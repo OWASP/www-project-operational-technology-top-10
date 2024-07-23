@@ -1,4 +1,3 @@
 ### Leaders
-* [Leader Name](mailto:leader.email@owasp.org)
-* [Leader Name](mailto:leader.email@owasp.org)
-* [Leader Name](mailto:leader.email@owasp.org)
+* [Andreas Happe](mailto:andreas.happe@owasp.org)
+* [Simon Rommer](mailto:andreas.happe@owasp.org)
