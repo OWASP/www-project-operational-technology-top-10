@@ -31,7 +31,7 @@ This section should give an overview about OWASP, related documents/standards, e
 
 # The OWASP OT Top 10
 
-- [How where the OT Top 10 created](/docs/methodology.md)
+- [How were the OT Top 10 created](/docs/methodology.md)
 - [Structure of each Top 10 entry](/docs/structure.md)
 
 ## The list of OT Top 10 (preliminary, TBD)
