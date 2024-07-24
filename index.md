@@ -33,6 +33,7 @@ Each entry in the OWASP OT Top 10 will be accompanied by a short description, pu
 I have already reached out to multiple companies and research institutes (mostly Central Europe) for contributors (and potenial leaders, I'd like to have at least one leader currently working in Academia), including:
 
 * Technical University of Vienna, Safety and Security Lab for Industrial Systems
+* OMICRON electronics GmbH
 * Siemens
 * TTTech
 * etc.
