@@ -5,7 +5,9 @@ Each entry in the OWASP OT Top 10 will be accompanied by a short description, pu
 - name
 - description
 - known OT attacks that utilized this vulnerability
+  - https://www.icsadvisoryproject.com
+  - https://icsstrive.com/
 - recommended mitigations and countermeasures
 - references
-  - relevant standars
+  - relevant standards
   - OWASP cheat sheet series if relevant, etc.
