@@ -13,52 +13,26 @@ The OWASP OT Top 10 is a comprehensive list of the top security risks and vulner
 
 By raising awareness and providing actionable recommendations, we aim to improve the security posture of OT systems and protect critical infrastructure from cyber threats.
 
-# introduction
+# Introduction
 
-## who is OWASP
+This section should give an overview about OWASP, related documents/standards, etc.
 
-## relationship to other OWASP standards
+- [About OWASP](/docs/about-owasp.md)
+- [Related Standards and Documents](/docs/related-documents.md)
+- [Community and Contributing](/docs/community-and-contributing.md)
 
-# Community and Contributors
+# Introduction to OT
 
-## Communication Channels
+- [What is OT](/docs/what-is-ot.md)
+- [Example OT Architectures](/docs/ot-architectures.md)
+- [Differences between OT and IT](/docs/ot-vs-it.md)
 
-## Our Core-Team (maintainers)
+# The OWASP OT Top 10
 
-## Contributors
+- [How where the OT Top 10 created](/docs/methodology.md)
+- [Structure of each Top 10 entry](/docs/structure.md)
 
-## How to Contribute?
-
-# what is OT?
-
-## example architectures
-
-- purdue model
-- maybe an example out of the sp800-?
-- also to explain typical components
-
-## differentiation to IT
-
-- also OT vs. IT attacks (also see ransomware)
-
-## relevant standards
-
-# Methodology
-
-## how was this standard created?
-
-## structure of each top 10 item
-
-- name
-- description
-- known OT attacks that utilized this vulnerability
-- references
-  - relevant standars
-  - OWASP cheat sheet series if relevant, etc.
-
-# the list of vulnerabilities itself (TBD)
-
-Each entry in the OWASP OT Top 10 will be accompanied by a short description, public incidents exploiting that entry, recommended mitigations and countermeasures, as well as references and tooling to assist in addressing the identified risks.
+## The list of OT Top 10 (preliminary, TBD)
 
 1. Unknown assets
 2. Missing/unsufficient Vulnerability management
