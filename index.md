@@ -17,9 +17,17 @@ By raising awareness and providing actionable recommendations, we aim to improve
 
 ## who is OWASP
 
-## How to contribute?
-
 ## relationship to other OWASP standards
+
+# Community and Contributors
+
+## Communication Channels
+
+## Our Core-Team (maintainers)
+
+## Contributors
+
+## How to Contribute?
 
 # what is OT?
 
