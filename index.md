@@ -36,6 +36,8 @@ This section should give an overview about OWASP, related documents/standards, e
 
 ## The list of OT Top 10 (preliminary, TBD)
 
+We're currently collecting potential candiates within [the repo](/docs/potential-top-10).
+
 1. Unknown assets
 2. Missing/unsufficient Vulnerability management
 3. Unsufficient/missing network separation
