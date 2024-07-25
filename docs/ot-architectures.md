@@ -8,4 +8,6 @@ Idea: give an example of how OT architecture looks like, this might help people 
 
 ## Purdue Model
 
+## OT Case-Studies
+
 - maybe use an example out of https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.ipd.pdf
