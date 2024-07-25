@@ -48,4 +48,4 @@ We're currently collecting potential candiates within [the repo](/docs/potential
 8. Unmanaged external access (from above purdue model level 3 / IEC62443 zones/conduits )
 9. Alert fatigue with “dirty” environment
 10. Undefined processes for alert reporting/handling
-11. Engineers not committed to security (safety as highest goal)
+11. [Engineers not committed to security (safety as highest goal)](/docs/potential-top-10/security-culture.md)
