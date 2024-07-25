@@ -38,8 +38,8 @@ This section should give an overview about OWASP, related documents/standards, e
 
 We're currently collecting potential candiates within [the repo](/docs/potential-top-10).
 
-1. Unknown assets
-2. Missing/unsufficient Vulnerability management
+1. [Unknown assets](/docs/potential-top-10/unknown-assets.md)
+2. [Missing/unsufficient Vulnerability management](/docs/potential-top-10/missing-vulnerability-management.md)
 3. Unsufficient/missing network separation
 4. Lax access controls  (account /user based)  - least privilege
 5. Intentional misconfiguration for ease of use (e.g. leaving rtu’s in upload mode)
