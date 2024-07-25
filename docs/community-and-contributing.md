@@ -10,7 +10,7 @@ This secton should both show-off the hard work that our contributors are doing, 
 ## Our Core-Team (maintainers)
 
 - [Andreas Happe](mailto:andreas.happe@owasp.org)
-- Simon Rommer
+- [Simon Rommer](mailto:simon.rommer@owasp.org)
 
 ## Contributors
 
