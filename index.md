@@ -51,3 +51,7 @@ We're currently collecting potential candiates within [the repo](/docs/potential
 9. Alert fatigue with “dirty” environment
 10. Undefined processes for alert reporting/handling
 11. [Engineers not committed to security (safety as highest goal)](/docs/potential-top-10/security-culture.md)
+
+Similar Lists (sync and/or create mapping):
+- https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&v=6
+- https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-278a
