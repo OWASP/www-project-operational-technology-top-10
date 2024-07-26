@@ -11,3 +11,4 @@ Each entry in the OWASP OT Top 10 will be accompanied by a short description, pu
 - references
   - relevant standards
   - OWASP cheat sheet series if relevant, etc.
+  - NIST SP800-82
