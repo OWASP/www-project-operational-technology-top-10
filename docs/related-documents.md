@@ -11,3 +11,14 @@ In OT we often analyze whole factory floors or power plants, situating our list 
 (I)IoT is a part of OT, but OT is broader in scope and utilized IoT devices within. This difference in scope is reflected in the Top Vulnerability list: when using the IoT Top 10, only 2 out of the 10 top vulnerabilities directly map onto the OT domain (I4 and I5).
 
 ## Related OT standards
+
+- EU NIS Directive
+- EU Cyber Resilience Act
+- NIST SP800-82
+- IEC 62443
+  - IEC 62443-2-1: Establish IACS Security Program
+  - IEC 62443-2-4: Integration and Maintenance Requirements
+  - IEC 62443-3-2: Security Levels for Zones and Conduits
+  - IEC 62443-3-3: System Security Requirements
+  - IEC 62443-4-1: Product Development Requirements
+  - IEC 62443-4-2: Technical Security Requirements
