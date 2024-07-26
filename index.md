@@ -29,6 +29,8 @@ This section should give an overview about OWASP, related documents/standards, e
 - [Example OT Architectures](/docs/ot-architectures.md)
 - [Differences between OT and IT](/docs/ot-vs-it.md)
 
+Focus: are we focusing builders, defenders or attackers? Different classification: Operators/Integrators/Vendors
+
 # The OWASP OT Top 10
 
 - [How were the OT Top 10 created](/docs/methodology.md)
