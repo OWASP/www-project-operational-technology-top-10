@@ -6,8 +6,9 @@ All errors are mine, I am proud to keep them.
 
 ## Basic Assumptions
 
-- we want to generate the project website from markdown files using `mkdocs` using the `material` theme
+- all documentation will be in markdown files within `/docs/`
 - we will not do manual versioning (`v1`, `v2`, `v3`) but will use git tags and github releases for this.
+- the project website will be generated from the markdown files using [mkdocs using the material theme](https://squidfunk.github.io/mkdocs-material)
 
 ### Feature Wishlist
 
