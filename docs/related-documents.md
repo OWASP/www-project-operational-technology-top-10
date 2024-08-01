@@ -12,13 +12,29 @@ In OT we often analyze whole factory floors or power plants, situating our list 
 
 ## Related OT standards
 
-- EU NIS Directive
-- EU Cyber Resilience Act
-- NIST SP800-82
-- IEC 62443
-  - IEC 62443-2-1: Establish IACS Security Program
-  - IEC 62443-2-4: Integration and Maintenance Requirements
-  - IEC 62443-3-2: Security Levels for Zones and Conduits
-  - IEC 62443-3-3: System Security Requirements
-  - IEC 62443-4-1: Product Development Requirements
-  - IEC 62443-4-2: Technical Security Requirements
+### EU NIS2 Directive
+
+- Technical and Organizational Aspects
+- Mandatory reporting of any incident that has a significant impact
+  - early warning within 24h, incident notifications in 72h, final report not alter than one month after the incident notification. That's gonna be fun.
+- high fines
+- authorities must be empowered to audit essential entities
+- give an overview of a company's obligations, is this targeted against vendors, integrators or operators?
+
+### EU Cyber Resilience Act
+
+- boundaries conditions for the development of secure products with digital elements
+- essential requirements, vulnerability handling process
+
+### NIST SP800-82
+
+### IEC 62443
+
+Series of standards, e.g.,
+
+- IEC 62443-2-1: Establish IACS Security Program
+- IEC 62443-2-4: Integration and Maintenance Requirements
+- IEC 62443-3-2: Security Levels for Zones and Conduits
+- IEC 62443-3-3: System Security Requirements
+- IEC 62443-4-1: Product Development Requirements
+- IEC 62443-4-2: Technical Security Requirements
