@@ -12,3 +12,4 @@ Each entry in the OWASP OT Top 10 will be accompanied by a short description, pu
   - relevant standards
   - OWASP cheat sheet series if relevant, etc.
   - NIST SP800-82
+  - MITRE ATTACK ICS and navigator

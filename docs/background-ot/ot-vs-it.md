@@ -33,3 +33,7 @@ OT: primary focus is protecting the plant or process
 
 - often unencrypted
 - often vendor-specific and vendor lock-in
+
+## Physical Security
+
+security strongly relies on physical security

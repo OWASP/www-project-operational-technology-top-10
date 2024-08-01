@@ -96,27 +96,30 @@ This is currently not working, maybe some bad interaction with the existing OWAS
 `.github/workflows/deploy.yml`:
 
 ~~~yaml
-name: ci
+name: Build Github Pages
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
 permissions:
-    contents: write
+  contents: write
 jobs:
-    deploy:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-            - uses: actions/setup-python@v4
-                with:
-                    python-version: 3.x
-            - uses: actions/cache@v2
-                with:
-                    key: ${{ github.ref }}
-                    path: .cache
-            - run: pip install mkdocs-material
-            - run: mkdocs gh-deploy --force
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+      - name: Install Dependencies
+        run: pip install mkdocs-material
+      - run: mkdocs gh-deploy --force --clean
 ~~~
 
 Go to your github repository and go towards `settings -> github pages` and set the `Branch` within the section `Build and Deployment` to `gh-pages`.
