@@ -123,3 +123,7 @@ jobs:
 ~~~
 
 Go to your github repository and go towards `settings -> github pages` and set the `Branch` within the section `Build and Deployment` to `gh-pages`.
+
+## Generate PDF (for archive and stuff, TBD)
+
+- uses `pandoc`
