@@ -9,6 +9,7 @@ All errors are mine, I am proud to keep them.
 - all documentation will be in markdown files within `/docs/`
 - we will not do manual versioning (`v1`, `v2`, `v3`) but will use git tags and github releases for this.
 - the project website will be generated from the markdown files using [mkdocs using the material theme](https://squidfunk.github.io/mkdocs-material)
+- the site will be hosted at <projectname>.owasp.org
 
 ### Feature Wishlist
 
@@ -122,7 +123,7 @@ jobs:
       - run: mkdocs gh-deploy --force --clean
 ~~~
 
-Go to your github repository and go towards `settings -> github pages` and set the `Branch` within the section `Build and Deployment` to `gh-pages`.
+Go to your github repository and go towards `settings -> github pages` and set the `Branch` within the section `Build and Deployment` to `gh-pages`. Configure your domain name as `custom url`
 
 ## Generate PDF (for archive and stuff, TBD)
 
