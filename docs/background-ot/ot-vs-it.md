@@ -36,4 +36,4 @@ OT: primary focus is protecting the plant or process
 
 ## Physical Security
 
-security strongly relies on physical security
+physical security plays a bigger role in defining threatmodels, since the systems to protect are located in the physical world rather than the digital
