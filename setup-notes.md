@@ -128,3 +128,9 @@ Go to your github repository and go towards `settings -> github pages` and set t
 ## Generate PDF (for archive and stuff, TBD)
 
 - uses `pandoc`
+
+## Analytics
+
+There seems to be no global OWASP analytics account. Typically projects use their own setup (e.g., google analytics setup with the @owasp.org email account):
+
+setup instructions can be found here: https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/
