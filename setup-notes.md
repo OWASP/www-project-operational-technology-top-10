@@ -134,3 +134,9 @@ Go to your github repository and go towards `settings -> github pages` and set t
 There seems to be no global OWASP analytics account. Typically projects use their own setup (e.g., google analytics setup with the @owasp.org email account):
 
 setup instructions can be found here: https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/
+
+## Donations
+
+Example from mas.owasp.org: We have a donation page [https://mas.owasp.org/donate/](https://mas.owasp.org/donate/) this has donation packages that companies can select and then they can donate through the OWASP donation page [https://owasp.org/donate/](https://owasp.org/donate/). Either an amount they choose or according to the donation package and then they get the benefits of them.
+
+GitHub sponsors: you can configure it to link to your donations page, and in there have the description on how to donate to your project via OWASP. You're only allowed to *receive* money that way now
