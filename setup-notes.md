@@ -140,3 +140,8 @@ setup instructions can be found here: https://squidfunk.github.io/mkdocs-materia
 Example from mas.owasp.org: We have a donation page [https://mas.owasp.org/donate/](https://mas.owasp.org/donate/) this has donation packages that companies can select and then they can donate through the OWASP donation page [https://owasp.org/donate/](https://owasp.org/donate/). Either an amount they choose or according to the donation package and then they get the benefits of them.
 
 GitHub sponsors: you can configure it to link to your donations page, and in there have the description on how to donate to your project via OWASP. You're only allowed to *receive* money that way now
+
+## Translations
+
+- this is problematic, translations need to be updated and quality-checked
+- for example, MASVS stopped providing translations themselves: https://mas.owasp.org/contributing/4_Add_new_Language/#masvs-translations
