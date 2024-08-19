@@ -125,6 +125,8 @@ jobs:
 
 Go to your github repository and go towards `settings -> github pages` and set the `Branch` within the section `Build and Deployment` to `gh-pages`. Configure your domain name as `custom url`
 
+You will need to create a new file `docs/CNAME` containing your domain name (e.g., `ot.owasp.org`). Otherwise, the [custom domain name will be overwritten every time the site is auto-deployed](https://github.com/tschaub/gh-pages/issues/213)
+
 ## Generate PDF (for archive and stuff, TBD)
 
 - uses `pandoc`
