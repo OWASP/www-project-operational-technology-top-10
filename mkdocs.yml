@@ -32,6 +32,9 @@ extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/OWASP/www-project-operational-technology-top-10
+  analytics:
+    provider: google
+    property: G-MGPB7M04WE
 
 copyright: |
   <div style="float: left; padding-right: 1em;">
