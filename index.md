@@ -16,3 +16,5 @@ By raising awareness and providing actionable recommendations, we aim to improve
 # Find the OWASP OT Top 10 at https://ot.owasp.org .
 
 ### This is a work-in-progress, all information within this document is currently mostly used for testing automated tooling/deployment
+
+Join us in the [OWASP OT Top 10 Slack channel](https://owasp.slack.com/archives/C07HDTYRA6R)!
