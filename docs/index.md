@@ -24,6 +24,7 @@ This section should give an overview about OWASP, related documents/standards, e
 
 - [What is OT](/docs/what-is-ot.md)
 - [Example OT Architectures](/docs/ot-architectures.md)
+- How do we expect a system to behave? What would be the perfect world?
 - [Differences between OT and IT](/docs/ot-vs-it.md)
 
 Focus: are we focusing builders, defenders or attackers? Different classification: Operators/Integrators/Vendors
