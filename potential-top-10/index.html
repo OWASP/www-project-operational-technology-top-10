@@ -868,22 +868,53 @@
 <ul>
 <li>maybe we should get to a more conceptional level with the Top 10</li>
 <li>e.g., "Insufficient Network Separation" is rather a problem with a mitigation and not the root cause vulnerability</li>
-<li>maybe those are better ideas (and each of them would have a list of examples)</li>
-<li>fear of overly communicative devices?</li>
+<li>I believe that those high-level problems will be highly inter-related.</li>
+<li>
+<p>controls/countermeasures: maybe add a separate directory and link those (if they are mentioned multiple times) to reduce duplication</p>
+</li>
+<li>
+<p>maybe those are better ideas (and each of them would have a list of examples)</p>
+</li>
+<li>fear of overly communicative devices?<ul>
+<li>merge this with <code>unexpected attack surface</code> or maybe split some things from there over here</li>
+<li>maybe split between architecture and device?</li>
+</ul>
+</li>
 <li>devices that cannot be updated<ul>
 <li>examples: due to availability concerns, vendor not providing updates, devices without update capabilities</li>
 </ul>
 </li>
-<li>too large blast zone</li>
-<li>unauthenticated/unauthorized communication without integrity protection</li>
-<li>depending upon physical security</li>
-<li>devices with known security vulnerabilities<ul>
+<li>devices with (known) security vulnerabilities<ul>
 <li>related: device cannot be updated</li>
 <li>missing vulnerability management</li>
+<li>missing patch management</li>
+</ul>
+</li>
+<li>over-dependence upon / defect mitigations<ul>
+<li>depending upon physical security</li>
+<li>invalid air-gapping, see stuxnet</li>
+</ul>
+</li>
+<li>too large blast zone<ul>
+<li>opposed to defense-in-depth/zero-trust</li>
+</ul>
+</li>
+<li>unauthenticated/unauthorized communication without integrity protection</li>
+<li>unexpected attack surface<ul>
+<li>remediations are not a <code>get out of jail free</code> card and impose limitations and maintenance burden</li>
+<li>examples: stuxnet</li>
+<li>devices with additional unknown services (features, management, backdoors, etc.)</li>
+<li>shadow infrastructure / unknown devices</li>
+<li>maintenance access</li>
+</ul>
+</li>
+<li>Lax access controls<ul>
+<li>on device/service-level</li>
+<li>on physical level</li>
 </ul>
 </li>
 </ul>
-<p>I believe that those high-level problems will be highly inter-related.</p>
+<p>I would like to add security-by-obscurity prefered by vendors also somewhere.</p>
 
 
 
