@@ -47,6 +47,7 @@ We're currently collecting potential candiates within [the repo](/docs/potential
     - **note**: could this be removed as it is replaced by 'attackers abusing unexpected attack surfaces' and 'attackers starting from unexpected areas'
   - unauthenticated/unauthorized communication without integrity protection
     - **note** this might be better suited for a "general problems in OT" and not a direct vulnerability
+    - maybe replace with "attackers able to forge network requests"
   - attackers abusing unexpected attack surfaces
     - devices with additional unknown services (features, management, backdoors, etc.)
     - shadow infrastructure / unknown devices
