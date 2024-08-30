@@ -750,6 +750,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#list-provided-by-christopher" class="md-nav__link">
+    <span class="md-ellipsis">
+      List provided by christopher
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -881,6 +890,7 @@
 </ul>
 </li>
 <li>devices that cannot be updated<ul>
+<li><strong>note</strong> this might be better suited for a "general problems in OT" and not a direct vulnerability</li>
 <li>examples: due to availability concerns, vendor not providing updates, devices without update capabilities</li>
 </ul>
 </li>
@@ -893,22 +903,35 @@
 <li>over-dependence upon / defect mitigations<ul>
 <li>depending upon physical security</li>
 <li>invalid air-gapping, see stuxnet</li>
+<li>remediations are not a <code>get out of jail free</code> card and impose limitations and maintenance burden</li>
+<li>examples: stuxnet</li>
 </ul>
 </li>
 <li>too large blast zone<ul>
 <li>opposed to defense-in-depth/zero-trust</li>
+<li><strong>note</strong>: could this be removed as it is replaced by 'attackers abusing unexpected attack surfaces' and 'attackers starting from unexpected areas'</li>
 </ul>
 </li>
-<li>unauthenticated/unauthorized communication without integrity protection</li>
-<li>unexpected attack surface<ul>
-<li>remediations are not a <code>get out of jail free</code> card and impose limitations and maintenance burden</li>
-<li>examples: stuxnet</li>
+<li>unauthenticated/unauthorized communication without integrity protection<ul>
+<li><strong>note</strong> this might be better suited for a "general problems in OT" and not a direct vulnerability</li>
+</ul>
+</li>
+<li>attackers abusing unexpected attack surfaces<ul>
 <li>devices with additional unknown services (features, management, backdoors, etc.)</li>
 <li>shadow infrastructure / unknown devices</li>
 <li>maintenance access</li>
+<li><strong>related to</strong> 'defect mitigations'</li>
+<li>vendors not publishing security advisories</li>
 </ul>
 </li>
-<li>Lax access controls<ul>
+<li>attackers starting from unexpected areas<ul>
+<li><strong>related to</strong> 'defect mitigations', 'too large blast zone'</li>
+<li>shadow infrastructure / unknown devices</li>
+<li>maintenance access</li>
+<li>adversaries being able to stay on the network</li>
+</ul>
+</li>
+<li>attackers abusing lax access controls<ul>
 <li>on device/service-level</li>
 <li>on physical level</li>
 </ul>
@@ -919,9 +942,19 @@
 <li>Missing configuration backups for OT-Devices</li>
 </ul>
 </li>
-<li>adversaries being able to stay on the network</li>
 </ul>
-<p>I would like to add security-by-obscurity prefered by vendors also somewhere.</p>
+<h2 id="list-provided-by-christopher">List provided by christopher</h2>
+<ul>
+<li>Lack of authentication</li>
+<li>use of insecure 3rd party items - HW / SW assets with critical vulnerabilities</li>
+<li>available JTAG/SWD interface left enabled on production devices</li>
+<li>lack of encryption / minimal encryption</li>
+<li>lack of hardening peripheral devices in the system, exposing devices to possible vulnerabilities</li>
+<li>broadly: trying to wiggle out of security features via deflection to obscurity</li>
+<li>weak built-in security features like basic Bluetooth</li>
+<li>lack of encryption for mobile apps, log files and PHI/PII</li>
+<li>not protecting the BIOS/boot order</li>
+</ul>
 
 
 
