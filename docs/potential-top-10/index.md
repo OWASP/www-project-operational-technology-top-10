@@ -51,5 +51,10 @@ We're currently collecting potential candiates within [the repo](/docs/potential
   - Lax access controls
     - on device/service-level
     - on physical level
+  - Not being able to react/recover from incidents
+    - missing backups/desaster recovery
+    - Undefined processes for alert reporting/handling
+    - Missing configuration backups for OT-Devices
+  - adversaries being able to stay on the network
 
 I would like to add security-by-obscurity prefered by vendors also somewhere.
