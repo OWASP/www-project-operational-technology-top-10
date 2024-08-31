@@ -29,6 +29,8 @@ This section should give an overview about OWASP, related documents/standards, e
 
 Focus: are we focusing builders, defenders or attackers? Different classification: Operators/Integrators/Vendors
 
+**TODO** maybe add a page about "the perfect setup", i.e., the systems that we would like to achieve in the long run.
+
 ## The OWASP OT Top 10
 
 - [How were the OT Top 10 created](/docs/methodology.md)
