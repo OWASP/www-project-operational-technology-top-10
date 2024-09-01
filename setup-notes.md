@@ -147,3 +147,31 @@ GitHub sponsors: you can configure it to link to your donations page, and in the
 
 - this is problematic, translations need to be updated and quality-checked
 - for example, MASVS stopped providing translations themselves: https://mas.owasp.org/contributing/4_Add_new_Language/#masvs-translations
+
+## Custom 404 (page not found) page
+
+- e.g., when you're switchting from another wiki engine and links are not working
+- so that you can give helpful hints to users
+
+add the following to your `mkdocs.yaml`
+
+```yaml
+theme:
+  name: material
+  custom_dir: overrides
+  static_templates:
+    - 404.html
+```
+
+create a directory `overrides` and add a file `404.html` within it. You can use the following as template
+
+```html
+{% extends "main.html" %} 
+
+<!-- Content --> 
+{% block content %} 
+  <h1>404 - Page not found!</h1> 
+
+  <!-- add your help text here -->
+{% endblock %} 
+```
