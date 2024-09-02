@@ -45,9 +45,9 @@ copyright: |
 
 nav:
   - 'Introduction':
-    - 'Why OT Top 10?': index.md
+    - 'About this Project': index.md
     - 'About OWASP': introduction/about-owasp.md
-    - 'How to contribute?': introduction/community-and-contributing.md
+    - 'How to contribute?': introduction/contributing.md
     - 'Related OWASP Projects': introduction/related-owasp-projects.md
   - 'Operation Technology (OT)':
     - 'What is OT?': background-ot/what-is-ot.md
