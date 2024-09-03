@@ -40,6 +40,8 @@ Now add some additional features in the `mkdocs.yml` file (you should be able to
 
 ~~~ yaml
 site_name: OWASP Operational Technology (OT) Top 11
+site_url: https://top10proactive.owasp.org
+repo_url: https://github.com/OWASP/www-project-proactive-controls/
 theme:
   name: material
   features:
@@ -81,6 +83,8 @@ copyright: |
     <a href="https://creativecommons.org/licenses/by/4.0">CC-BY-4.0</a>. For any reuse or distribution, you must make clear to others the license terms of this work.
   </span><br><span style="font-size: smaller">OWASP &#174; is a registered trademark of the OWASP Foundation, Inc.</span> <span>This website uses cookies to analyze our traffic and only share that information with our analytics partners. <a href="https://github.com/OWASP/owasp-mastg/blob/master/about_cookies.md">Learn more</a>.</span>
 ~~~
+
+`site_url` is important as it will generate a `/sitemap.xml` which is used by search engines!
 
 I haven't included all the markdown extensions for code editing and stuff.
 
