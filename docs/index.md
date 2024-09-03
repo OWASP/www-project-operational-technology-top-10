@@ -1,22 +1,22 @@
 # OWASP OT Top 10
 
-In today's rapidly evolving technological landscape, the convergence of information technology (IT) and operational technology (OT) has introduced new efficiencies and capabilities across industries. Operational Technology, which encompasses the hardware and software systems used to monitor and control industrial processes, plays a critical role in sectors such as manufacturing, energy, transportation, and utilities. As these systems become increasingly interconnected and integrated with IT networks, they also become more vulnerable to cyber threats.
+Operational Technology (OT), which encompasses the hardware and software systems used to monitor and control industrial processes, plays a critical role in sectors such as manufacturing, energy, transportation, and utilities. As these systems become increasingly interconnected and integrated with IT networks, they also become more vulnerable to cyber threats.
 
 The significance of safeguarding OT environments cannot be overstated. These systems are integral to the functionality of critical infrastructure, and any disruption or compromise can have severe consequences, ranging from operational downtime and financial losses to potential safety hazards and national security risks. Despite their importance, OT systems often lack the robust cybersecurity measures commonly found in IT environments, primarily due to the legacy nature of many industrial control systems (ICS) and the historical focus on availability and reliability over security.
 
 ## Aim & Objective
 
-The OWASP OT Top 10 is a comprehensive list of the top security risks and vulnerabilities specific to Operational Technology (OT) environments. OT systems, which include industrial control systems and critical infrastructure, are increasingly being targeted by malicious actors. This list aims to provide guidance and best practices for securing OT systems and mitigating these risks.
-
-By raising awareness and providing actionable recommendations, we aim to improve the security posture of OT systems and protect critical infrastructure from cyber threats.
+The goal of the **OWASP Operational Technology (OT) Top 10** is to raise awareness about the top security risks and vulnerabilities specific to Operational Technology (OT) environments. By providing actionable recommendations, we aim to improve the security posture of OT systems and protect critical infrastructure from cyber threats.
 
 ## Target Audience
 
-Focus: are we focusing builders, defenders or attackers? Different classification: Operators/Integrators/Vendors
+This document is written for two main target audiences: system developers and system integrators. This mirrors the OT world in which system components are developed and integrated (i.e., configured and setup on-site) by different parties with different capabilities. While developers can pro-actively create secure components, integrators are often limited to implement mitigations.
+
+However, development managers, product owners, Q/A professionals, program managers, and anyone involved in building software can also benefit from this document.
 
 ## How to Use this Document
 
-Yeah, what's our vision?
+This document’s main purpose is to provide a solid foundation of topics to help introduce developers and integrators to the OT world an its very special set of requirements.
 
 ## Project Leaders (in alphabetical order)
 
