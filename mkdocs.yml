@@ -28,6 +28,9 @@ theme:
       primary: teal
       accent: lime
 
+markdown_extensions: 
+  - tables
+
 extra:
   social:
     - icon: fontawesome/brands/github-alt
@@ -50,18 +53,17 @@ nav:
     - 'About this Project': index.md
     - 'About OWASP': introduction/about-owasp.md
     - 'How to contribute?': introduction/contributing.md
+    - 'Contributors': introduction/contributors.md
     - 'Related OWASP Projects': introduction/related-owasp-projects.md
   - 'Operation Technology (OT)':
     - 'What is OT?': background-ot/what-is-ot.md
     - 'Cultural Differences': background-ot/culture.md
     - 'Example Architectures': background-ot/ot-architectures.md
     - 'Related Standards': background-ot/related-standards.md
-    - 'OT vs IT': 0x05_background/ot-vs-it.md
-  - 'Methodology':
-    - 'How was this created?': methodology/how-was-this-created.md
-    - "What's in a Top 10 item": methodology/structure.md
+    - 'OT vs IT': background-ot/ot-vs-it.md
   - 'The Top 10':
-      - "Preliminiary List": the-top-10/index.md
+      - "Introduction": the-top-10/introduction.md
+      - "Preliminary List": the-top-10/index.md
       - "1. TBD": the-top-10/1.md
       - "2. TBD": the-top-10/2.md
       - "3. TBD": the-top-10/3.md

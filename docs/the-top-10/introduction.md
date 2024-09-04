@@ -1,4 +1,15 @@
-# structure of each top 10 item
+# Introduction
+
+## How were the OT Top 10 created
+
+- meetings every two weeks to gather the top 10 list
+- quantitative discussion to form the top 10
+
+## How did we make sure that we covered reality
+
+- check existing OT incident reports and see if the proposed top 10 fit
+
+## structure of each top 10 item
 
 Each entry in the OWASP OT Top 10 will be accompanied by a short description, public incidents exploiting that entry, recommended mitigations and countermeasures, as well as references and tooling to assist in addressing the identified risks.
 
