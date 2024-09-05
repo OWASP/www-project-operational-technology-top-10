@@ -179,3 +179,70 @@ create a directory `overrides` and add a file `404.html` within it. You can use 
   <!-- add your help text here -->
 {% endblock %} 
 ```
+
+## Adding simple outgoing link-checking and a markdown linter
+
+Configure a new github action, e.g., `.github/workflows/ci.yaml` with:
+
+```yaml
+name: CI pipeline
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+# for security reasons the github actions are pinned to specific release versions
+jobs:
+  link_checker:
+    name: Link checker
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v4.1.1
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1.10.0
+        with:
+          args: --no-progress --max-retries 5 './docs/**/*.md'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  md_linter:
+    name: Lint markdown
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v4.1.1
+
+      - name: Lint markdown
+        uses: DavidAnson/markdownlint-cli2-action@v16.0.0
+        with:
+          config: '.markdownlint.yaml'
+          globs: './docs/**/*.md'
+```
+
+And add a configuration file for markdown linting  in `.markdownlint.yaml`:
+
+```yaml
+---
+no-trailing-punctuation: false
+no-inline-html: false
+first-line-heading: false
+link-fragments: false
+
+# MD013 - Line length
+MD013:
+  code_block_line_length: 125
+  code_blocks: true
+  heading_line_length: 100
+  #heading_line_length: 80
+  headings: true
+  # line_length: 125
+  line_length: 1024
+  stern: true
+  strict: false
+  tables: true
+```
