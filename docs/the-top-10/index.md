@@ -2,9 +2,9 @@
 
 We're currently collecting potential candiates within [the repo](/docs/potential-top-10).
 
-1. [Unknown assets](https://ot.owasp.org/potential-top-10/unknown-assets/)
-2. [Missing/unsufficient Vulnerability management](https://ot.owasp.org/potential-top-10/missing-vulnerability-management/)
-3. Unsufficient/missing network separation
+1. [Unknown assets](/the-top-10/unknown-assets/)
+2. [Missing/insufficient Vulnerability management](/the-top-10/missing-vulnerability-management/)
+3. Insufficient/missing network separation
 4. Lax access controls  (account /user based)  - least privilege
 5. Intentional misconfiguration for ease of use (e.g. leaving rtu’s in upload mode)
 6. Missing configuration backups for OT-Devices
@@ -12,12 +12,11 @@ We're currently collecting potential candiates within [the repo](/docs/potential
 8. Unmanaged external access (from above purdue model level 3 / IEC62443 zones/conduits )
 9. Alert fatigue with “dirty” environment
 10. Undefined processes for alert reporting/handling
-11. [Engineers not committed to security (safety as highest goal)](https://ot.owasp.org/potential-top-10/security-culture/)
 
 ## Similar Lists (sync and/or create mapping):
 
-- https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&v=6
-- https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-278a
+- <https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&v=6>
+- <https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-278a>
 
 ## After Discussion 28.8.2024
 
@@ -66,7 +65,7 @@ We're currently collecting potential candiates within [the repo](/docs/potential
     - missing backups/desaster recovery
     - Undefined processes for alert reporting/handling
     - Missing configuration backups for OT-Devices
-   
+
 ## List provided by christopher
 
 - Lack of authentication

@@ -13,8 +13,6 @@ Cyberphysical is a coinage that tries to describe the IT/OT convergence that int
 
 Since IT and OT are not mutual exclusive, but interconnected, we just view IT systems in OT as part of OT. The line between IT and OT systems is drawn with responsibility/ function of the system and network topology as seen in the [Purdue Model](https://en.wikipedia.org/wiki/Purdue_Enterprise_Reference_Architecture).
 
-
-
 ## Involved Parties
 
 typical: vendors, integrators, operators
