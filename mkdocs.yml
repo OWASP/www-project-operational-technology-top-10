@@ -57,10 +57,9 @@ nav:
     - 'Related OWASP Projects': introduction/related-owasp-projects.md
   - 'Operation Technology (OT)':
     - 'What is OT?': background-ot/what-is-ot.md
-    - 'Cultural Differences': background-ot/culture.md
     - 'Example Architectures': background-ot/ot-architectures.md
-    - 'Related Standards': background-ot/related-standards.md
     - 'OT vs IT': background-ot/ot-vs-it.md
+    - 'Related Standards and Regulations': background-ot/related-standards.md
   - 'The Top 10':
       - "Introduction": the-top-10/introduction.md
       - "Preliminary List": the-top-10/index.md
