@@ -1,15 +1,11 @@
 # Related Standards and Regulations
 
 While this document explores the unique challenges in OT networks and systems,
-there are established standards both from OWASP and other organizations that can
+there are established standards both from [OWASP](../introduction/related-owasp-projects.md) and other organizations that can
 provide useful information for suppliers, integrators and operators alike.
+
 Additionally, like mentioned in the introduction, there is also an increasing
 number of laws and regulations.
-
-## Related OWASP standards
-
-- OWASP IoT Top 10: The increasing introduction of IoT devices in OT environments (Industrial IoT, IIoT) comes with many of the security problems that are known from common IoT. This makes OWASP IoT Top 10 a valuable resource especially for suppliers and integrators, but for operators as well.
-- OWASP Top 10: The best known OWASP standard, the Top 10 of web application security, is also relevant for OT. Suppliers and integrators developing software in form of web applications, e.g. for control systems with a web interface can find useful information on how to avoid the most common vulnerabilities in web applications – even when they are used in an industrial environment.
 
 ## Standards of other organizations
 
