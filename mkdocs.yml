@@ -60,7 +60,7 @@ nav:
     - background-ot/index.md
     - 'Example Architectures': background-ot/ot-architectures.md
     - 'OT vs IT': background-ot/ot-vs-it.md
-    - 'Related Standards and Regulations': background-ot/related-standards.md
+    - 'Standards and Regulations': background-ot/related-standards.md
   - 'The Top 10':
       - the-top-10/index.md
       - "1. TBD": the-top-10/1.md
