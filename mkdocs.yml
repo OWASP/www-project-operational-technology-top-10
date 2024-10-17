@@ -8,6 +8,7 @@ theme:
     - navigation.tracking
     - navigation.path
     - navigation.top
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -50,19 +51,18 @@ copyright: |
 
 nav:
   - 'Introduction':
-    - 'About this Project': index.md
+    - index.md
     - 'About OWASP': introduction/about-owasp.md
     - 'How to contribute?': introduction/contributing.md
     - 'Contributors': introduction/contributors.md
     - 'Related OWASP Projects': introduction/related-owasp-projects.md
   - 'Operation Technology (OT)':
-    - 'What is OT?': background-ot/what-is-ot.md
+    - background-ot/index.md
     - 'Example Architectures': background-ot/ot-architectures.md
     - 'OT vs IT': background-ot/ot-vs-it.md
     - 'Related Standards and Regulations': background-ot/related-standards.md
   - 'The Top 10':
-      - "Introduction": the-top-10/introduction.md
-      - "Preliminary List": the-top-10/index.md
+      - the-top-10/index.md
       - "1. TBD": the-top-10/1.md
       - "2. TBD": the-top-10/2.md
       - "3. TBD": the-top-10/3.md

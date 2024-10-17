@@ -1,4 +1,36 @@
-# The list of OT Top 10 (preliminary, TBD)
+# The Top 10
+
+## How were the OT Top 10 created
+
+- meetings every two weeks to gather the top 10 list
+- quantitative discussion to form the top 10
+
+## How did we make sure that we covered reality
+
+- check existing OT incident reports and see if the proposed top 10 fit
+
+## structure of each top 10 item
+
+Each entry in the OWASP OT Top 10 will be accompanied by a short description, public incidents exploiting that entry, recommended mitigations and countermeasures, as well as references and tooling to assist in addressing the identified risks.
+
+- name
+- description
+- known OT attacks that utilized this vulnerability
+  - <https://www.icsadvisoryproject.com>
+  - <https://icsstrive.com/>
+- recommended mitigations and countermeasures
+  - there will be multiple levels
+    - design and implementation level mitigations for developers/builders
+    - operational mitigations for integrators, e.g., air-gapping systems
+- references
+  - relevant standards
+  - OWASP cheat sheet series if relevant, etc.
+  - NIST SP800-82
+  - MITRE ATTACK ICS and navigator
+
+## Ideas about Top 10 Lists
+
+### The list of OT Top 10 (preliminary, TBD)
 
 We're currently collecting potential candiates within [the repo](/docs/potential-top-10).
 
@@ -13,12 +45,12 @@ We're currently collecting potential candiates within [the repo](/docs/potential
 9. Alert fatigue with “dirty” environment
 10. Undefined processes for alert reporting/handling
 
-## Similar Lists (sync and/or create mapping):
+### Similar Lists (sync and/or create mapping):
 
 - <https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&v=6>
 - <https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-278a>
 
-## After Discussion 28.8.2024
+### After Discussion 28.8.2024
 
 - maybe we should get to a more conceptional level with the Top 10
 - e.g., "Insufficient Network Separation" is rather a problem with a mitigation and not the root cause vulnerability
@@ -66,7 +98,7 @@ We're currently collecting potential candiates within [the repo](/docs/potential
     - Undefined processes for alert reporting/handling
     - Missing configuration backups for OT-Devices
 
-## List provided by christopher
+### List provided by christopher
 
 - Lack of authentication
 - use of insecure 3rd party items - HW / SW assets with critical vulnerabilities
