@@ -1,4 +1,4 @@
-# The Top 10 
+# The Top 10
 
 ## How were the OT Top 10 created
 
@@ -28,8 +28,7 @@ Each entry in the OWASP OT Top 10 will be accompanied by a short description, pu
   - NIST SP800-82
   - MITRE ATTACK ICS and navigator
 
-
-## Ideas about Top 10 Lists 
+## Ideas about Top 10 Lists
 
 ### The list of OT Top 10 (preliminary, TBD)
 
