@@ -26,6 +26,8 @@ target temperature and to observe the current state of the boiler. Finally,
 remote diagnostics and maintenance tools can be used in case of abnormal
 operation of the system or solution.
 
+## Purdue Model
+
 While this control loop gives a general overview of the principal function of a
 control system, not all OT systems and devices are equal. While some like PLCs
 are more involved in direct control of individual processes, others are used on

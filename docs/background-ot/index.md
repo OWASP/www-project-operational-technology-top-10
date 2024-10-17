@@ -5,13 +5,17 @@ systems and devices that directly or indirectly interact with the physical
 environment. In case of indirect interaction, these systems manage other systems
 or devices that themselves interact with the physical world in a direct way. All
 of these interactions happen through monitoring and controlling devices,
-processes, and events. A very simple example for that could be a thermostat that
+processes, and events.
+
+A very simple example for that could be a thermostat that
 monitors the temperature in a room. If it senses, that it gets to cold, it turns
 up the heating thus changes the physical environment around it. Due to this
 interleaving with the physical world, the term cyber-physical system (CPS) is
 often used synonymously with OT. While the increased use of CPS is not least due
 to the increasing convergence of IT, OT and IoT, this mixture of fields can also
 sometimes make the term blurry.
+
+## Types of OT Systems
 
 OT systems can come in a wide variety of forms, ranging from small programmable
 logic controllers (PLCs) to (multiple) site encompassing control systems like
@@ -21,7 +25,9 @@ supervisory control and data acquisition (SCADA) or distributed control systems
 and even medical IoT devices are part of OT. But not only the types of systems
 and devices are diverse, so are the industries and infrastructures fielding OT
 systems. From chemical production to the transportation sector – almost no
-modern infrastructure operates without OT components. Especially due to the
+modern infrastructure operates without OT components.
+
+Especially due to the
 usage in critical infrastructure like in energy or water and wastewater
 infrastructure, OT security problems can have major impacts on the society
 relying on these infrastructures. This is also why OT security is of ever
@@ -29,6 +35,8 @@ increasing importance, not least as several highly sophisticated pieces of
 malware have already affected OT system, from the notorious Stuxnet in 2010 to
 several power outages in Ukraine since 2015 due to software like BlackEnergy or
 Industroyer.
+
+## Stakeholders
 
 To achieve security in OT systems and devices, several stakeholders have to work
 hand in hand. For example, the standards series for security for OT in
