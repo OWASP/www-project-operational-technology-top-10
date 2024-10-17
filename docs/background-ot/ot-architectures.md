@@ -3,7 +3,7 @@
 A typical OT system consists of control loops, human-machine interfaces (HMI)
 and remote diagnostics and maintenance tools like depicted in the image below.
 
-![Components of an OT System](/assets/images/nist_architecture.png)<br>
+![Components of an OT System](../assets/images/nist_architecture.png)<br>
 *Source: NIST SP 800-82r3, p. 11*
 
 A control loop is meant – as the name suggests – to control some kind of
@@ -45,7 +45,7 @@ when going up the levels, the corresponding devices scope gets broader. While
 Level 0 and Level 1 are limited to the direct process (“shopfloor”), Level 2
 already comprises a whole local station.
 
-![Purdue Model Architecture Example](/assets/images/limes_purdue_model_example.png)<br>
+![Purdue Model Architecture Example](../assets/images/limes_purdue_model_example.png)<br>
 *Source: Limes Security ICS.211 Industrial Security Training Advanced Technical Expert, p. 345*
 
 It has to be noted that the Purdue Model should not be seen as a strict,
