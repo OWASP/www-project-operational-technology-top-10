@@ -1,9 +1,6 @@
 name: CI pipeline
 on:
   push:
-    branches:
-      - main
-      - master
   workflow_dispatch:
 
 # for security reasons the github actions are pinned to specific release versions
@@ -35,3 +32,4 @@ jobs:
         with:
           config: '.markdownlint.yaml'
           globs: './docs/**/*.md'
+
