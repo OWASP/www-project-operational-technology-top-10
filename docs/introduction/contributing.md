@@ -2,7 +2,7 @@
 
 Please don’t hesitate to contact the OWASP OT Top 10 project with your questions, comments, and ideas, either publicly by adding issues or providing commits on [our github page](https://github.com/OWASP/www-project-operational-technology-top-10).
 
-Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R) to chat.
+Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R) to chat. You can get a free invitation to the OWASP slack server through [this website](https://owasp.org/slack/invite).
 
 Until the Top 10 have stabilized, we aim to do a video conference every two weeks. The next one will be announced on slack (and pinned there).
 
