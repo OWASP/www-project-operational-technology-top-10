@@ -35,7 +35,6 @@ Maybe we should get to a more conceptional level, this might not be the list of 
 - Following List:
   - devices that cannot be updated
     - examples: due to availability concerns, vendor not providing updates, devices without update capabilities
-  - over-dependence upon / defect mitigations
     - depending upon physical security
     - invalid air-gapping, see stuxnet
     - remediations are not a `get out of jail free` card and impose limitations and maintenance burden
@@ -43,7 +42,13 @@ Maybe we should get to a more conceptional level, this might not be the list of 
 
 ### High-level Vulnerabilities (Root-Causes)
 
-- This could be a short-list (5-6 items) that explain some of our problems, that we very often solve by using network separation and/or depending upon physical access control --- which in turn can introduce vulnerabilities by themselves.
+This could be a short-list (5-6 items) that explain some of our problems, that we very often solve by using network separation and/or depending upon physical access control --- which in turn can introduce vulnerabilities by themselves.
+
+We have a simple high-level storyline.
+
+#### Devices that must be protected
+
+- We are a bit different to typical IT environments
   - devices with (known) security vulnerabilities
     - **related to**: device cannot be updated
     - missing vulnerability management
@@ -51,6 +56,12 @@ Maybe we should get to a more conceptional level, this might not be the list of 
   - unauthenticated/unauthorized communication without integrity protection
     - **note** this might be better suited for a "general problems in OT" and not a direct vulnerability
     - maybe replace with "attackers able to forge network requests"
+
+#### We depend upon mitigations (and very often physical/network separation)
+
+Problem: what happens, if this separation is not upheld?
+
+- dependence upon / defect mitigations
   - attackers abusing unexpected attack surfaces
     - devices with additional unknown services (features, management, backdoors, etc.)
     - shadow infrastructure / unknown devices
@@ -62,6 +73,10 @@ Maybe we should get to a more conceptional level, this might not be the list of 
     - shadow infrastructure / unknown devices
     - maintenance access
     - adversaries being able to stay on the network
+
+#### Overall: how do we react to an incident?
+
+- in IT, we often can install backups
   - Not being able to react/recover from incidents
     - missing backups/disaster recovery
     - Undefined processes for alert reporting/handling
