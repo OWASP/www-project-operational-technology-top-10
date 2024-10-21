@@ -96,9 +96,24 @@ We're currently collecting potential candiates within [the repo](/docs/potential
 - lack of encryption for mobile apps, log files and PHI/PII
 - not protecting the BIOS/boot order
 
+### BSI: ICS Top 10 threats and countermeasures 2022
+
+[Source](https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&v=6)
+
+1. Infiltration of malware via remote media and mobile systems
+2. infection with malware via internet and intranet
+3. human error and sabotage
+4. compromise of extranet and cloud components
+5. social engineering and phishing
+6. (D)DoS attacks
+7. internet-connected control components
+8. intrusion via remote maintenance access
+9. technical failure and force majeure
+10. sof- and hardware vulnerabilities in the supply chain
+
+
 ### Similar Lists
 
 sync and/or create mapping
 
-- <https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&v=6>
 - <https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-278a>
