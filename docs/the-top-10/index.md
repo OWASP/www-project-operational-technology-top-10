@@ -32,10 +32,10 @@ Each entry in the OWASP OT Top 10 will be accompanied by a short description, pu
 
 ### The list of OT Top 10 (preliminary, TBD)
 
-We're currently collecting potential candiates within [the repo](/docs/potential-top-10).
+We're currently collecting potential candiates:
 
-1. [Unknown assets](/the-top-10/unknown-assets/)
-2. [Missing/insufficient Vulnerability management](/the-top-10/missing-vulnerability-management/)
+1. [Unknown assets](unknown-assets.md)
+2. [Missing/insufficient Vulnerability management](missing-vulnerability-management.md)
 3. Insufficient/missing network separation
 4. Lax access controls  (account /user based)  - least privilege
 5. Intentional misconfiguration for ease of use (e.g. leaving rtu’s in upload mode)
