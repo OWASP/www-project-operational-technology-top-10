@@ -941,6 +941,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="High-level Vulnerabilities (Root-Causes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#devices-that-must-be-protected" class="md-nav__link">
+    <span class="md-ellipsis">
+      Devices that must be protected
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#we-depend-upon-mitigations-and-very-often-physicalnetwork-separation" class="md-nav__link">
+    <span class="md-ellipsis">
+      We depend upon mitigations (and very often physical/network separation)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overall-how-do-we-react-to-an-incident" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overall: how do we react to an incident?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1072,9 +1105,6 @@
 <li>Following List:</li>
 <li>devices that cannot be updated<ul>
 <li>examples: due to availability concerns, vendor not providing updates, devices without update capabilities</li>
-</ul>
-</li>
-<li>over-dependence upon / defect mitigations<ul>
 <li>depending upon physical security</li>
 <li>invalid air-gapping, see stuxnet</li>
 <li>remediations are not a <code>get out of jail free</code> card and impose limitations and maintenance burden</li>
@@ -1083,8 +1113,11 @@
 </li>
 </ul>
 <h3 id="high-level-vulnerabilities-root-causes">High-level Vulnerabilities (Root-Causes)</h3>
+<p>This could be a short-list (5-6 items) that explain some of our problems, that we very often solve by using network separation and/or depending upon physical access control --- which in turn can introduce vulnerabilities by themselves.</p>
+<p>We have a simple high-level storyline.</p>
+<h4 id="devices-that-must-be-protected">Devices that must be protected</h4>
 <ul>
-<li>This could be a short-list (5-6 items) that explain some of our problems, that we very often solve by using network separation and/or depending upon physical access control --- which in turn can introduce vulnerabilities by themselves.</li>
+<li>We are a bit different to typical IT environments</li>
 <li>devices with (known) security vulnerabilities<ul>
 <li><strong>related to</strong>: device cannot be updated</li>
 <li>missing vulnerability management</li>
@@ -1096,6 +1129,11 @@
 <li>maybe replace with "attackers able to forge network requests"</li>
 </ul>
 </li>
+</ul>
+<h4 id="we-depend-upon-mitigations-and-very-often-physicalnetwork-separation">We depend upon mitigations (and very often physical/network separation)</h4>
+<p>Problem: what happens, if this separation is not upheld?</p>
+<ul>
+<li>dependence upon / defect mitigations</li>
 <li>attackers abusing unexpected attack surfaces<ul>
 <li>devices with additional unknown services (features, management, backdoors, etc.)</li>
 <li>shadow infrastructure / unknown devices</li>
@@ -1111,6 +1149,10 @@
 <li>adversaries being able to stay on the network</li>
 </ul>
 </li>
+</ul>
+<h4 id="overall-how-do-we-react-to-an-incident">Overall: how do we react to an incident?</h4>
+<ul>
+<li>in IT, we often can install backups</li>
 <li>Not being able to react/recover from incidents<ul>
 <li>missing backups/disaster recovery</li>
 <li>Undefined processes for alert reporting/handling</li>
