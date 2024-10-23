@@ -2,7 +2,9 @@
 
 Operational Technology or short OT refers to a broad range of programmable
 systems and devices that directly or indirectly interact with the physical
-environment. In case of indirect interaction, these systems manage other systems
+environment. OT plays an active role across all sectors including manufacturing,
+energy, transportation, medical, and utilities. In case of indirect interaction,
+these systems manage other systems
 or devices that themselves interact with the physical world in a direct way. All
 of these interactions happen through monitoring and controlling devices,
 processes, and events.
@@ -17,24 +19,23 @@ sometimes make the term blurry.
 
 ## Types of OT Systems
 
-OT systems can come in a wide variety of forms, ranging from small programmable
-logic controllers (PLCs) to (multiple) site encompassing control systems like
-supervisory control and data acquisition (SCADA) or distributed control systems
-(DCS). Also, building automation systems or short BAS are considered to be OT
-(like in the thermostat example before). So are physical access control systems
-and even medical IoT devices are part of OT. But not only the types of systems
-and devices are diverse, so are the industries and infrastructures fielding OT
-systems. From chemical production to the transportation sector – almost no
-modern infrastructure operates without OT components.
+OT systems come in a wide variety of forms, ranging from:
 
-Especially due to the
-usage in critical infrastructure like in energy or water and wastewater
-infrastructure, OT security problems can have major impacts on the society
-relying on these infrastructures. This is also why OT security is of ever
-increasing importance, not least as several highly sophisticated pieces of
-malware have already affected OT system, from the notorious Stuxnet in 2010 to
-several power outages in Ukraine since 2015 due to software like BlackEnergy or
-Industroyer.
+- Small 8 to 32 bit microcontrollers embedded in purpose-built devices
+- Programmable logic controllers ("PLC")
+- Multiple sites encompassing control systems like supervisory control and data acquisition ("SCADA")
+- Building automation systems ("BAS")
+- Industrial Automation and Control System ("IACS")
+- Refrigeration control systems
+- Water purification control and safety systems
+- Oil and gas pumping, flow, and processing control systems
+- Physical access control systems
+- Medical devices
+- And many others, as OT systems far outnumber IT systems in use.
+
+Not only are the types of systems and devices diverse, but so are the environments which utilize OT systems. Virtually no modern industry or environment operates without a large set of OT systems in operation.
+
+OT security problems in these industries can have major impacts on the society and surrounding environment. This is also why OT security is of ever-increasing importance, this can be seen in previous attacks using several highly sophisticated pieces of malware that have already affected OT systems, from the notorious Stuxnet in 2010 to power outages in Ukraine due to attack tools such as BlackEnergy or Industroyer.
 
 ## Stakeholders
 
@@ -51,6 +52,7 @@ OT security challenges are different for these stakeholders, which is also
 reflected in the different standards of the IEC 62443 series. For example, an
 operator does not have access to the development process of the specific
 component and thus cannot implement security measures at the source code level.
+
 On the other hand, the operator more or less can shape the intended environment
 where the solution is employed and therefor is capable of introducing mitigating
 measures like strong network segmentation.
