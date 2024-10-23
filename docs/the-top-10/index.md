@@ -126,7 +126,6 @@ We're currently collecting potential candiates within [the repo](/docs/potential
 9. technical failure and force majeure
 10. sof- and hardware vulnerabilities in the supply chain
 
-
 ### Similar Lists
 
 sync and/or create mapping
