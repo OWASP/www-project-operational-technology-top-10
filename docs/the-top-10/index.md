@@ -24,64 +24,6 @@ Each entry in the OWASP OT Top 10 will be accompanied by a short description, pu
 | References| Relevant standards |
 | Tooling | Links to Tools that can be used to test for the vulnerability|
 
-## Ideas about Top 10 Lists
-
-### After Discussion 28.8.2024
-
-Maybe we should get to a more conceptional level, this might not be the list of Top 10 Vulnerabilities but rather an introduction how the concrete top 10 came to be. For example, "Insufficient Network Separation" is rather a problem with a mitigation and not the root cause vulnerability.
-
-### Problems specific to OT (not vulnerabilities by themselves)
-
-- Following List:
-  - devices that cannot be updated
-    - examples: due to availability concerns, vendor not providing updates, devices without update capabilities
-    - depending upon physical security
-    - invalid air-gapping, see stuxnet
-    - remediations are not a `get out of jail free` card and impose limitations and maintenance burden
-    - examples: stuxnet
-
-### High-level Vulnerabilities (Root-Causes)
-
-This could be a short-list (5-6 items) that explain some of our problems, that we very often solve by using network separation and/or depending upon physical access control --- which in turn can introduce vulnerabilities by themselves.
-
-We have a simple high-level storyline.
-
-#### Devices that must be protected
-
-- We are a bit different to typical IT environments
-  - devices with (known) security vulnerabilities
-    - **related to**: device cannot be updated
-    - missing vulnerability management
-    - missing patch management
-  - unauthenticated/unauthorized communication without integrity protection
-    - **note** this might be better suited for a "general problems in OT" and not a direct vulnerability
-    - maybe replace with "attackers able to forge network requests"
-
-#### We depend upon mitigations (and very often physical/network separation)
-
-Problem: what happens, if this separation is not upheld?
-
-- dependence upon / defect mitigations
-  - attackers abusing unexpected attack surfaces
-    - devices with additional unknown services (features, management, backdoors, etc.)
-    - shadow infrastructure / unknown devices
-    - maintenance access
-    - **related to** 'defect mitigations'
-    - vendors not publishing security advisories
-  - attackers starting from unexpected areas
-    - **related to** 'defect mitigations', 'too large blast zone'
-    - shadow infrastructure / unknown devices
-    - maintenance access
-    - adversaries being able to stay on the network
-
-#### Overall: how do we react to an incident?
-
-- in IT, we often can install backups
-  - Not being able to react/recover from incidents
-    - missing backups/disaster recovery
-    - Undefined processes for alert reporting/handling
-    - Missing configuration backups for OT-Devices
-
 ## Provided Potential Top 10 Lists
 
 ### List provided by Simon

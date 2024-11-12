@@ -63,6 +63,8 @@ nav:
     - 'Standards and Regulations': background-ot/related-standards.md
   - 'The Top 10':
       - the-top-10/index.md
+      - "Introduction" : the-top-10/introduction.md
+      - "Template" : the-top-10/template.md
       - "1. TBD": the-top-10/1.md
       - "2. TBD": the-top-10/2.md
       - "3. TBD": the-top-10/3.md
@@ -73,3 +75,6 @@ nav:
       - "8. TBD": the-top-10/8.md
       - "9. TBD": the-top-10/9.md
       - "10. TBD": the-top-10/10.md
+  - 'Appendix':
+    - 'How to Test': appendix/how-to-test.md
+    - 'Glossary': appendix/glossary.md
