@@ -10,7 +10,7 @@ The goal of the **OWASP Operational Technology (OT) Top 10** is to raise awarene
 
 ## Target Audience
 
-This document is written for two main target audiences: system developers and system integrators. This mirrors the OT world in which system components are developed and integrated (i.e., configured and setup on-site) by different parties with different capabilities. While developers can pro-actively create secure components, integrators are often limited to implement mitigations.
+This document is written for two main target audiences: system developers, operators, and integrators. This mirrors the OT world in which system components are developed and integrated (i.e., configured and setup on-site) by different parties with different capabilities. While developers can pro-actively create secure components, integrators are often limited to implement mitigations.
 
 However, development managers, product owners, Q/A professionals, program managers, and anyone involved in building software can also benefit from this document.
 

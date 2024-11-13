@@ -13,8 +13,8 @@ Potential Sources
 
 - <https://www.icsadvisoryproject.com>
 - <https://icsstrive.com/>
-- https://emb3d.mitre.org/
-- https://attack.mitre.org/techniques/ics/
+- <https://emb3d.mitre.org/>
+- <https://attack.mitre.org/techniques/ics/>
 - please add more
 
 ### How-To Test (have to discuss)
