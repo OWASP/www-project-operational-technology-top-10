@@ -1,4 +1,4 @@
-# Conceptional Introduction for IT people
+# The OT World for Security People: Why is it problematic?
 
 Maybe we should get to a more conceptional level, this might not be the list of Top 10 Vulnerabilities but rather an introduction how the concrete top 10 came to be. For example, "Insufficient Network Separation" is rather a problem with a mitigation and not the root cause vulnerability.
 
