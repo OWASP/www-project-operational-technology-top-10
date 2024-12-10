@@ -2,17 +2,13 @@
 
 !!! Info "Work in Progress"
 
-    This should be an introductory text that explains to IT security people why OT security looks the way it looks.
-    
-    This should also link most of the final top 10 items, as they should be related.. and should provide an IT-centric storyline how all of those Top 10 items 'play together'
-
-    I want to link other areas of the introduction too (and just go over them on a high-level here).
-
-    I also want a similar storyline for the 'OT people'
+    This should be an introductory text that explains to IT security people why OT security looks the way it looks. It should link most of the final top 10 items, as they should be related.. and should provide an IT-centric storyline how all of those Top 10 items 'play together'
 
 ## The OT World
 
-Some "special" issues:
+When IT security people look at OT scenarios, some miscomprehensions often occur, often leading to suggestions like "why don't you just update components?", "why don't you replace these insecure protocols?" or, "just buy new hardware".
+
+Sadly, the situation and requirements within the OT world are a bit different to typical IT requirements. Understanding those differences helps to understand how some of our OT Top 10 came to be. Some of the conceptional problems in the OT world are:
 
 - **Long lifetime of products**: decades rather than years. Remember computer security thirty
   years ago? This is our current security level in some OT setups.
@@ -29,50 +25,40 @@ These are realities within the field with which we have to deal. Very often, we 
 
 ## Devices must be protected
 
-As shown before, in the OT world we often have to deal with potentially inherently insecure devices that might not be updated or upgraded too.
+As shown before, in the OT world we often have to deal with potentially inherently insecure devices that might not be updated or upgraded too. Typically this issue is mitigated by accepting some devices to be insecure and preventing attackers from accessing them in the first place: if we cannot make the devices themselves secure, we try to prevent attackers from accessing them in the first place.
 
-Typically this issue is mitigated by accepting some devices to be insecure and preventing attackers from accessing them in the first place. This is typically done through mitigations such as network separation or through adding physical security controls.
+### We depend upon Mitigations
 
-We would prefer to have secure devices (or even zero-trust enabled devices) but until then, often those mitigations are the only way of keeping critical infrastructure operational.
+This is typically done through mitigations such as network separation or through adding physical security controls. Begin able to 'lock away' devices and their network also helps with devices that can only use network protocols without integrity or confidenciality protections.
 
-!!! todo
+These remediations are not a `get out of jail free` card and impose limitations as well as maintenance burden.
 
-    - We are a bit different to typical IT environments
-      - devices with (known) security vulnerabilities
-        - **related to**: device cannot be updated
-        - missing vulnerability management
-        - missing patch management
-      - unauthenticated/unauthorized communication without integrity protection
-        - **note** this might be better suited for a "general problems in OT" and not a direct vulnerability
-        - maybe replace with "attackers able to forge network requests"
-
-## We depend upon Mitigations
-
-(and very often physical/network separation)
-
-- depending upon physical security
-- invalid air-gapping, see stuxnet
-- remediations are not a `get out of jail free` card and impose limitations and maintenance burden
+Please note that we would prefer to have secure devices (or even zero-trust enabled devices) but until then, often those mitigations are the only way of keeping critical infrastructure operational.
 
 ## Problem: What happens if Mitigations fail?
 
-- dependence upon / defect mitigations
-  - attackers abusing unexpected attack surfaces
-    - devices with additional unknown services (features, management, backdoors, etc.)
-    - shadow infrastructure / unknown devices
-    - maintenance access
-    - **related to** 'defect mitigations'
-    - vendors not publishing security advisories
-  - attackers starting from unexpected areas
-    - **related to** 'defect mitigations', 'too large blast zone'
-    - shadow infrastructure / unknown devices
-    - maintenance access
-    - adversaries being able to stay on the network
+What could go wrong with our mitigations? Just a couple of examples:
 
-## Overall: How do we react to an incident?
+!!! info "add incidnets from the top 10 list"
 
-- in IT, we often can install backups
-  - Not being able to react/recover from incidents
-    - missing backups/disaster recovery
-    - Undefined processes for alert reporting/handling
-    - Missing configuration backups for OT-Devices
+- stuxnet/USB disks
+- missing network segmentation between factory floor and office networks
+- problems with physical security, people being able to get on the factory floor and manipulating control systems
+- etc.
+
+The overall architecture of "protecting insecure devices by preventing attackers from accessing them" breaks down if attackers find a way to bypass these protections.
+
+If this happens, we typically run into reoccuring major problems:
+
+- The insecure devices are, well, insecure and easy to exploit. Communication between devices can be intercepted and altered due to lack of encryption or integrity protection
+- Large blast zones: attackers that are able to bypass security mechanisms and are able to compromise devices, can use those devices to further propagate and privot into other 'secured' networks and devices.
+
+## Bonus: How do we react to an incident?
+
+Compared to well-maintained traditional IT systems, OT systems often also display a lack of recoverability. Very often, compromised companies are not able to react to or recover from incidents.
+
+This is mostly due to:
+
+- missing backups/disaster recovery
+- Missing configuration backups for OT-Devices
+- Undefined processes for alert reporting/handling
