@@ -5,9 +5,9 @@ the way it often looks.
 
 !!! Info "Work in Progress"
 
-  It should link most of the final top 10 items, as they should be related..
-  and should provide an IT-centric storyline how all of those Top 10 items
-  'play together'
+    It should link most of the final top 10 items, as they should be related..
+    and should provide an IT-centric storyline how all of those Top 10 items
+    'play together'
 
 ## The OT World
 
@@ -70,7 +70,7 @@ are the only way of keeping critical infrastructure operational.
 As risk is typically calculated by "Risk = Likelyhood x Impact" and this
 would reduce the Likelyhood to zero, we can close the case, right?
 
-## Problem: What happens if Mitigations fail?
+## What happens if Mitigations fail?
 
 What could go wrong with our mitigations? Just a couple of examples:
 
@@ -96,9 +96,7 @@ If this happens, we typically run into reoccuring major problems:
   mechanisms and are able to compromise devices, can use those devices
   to further propagate and privot into other 'secured' networks and devices.
 
-!!! info "write that this is the area where we have to work"
-
-## Bonus: How do we react to an incident?
+### How do we react to an incident?
 
 Compared to well-maintained traditional IT systems, OT systems often
 also display a lack of recoverability. Very often, compromised companies
@@ -109,3 +107,20 @@ This is mostly due to:
 - missing backups/disaster recovery
 - Missing configuration backups for OT-Devices
 - Undefined processes for alert reporting/handling
+
+## Fields of Compromise
+
+We hope that this introduction explains why we often have to compromise to get
+some security done. In legacy settings, this mostly means depending upon mitigations
+such as network seggretation or physical access management. Hopefully, newer systems
+will alleviate these problems, but we still have to deal with legacy systems to
+keep existing critical infrastructure running.
+
+Compromise has another meaning too: often we over-rely on mitigations and if those
+are not uphold, our systems become compromised. If there are not additional
+defense-in-depth measures in place, the potential fallout is immense as further
+compromise-able systems are often within the blast radius. This makes additional
+hardening even more important than within traditional IT systems.
+
+Getting critical infrastructure secure will be quite a journey. But that is no excuse
+for not starting this journey right now.
