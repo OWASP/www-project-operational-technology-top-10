@@ -16,4 +16,14 @@ There are therefore some concerns regarding the use of cyber security measures.
 
 In many cases, the configuration of cyber security functions is very complex and overwhelms the operators.
 
+# Advantages of cyber security
+
 ## 
+
+cyber security is not just a hindrance. Remote access is not feasible in today's world without it. (link to the TOP 10 item).
+
+here are some more brief examples of why security is necessary and how it relates to the other top 10 items.
+
+## Digitization of processes
+
+Cryptographic signatures can be used to detect changes to logs and measurement data or to prove their integrity. This makes it possible, for example, to digitize previous paper-based processes, thereby accelerating and optimizing them.
