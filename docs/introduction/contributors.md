@@ -8,3 +8,4 @@ The OT Top 10 wouldn't be possible without our awesome contributors:
 | [Simon Rommer](https://github.com/simonrommer) | OMICRON Security | |
 | [Nino Fürthauer](https://github.com/nfu4232) | Limes Security | |
 | Christopher Gates | | |
+| [Siegfried Hollerer](https://www.linkedin.com/in/siegfried-hollerer-1ab397162) | Federal Ministry of the Interior, Austria | |
