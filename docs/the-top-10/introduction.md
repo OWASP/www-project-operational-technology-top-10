@@ -1,4 +1,4 @@
-# The OT World for Security People
+# The OT World for IT Security People
 
 This introduction tries to explain for IT security people why OT security looks
 the way it often looks.
@@ -10,6 +10,8 @@ the way it often looks.
   'play together'
 
 ## The OT World
+
+All professional communities have their own work culture and mindset, and people only working in IT security may not even be aware of the cultural "waters" in which they "swim". OT is a separate culture and things work rather differently. 
 
 When IT security people look at OT scenarios, some miscomprehensions often
 occur, sometimes leading to suggestions like "why don't you just update
@@ -60,7 +62,7 @@ through adding physical security controls. Begin able to 'lock away'
 devices and their network also helps with devices that can only use
 network protocols without integrity or confidenciality protections.
 
-These remediations are not a `get out of jail free` card and impose
+These remediations are not a "get out of jail free" card and impose
 limitations as well as maintenance burden.
 
 Please note that we would prefer to have secure devices (or even
@@ -68,7 +70,7 @@ zero-trust enabled devices) but until then, often those mitigations
 are the only way of keeping critical infrastructure operational.
 
 As risk is typically calculated by "Risk = Likelyhood x Impact" and this
-would reduce the Likelyhood to zero, we can close the case, right?
+would reduce the Likelyhood to zero, we can close the case, right? Sadly, NO.
 
 ## Problem: What happens if Mitigations fail?
 
@@ -76,6 +78,7 @@ What could go wrong with our mitigations? Just a couple of examples:
 
 !!! info "add incidents from the top 10 list"
 
+- human error
 - stuxnet/USB disks
 - missing network segmentation between factory floor and office networks
 - problems with physical security, people being able to get on the
@@ -103,6 +106,8 @@ If this happens, we typically run into reoccuring major problems:
 Compared to well-maintained traditional IT systems, OT systems often
 also display a lack of recoverability. Very often, compromised companies
 are not able to react to or recover from incidents.
+
+!!! info "add concrete examples of not being able to recover, also why can't we just reboot everything from scratch?"
 
 This is mostly due to:
 
