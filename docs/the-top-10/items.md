@@ -24,7 +24,6 @@
 - Missing Monitoring/Logging for Incident Detection
   - discovery?
 
-
 ## List provided by Simon
 
 We're currently collecting potential candiates within [the repo](/docs/potential-top-10).

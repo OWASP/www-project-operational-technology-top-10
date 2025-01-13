@@ -8,7 +8,7 @@ Until the Top 10 have stabilized, we aim to do a video conference every two week
 
 We do a web videocall every second monday at 5pm CET, please join us at:
 
-```
+```plain
 OWASP OT Videocall
 Monday, January 27 · 5:00 – 6:00pm
 Time zone: Europe/Vienna

@@ -11,7 +11,9 @@ the way it often looks.
 
 ## The OT World
 
-All professional communities have their own work culture and mindset, and people only working in IT security may not even be aware of the cultural "waters" in which they "swim". OT is a separate culture and things work rather differently. 
+All professional communities have their own work culture and mindset, and people
+only working in IT security may not even be aware of the cultural "waters" in
+which they "swim". OT is a separate culture and things work rather differently.
 
 When IT security people look at OT scenarios, some miscomprehensions often
 occur, sometimes leading to suggestions like "why don't you just update
