@@ -4,6 +4,27 @@
 
     This page will be removed in the final version
 
+## Preliminary Top 10 Items
+
+- Access Control
+  - unmanaged access
+    - external
+    - physical (JTAG)
+  - Lax access controls  (account /user based)  - least privilege
+- Supply Chain Management
+- Devices out in the field with known Vulnerabilities/Issues
+  - discovery
+  - legacy devices
+  - problems with mitigation
+    - network seg
+    - missing patch management/vendor support
+    - configuration
+- Trust Boundaries
+  - network segregration
+- Missing Monitoring/Logging for Incident Detection
+  - discovery?
+
+
 ## List provided by Simon
 
 We're currently collecting potential candiates within [the repo](/docs/potential-top-10).
