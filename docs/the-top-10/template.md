@@ -1,6 +1,7 @@
 !!! Note
 
-    This page will be removed in the final version. This is just a placeholder to easily check our proposed template for each top 10 item.
+    This page will be removed in the final version. This is just a
+    placeholder to easily check our proposed template for each top 10 item.
 
 # The Top 10 Item's name
 

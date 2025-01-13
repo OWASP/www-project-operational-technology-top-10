@@ -75,7 +75,7 @@ sync and/or create mapping
 
 ## ENISA Threat Landscapes
 
-- Power / energy sector: https://www.enisa.europa.eu/publications/power-sector-dependency?v2=1
-- Transport sector: https://www.enisa.europa.eu/publications/enisa-transport-threat-landscape?v2=1
-- Health sector: https://www.enisa.europa.eu/publications/cyber-security-and-resilience-for-smart-hospitals?v2=1
-- General (Figure 8 shows which OT-domain got how much attention from threat actors this year): https://www.enisa.europa.eu/publications/enisa-threat-landscape-2024
+- Power / energy sector: <https://www.enisa.europa.eu/publications/power-sector-dependency?v2=1>
+- Transport sector: <https://www.enisa.europa.eu/publications/enisa-transport-threat-landscape?v2=1>
+- Health sector: <https://www.enisa.europa.eu/publications/cyber-security-and-resilience-for-smart-hospitals?v2=1>
+- General (Figure 8 shows which OT-domain got how much attention from threat actors this year): <https://www.enisa.europa.eu/publications/enisa-threat-landscape-2024>
