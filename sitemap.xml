@@ -57,11 +57,19 @@
          <lastmod>2025-01-13</lastmod>
     </url>
     <url>
+         <loc>https://ot.owasp.org/the-top-10/introduction_for_ot/</loc>
+         <lastmod>2025-01-13</lastmod>
+    </url>
+    <url>
          <loc>https://ot.owasp.org/the-top-10/items/</loc>
          <lastmod>2025-01-13</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/the-top-10/missing-vulnerability-management/</loc>
+         <lastmod>2025-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://ot.owasp.org/the-top-10/missing_access_control/</loc>
          <lastmod>2025-01-13</lastmod>
     </url>
     <url>
