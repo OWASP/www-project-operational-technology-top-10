@@ -49,7 +49,7 @@ only catching up and thus any (substantial) security improvement is welcome.
 
 ## Devices must be protected
 
-As shown before, in the OT world we often have to deal with potentially 
+As shown before, in the OT world we often have to deal with potentially
 inherently insecure devices that might not be updated or upgraded too.
 
 Typically this issue is mitigated by accepting some devices to be insecure
