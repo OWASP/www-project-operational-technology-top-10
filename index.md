@@ -19,12 +19,13 @@ By raising awareness and providing actionable recommendations, we aim to improve
 
 Join us in the [OWASP OT Top 10 Slack channel](https://owasp.slack.com/archives/C07HDTYRA6R)! The first video meeting will be on Wednesday, August 28th at 6pm CEST using [google meets](https://meet.google.com/vjc-egev-dya):
 
+We do a web videocall every second monday from 5-6pm CET, feel free to join at:
+
 ```
-Initial Meeting OWASP OT Top 10
-Wednesday, 28 August · 18:00 – 18:30
+OWASP OT Videocall
+Monday, January 27 · 5:00 – 6:00pm
 Time zone: Europe/Vienna
 Google Meet joining info
-Video call link: https://meet.google.com/vjc-egev-dya
-Or dial: ‪(AT) +43 1 22781290‬ PIN: ‪300 012 610‬#
-More phone numbers: https://tel.meet/vjc-egev-dya?pin=3073314870252
+Video call link: https://meet.google.com/fmu-sokc-gei
+Or dial: ‪(US) +1 669-244-0206‬ PIN: ‪940 723 699‬#
 ```

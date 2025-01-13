@@ -6,6 +6,17 @@ Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives
 
 Until the Top 10 have stabilized, we aim to do a video conference every two weeks. The next one will be announced on slack (and pinned there).
 
+We do a web videocall every second monday at 5pm CET, please join us at:
+
+```
+OWASP OT Videocall
+Monday, January 27 · 5:00 – 6:00pm
+Time zone: Europe/Vienna
+Google Meet joining info
+Video call link: https://meet.google.com/fmu-sokc-gei
+Or dial: ‪(US) +1 669-244-0206‬ PIN: ‪940 723 699‬#
+```
+
 ## How to Contribute??
 
 We're currently discussing and selecting the potential top 10 entries and are looking for new suggestions. If you have one, please add them as new markdown file in the `/docs/the-top-10/` directory and link it from within [index.md](../the-top-10/index.md)'s list of potential top 10.
