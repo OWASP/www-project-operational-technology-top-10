@@ -6,6 +6,7 @@
 
 ## Preliminary Top 10 Items
 
+```text
 - Access Control
   - unmanaged access
     - external
@@ -23,6 +24,7 @@
   - network segregration
 - Missing Monitoring/Logging for Incident Detection
   - discovery?
+```
 
 ## List provided by Simon
 

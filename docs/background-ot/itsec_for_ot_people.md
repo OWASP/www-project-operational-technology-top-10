@@ -1,4 +1,4 @@
-# The security World for OT: Why is it problematic?
+# IT Sec for OT: Why is it problematic?
 
 Malicious external actors were previously not a problem for the operators.
 These dangers were not relevant. In addition, direct physical access was

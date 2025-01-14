@@ -1,4 +1,4 @@
-# The OT World for IT Security People
+# OT for IT Sec People
 
 This introduction tries to explain for IT security people why OT security looks
 the way it often looks.
