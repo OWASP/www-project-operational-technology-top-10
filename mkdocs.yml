@@ -62,11 +62,12 @@ nav:
   - 'Operation Technology (OT)':
     - background-ot/index.md
     - 'Example Architectures': background-ot/ot-architectures.md
-    - 'OT vs IT': background-ot/ot-vs-it.md
+    - 'OT and IT': background-ot/ot-vs-it.md
+    - "OT for IT Sec People": background-ot/ot_for_itsec_people.md
+    - "IT Sec for OT People": background-ot/itsec_for_ot_people.md
     - 'Standards and Regulations': background-ot/related-standards.md
   - 'The Top 10':
       - the-top-10/index.md
-      - "WIP: Introduction for IT Sec" : the-top-10/introduction.md
       - "WIP: Template" : the-top-10/template.md
       - "WIP: Top 10s?" : the-top-10/items.md
       - "1. TBD": the-top-10/1.md
