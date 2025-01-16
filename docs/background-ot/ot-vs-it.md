@@ -50,6 +50,30 @@ working correctly. LOC, as the name implies, means that the operators cannot
 control the process and its systems anymore more, making them unable to respond
 to possible unsafe operations.
 
+### CIA-Triad in IT and OT
+
+When assessing the security impact of security vulnerabilities, IT security
+people often refer to the "CIA triad". The acronym is built from the starting
+letters of Confidenciality, Integrity and Availability.
+
+In traditional IT systems, we often emphatise Confidenciality and Integrity.
+For example, when you look at a web-shop, it is important that no sensitive
+user data (such as passwords or orders) are exposed (confidenciality) and
+that invoices cannot be changed by attackers so that they pay less money
+(integrity). Availability is often only an after-thought: if the shop is down,
+it's down. The company might not make any money from orders, but they will
+not be sued due to exposed passwords or loose money through maliciously
+altered invoices.
+
+The OT world works differently. Here availability is paramount: the worst
+case if often that, e.g., a power plant is not producing any power anymore
+(availabiliity) and this is more severe than exposing financial data of the 
+power plant company (confidenciality).
+
+Sometimes, this differentiation is not as clear-cut: imagine an attacker
+can alter transmitted usage data (integrity) and through that misleads
+a power plant to over- or under-produce power (availability).
+
 ## System Lifetimes
 
 While security culture is shifting in OT and is undeniably growing in importance
