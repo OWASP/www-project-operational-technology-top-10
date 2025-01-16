@@ -1225,37 +1225,59 @@
 <p>This page will be removed in the final version</p>
 </div>
 <h2 id="preliminary-top-10-items">Preliminary Top 10 Items</h2>
-<div class="highlight"><pre><span></span><code>- Access Control
-  - unmanaged access
+<div class="highlight"><pre><span></span><code>- Insufficient Access Control
+  - Access Control: User Identification, Authentication, Authorization
+  - unmanaged admin access
     - external
     - physical (JTAG)
-  - Lax access controls  (account /user based)  - least privilege
+  - Lax access controls  (account /user based)
+    - least privilege
+    - privilege creep
+    - non-repudiation
+  - potentially: way too large area, might need split-up; maybe use this user-management
+  - alternative: (identity + authentication + roles) + (access control)
+
 - Supply Chain Management
+
 - Devices out in the field with known Vulnerabilities/Issues
-  - discovery
-  - legacy devices
-  - problems with mitigation
-    - network seg
-    - missing patch management/vendor support
-    - configuration
-- Trust Boundaries
-  - network segregration
-- Missing Monitoring/Logging for Incident Detection
-  - discovery?
+  - &quot;everything where I as an attacker see a version number (hardware/software) and use an exploit for that version&quot;
+  - problems with mitigation on-device-itself/vulnerability
+    - missing vulnerability management
+  - problems without mitigation on-device-itself/vulnerability
+    - legacy devices (hardware does not have capabilities)
+    - missing vendor support
+  - TODO: differentiation to configuration errors?
+
+- Faulty Trust Boundaries
+  - errors in network segregration
+
+- Missing Incident Detection/Reaction Capabilities
+  - Missing Monitoring/Logging for Incident Detection (shadow infrastructure?)
+    - Alert fatigue with “dirty” environment
+  - Undefined processes for alert reporting/handling
+  - Discussion? Missing configuration backups for OT-Devices
+
+- Selection of insufficient Products/Protocols
+  - legacy-to-be
+  - legacy products for new deployments
+  - protocols missing confidenciality/integrity (depends upon trust-zone)
+
+- unknown assets
+
+- Unmanaged external access (from above purdue model level 3 / IEC62443 zones/conduits )
+
+- missing awareness
+  - culture
 </code></pre></div>
 <h2 id="list-provided-by-simon">List provided by Simon</h2>
 <p>We're currently collecting potential candiates within <a href="/docs/potential-top-10">the repo</a>.</p>
 <ol>
 <li><a href="/the-top-10/unknown-assets/">Unknown assets</a></li>
-<li><a href="/the-top-10/missing-vulnerability-management/">Missing/insufficient Vulnerability management</a></li>
-<li>Insufficient/missing network separation</li>
-<li>Lax access controls  (account /user based)  - least privilege</li>
+<li>root cause vs. implications</li>
+<li>Simon says this is important</li>
 <li>Intentional misconfiguration for ease of use (e.g. leaving rtu’s in upload mode)</li>
-<li>Missing configuration backups for OT-Devices</li>
-<li>Legacy devices</li>
+<li>Culture? Missing Security Awareness?</li>
 <li>Unmanaged external access (from above purdue model level 3 / IEC62443 zones/conduits )</li>
-<li>Alert fatigue with “dirty” environment</li>
-<li>Undefined processes for alert reporting/handling</li>
 </ol>
 <h2 id="list-provided-by-christopher">List provided by christopher</h2>
 <ul>
@@ -1270,6 +1292,9 @@
 <li>not protecting the BIOS/boot order</li>
 </ul>
 <h2 id="bsi-ics-top-10-threats-and-countermeasures-2022">BSI: ICS Top 10 threats and countermeasures 2022</h2>
+<ul>
+<li>This feels more like a list of impact (e.g., 1, 2, 6) or intentions (e.g., 3)</li>
+</ul>
 <p><a href="https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&amp;v=6">Source</a></p>
 <ol>
 <li>Infiltration of malware via remote media and mobile systems</li>
@@ -1281,7 +1306,7 @@
 <li>internet-connected control components</li>
 <li>intrusion via remote maintenance access</li>
 <li>technical failure and force majeure</li>
-<li>sof- and hardware vulnerabilities in the supply chain</li>
+<li>soft- and hardware vulnerabilities in the supply chain</li>
 </ol>
 <h2 id="similar-lists">Similar Lists</h2>
 <p>sync and/or create mapping</p>
