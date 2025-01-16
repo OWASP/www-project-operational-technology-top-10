@@ -1,4 +1,4 @@
-# OT vs IT – Differences in Security and Culture
+# OT and IT: Differences in Security and Culture
 
 Although there is an increasing convergence of IT and OT and regular IT systems
 are just as well used in OT environments, there are nonetheless fundamental
