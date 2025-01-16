@@ -6,6 +6,9 @@
 
 ## Preliminary Top 10 Items
 
+Simon and Andreas went through the list and prepared the following as discussion
+starter for the next video conference:
+
 ```text
 - Insufficient Access Control
   - Access Control: User Identification, Authentication, Authorization
@@ -50,20 +53,12 @@
 
 - missing awareness
   - culture
+  - Intentional misconfiguration for ease of use, e.g., leaving rtu’s in upload mode
 ```
 
-## List provided by Simon
+## More Input
 
-We're currently collecting potential candiates within [the repo](/docs/potential-top-10).
-
-1. [Unknown assets](/the-top-10/unknown-assets/)
-  - root cause vs. implications
-  - Simon says this is important
-5. Intentional misconfiguration for ease of use (e.g. leaving rtu’s in upload mode)
-  - Culture? Missing Security Awareness?
-8. Unmanaged external access (from above purdue model level 3 / IEC62443 zones/conduits )
-
-## List provided by christopher
+### List provided by christopher
 
 - Lack of authentication
 - use of insecure 3rd party items - HW / SW assets with critical vulnerabilities
@@ -75,32 +70,20 @@ We're currently collecting potential candiates within [the repo](/docs/potential
 - lack of encryption for mobile apps, log files and PHI/PII
 - not protecting the BIOS/boot order
 
-## BSI: ICS Top 10 threats and countermeasures 2022
+### Potential further items
 
-- This feels more like a list of impact (e.g., 1, 2, 6) or intentions (e.g., 3)
+- (D)DoS attacks
 
-[Source](https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&v=6)
+### Existing Lists/Top-10 Items
 
-1. Infiltration of malware via remote media and mobile systems
-2. infection with malware via internet and intranet
-3. human error and sabotage
-4. compromise of extranet and cloud components
-5. social engineering and phishing
-6. (D)DoS attacks
-7. internet-connected control components
-8. intrusion via remote maintenance access
-9. technical failure and force majeure
-10. soft- and hardware vulnerabilities in the supply chain
+We might move these to the `related standards` section later on, but keep them
+here as food for thought for now:
 
-## Similar Lists
-
-sync and/or create mapping
-
-- <https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-278a>
-
-## ENISA Threat Landscapes
-
-- Power / energy sector: <https://www.enisa.europa.eu/publications/power-sector-dependency?v2=1>
-- Transport sector: <https://www.enisa.europa.eu/publications/enisa-transport-threat-landscape?v2=1>
-- Health sector: <https://www.enisa.europa.eu/publications/cyber-security-and-resilience-for-smart-hospitals?v2=1>
-- General (Figure 8 shows which OT-domain got how much attention from threat actors this year): <https://www.enisa.europa.eu/publications/enisa-threat-landscape-2024>
+| Issuer | Title | Description |
+| --- | --- | --- |
+| [BSI](https://www.bsi.bund.de/DE/Home/home_node.html) | [ICS Security Top 10 threats and countermeasures 2022](https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&v=6) | Focus on impact and vectors (malware, phishing, DDoS, sabotage) |
+| [CISA](https://www.cisa.gov) | [Top Ten Cybersecurity Misconfigurations](https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-278a) ||
+| [ENISA](https://www.enisa.europa.eu) | [Power Sector Dependency on Time Service](https://www.enisa.europa.eu/publications/power-sector-dependency?v2=1#contentList) | rather specific |
+| [ENISA](https://www.enisa.europa.eu) | [Transport Threat Landscape](https://www.enisa.europa.eu/publications/enisa-transport-threat-landscape?v2=1#contentList) | |
+| [ENISA](https://www.enisa.europa.eu) | [Cyber security and resilience for Smart Hospitals](https://www.enisa.europa.eu/publications/cyber-security-and-resilience-for-smart-hospitals?v2=1#contentList) ||
+| [ENISA](https://www.enisa.europa.eu) | [ENISA Threat Landscape 2024](https://www.enisa.europa.eu/publications/enisa-threat-landscape-2024) | Figure 8 (Page 16), gives a per-sector attack overview|
