@@ -101,6 +101,10 @@ If this happens, we typically run into reoccuring major problems:
   mechanisms and are able to compromise devices, can use those devices
   to further propagate and privot into other 'secured' networks and devices.
 
+Fragility is a concern so considering downstream implications if such
+mitigations fail is important. Monitoring to detect compromise and/or
+defense in depth may be needed in addition.
+
 ### How do we react to an incident?
 
 Compared to well-maintained traditional IT systems, OT systems often

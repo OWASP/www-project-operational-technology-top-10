@@ -61,7 +61,6 @@ nav:
     - 'Related OWASP Projects': introduction/related-owasp-projects.md
   - 'Operation Technology (OT)':
     - background-ot/index.md
-    - 'Example Architectures': background-ot/ot-architectures.md
     - 'OT and IT': background-ot/ot-vs-it.md
     - "OT for IT Sec People": background-ot/ot_for_itsec_people.md
     - "IT Sec for OT People": background-ot/itsec_for_ot_people.md
