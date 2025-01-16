@@ -102,7 +102,6 @@ segmentation and separation between IT and OT (in this case realized by Level
 3.5 IT/OT DMZ). As most security incidents still occur in IT, it is of utmost
 importance to prevent such an incident to spread to OT.
 
-
 ## Stakeholders
 
 To achieve security in OT systems and devices, several stakeholders have to work

@@ -67,7 +67,7 @@ altered invoices.
 
 The OT world works differently. Here availability is paramount: the worst
 case if often that, e.g., a power plant is not producing any power anymore
-(availabiliity) and this is more severe than exposing financial data of the 
+(availabiliity) and this is more severe than exposing financial data of the
 power plant company (confidenciality).
 
 Sometimes, this differentiation is not as clear-cut: imagine an attacker
