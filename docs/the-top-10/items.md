@@ -1,16 +1,11 @@
-# WIP: potential Top 10 Items
+# WIP: Preliminary Top 10 Items
 
 !!! Note
 
     This page will be removed in the final version
 
-## Preliminary Top 10 Items
+## Insufficient Access Control
 
-Simon and Andreas went through the list and prepared the following as discussion
-starter for the next video conference:
-
-```text
-- Insufficient Access Control
   - Access Control: User Identification, Authentication, Authorization
   - unmanaged admin access
     - external
@@ -22,10 +17,12 @@ starter for the next video conference:
   - potentially: way too large area, might need split-up; maybe use this user-management
   - alternative: (identity + authentication + roles) + (access control)
 
-- Supply Chain Management
+## Supply Chain Management
+
   - use of insecure 3rd party items - HW / SW assets with critical vulnerabilities
 
-- Devices out in the field with known Vulnerabilities/Issues
+## Devices out in the field with known Vulnerabilities/Issues
+
   - "everything where I as an attacker see a version number (hardware/software) and use an exploit for that version"
   - problems with mitigation on-device-itself/vulnerability
     - missing vulnerability management
@@ -34,20 +31,23 @@ starter for the next video conference:
     - missing vendor support
   - TODO: differentiation to configuration errors?
 
-- Faulty Trust Boundaries
+## Faulty Trust Boundaries
+
   - goal: least functionality vs. over-exposure of services
   - errors in network segregration
   - potentially can also contain 'external admin access'?
   - potentially 'forgotten hardware debug interfaces'?
   - available JTAG/SWD interface left enabled on production devices
 
-- Missing Incident Detection/Reaction Capabilities
+## Missing Incident Detection/Reaction Capabilities
+
   - Missing Monitoring/Logging for Incident Detection (shadow infrastructure?)
     - Alert fatigue with “dirty” environment
   - Undefined processes for alert reporting/handling
   - Discussion? Missing configuration backups for OT-Devices
 
-- Selection of components/protocols with insufficient security capabilities
+## Selection of components/protocols with insufficient security capabilities
+
   - weak built-in security features like basic Bluetooth
   - attention: this should not be a product placement
   - legacy-to-be
@@ -57,14 +57,22 @@ starter for the next video conference:
     - here: security feature is not available
     - 'missing awareness': feature is availabe, but not configured
 
-- unknown assets
+## Unknown Assets
+
   - eventuell auch als subpunkt von incident response?
   - discussion 'different split': missing visibility (includes incident detection, unknown assets) + missing incident reponse
 
-- Unmanaged external access (from above purdue model level 3 / IEC62443 zones/conduits )
+## Unmanaged external access (from above purdue model level 3 / IEC62443 zones/conduits )
+
   - maintenance access
 
-- missing awareness
+## Availability
+  - (D)DoS attacks
+  - real-time communication safety
+  - availability vs. integrity -- flooding with fake data
+
+## Missing Awareness
+
   - trying to wiggle out of security features via deflection to obscurity
   - cyber-security hygiene
   - everything configuration related
@@ -75,13 +83,7 @@ starter for the next video conference:
   - why are security best-practises not applied? missing knowledge?
   - culture
 
-- availability
-  - (D)DoS attacks
-  - real-time communication safety
-  - availability vs. integrity -- flooding with fake data
-```
-
-### Existing Lists/Top-10 Items
+# Existing Lists/Top-10 Items
 
 We might move these to the `related standards` section later on, but keep them
 here as food for thought for now:
