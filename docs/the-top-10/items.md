@@ -16,6 +16,7 @@
 
 ## Supplier/Supply Chain Management
 
+  - make sure that IT people understand that this is not only dependency management
   - use of insecure 3rd party items - HW / SW assets with critical vulnerabilities
   - organization issue
     - like SLAs, notifications
