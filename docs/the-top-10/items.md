@@ -7,19 +7,33 @@
 ## Insufficient Access Control
 
   - Access Control: User Identification, Authentication, Authorization
-  - unmanaged admin access
-    - external
-    - physical (JTAG)
+  - interacts (unmanaged external access, broken zone design)
   - Lax access controls  (account /user based)
     - least privilege
     - privilege creep
     - non-repudiation
-  - potentially: way too large area, might need split-up; maybe use this user-management
-  - alternative: (identity + authentication + roles) + (access control)
+  - note for the future: maybe split identification/authentication from authorization
 
-## Supply Chain Management
+## Supplier/Supply Chain Management
 
   - use of insecure 3rd party items - HW / SW assets with critical vulnerabilities
+  - organization issue
+    - like SLAs, notifications
+  - treat IT as supplier too?
+
+## Unknown Assets and Unmanaged external Access
+
+  - inter-section to incident detection (due to missing detection capabilitites), security-misconfiguration
+  - physical 'stuff'
+      - manual list
+
+  - counter-measures
+    - network scanning/discovery
+    - port/traffic monitoring
+   
+  - Unmanaged external access
+      - from above purdue model level 3 / IEC62443 zones/conduits
+      - maintenance access
 
 ## Devices out in the field with known Vulnerabilities/Issues
 
@@ -29,10 +43,11 @@
   - problems without mitigation on-device-itself/vulnerability
     - legacy devices (hardware does not have capabilities)
     - missing vendor support
-  - TODO: differentiation to configuration errors?
+  - TODO: Selection of components/protocols with insufficient security capabilities as well as culture
 
-## Faulty Trust Boundaries
+## Broken Zone and Conduits Design
 
+  - risk-based approach (mention threat modeling)
   - goal: least functionality vs. over-exposure of services
   - errors in network segregration
   - potentially can also contain 'external admin access'?
@@ -44,7 +59,8 @@
   - Missing Monitoring/Logging for Incident Detection (shadow infrastructure?)
     - Alert fatigue with “dirty” environment
   - Undefined processes for alert reporting/handling
-  - Discussion? Missing configuration backups for OT-Devices
+  - missing reacting capabilities
+      - Missing configuration backups for OT-Devices
 
 ## Selection of components/protocols with insufficient security capabilities
 
@@ -56,15 +72,6 @@
   - differentiation to 'missing awareness'
     - here: security feature is not available
     - 'missing awareness': feature is availabe, but not configured
-
-## Unknown Assets
-
-  - eventuell auch als subpunkt von incident response?
-  - discussion 'different split': missing visibility (includes incident detection, unknown assets) + missing incident reponse
-
-## Unmanaged external access (from above purdue model level 3 / IEC62443 zones/conduits )
-
-  - maintenance access
 
 ## Availability
   - (D)DoS attacks
@@ -82,6 +89,14 @@
     - lack of hardening
   - why are security best-practises not applied? missing knowledge?
   - culture
+  - OT guys know something that the IT guys know not
+
+# Potential additional items
+
+- integrity protection
+  - or is this a part of culture / missing security capabilitites
+  - integrity protection within updates
+    - supplier + consumer problem
 
 # Existing Lists/Top-10 Items
 
