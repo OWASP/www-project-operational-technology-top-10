@@ -16,10 +16,12 @@
 
 ## Supplier/Supply Chain Management
 
-  - treat it like partners management
+  - treat it like partners management?
     - treat IT as supplier too?
+    - make sure that IT people understand that this is not only dependency management
 
-  - make sure that IT people understand that this is not only dependency management
+  - OT has a 'special' situation with integrators needing access
+    - (is this so special, there's the same problem with managed SOCs, outsourced administration done by system houses)
 
   - organization issue
     - like SLAs, notifications
@@ -38,6 +40,7 @@
   - Unmanaged external access
       - from above purdue model level 3 / IEC62443 zones/conduits
       - maintenance access
+      - this can be related to 'missing awareness'
 
 ## Devices out in the field with known Vulnerabilities/Issues
 
@@ -47,7 +50,11 @@
   - problems without mitigation on-device-itself/vulnerability
     - legacy devices (hardware does not have capabilities)
     - missing vendor support
-  - TODO: Selection of components/protocols with insufficient security capabilities as well as culture
+  - very related to other top 10 items as this is the outcome of problems in other areas
+    - Selection of components/protocols with insufficient security capabilities
+    - Missing Awareness
+    - Unknown Assets and Unmanaged external Access
+    - Supplier/Supply Chain Management
 
 ## Broken Zone and Conduits Design
 
