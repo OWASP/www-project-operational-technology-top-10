@@ -89,6 +89,7 @@
   - (D)DoS attacks
   - real-time communication safety
   - availability vs. integrity -- flooding with fake data
+  - think about software updates (integrity vs. availabilty, supply-chain)
 
 ## Missing Awareness
 
@@ -102,13 +103,6 @@
   - why are security best-practises not applied? missing knowledge?
   - culture
   - OT guys know something that the IT guys know not
-
-# Potential additional items
-
-- integrity protection
-  - or is this a part of culture / missing security capabilitites
-  - integrity protection within updates
-    - supplier + consumer problem
 
 # Existing Lists/Top-10 Items
 
