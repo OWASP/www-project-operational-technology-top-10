@@ -16,11 +16,14 @@
 
 ## Supplier/Supply Chain Management
 
+  - treat it like partners management
+    - treat IT as supplier too?
+
   - make sure that IT people understand that this is not only dependency management
-  - use of insecure 3rd party items - HW / SW assets with critical vulnerabilities
+
   - organization issue
     - like SLAs, notifications
-  - treat IT as supplier too?
+    - product specific issues woudl rather be "Devices out in the field with known Vulnerabilities/Issues"
 
 ## Unknown Assets and Unmanaged external Access
 
@@ -75,6 +78,7 @@
     - 'missing awareness': feature is availabe, but not configured
 
 ## Availability
+
   - (D)DoS attacks
   - real-time communication safety
   - availability vs. integrity -- flooding with fake data
