@@ -1,4 +1,4 @@
-# The OT World for IT Security People
+# OT for IT Sec People
 
 This introduction tries to explain for IT security people why OT security looks
 the way it often looks.
@@ -100,6 +100,10 @@ If this happens, we typically run into reoccuring major problems:
 - Large blast zones: attackers that are able to bypass security
   mechanisms and are able to compromise devices, can use those devices
   to further propagate and privot into other 'secured' networks and devices.
+
+Fragility is a concern so considering downstream implications if such
+mitigations fail is important. Monitoring to detect compromise and/or
+defense in depth may be needed in addition.
 
 ### How do we react to an incident?
 

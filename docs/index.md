@@ -8,6 +8,10 @@ The significance of safeguarding OT environments cannot be overstated. These sys
 
 The goal of the **OWASP Operational Technology (OT) Top 10** is to raise awareness about the top security risks and vulnerabilities specific to Operational Technology (OT) environments. By providing actionable recommendations, we aim to improve the security posture of OT systems and protect critical infrastructure from cyber threats.
 
+## Scope
+
+The scope includes all the devices in the OT-domain. This includes devices that are part of the core functionality of the system (CNC machines, SCADA systems, centrifuges, insulin pumps, HVAC,...) as well as all related devices (HMI, barcodescanner, surveillance  cameras on the shop floor, virtualization servers and VMs with core functionality,...). Office IT and edge devices that are not directly related to the main OT purpose are not in scope
+
 ## Target Audience
 
 This document is written for two main target audiences: system developers, operators, and integrators. This mirrors the OT world in which system components are developed and integrated (i.e., configured and setup on-site) by different parties with different capabilities. While developers can pro-actively create secure components, integrators are often limited to implement mitigations.
