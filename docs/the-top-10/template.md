@@ -12,6 +12,10 @@ Short Description (one paragraph)
 - what is this about
 - add background information if needed
 
+## Rationale
+
+- why did we include this item in the top 10?
+
 ## Known Attacks
 
 Potential Sources
