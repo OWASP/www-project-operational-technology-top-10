@@ -27,6 +27,9 @@ Insufficient or missing vulnerability management practices in an OT environment 
 - Colonial Pipeline ransomware attack
 - NotPetya
 - TRISIS
+- [APT44 is a persistent and operationally mature adversary that uses diverse initial access methods ranging from common vectors such as phishing, credential harvesting, and known vulnerability exploitation to targeted supply chain compromises.](https://services.google.com/fh/files/misc/apt44-unearthing-sandworm.pdf)
+- [Volt Typhoon typically gains initial access to the IT network by exploiting known or zero-day vulnerabilities in public-facing network appliances](https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a)
+- [Sensitive nuclear information (SNI), the industry’s special classification system, was left vulnerable in part because of the use of “obsolete” technology including Windows 7 and Windows 2008, Lawrence said.](https://www.theguardian.com/business/article/2024/aug/08/sellafield-apologises-guilty-plea-security-failings-nuclear)
 
 Potential Sources
 

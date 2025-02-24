@@ -28,6 +28,8 @@ Unknown assets are devices or systems in an OT environment that are not properly
 - Stuxnet
 - Triton
 - WannaCry
+- [Someone tried to poison a Florida city by hijacking its water treatment plant via TeamViewer, says sheriff](https://www.theregister.com/2021/02/09/florida_water_hacked/)
+- [CISA and the Environmental Protection Agency (EPA) warned water facilities today to secure Internet-exposed Human Machine Interfaces (HMIs) from cyberattacks.](https://www.bleepingcomputer.com/news/security/cisa-warns-water-facilities-to-secure-hmi-systems-exposed-online/)
 
 Potential Sources
 

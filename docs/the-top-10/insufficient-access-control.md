@@ -27,6 +27,7 @@ Users have to fulfill different functions with devices. Not every user needs acc
 ## Known Attacks/Examples
 
 - Misuse of extenal available VNC-Server
+- [After quitting his job at the plant at the beginning of 2019, he then used the remote login system again on March 27, 2019, to shut down the plant and one of its treatment filters..](https://www.ksnt.com/news/local-news/kansas-hacker-pleads-guilty-to-shutting-down-drinking-water-plant-with-phone/)
 
 Potential Sources
 
