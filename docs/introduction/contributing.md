@@ -4,9 +4,7 @@ Please don’t hesitate to contact the OWASP OT Top 10 project with your questio
 
 Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R) to chat. You can get a free invitation to the OWASP slack server through [this website](https://owasp.org/slack/invite).
 
-Until the Top 10 have stabilized, we aim to do a video conference every two weeks. The next one will be announced on slack (and pinned there).
-
-We do a web videocall every second monday at 5pm CET, please join us at:
+Until the Top 10 have stabilized, we aim to do a video conference every two weeks (typically every second and fourth monday).
 
 ```plain
 OWASP OT Videocall

@@ -1,3 +1,21 @@
+!!! Warning "Work in Progress and Help wanted!"
+
+    Please don’t hesitate to contact the OWASP OT Top 10 project with your questions, comments, and ideas, either publicly by adding issues or providing commits on [our github page](https://github.com/OWASP/www-project-operational-technology-top-10).
+
+    Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R) to chat. You can get a free invitation to the OWASP slack server through [this website](https://owasp.org/slack/invite).
+
+    Until the Top 10 have stabilized, we aim to do a video conference every two weeks (typically every second and fourth monday).
+
+    ```plain
+    OWASP OT Videocall
+    Monday, January 27 · 5:00 – 6:00pm
+    Time zone: Europe/Vienna
+    Google Meet joining info
+    Video call link: https://meet.google.com/fmu-sokc-gei
+    Or dial: ‪(US) +1 669-244-0206‬ PIN: ‪940 723 699‬#
+    ```
+
+
 # OWASP OT Top 10
 
 Operational Technology (aka: “OT”) refers to a broad range of programmable systems and devices that directly or indirectly interact with the physical environment. OT plays an active role across all sectors including manufacturing, energy, transportation, medical, and utilities. As OT becomes increasingly interconnected and integrated with IT networks, they become more vulnerable to large-scale cyber attacks. OT also increases the probability of catastrophic outcomes due to their control of the physical environment as opposed to data impacts in an IT environment.

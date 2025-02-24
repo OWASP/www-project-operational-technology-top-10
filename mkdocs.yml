@@ -67,18 +67,15 @@ nav:
     - 'Standards and Regulations': background-ot/related-standards.md
   - 'The Top 10':
       - the-top-10/index.md
-      - "WIP: Template" : the-top-10/template.md
-      - "WIP: Top 10s?" : the-top-10/items.md
-      - "1. TBD": the-top-10/1.md
-      - "2. TBD": the-top-10/2.md
-      - "3. TBD": the-top-10/3.md
-      - "4. TBD": the-top-10/4.md
-      - "5. TBD": the-top-10/5.md
-      - "6. TBD": the-top-10/6.md
-      - "7. TBD": the-top-10/7.md
-      - "8. TBD": the-top-10/8.md
-      - "9. TBD": the-top-10/9.md
-      - "10. TBD": the-top-10/10.md
+      - 'TBD: Supply Chain Management': the-top-10/supply_chain_management.md
+      - 'TBD: Devices with known Vulnerabilities': the-top-10/accessible-devices-with-known-vulnerabilities.md
+      - 'TBD: Unknown Assets and Unmanaged External Access': the-top-10/unknown-assets-and-admin-access.md
+      - 'TBD: Insufficient Access Control': the-top-10/insufficient-access-control.md
+      - 'TBD: Broken Zones and Conduits Design': the-top-10/broken-zone-and-conduits-design.md
+      - 'TBD: Missing Incident Detection/Reaction Capabilities': the-top-10/missing-incident-detection-response.md
+      - 'TBD: Availability': the-top-10/availability.md
+      - 'TBD: Missing Awareness': the-top-10/missing-awareness.md
+      - 'TBD: Insufficient Security Capabilitites': the-top-10/components-with-insufficient-security-capabilities.md
   - 'Appendix':
     - 'WIP: How to Test': appendix/how-to-test.md
     - 'WIP: Glossary': appendix/glossary.md

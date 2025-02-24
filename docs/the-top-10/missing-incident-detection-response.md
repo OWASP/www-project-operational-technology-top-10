@@ -1,22 +1,20 @@
-!!! Note
-
-    This page will be removed in the final version. This is just a
-    placeholder to easily check our proposed template for each top 10 item.
-
-# The Top 10 Item's name
+# Missing Incident Detection/Reaction Capabilities
 
 Short Description (one paragraph)
 
 ## Description
 
-- what is this about
-- add background information if needed
+  - Missing Monitoring/Logging for Incident Detection (shadow infrastructure?)
+    - Alert fatigue with “dirty” environment
+  - Undefined processes for alert reporting/handling
+  - missing reacting capabilities
+      - Missing configuration backups for OT-Devices
 
 ## Rationale
 
 - why did we include this item in the top 10?
 
-## Known Attacks
+## Known Attacks/Examples
 
 Potential Sources
 
