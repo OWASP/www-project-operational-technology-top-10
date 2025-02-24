@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://ot.owasp.org/the-top-10/items/">
+        <link rel="canonical" href="https://ot.owasp.org/the-top-10/supply_chain_management/">
       
       
-        <link rel="prev" href="../template/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../appendix/how-to-test/">
+        <link rel="next" href="../accessible-devices-with-known-vulnerabilities/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>WIP: Top 10s? - OWASP Operational Technology (OT) Top 10</title>
+        <title>TBD: Supply Chain Management - OWASP Operational Technology (OT) Top 10</title>
       
     
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#wip-preliminary-top-10-items" class="md-skip">
+        <a href="#suppliersupply-chain-management" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              WIP: Top 10s?
+              TBD: Supply Chain Management
             
           </span>
         </div>
@@ -611,12 +611,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
     
     
       
@@ -665,28 +659,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../template/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    WIP: Template
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -703,7 +675,7 @@
           
   
   <span class="md-ellipsis">
-    WIP: Top 10s?
+    TBD: Supply Chain Management
     
   </span>
   
@@ -715,7 +687,7 @@
         
   
   <span class="md-ellipsis">
-    WIP: Top 10s?
+    TBD: Supply Chain Management
     
   </span>
   
@@ -738,83 +710,119 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#insufficient-access-control" class="md-nav__link">
+  <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
-      Insufficient Access Control
+      Description
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#suppliersupply-chain-management" class="md-nav__link">
+  <a href="#rationale" class="md-nav__link">
     <span class="md-ellipsis">
-      Supplier/Supply Chain Management
+      Rationale
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#unknown-assets-and-unmanaged-external-access" class="md-nav__link">
+  <a href="#known-attacksexamples" class="md-nav__link">
     <span class="md-ellipsis">
-      Unknown Assets and Unmanaged external Access
+      Known Attacks/Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Known Attacks/Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-test-have-to-discuss" class="md-nav__link">
+    <span class="md-ellipsis">
+      How-To Test (have to discuss)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#devices-out-in-the-field-with-known-vulnerabilitiesissues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Devices out in the field with known Vulnerabilities/Issues
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#broken-zone-and-conduits-design" class="md-nav__link">
+  <a href="#mitigationcountermeasures" class="md-nav__link">
     <span class="md-ellipsis">
-      Broken Zone and Conduits Design
+      Mitigation/Countermeasures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mitigation/Countermeasures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-and-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design and Implementation
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#missing-incident-detectionreaction-capabilities" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#operational" class="md-nav__link">
     <span class="md-ellipsis">
-      Missing Incident Detection/Reaction Capabilities
+      Operational
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#selection-of-componentsprotocols-with-insufficient-security-capabilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Selection of components/protocols with insufficient security capabilities
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#availability" class="md-nav__link">
+  <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      Availability
+      References
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="References">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#missing-awareness" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#background-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Missing Awareness
+      Background information
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tooling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tooling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -834,11 +842,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.md" class="md-nav__link">
+      <a href="../accessible-devices-with-known-vulnerabilities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    1. TBD
+    TBD: Devices with known Vulnerabilities
     
   </span>
   
@@ -856,11 +864,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../2.md" class="md-nav__link">
+      <a href="../unknown-assets-and-admin-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    2. TBD
+    TBD: Unknown Assets and Unmanaged External Access
     
   </span>
   
@@ -878,11 +886,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../3.md" class="md-nav__link">
+      <a href="../insufficient-access-control/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    3. TBD
+    TBD: Insufficient Access Control
     
   </span>
   
@@ -900,11 +908,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../4.md" class="md-nav__link">
+      <a href="../broken-zone-and-conduits-design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    4. TBD
+    TBD: Broken Zones and Conduits Design
     
   </span>
   
@@ -922,11 +930,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../5.md" class="md-nav__link">
+      <a href="../missing-incident-detection-response/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    5. TBD
+    TBD: Missing Incident Detection/Reaction Capabilities
     
   </span>
   
@@ -944,11 +952,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../6.md" class="md-nav__link">
+      <a href="../availability/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    6. TBD
+    TBD: Availability
     
   </span>
   
@@ -966,11 +974,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../7.md" class="md-nav__link">
+      <a href="../missing-awareness/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    7. TBD
+    TBD: Missing Awareness
     
   </span>
   
@@ -988,55 +996,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../8.md" class="md-nav__link">
+      <a href="../components-with-insufficient-security-capabilities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    8. TBD
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../9.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    9. TBD
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../10.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    10. TBD
+    TBD: Insufficient Security Capabilitites
     
   </span>
   
@@ -1179,83 +1143,119 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#insufficient-access-control" class="md-nav__link">
+  <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
-      Insufficient Access Control
+      Description
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#suppliersupply-chain-management" class="md-nav__link">
+  <a href="#rationale" class="md-nav__link">
     <span class="md-ellipsis">
-      Supplier/Supply Chain Management
+      Rationale
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#unknown-assets-and-unmanaged-external-access" class="md-nav__link">
+  <a href="#known-attacksexamples" class="md-nav__link">
     <span class="md-ellipsis">
-      Unknown Assets and Unmanaged external Access
+      Known Attacks/Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Known Attacks/Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-test-have-to-discuss" class="md-nav__link">
+    <span class="md-ellipsis">
+      How-To Test (have to discuss)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#devices-out-in-the-field-with-known-vulnerabilitiesissues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Devices out in the field with known Vulnerabilities/Issues
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#broken-zone-and-conduits-design" class="md-nav__link">
+  <a href="#mitigationcountermeasures" class="md-nav__link">
     <span class="md-ellipsis">
-      Broken Zone and Conduits Design
+      Mitigation/Countermeasures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mitigation/Countermeasures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-and-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design and Implementation
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#missing-incident-detectionreaction-capabilities" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#operational" class="md-nav__link">
     <span class="md-ellipsis">
-      Missing Incident Detection/Reaction Capabilities
+      Operational
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#selection-of-componentsprotocols-with-insufficient-security-capabilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Selection of components/protocols with insufficient security capabilities
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#availability" class="md-nav__link">
+  <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      Availability
+      References
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="References">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#missing-awareness" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#background-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Missing Awareness
+      Background information
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tooling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tooling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1278,24 +1278,9 @@
   
 
 
-<h1 id="wip-preliminary-top-10-items">WIP: Preliminary Top 10 Items</h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This page will be removed in the final version</p>
-</div>
-<h2 id="insufficient-access-control">Insufficient Access Control</h2>
-<ul>
-<li>Access Control: User Identification, Authentication, Authorization</li>
-<li>interacts (unmanaged external access, broken zone design)</li>
-<li>Lax access controls  (account /user based)<ul>
-<li>least privilege</li>
-<li>privilege creep</li>
-<li>non-repudiation</li>
-</ul>
-</li>
-<li>note for the future: maybe split identification/authentication from authorization</li>
-</ul>
-<h2 id="suppliersupply-chain-management">Supplier/Supply Chain Management</h2>
+<h1 id="suppliersupply-chain-management">Supplier/Supply Chain Management</h1>
+<p>Short Description (one paragraph)</p>
+<h2 id="description">Description</h2>
 <ul>
 <li>
 <p>treat it like partners management?</p>
@@ -1318,151 +1303,45 @@
 </ul>
 </li>
 </ul>
-<h2 id="unknown-assets-and-unmanaged-external-access">Unknown Assets and Unmanaged external Access</h2>
+<h2 id="rationale">Rationale</h2>
 <ul>
-<li>inter-section to incident detection (due to missing detection capabilitites), security-misconfiguration</li>
-<li>
-<p>physical 'stuff'</p>
+<li>why did we include this item in the top 10?</li>
+</ul>
+<h2 id="known-attacksexamples">Known Attacks/Examples</h2>
+<p>Potential Sources</p>
 <ul>
-<li>manual list</li>
+<li><a href="https://www.icsadvisoryproject.com">https://www.icsadvisoryproject.com</a></li>
+<li><a href="https://icsstrive.com/">https://icsstrive.com/</a></li>
+<li><a href="https://emb3d.mitre.org/">https://emb3d.mitre.org/</a></li>
+<li><a href="https://attack.mitre.org/techniques/ics/">https://attack.mitre.org/techniques/ics/</a></li>
+<li>please add more</li>
 </ul>
-</li>
-<li>
-<p>counter-measures</p>
+<h3 id="how-to-test-have-to-discuss">How-To Test (have to discuss)</h3>
 <ul>
-<li>network scanning/discovery</li>
-<li>port/traffic monitoring</li>
+<li>maybe add this to a separate section?</li>
 </ul>
-</li>
-<li>
-<p>Unmanaged external access</p>
+<h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
+<h3 id="design-and-implementation">Design and Implementation</h3>
 <ul>
-<li>from above purdue model level 3 / IEC62443 zones/conduits</li>
-<li>maintenance access</li>
-<li>this can be related to 'missing awareness'</li>
+<li>mitigations for developers/builders</li>
 </ul>
-</li>
-</ul>
-<h2 id="devices-out-in-the-field-with-known-vulnerabilitiesissues">Devices out in the field with known Vulnerabilities/Issues</h2>
+<h3 id="operational">Operational</h3>
 <ul>
-<li>"everything where I as an attacker see a version number (hardware/software) and use an exploit for that version"</li>
-<li>problems with mitigation on-device-itself/vulnerability<ul>
-<li>missing vulnerability management</li>
+<li>mitigations for integrators/builders</li>
 </ul>
-</li>
-<li>problems without mitigation on-device-itself/vulnerability<ul>
-<li>legacy devices (hardware does not have capabilities)</li>
-<li>missing vendor support</li>
-</ul>
-</li>
-<li>very related to other top 10 items as this is the outcome of problems in other areas<ul>
-<li>Selection of components/protocols with insufficient security capabilities</li>
-<li>Missing Awareness</li>
-<li>Unknown Assets and Unmanaged external Access</li>
-<li>Supplier/Supply Chain Management</li>
-</ul>
-</li>
-</ul>
-<h2 id="broken-zone-and-conduits-design">Broken Zone and Conduits Design</h2>
+<h2 id="references">References</h2>
+<h3 id="standards">Standards</h3>
 <ul>
-<li>risk-based approach (mention threat modeling)</li>
-<li>goal: least functionality vs. over-exposure of services</li>
-<li>errors in network segregration</li>
-<li>potentially can also contain 'external admin access'?</li>
-<li>potentially 'forgotten hardware debug interfaces'?</li>
-<li>available JTAG/SWD interface left enabled on production devices</li>
+<li>links to relevant standards</li>
 </ul>
-<h2 id="missing-incident-detectionreaction-capabilities">Missing Incident Detection/Reaction Capabilities</h2>
+<h3 id="background-information">Background information</h3>
 <ul>
-<li>Missing Monitoring/Logging for Incident Detection (shadow infrastructure?)<ul>
-<li>Alert fatigue with “dirty” environment</li>
+<li>links to blogs, etc.</li>
 </ul>
-</li>
-<li>Undefined processes for alert reporting/handling</li>
-<li>missing reacting capabilities<ul>
-<li>Missing configuration backups for OT-Devices</li>
-</ul>
-</li>
-</ul>
-<h2 id="selection-of-componentsprotocols-with-insufficient-security-capabilities">Selection of components/protocols with insufficient security capabilities</h2>
+<h3 id="tooling">Tooling</h3>
 <ul>
-<li>weak built-in security features like basic Bluetooth</li>
-<li>attention: this should not be a product placement</li>
-<li>legacy-to-be</li>
-<li>legacy products for new deployments</li>
-<li>protocols missing confidenciality/integrity (depends upon trust-zone)</li>
-<li>differentiation to 'missing awareness'<ul>
-<li>here: security feature is not available</li>
-<li>'missing awareness': feature is availabe, but not configured</li>
+<li>for testing, etc.</li>
 </ul>
-</li>
-</ul>
-<h2 id="availability">Availability</h2>
-<ul>
-<li>(D)DoS attacks</li>
-<li>real-time communication safety</li>
-<li>availability vs. integrity -- flooding with fake data</li>
-<li>think about software updates (integrity vs. availabilty, supply-chain)</li>
-</ul>
-<h2 id="missing-awareness">Missing Awareness</h2>
-<ul>
-<li>trying to wiggle out of security features via deflection to obscurity</li>
-<li>cyber-security hygiene</li>
-<li>everything configuration related<ul>
-<li>missing encryption even if available</li>
-<li>available JTAG/SWD interface left enabled on production devices</li>
-<li>Intentional misconfiguration for ease of use, e.g., leaving rtu’s in upload mode</li>
-<li>lack of hardening</li>
-</ul>
-</li>
-<li>why are security best-practises not applied? missing knowledge?</li>
-<li>culture</li>
-<li>OT guys know something that the IT guys know not</li>
-</ul>
-<h1 id="existing-liststop-10-items">Existing Lists/Top-10 Items</h1>
-<p>We might move these to the <code>related standards</code> section later on, but keep them
-here as food for thought for now:</p>
-<table>
-<thead>
-<tr>
-<th>Issuer</th>
-<th>Title</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://www.bsi.bund.de/DE/Home/home_node.html">BSI</a></td>
-<td><a href="https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&amp;v=6">ICS Security Top 10 threats and countermeasures 2022</a></td>
-<td>Focus on impact and vectors (malware, phishing, DDoS, sabotage)</td>
-</tr>
-<tr>
-<td><a href="https://www.cisa.gov">CISA</a></td>
-<td><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-278a">Top Ten Cybersecurity Misconfigurations</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://www.enisa.europa.eu">ENISA</a></td>
-<td><a href="https://www.enisa.europa.eu/publications/power-sector-dependency?v2=1#contentList">Power Sector Dependency on Time Service</a></td>
-<td>rather specific</td>
-</tr>
-<tr>
-<td><a href="https://www.enisa.europa.eu">ENISA</a></td>
-<td><a href="https://www.enisa.europa.eu/publications/enisa-transport-threat-landscape?v2=1#contentList">Transport Threat Landscape</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://www.enisa.europa.eu">ENISA</a></td>
-<td><a href="https://www.enisa.europa.eu/publications/cyber-security-and-resilience-for-smart-hospitals?v2=1#contentList">Cyber security and resilience for Smart Hospitals</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://www.enisa.europa.eu">ENISA</a></td>
-<td><a href="https://www.enisa.europa.eu/publications/enisa-threat-landscape-2024">ENISA Threat Landscape 2024</a></td>
-<td>Figure 8 (Page 16), gives a per-sector attack overview</td>
-</tr>
-</tbody>
-</table>
 
 
 
