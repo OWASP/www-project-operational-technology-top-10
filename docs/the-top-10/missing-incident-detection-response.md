@@ -16,6 +16,8 @@ Short Description (one paragraph)
 
 ## Known Attacks/Examples
 
+- [a test had found that it was possible to download and execute malicious files on to Sellafield’s IT networks via a phishing attack “without raising any alarms”, according to Nigel Lawrence KC, representing the ONR.](https://www.theguardian.com/business/article/2024/aug/08/sellafield-apologises-guilty-plea-security-failings-nuclear)
+
 Potential Sources
 
 - <https://www.icsadvisoryproject.com>

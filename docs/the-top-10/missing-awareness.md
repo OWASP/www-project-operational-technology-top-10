@@ -21,6 +21,8 @@ Short Description (one paragraph)
 
 ## Known Attacks/Examples
 
+- [The Register: Iranian hacktivists .. likely broke into the facilities by using defautl passwords for internet-accessible PLCs](https://www.theregister.com/2024/09/07/us_water_cyberattacks/)
+
 Potential Sources
 
 - <https://www.icsadvisoryproject.com>
