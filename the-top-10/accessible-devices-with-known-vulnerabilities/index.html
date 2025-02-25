@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#devices-with-known-vulnerabilitiesissues" class="md-skip">
+        <a href="#accessible-devices-with-known-vulnerabilitiesissues" class="md-skip">
           Skip to content
         </a>
       
@@ -738,6 +738,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-cant-we-just-upgrade-all-the-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why can't we just upgrade all the systems?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vulnerability-mangement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vulnerability Mangement?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -784,18 +808,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#design-and-implementation" class="md-nav__link">
+  <a href="#developersbuilders-design-and-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      Design and Implementation
+      Developers/Builders: Design and Implementation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#operational" class="md-nav__link">
+  <a href="#integratorsoperators-operational" class="md-nav__link">
     <span class="md-ellipsis">
-      Operational
+      Integrators/Operators: Operational
     </span>
   </a>
   
@@ -1149,6 +1173,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-cant-we-just-upgrade-all-the-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why can't we just upgrade all the systems?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vulnerability-mangement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vulnerability Mangement?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1195,18 +1243,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#design-and-implementation" class="md-nav__link">
+  <a href="#developersbuilders-design-and-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      Design and Implementation
+      Developers/Builders: Design and Implementation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#operational" class="md-nav__link">
+  <a href="#integratorsoperators-operational" class="md-nav__link">
     <span class="md-ellipsis">
-      Operational
+      Integrators/Operators: Operational
     </span>
   </a>
   
@@ -1278,67 +1326,113 @@
   
 
 
-<h1 id="devices-with-known-vulnerabilitiesissues">Devices with known Vulnerabilities/Issues</h1>
-<p>Short Description (one paragraph)</p>
+<h1 id="accessible-devices-with-known-vulnerabilitiesissues">(Accessible) Devices with known Vulnerabilities/Issues</h1>
+<p>Attackers love to find software/hardware with known vulnerabilities, especially if exploits are already available. Given a sufficiently devastating vulnerability, all other defenses are naught and the attacker can take over the device.</p>
+<p>This can be used for initial access, e.g., when exploiting public facing services such as VPNs, or can be used within the target network for Lateral-Movement or Privilege-Escalation.</p>
 <h2 id="description">Description</h2>
+<p>If an attacker is able to access a system with known exploitable vulnerable components, most other defense mechanisms are useless. The attacker will be able to take over the system, the only defenses that remain are those that reduce the pwned device's blast radius, i.e., reduces the systems that an attacker can attack "out-going" from the comproised device.</p>
+<p>In traditional IT, the typical recommendation is to upgrade. This does not work in OT due to safety concerns, mandatory update time-windows, and generally longer lifetimes of used components. Compared to IT, OT works at a glacial pace.</p>
+<p>As updates are sometimes not possible, mitigations such as network segregation are used. This prevents vulnerable systems to become accessible to attackers. Alas, these counter-measures do not solve the problem: if there is a vulnerability within the counter-measure, the original vulnerability can still be exploited. This often makes OT systems <a href="../unknown-assets-and-admin-access/">very vulnerable against unexpected admin access</a> or <a href="../broken-zone-and-conduits-design/">badly designed zones</a>: once the attacker is in the network, they have access to exploitable systems and can commence from there.</p>
+<h3 id="why-cant-we-just-upgrade-all-the-systems">Why can't we just upgrade all the systems?</h3>
+<p>To reiterate on the special problems that the OT world faces, we want to give a list of common excuses/reason given that could prevent an easy implementation of a vulnerability management system:</p>
 <ul>
-<li>"everything where I as an attacker see a version number (hardware/software) and use an exploit for that version"</li>
-<li>problems with mitigation on-device-itself/vulnerability<ul>
-<li>missing vulnerability management</li>
-</ul>
+<li>
+<p><strong>You don't just upgrade a medical device or power plant</strong>: this is not your typical desktop PC where you are annoyed if an update breaks your system for a couple of days, this is critical infrastructure upon which lifes potentially depend upon. Imagine you are depending upon a digital pace maker or insulin pump: would you just update it (without making sure that it will not negativly impact you)?</p>
 </li>
-<li>problems without mitigation on-device-itself/vulnerability<ul>
-<li>legacy devices (hardware does not have capabilities)</li>
+<li>
+<p><strong><a href="../supply_chain_management/">Problems with the supply chain</a></strong>: TBD</p>
+<ul>
 <li>missing vendor support</li>
+<li>missing vendor notifications</li>
+<li>tight coupling to few vendors</li>
 </ul>
 </li>
-<li>very related to other top 10 items as this is the outcome of problems in other areas<ul>
-<li>Selection of components/protocols with insufficient security capabilities</li>
-<li>Missing Awareness</li>
-<li>Unknown Assets and Unmanaged external Access</li>
-<li>Supplier/Supply Chain Management</li>
+<li>
+<p><strong><a href="../components-with-insufficient-security-capabilities/">Usage of legacy devices</a></strong>: TBD</p>
+<ul>
+<li>missing capabilities for vulnerability remediation</li>
+<li>long-lifetimes</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../missing-awareness/">Missing Awareness on the OT side</a></strong>: TBD</p>
+<ul>
+<li><em>why should I update a running system?</em></li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../unknown-assets-and-admin-access/">Unknown devices and shadow infrastructure</a></strong>: TBD</p>
+<ul>
+<li>if you don't event know about a device, how should you know that you need to update it?</li>
 </ul>
 </li>
 </ul>
-<p>Insufficient or missing vulnerability management practices in an OT environment can leave systems exposed to known security vulnerabilities. Without proper patching and vulnerability scanning, attackers can exploit these vulnerabilities to gain unauthorized access and disrupt critical operations.</p>
+<p>Please note, that this shows (primarily to IT security people) why upgrading is not as simple as in other domains but <strong>does not mean that we (as OT) can use any of this as an excuse for not having update procedures in place</strong>.</p>
+<h3 id="vulnerability-mangement">Vulnerability Mangement?</h3>
+<p>Insufficient or missing vulnerability management practices in an OT environment can leave systems exposed to known security vulnerabilities. Not installing security patches eventually, will lead to an amplification effect when (not if) the attacker is within the system.</p>
+<p>Even if all the issues mentioned in the last section do not apply for an OT system, security updates are very often not applied. The reason for that is <strong>missing vulnerability management</strong>.</p>
+<p>TBD: what is part of vulnerability managenet? What are concrete first steps that an organization can do to establish a vulnerabilty management process?</p>
 <h2 id="rationale">Rationale</h2>
-<ul>
-<li>why did we include this item in the top 10?</li>
-</ul>
+<p>Vulnerable devices bad. Especially in critical infrastructure.</p>
 <h2 id="known-attacksexamples">Known Attacks/Examples</h2>
+<div class="admonition warning">
+<p class="admonition-title">given TRISIS: should misconfiguration also be a part of this section, or do we move this to 'missing awareness'</p>
+</div>
 <ul>
-<li>Colonial Pipeline ransomware attack</li>
-<li>NotPetya</li>
-<li>TRISIS</li>
+<li><a href="https://www.dragos.com/resources/whitepaper/trisis-analyzing-safety-system-targeting-malware/">TRISIS: The Triconex SIS controller had the keyswitch in ‘program mode’ during the time of the attack and the SIS was connected to the operations network against best practices. In a proper configuration and with the controller placed in Run mode (program changes not permitted) the attackers would face a more difficult challenge implementing the attack.</a></li>
 <li><a href="https://services.google.com/fh/files/misc/apt44-unearthing-sandworm.pdf">APT44 is a persistent and operationally mature adversary that uses diverse initial access methods ranging from common vectors such as phishing, credential harvesting, and known vulnerability exploitation to targeted supply chain compromises.</a></li>
 <li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a">Volt Typhoon typically gains initial access to the IT network by exploiting known or zero-day vulnerabilities in public-facing network appliances</a></li>
 <li><a href="https://www.theguardian.com/business/article/2024/aug/08/sellafield-apologises-guilty-plea-security-failings-nuclear">Sensitive nuclear information (SNI), the industry’s special classification system, was left vulnerable in part because of the use of “obsolete” technology including Windows 7 and Windows 2008, Lawrence said.</a></li>
 </ul>
-<p>Potential Sources</p>
-<ul>
-<li><a href="https://www.icsadvisoryproject.com">https://www.icsadvisoryproject.com</a></li>
-<li><a href="https://icsstrive.com/">https://icsstrive.com/</a></li>
-<li><a href="https://emb3d.mitre.org/">https://emb3d.mitre.org/</a></li>
-<li><a href="https://attack.mitre.org/techniques/ics/">https://attack.mitre.org/techniques/ics/</a></li>
-<li>please add more</li>
-</ul>
 <h3 id="how-to-test-have-to-discuss">How-To Test (have to discuss)</h3>
-<ul>
-<li>maybe add this to a separate section?</li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">maybe remove this (and add an appendix document with 'how to test' initially?)</p>
+</div>
 <h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
-<h3 id="design-and-implementation">Design and Implementation</h3>
+<div class="admonition note">
+<p class="admonition-title">maybe renamet his from 'design/implementation' and 'operational' to something more role-specific?</p>
+</div>
+<h3 id="developersbuilders-design-and-implementation">Developers/Builders: Design and Implementation</h3>
 <ul>
-<li>mitigations for developers/builders</li>
+<li>
+<p>Try to prevent vulnerabilitites from accessing the system</p>
+<ul>
+<li><a href="https://owaspsamm.org/">OWASP SAMM2</a></li>
 </ul>
-<h3 id="operational">Operational</h3>
+</li>
+<li>
+<p>Test hardware/software before deploying them in the field</p>
 <ul>
-<li>mitigations for integrators/builders</li>
-<li>Establish a vulnerability management program that includes regular vulnerability scanning, patch management, and remediation processes.</li>
+<li><a href="https://owasp.org/owasp-istg/index.html">OWASP IoT Security Testing Guide</a></li>
+<li><a href="https://scriptingxss.gitbook.io/firmware-security-testing-methodology">OWASP Firmware Security Testing Methodology</a></li>
+</ul>
+</li>
+<li>
+<p>Inform customers about security updates. Provide SBOMs.</p>
+</li>
+<li>
+<p>Don't depend upon security-by-obscurity.</p>
+</li>
+</ul>
+<h3 id="integratorsoperators-operational">Integrators/Operators: Operational</h3>
+<ul>
+<li>Make mandatory vulnerabilty notifications and remediation part of your supplier contracts.</li>
+<li>Keep an up-to-date asset register with hardware/software versions.</li>
+<li>Test hardware/software before deploying them in the field<ul>
+<li><a href="https://owasp.org/owasp-istg/index.html">OWASP IoT Security Testing Guide</a></li>
+<li><a href="https://scriptingxss.gitbook.io/firmware-security-testing-methodology">OWASP Firmware Security Testing Methodology</a></li>
+</ul>
+</li>
+<li>Establish a vulnerability management program that includes regular vulnerability scanning, patch management, and remediation processes.<ul>
 <li>Prioritize critical security updates and patches for OT systems to address high-risk vulnerabilities.</li>
+</ul>
+</li>
 <li>Implement network segmentation and access controls to limit the impact of security vulnerabilities.</li>
 </ul>
 <h2 id="references">References</h2>
+<div class="admonition note">
+<p class="admonition-title">maybe remove the subsections and just add a list with items and their respective descriptions</p>
+</div>
 <h3 id="standards">Standards</h3>
 <ul>
 <li>links to relevant standards</li>
