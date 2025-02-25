@@ -1,17 +1,25 @@
 # Selection of components/protocols with insufficient security capabilities
 
-Short Description (one paragraph)
+- legacy-devices-to-be, remember 30y+ lifetimes
+- if we design new systems there should be slack for future security features
+
+
+differentiation to [missing awareness](./missing-awareness.md):
+
+- here: security feature is not available
+- 'missing awareness': feature is availabe, but not configured
 
 ## Description
 
-  - weak built-in security features like basic Bluetooth
-  - attention: this should not be a product placement
-  - legacy-to-be
-  - legacy products for new deployments
-  - protocols missing confidenciality/integrity (depends upon trust-zone)
-  - differentiation to 'missing awareness'
-    - here: security feature is not available
-    - 'missing awareness': feature is availabe, but not configured
+- we define legacy systems as systems with security and cryptography capabilities that are not up to date
+
+### Don't use Legacy Protocols if possible
+
+- typcially [without integrity](./availability.md) or without [sufficient authentication mechanisms](./insufficient-access-control.md)
+- weak built-in security features like basic Bluetooth
+- protocols missing confidenciality/integrity (depends upon trust-zone)
+
+### Don't use Legacy Systems for new Deployments
 
 ## Rationale
 
