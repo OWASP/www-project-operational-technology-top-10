@@ -18,19 +18,19 @@ To reiterate on the special problems that the OT world faces, we want to give a 
 
 - **You don't just upgrade a medical device or power plant**: this is not your typical desktop PC where you are annoyed if an update breaks your system for a couple of days, this is critical infrastructure upon which lifes potentially depend upon. Imagine you are depending upon a digital pace maker or insulin pump: would you just update it (without making sure that it will not negativly impact you)?
 
-- **[Problems with the supply chain](./supply_chain_management.md)**: TBD
+  - **[Problems with the supply chain](./supply_chain_management.md)**: TBD
     - missing vendor support
     - missing vendor notifications
     - tight coupling to few vendors
 
-- **[Usage of legacy devices](./components-with-insufficient-security-capabilities.md)**: TBD
+  - **[Usage of legacy devices](./components-with-insufficient-security-capabilities.md)**: TBD
     - missing capabilities for vulnerability remediation
     - long-lifetimes
 
-- **[Missing Awareness on the OT side](./missing-awareness.md)**: TBD
+  - **[Missing Awareness on the OT side](./missing-awareness.md)**: TBD
     - *why should I update a running system?*
 
-- **[Unknown devices and shadow infrastructure](./unknown-assets-and-admin-access.md)**: TBD
+  - **[Unknown devices and shadow infrastructure](./unknown-assets-and-admin-access.md)**: TBD
     - if you don't event know about a device, how should you know that you need to update it?
 
 Please note, that this shows (primarily to IT security people) why upgrading is not as simple as in other domains but **does not mean that we (as OT) can use any of this as an excuse for not having update procedures in place**.
