@@ -21,23 +21,19 @@ sometimes make the term blurry.
 
 Not only are the types of systems and devices diverse, but so are the environments which utilize OT systems. Virtually no modern industry or environment operates without a large set of OT systems in operation.
 
-!!! Info "could we convert the list into a list of paragraphs of related items?"
+Operational Technology (OT) systems encompass a wide range of devices and control systems used in various industries.
 
-OT systems come in a wide variety of forms, ranging from:
+**On a low-level**, these systems include small 8 to 32-bit microcontrollers embedded in purpose-built devices, which are designed for specific tasks and are often found in industrial and commercial applications. Programmable Logic Controllers (PLCs) are another key component of OT systems, providing automation and control in manufacturing processes and other industrial environments.
 
-- Small 8 to 32 bit microcontrollers embedded in purpose-built devices
-- Programmable logic controllers ("PLC")
-- Multiple sites encompassing control systems like supervisory control and data acquisition ("SCADA")
-- Building automation systems ("BAS")
-- Industrial Automation and Control System ("IACS")
-- Refrigeration control systems
-- Water purification control and safety systems
-- Oil and gas pumping, flow, and processing control systems
-- Physical access control systems
-- Medical devices
-- And many others, as OT systems far outnumber IT systems in use.
+OT systems also include complex **control systems** that span multiple sites, such as Supervisory Control and Data Acquisition (SCADA) systems. SCADA systems are used to monitor and control large-scale processes and infrastructure, including utilities and transportation networks. Building Automation Systems (BAS) are used to manage and control building operations, such as heating, ventilation, air conditioning, lighting, and security.
 
-OT security problems in these industries can have major impacts on the society and surrounding environment. This is also why OT security is of ever-increasing importance, this can be seen in previous attacks using several highly sophisticated pieces of malware that have already affected OT systems, from the notorious Stuxnet in 2010 to power outages in Ukraine due to attack tools such as BlackEnergy or Industroyer.
+Physical access control systems are employed to secure facilities and restrict access to authorized personnel.
+
+**Industrial Automation and Control Systems** (IACS) are integral to the operation of manufacturing plants and other industrial facilities, ensuring efficient and safe production processes. Refrigeration control systems are used in various industries to maintain the proper temperature for storage and processing. Water purification control and safety systems are critical for ensuring the safety and quality of water supplies. In the oil and gas industry, OT systems are used to control and monitor pumping, flow, and processing operations.
+
+Medical devices also rely on OT systems for accurate and reliable operation, ensuring patient safety and effective treatment.
+
+Overall, OT systems are essential for the operation of many industries, and they far outnumber Information Technology (IT) systems in use. OT security problems in these industries can have major impacts on the society and surrounding environment. This is also why OT security is of ever-increasing importance, this can be seen in previous attacks using several highly sophisticated pieces of malware that have already affected OT systems, from the notorious Stuxnet in 2010 to power outages in Ukraine due to attack tools such as BlackEnergy or Industroyer.
 
 ## Example OT Architectures
 
