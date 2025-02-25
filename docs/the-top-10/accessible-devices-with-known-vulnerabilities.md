@@ -77,6 +77,8 @@ Vulnerable devices bad. Especially in critical infrastructure.
 
 - Don't depend upon security-by-obscurity.
 
+- Use memory-safe programming languages and utilize security-features of frameworks.
+
 ### Integrators/Operators: Operational
 
 - Make mandatory vulnerabilty notifications and remediation part of your supplier contracts.

@@ -31,16 +31,16 @@ world without it. (link to the TOP 10 item).
 
 here are some more brief examples of why security is necessary and how it relates to the other top 10 items.
 
-# Digitization of processes
+## Digitization of processes
 
 Cryptographic signatures can be used to detect changes to logs and measurement data
 or to prove their integrity. This makes it possible, for example, to digitize previous
 paper-based processes, thereby accelerating and optimizing them.
 
-# System monitoring
+## System monitoring
 
 The number one goal for serious adversaries in an OT environment is disruption. This is why security appliances also closely monitor the functionality and critical operational functions in the system. Additionally, security appliances show alsmost instantly if unknown devices have connected. This can also be problematic if it is not an attacker, but devices that should not be able to connect to the OT-domain.
 
-# Compliance
+## Compliance
 
 Security is part of most of the common standards nowadays. May it be critical infrastructure or "just" some risk management procedure like IEC 62443, security is part of the process and can not be ignored when wanting to be compliant.

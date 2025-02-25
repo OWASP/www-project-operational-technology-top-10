@@ -1,13 +1,34 @@
 # Availability
 
-Short Description (one paragraph)
+- paramount and well-understood in the OT world
+- still can be problematic, e.g., integrity is part of availability
 
 ## Description
 
+- note that we talk about protecting "our" infrastructure from DDoS and do not talk about becoming part of a botnet after a compromise (which is also problematic, but rather a subpart of [Missing Incident Detection/Reaction Capabilities](./missing-incident-detection-response.md))
+
+### Primitive (D)Dos attacks
+
   - (D)DoS attacks
+  - potentially against control infrastructure
+    - are there documented attacks against sensor? seems not feasible
+
+### Real-Time Communication Safety
+
   - real-time communication safety
+  - 'timing-attacks'?
+  - special protocols and hardware needed?
+  - do we see this as part of availability?
+
+### Availability and Integrity
+
   - availability vs. integrity -- flooding with fake data
-  - think about software updates (integrity vs. availabilty, supply-chain)
+  - while this is not direct availability, if you cannot trust your data, the datasource become unavailable
+  - might introduce a performance overhead (that would be neglectable in the IT world but can be [problematic in old OT hardware](./components-with-insufficient-security-capabilities.md))
+
+### Availability and Software Updates
+
+  - think about software updates, quality assurance (crowdstrike incident)
 
 ## Rationale
 
@@ -38,6 +59,8 @@ Potential Sources
 - mitigations for integrators/builders
 
 ## References
+
+- [BSI Industrial Control System Security: Top 10 threats and coutnermeasures 2022](https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&v=6)
 
 ### Standards
 
