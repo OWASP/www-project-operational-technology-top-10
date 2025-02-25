@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://ot.owasp.org/background-ot/ot-vs-it/">
+        <link rel="canonical" href="https://ot.owasp.org/background-ot/safety-vs-security/">
       
       
         <link rel="prev" href="../">
@@ -22,7 +22,7 @@
     
     
       
-        <title>OT and IT - OWASP Operational Technology (OT) Top 10</title>
+        <title>Saftey vs. Security - OWASP Operational Technology (OT) Top 10</title>
       
     
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ot-and-it-differences-in-security-and-culture" class="md-skip">
+        <a href="#safety-and-security" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              OT and IT
+              Saftey vs. Security
             
           </span>
         </div>
@@ -505,7 +505,7 @@
           
   
   <span class="md-ellipsis">
-    OT and IT
+    Saftey vs. Security
     
   </span>
   
@@ -517,7 +517,7 @@
         
   
   <span class="md-ellipsis">
-    OT and IT
+    Saftey vs. Security
     
   </span>
   
@@ -540,23 +540,14 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#safety-vs-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      Safety vs. Security
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Safety vs. Security">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#availability-is-paramount" class="md-nav__link">
     <span class="md-ellipsis">
       Availability is Paramount
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Availability is Paramount">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#worst-case-scenarios" class="md-nav__link">
@@ -582,9 +573,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#system-lifetimes" class="md-nav__link">
+  <a href="#safety-and-security-culture" class="md-nav__link">
     <span class="md-ellipsis">
-      System Lifetimes
+      Safety and Security Culture
     </span>
   </a>
   
@@ -1077,23 +1068,14 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#safety-vs-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      Safety vs. Security
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Safety vs. Security">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#availability-is-paramount" class="md-nav__link">
     <span class="md-ellipsis">
       Availability is Paramount
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Availability is Paramount">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#worst-case-scenarios" class="md-nav__link">
@@ -1119,9 +1101,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#system-lifetimes" class="md-nav__link">
+  <a href="#safety-and-security-culture" class="md-nav__link">
     <span class="md-ellipsis">
-      System Lifetimes
+      Safety and Security Culture
     </span>
   </a>
   
@@ -1146,20 +1128,22 @@
   
 
 
-<h1 id="ot-and-it-differences-in-security-and-culture">OT and IT: Differences in Security and Culture</h1>
+<h1 id="safety-and-security">Safety and Security</h1>
 <p>Although there is an increasing convergence of IT and OT and regular IT systems
 are just as well used in OT environments, there are nonetheless fundamental
-differences in security goals and security culture.</p>
-<h2 id="safety-vs-security">Safety vs. Security</h2>
-<p>Traditionally, security can be defined by the mixture of the three security
-goals confidentiality, integrity, and availability. This is also known as the
-CIA triad.</p>
+differences in security goals and security culture. When assessing the security
+impact of security vulnerabilities, IT security people often refer to the
+"CIA triad". The acronym is built from the starting letters of Confidenciality,
+Integrity and Availability.</p>
 <p>While in IT commonly confidentiality and integrity are paramount,
 confidentiality is mostly of lesser importance in OT as it is often employed in
-more or less physically restricted environments. The most important goal in OT
-is safety, as humans can get harmed or even worse get killed when OT systems and
+more or less physically restricted environments. <strong>The most important goal in OT
+is safety, as humans can get harmed</strong> or even worse get killed when OT systems and
 devices malfunction.</p>
-<h3 id="availability-is-paramount">Availability is Paramount</h3>
+<p>This is further complicated by the fact, that e.g. in German Safety and Security
+are actually the same world ("Sicherheit"), leading to too many "lost-in-translation"
+effects even while using the same language.</p>
+<h2 id="availability-is-paramount">Availability is Paramount</h2>
 <p>Besides that, availability is paramount. Be it production
 site, be it critical energy infrastructure – many OT environments cannot afford
 even the smallest downtime. This also is reflected in security testing of OT,
@@ -1188,9 +1172,6 @@ working correctly. LOC, as the name implies, means that the operators cannot
 control the process and its systems anymore more, making them unable to respond
 to possible unsafe operations.</p>
 <h3 id="cia-triad-in-it-and-ot">CIA-Triad in IT and OT</h3>
-<p>When assessing the security impact of security vulnerabilities, IT security
-people often refer to the "CIA triad". The acronym is built from the starting
-letters of Confidenciality, Integrity and Availability.</p>
 <p>In traditional IT systems, we often emphatise Confidenciality and Integrity.
 For example, when you look at a web-shop, it is important that no sensitive
 user data (such as passwords or orders) are exposed (confidenciality) and
@@ -1206,7 +1187,7 @@ power plant company (confidenciality).</p>
 <p>Sometimes, this differentiation is not as clear-cut: imagine an attacker
 can alter transmitted usage data (integrity) and through that misleads
 a power plant to over- or under-produce power (availability).</p>
-<h2 id="system-lifetimes">System Lifetimes</h2>
+<h2 id="safety-and-security-culture">Safety and Security Culture</h2>
 <p>While security culture is shifting in OT and is undeniably growing in importance
 due to an increasing number of regulations and cyberattacks, this culture shift
 unfortunately is quite slow.</p>
@@ -1222,7 +1203,8 @@ engineers.</p>
 <p>While having a very good understanding of the prevention of accidents
 and therefore required safety measures, the notion that there are indeed
 attackers deliberately causing such “accidents” is not as widespread as much as
-it is needed yet. Additionally, many companies are not as open to vulnerability
+it is needed yet.</p>
+<p>Additionally, many companies are not as open to vulnerability
 disclosures as most IT companies yet. Fortunately, this is also currently
 changing and more and more OT organizations see the value in transparent and
 proactive handling of discovered vulnerabilities.</p>
