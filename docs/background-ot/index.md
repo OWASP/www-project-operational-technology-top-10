@@ -17,7 +17,6 @@ often used synonymously with OT. While the increased use of CPS is not least due
 to the increasing convergence of IT, OT and IoT, this mixture of fields can also
 sometimes make the term blurry.
 
-
 ## Types of OT Systems
 
 Not only are the types of systems and devices diverse, but so are the environments which utilize OT systems. Virtually no modern industry or environment operates without a large set of OT systems in operation.
@@ -103,7 +102,7 @@ importance to prevent such an incident to spread to OT.
 
 ## Common IT-Systems in OT
 
-Knowing now about the Purdue Model, the question arises about common IT devices such as PCs or printers and their relationship to the OT network and systems. Here we need to remind ourselves that the terms Information Technology and Operational Technology are just terms to describe a broader range of certain devices with a common purpose, not even common functionality. OT and IT are just concepts and have no strict universally applicable definition. Therefore, the question of whether "IT" devices belong in OT or are OT devices is a classic "it depends". 
+Knowing now about the Purdue Model, the question arises about common IT devices such as PCs or printers and their relationship to the OT network and systems. Here we need to remind ourselves that the terms Information Technology and Operational Technology are just terms to describe a broader range of certain devices with a common purpose, not even common functionality. OT and IT are just concepts and have no strict universally applicable definition. Therefore, the question of whether "IT" devices belong in OT or are OT devices is a classic "it depends".
 
 The easiest categorization would be to view everything below Purdue 3.5 (DMZ) as OT regardless of the device. This makes sense when looking at two examples from different fields:
 
