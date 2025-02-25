@@ -17,9 +17,13 @@
 
 # OWASP OT Top 10
 
-Operational Technology (aka: “OT”) refers to a broad range of programmable systems and devices that directly or indirectly interact with the physical environment. OT plays an active role across all sectors including manufacturing, energy, transportation, medical, and utilities. As OT becomes increasingly interconnected and integrated with IT networks, they become more vulnerable to large-scale cyber attacks. OT also increases the probability of catastrophic outcomes due to their control of the physical environment as opposed to data impacts in an IT environment.
+Operational Technology (OT) encompasses a wide variety of programmable systems and devices that have direct or indirect interactions with the physical environment. These technologies are integral to numerous sectors such as manufacturing, energy, transportation, medical, and utilities, where they play a crucial role in the operation and management of physical processes.
 
-The significance of safeguarding OT environments cannot be overstated. These systems are integral to the functionality of critical infrastructure, and any disruption or compromise can have severe consequences, ranging from operational downtime and financial losses to potential safety hazards and national security risks. Despite their importance, OT systems often lack the robust cybersecurity measures commonly found in IT environments, primarily due to the legacy nature of many industrial control systems (ICS) and the historical focus on availability and reliability over security.
+As OT systems become more interconnected and integrated with Information Technology (IT) networks, they face increased vulnerability to large-scale cyber attacks. This integration, while beneficial for operational efficiency and data sharing, exposes OT systems to the same cyber threats that typically target IT environments.
+
+The risks associated with OT are particularly significant because these systems control physical processes. Unlike IT environments, where cyber attacks primarily impact data, breaches in OT systems can lead to catastrophic outcomes, including physical damage, safety hazards, and disruptions to critical infrastructure. Therefore, securing OT systems is paramount to prevent potentially severe consequences. The significance of safeguarding OT environments cannot be overstated. These systems are integral to the functionality of critical infrastructure, and thus society.
+
+Despite their importance, OT systems often lack the robust cybersecurity measures more-commonly found in IT environments, primarily due to the legacy nature of many industrial control systems (ICS) and the historical focus on availability and reliability over security.
 
 ## Aim & Objective
 
