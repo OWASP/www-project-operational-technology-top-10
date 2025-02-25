@@ -4,16 +4,16 @@ Short Description (one paragraph)
 
 ## Description
 
-  - treat it like partners management?
-    - treat IT as supplier too?
-    - make sure that IT people understand that this is not only dependency management
+- treat it like partners management?
+  - treat IT as supplier too?
+  - make sure that IT people understand that this is not only dependency management
 
-  - OT has a 'special' situation with integrators needing access
-    - (is this so special, there's the same problem with managed SOCs, outsourced administration done by system houses)
+- OT has a 'special' situation with integrators needing access
+  - (is this so special, there's the same problem with managed SOCs, outsourced administration done by system houses)
 
-  - organization issue
-    - like SLAs, notifications
-    - product specific issues woudl rather be "Devices out in the field with known Vulnerabilities/Issues"
+- organization issue
+  - like SLAs, notifications
+  - product specific issues woudl rather be "Devices out in the field with known Vulnerabilities/Issues"
 
 ## Rationale
 
@@ -60,4 +60,3 @@ Potential Sources
 ### Tooling
 
 - for testing, etc.
- 

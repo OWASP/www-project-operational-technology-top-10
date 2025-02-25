@@ -6,18 +6,16 @@ Short Description (one paragraph)
 
 Unknown assets are devices or systems in an OT environment that are not properly identified or documented. These assets can include legacy systems, unmanaged devices, or unauthorized connections that are not accounted for in the organization's inventory.
 
-  - inter-section to incident detection (due to missing detection capabilitites), security-misconfiguration
-  - physical 'stuff'
-      - manual list
-
-  - counter-measures
-    - network scanning/discovery
-    - port/traffic monitoring
-   
-  - Unmanaged external access
-      - from above purdue model level 3 / IEC62443 zones/conduits
-      - maintenance access
-      - this can be related to 'missing awareness'
+- inter-section to incident detection (due to missing detection capabilitites), security-misconfiguration
+- physical 'stuff'
+  - manual list
+- counter-measures
+  - network scanning/discovery
+  - port/traffic monitoring
+- Unmanaged external access
+  - from above purdue model level 3 / IEC62443 zones/conduits
+  - maintenance access
+  - this can be related to 'missing awareness'
 
 ## Rationale
 

@@ -1,8 +1,19 @@
 # About OWASP
 
-The *Open Worldwide Application Security Project* (*OWASP*) is an open community
+The [Open Worldwide Application Security Project](https://owasp.org/) ([OWASP](https://owasp.org/)) is an open community
 dedicated to enabling organizations to develop, purchase, and maintain
 applications and APIs that can be trusted.
+
+At OWASP, you'll find free and open:
+
+- Application security tools and standards
+- Cutting edge research
+- Standard security controls and libraries
+- Complete books on application security testing, secure code development, and secure code review
+- Presentations and [videos](https://www.youtube.com/user/OWASPGLOBAL)
+- [Cheat sheets on many common topics](https://cheatsheetseries.owasp.org/)
+- [Chapters meetings](https://owasp.org/chapters/)
+- [Events, training, and conferences](https://owasp.org/events/)
 
 All OWASP tools, documents, videos, presentations, and chapters are free and
 open to anyone interested in improving application security.

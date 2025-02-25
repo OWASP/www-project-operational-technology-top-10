@@ -2,7 +2,7 @@
 
 OWASP is a volunteer-driven organization. Those volunteers contributed many useful documents, and this section points to some related OWASP documents and projects:
 
-## OWASP IoT Top 10
+## [OWASP IoT Top 10](https://owasp.org/www-project-internet-of-things/)
 
 The increasing introduction of IoT devices in OT environments (Industrial IoT, IIoT) comes with many of the security problems that are known from common IoT. This makes OWASP IoT Top 10 a valuable resource especially for suppliers and integrators, but for operators as well.
 
@@ -12,7 +12,7 @@ In OT we often analyze whole factory floors or power plants, situating our list 
 
 OWASP hosts multiple projects that aim to [increase the security of IOT projects](https://owasp.org/www-project-internet-of-things/).
 
-## OWASP Top 10
+## [OWASP Top 10](https://owasp.org/Top10/)
 
 The best known OWASP standard, the Top 10 of web application security, is also relevant for OT. Suppliers and integrators developing software in form of web applications, e.g. for control systems with a web interface can find useful information on how to avoid the most common vulnerabilities in web applications – even when they are used in an industrial environment.
 

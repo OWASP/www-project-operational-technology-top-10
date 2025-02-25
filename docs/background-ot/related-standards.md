@@ -76,4 +76,4 @@ importers and distributors.
 
 The Radio Equipment Directive (RED) regulates the placing of radio equipment on the EU market for manufacturers and importers. Additional to existing requirements concerning safety, radio performance and electromagnetic compatibility, an extending requirement aiming to improve cybersecurity, privacy and data protection of radio equipment will come into force on 1 August 2025.
 
-**\[TODO Add US regulations like EO14028, should be done by colleagues from the US\]**
+!!! todo "Add US regulations like EO14028, should be done by colleagues from the US"

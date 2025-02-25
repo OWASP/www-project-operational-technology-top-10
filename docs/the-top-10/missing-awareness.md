@@ -4,16 +4,16 @@ Short Description (one paragraph)
 
 ## Description
 
-  - trying to wiggle out of security features via deflection to obscurity
-  - cyber-security hygiene
-  - everything configuration related
-    - missing encryption even if available
-    - available JTAG/SWD interface left enabled on production devices
-    - Intentional misconfiguration for ease of use, e.g., leaving rtu’s in upload mode
-    - lack of hardening
-  - why are security best-practises not applied? missing knowledge?
-  - culture
-  - OT guys know something that the IT guys know not
+- trying to wiggle out of security features via deflection to obscurity
+- cyber-security hygiene
+- everything configuration related
+  - missing encryption even if available
+  - available JTAG/SWD interface left enabled on production devices
+  - Intentional misconfiguration for ease of use, e.g., leaving rtu’s in upload mode
+  - lack of hardening
+- why are security best-practises not applied? missing knowledge?
+- culture
+- OT guys know something that the IT guys know not
 
 ## Rationale
 

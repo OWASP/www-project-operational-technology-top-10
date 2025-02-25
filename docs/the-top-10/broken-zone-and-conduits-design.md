@@ -4,15 +4,12 @@ Short Description (one paragraph)
 
 ## Description
 
-- what is this about
-- add background information if needed
-
-  - risk-based approach (mention threat modeling)
-  - goal: least functionality vs. over-exposure of services
-  - errors in network segregration
-  - potentially can also contain 'external admin access'?
-  - potentially 'forgotten hardware debug interfaces'?
-  - available JTAG/SWD interface left enabled on production devices
+- risk-based approach (mention threat modeling)
+- goal: least functionality vs. over-exposure of services
+- errors in network segregration
+- potentially can also contain 'external admin access'?
+- potentially 'forgotten hardware debug interfaces'?
+- available JTAG/SWD interface left enabled on production devices
 
 ## Rationale
 

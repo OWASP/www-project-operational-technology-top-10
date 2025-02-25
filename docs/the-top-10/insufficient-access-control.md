@@ -9,11 +9,11 @@ Users have to fulfill different functions with devices. Not every user needs acc
 
 ### Particularities of OT
 
-- good example: `emergency shutdown switches`: you do not want to impose any additional latencies activating them (in case of emergency, pushing them is kinda time-critical) but on-the-other-hand you do not want to have them accessible to everyone.
-    - the same goes for medical devices in hospitals: you do not want to have a password prompt when a doctor wants to use a defibrillator
+- good example: `emergency shutdown switches`: you do not want to impose any additional latencies activating them (in case of emergency, pushing them is kinda time-critical) but on-the-other-hand you do not want to have them accessible to everyone. The same goes for medical devices in hospitals: you do not want to have a password prompt when a doctor wants to use a defibrillator
   
 - old systems/long lifetimes: imagine a lifetime of 30+ years. What IT security did we have in 1995? How much can you subsequently add to a system that was designed in 1995?
-    - old systems often have only limited authentication functions. they also offer no connection to a central identity management system. This makes it difficult to maintain and respond to changes in the organization's responsibilities on an ongoing basis
+  
+Old systems often have only limited authentication functions. they also offer no connection to a central identity management system. This makes it difficult to maintain and respond to changes in the organization's responsibilities on an ongoing basis
 
 ### Organizational Level
 
