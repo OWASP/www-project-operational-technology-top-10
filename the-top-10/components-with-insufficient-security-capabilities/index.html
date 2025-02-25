@@ -892,6 +892,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dont-use-legacy-protocols-if-possible" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't use Legacy Protocols if possible
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont-use-legacy-systems-for-new-deployments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't use Legacy Systems for new Deployments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1149,6 +1173,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dont-use-legacy-protocols-if-possible" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't use Legacy Protocols if possible
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont-use-legacy-systems-for-new-deployments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't use Legacy Systems for new Deployments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1279,20 +1327,26 @@
 
 
 <h1 id="selection-of-componentsprotocols-with-insufficient-security-capabilities">Selection of components/protocols with insufficient security capabilities</h1>
-<p>Short Description (one paragraph)</p>
-<h2 id="description">Description</h2>
 <ul>
-<li>weak built-in security features like basic Bluetooth</li>
-<li>attention: this should not be a product placement</li>
-<li>legacy-to-be</li>
-<li>legacy products for new deployments</li>
-<li>protocols missing confidenciality/integrity (depends upon trust-zone)</li>
-<li>differentiation to 'missing awareness'<ul>
+<li>legacy-devices-to-be, remember 30y+ lifetimes</li>
+<li>if we design new systems there should be slack for future security features</li>
+</ul>
+<p>differentiation to <a href="../missing-awareness/">missing awareness</a>:</p>
+<ul>
 <li>here: security feature is not available</li>
 <li>'missing awareness': feature is availabe, but not configured</li>
 </ul>
-</li>
+<h2 id="description">Description</h2>
+<ul>
+<li>we define legacy systems as systems with security and cryptography capabilities that are not up to date</li>
 </ul>
+<h3 id="dont-use-legacy-protocols-if-possible">Don't use Legacy Protocols if possible</h3>
+<ul>
+<li>typcially <a href="../availability/">without integrity</a> or without <a href="../insufficient-access-control/">sufficient authentication mechanisms</a></li>
+<li>weak built-in security features like basic Bluetooth</li>
+<li>protocols missing confidenciality/integrity (depends upon trust-zone)</li>
+</ul>
+<h3 id="dont-use-legacy-systems-for-new-deployments">Don't use Legacy Systems for new Deployments</h3>
 <h2 id="rationale">Rationale</h2>
 <ul>
 <li>why did we include this item in the top 10?</li>
