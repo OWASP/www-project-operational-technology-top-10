@@ -39,7 +39,6 @@ Each entry in the OWASP OT Top 10 will be accompanied by a short description, pu
 | References| Relevant standards |
 | Tooling | Links to Tools that can be used to test for the vulnerability|
 
-
 ## Existing Lists/Top-11 Items
 
 We might move these to the `related standards` section later on, but keep them

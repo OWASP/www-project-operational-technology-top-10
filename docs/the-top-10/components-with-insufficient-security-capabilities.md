@@ -3,7 +3,6 @@
 - legacy-devices-to-be, remember 30y+ lifetimes
 - if we design new systems there should be slack for future security features
 
-
 differentiation to [missing awareness](./missing-awareness.md):
 
 - here: security feature is not available
