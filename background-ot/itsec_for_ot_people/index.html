@@ -584,18 +584,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#problems-with-security" class="md-nav__link">
+  <a href="#potential-for-friction" class="md-nav__link">
     <span class="md-ellipsis">
-      Problems with security
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#security-personnel-does-not-have-the-insight" class="md-nav__link">
-    <span class="md-ellipsis">
-      Security personnel does not have the insight
+      Potential for Friction
     </span>
   </a>
   
@@ -605,24 +596,6 @@
   <a href="#advantages-of-cyber-security" class="md-nav__link">
     <span class="md-ellipsis">
       Advantages of cyber security
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#digitization-of-processes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Digitization of processes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#system-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      System monitoring
     </span>
   </a>
   
@@ -1080,18 +1053,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#problems-with-security" class="md-nav__link">
+  <a href="#potential-for-friction" class="md-nav__link">
     <span class="md-ellipsis">
-      Problems with security
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#security-personnel-does-not-have-the-insight" class="md-nav__link">
-    <span class="md-ellipsis">
-      Security personnel does not have the insight
+      Potential for Friction
     </span>
   </a>
   
@@ -1101,24 +1065,6 @@
   <a href="#advantages-of-cyber-security" class="md-nav__link">
     <span class="md-ellipsis">
       Advantages of cyber security
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#digitization-of-processes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Digitization of processes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#system-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      System monitoring
     </span>
   </a>
   
@@ -1154,33 +1100,79 @@
 
 <h1 id="it-sec-for-ot-why-is-it-problematic">IT Sec for OT: Why is it problematic?</h1>
 <p>Malicious external actors were previously not a problem for the operators.
-These dangers were not relevant. In addition, direct physical access was
-usually required to manipulate the system.</p>
-<p>OT operators are familiar with the production process. Cybersecurity is a
-new field in which there is little knowledge.</p>
-<h2 id="problems-with-security">Problems with security</h2>
-<p>Many cyber security measures make it difficult to analyze errors if there
+While safety always was a large concern, cyber-security wasn't. OT operators
+are familiar with the production process. Tradionally, security was not a big
+part of their education. Direct physical access was usually required to
+manipulate the system. Attacks were seldom, and almost never reported in public.</p>
+<p>These times are chaning. Critical infrastructure is getting more connected.
+While this makes some maintenance easier (think about remote management) or
+improves efficiency (predictive maintenace, predictions about power ussage, etc.)
+this also means that critical infrastructure is now easier reachable for attackers.</p>
+<p>As security was not of concern for a long-term, much of critical infrastructure
+has a similar security posture to websites or local networks twenty years ago.
+Which was not good (to state it diplomatically). One particular problem that we
+are seening in OT is that some of these insecure networks are not becoming
+connected to the internet and are now exposed to malicious attackers, leading
+to increased security incidents.</p>
+<p>Adding security becomes more and more important, but retro-fitting existing
+infrastructure is a tedious and sometimes expensive process. The "<em>Never change a
+working system</em>" approach was well known in traditional IT, and it is understandable
+that it is even more often heard within OT with its often glacial speed of
+change. Overall, the integration of security into OT can produce friction. We
+hope that efforts such as this document help to reduce some of that friction.</p>
+<p>Sadly, attackers don't wait, so we have to do something about it.</p>
+<h2 id="potential-for-friction">Potential for Friction</h2>
+<p>There are many areas where introduction of security-specific measures can
+become problematic. To be clear, we believe that not doing those security-measures
+is more problematic in the long term though.</p>
+<p>Some common complaints are:</p>
+<ul>
+<li>
+<p>Some cyber security measures make it difficult to analyze errors if there
 is a problem with the machine or system. For example, an encrypted
 transmission of data cannot easily be analyzed to determine whether
 the data is correct.</p>
-<p>Another example is the use of certificates for authentication. If these expire
-and are not replaced in time, this can lead to the system coming to a standstill.
-This leads to a reduction in the availability of the system.</p>
-<p>There are therefore some concerns regarding the use of cyber security measures.</p>
-<h2 id="security-personnel-does-not-have-the-insight">Security personnel does not have the insight</h2>
-<p>Security personnel is dependent on operators for deeper information about the network, processes and what is "normal" inside the network. Therefore OT-personnel are integral part of the securityt process. Especially, when it comes to remediation and rebuilding after an incident.</p>
+</li>
+<li>
+<p>Authentication information can be problemaic. One example is the use of
+  certificates for authentication. If these expire and are not replaced in time, this can lead to the system coming to a standstill. This leads to a reduction in the availability of the system. Oftentimes, certificate checks are thus disabled in IoT systems.</p>
+</li>
+<li>
+<p>There are few OT plus Security specialists. Traditional IT security training does not
+  include much information about the OT world. THus, security personnel is dependent on
+  operators for deeper information about the network, processes and what is "normal" inside
+  the network. External IT security specialist can be overboarding while not being educated
+  in the nuances of the OT world. You might want them to <a href="../ot_for_itsec_people/">OT for IT Sec People</a>.</p>
+</li>
+</ul>
+<p>OT-personnel are integral part of the security process. Especially, when it comes to remediation and rebuilding after an incident.</p>
 <h2 id="advantages-of-cyber-security">Advantages of cyber security</h2>
-<p>cyber security is not just a hindrance. Remote access is not feasible in today's
-world without it. (link to the TOP 10 item).</p>
-<p>here are some more brief examples of why security is necessary and how it relates to the other top 10 items.</p>
-<h2 id="digitization-of-processes">Digitization of processes</h2>
-<p>Cryptographic signatures can be used to detect changes to logs and measurement data
-or to prove their integrity. This makes it possible, for example, to digitize previous
-paper-based processes, thereby accelerating and optimizing them.</p>
-<h2 id="system-monitoring">System monitoring</h2>
-<p>The number one goal for serious adversaries in an OT environment is disruption. This is why security appliances also closely monitor the functionality and critical operational functions in the system. Additionally, security appliances show alsmost instantly if unknown devices have connected. This can also be problematic if it is not an attacker, but devices that should not be able to connect to the OT-domain.</p>
+<p>Cyber security is not just a hindrance:</p>
+<ul>
+<li>
+<p>Remote access is not feasible in today's world without robust security.</p>
+</li>
+<li>
+<p>Higher efficiency due to integrated processes. So using more cyber-infrastructure might be a business-priority.</p>
+</li>
+<li>
+<p>Digitization of processes: cryptographic signatures can be used to detect changes to logs and measurement data or to prove their integrity. This makes it possible, for example, to digitize previous paper-based processes, thereby accelerating and optimizing them.</p>
+</li>
+<li>
+<p>System monitoring: the number one goal for serious adversaries in an OT environment is disruption. This is why security appliances also closely monitor the functionality and critical operational functions in the system. Additionally, security appliances show almost instantly if unknown devices have connected.</p>
+</li>
+</ul>
 <h2 id="compliance">Compliance</h2>
 <p>Security is part of most of the common standards nowadays. May it be critical infrastructure or "just" some risk management procedure like IEC 62443, security is part of the process and can not be ignored when wanting to be compliant.</p>
+<p>While the authors have seen organizations that used mandatory standarization to improve their
+security processes and increased their security posture/hygiene, they also have seen
+organizations in which standardization was mostly paper-pushing. Achieving an ISO
+certification can be a long and expensive process, we can only suggest to try really live
+the processes including the security steps that are documented (and to actively engage
+the people trying to document and write the process documentation --- so that real lived
+processes are documented and not some fake processes that have to be implemented afterwards)</p>
+<p>One thing should also be clear (esp. for management): giving an additional task (security) to
+potentially already over-worked personell will not work.</p>
 
 
 

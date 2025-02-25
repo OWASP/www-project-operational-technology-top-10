@@ -1335,37 +1335,25 @@
 <p>As updates are sometimes not possible, mitigations such as network segregation are used. This prevents vulnerable systems to become accessible to attackers. Alas, these counter-measures do not solve the problem: if there is a vulnerability within the counter-measure, the original vulnerability can still be exploited. This often makes OT systems <a href="../unknown-assets-and-admin-access/">very vulnerable against unexpected admin access</a> or <a href="../broken-zone-and-conduits-design/">badly designed zones</a>: once the attacker is in the network, they have access to exploitable systems and can commence from there.</p>
 <h3 id="why-cant-we-just-upgrade-all-the-systems">Why can't we just upgrade all the systems?</h3>
 <p>To reiterate on the special problems that the OT world faces, we want to give a list of common excuses/reason given that could prevent an easy implementation of a vulnerability management system:</p>
-<ul>
-<li>
 <p><strong>You don't just upgrade a medical device or power plant</strong>: this is not your typical desktop PC where you are annoyed if an update breaks your system for a couple of days, this is critical infrastructure upon which lifes potentially depend upon. Imagine you are depending upon a digital pace maker or insulin pump: would you just update it (without making sure that it will not negativly impact you)?</p>
-</li>
-<li>
 <p><strong><a href="../supply_chain_management/">Problems with the supply chain</a></strong>: TBD</p>
 <ul>
 <li>missing vendor support</li>
 <li>missing vendor notifications</li>
 <li>tight coupling to few vendors</li>
 </ul>
-</li>
-<li>
 <p><strong><a href="../components-with-insufficient-security-capabilities/">Usage of legacy devices</a></strong>: TBD</p>
 <ul>
 <li>missing capabilities for vulnerability remediation</li>
 <li>long-lifetimes</li>
 </ul>
-</li>
-<li>
 <p><strong><a href="../missing-awareness/">Missing Awareness on the OT side</a></strong>: TBD</p>
 <ul>
 <li><em>why should I update a running system?</em></li>
 </ul>
-</li>
-<li>
 <p><strong><a href="../unknown-assets-and-admin-access/">Unknown devices and shadow infrastructure</a></strong>: TBD</p>
 <ul>
 <li>if you don't event know about a device, how should you know that you need to update it?</li>
-</ul>
-</li>
 </ul>
 <p>Please note, that this shows (primarily to IT security people) why upgrading is not as simple as in other domains but <strong>does not mean that we (as OT) can use any of this as an excuse for not having update procedures in place</strong>.</p>
 <h3 id="vulnerability-mangement">Vulnerability Mangement?</h3>
@@ -1394,42 +1382,18 @@
 </div>
 <h3 id="developersbuilders-design-and-implementation">Developers/Builders: Design and Implementation</h3>
 <ul>
-<li>
-<p>Try to prevent vulnerabilitites from accessing the system</p>
-<ul>
-<li><a href="https://owaspsamm.org/">OWASP SAMM2</a></li>
-</ul>
-</li>
-<li>
-<p>Test hardware/software before deploying them in the field</p>
-<ul>
-<li><a href="https://owasp.org/owasp-istg/index.html">OWASP IoT Security Testing Guide</a></li>
-<li><a href="https://scriptingxss.gitbook.io/firmware-security-testing-methodology">OWASP Firmware Security Testing Methodology</a></li>
-</ul>
-</li>
-<li>
-<p>Inform customers about security updates. Provide SBOMs.</p>
-</li>
-<li>
-<p>Don't depend upon security-by-obscurity.</p>
-</li>
-<li>
-<p>Use memory-safe programming languages and utilize security-features of frameworks.</p>
-</li>
+<li>Try to prevent vulnerabilitites from accessing the system (<a href="https://owaspsamm.org/">OWASP SAMM2</a>)</li>
+<li>Test hardware/software before deploying them in the field (<a href="https://owasp.org/owasp-istg/index.html">OWASP IoT Security Testing Guide</a>, <a href="https://scriptingxss.gitbook.io/firmware-security-testing-methodology">OWASP Firmware Security Testing Methodology</a>)</li>
+<li>Inform customers about security updates. Provide SBOMs.</li>
+<li>Don't depend upon security-by-obscurity.</li>
+<li>Use memory-safe programming languages and utilize security-features of frameworks.</li>
 </ul>
 <h3 id="integratorsoperators-operational">Integrators/Operators: Operational</h3>
 <ul>
 <li>Make mandatory vulnerabilty notifications and remediation part of your supplier contracts.</li>
 <li>Keep an up-to-date asset register with hardware/software versions.</li>
-<li>Test hardware/software before deploying them in the field<ul>
-<li><a href="https://owasp.org/owasp-istg/index.html">OWASP IoT Security Testing Guide</a></li>
-<li><a href="https://scriptingxss.gitbook.io/firmware-security-testing-methodology">OWASP Firmware Security Testing Methodology</a></li>
-</ul>
-</li>
-<li>Establish a vulnerability management program that includes regular vulnerability scanning, patch management, and remediation processes.<ul>
-<li>Prioritize critical security updates and patches for OT systems to address high-risk vulnerabilities.</li>
-</ul>
-</li>
+<li>Test hardware/software before deploying them in the field (<a href="https://owasp.org/owasp-istg/index.html">OWASP IoT Security Testing Guide</a>, <a href="https://scriptingxss.gitbook.io/firmware-security-testing-methodology">OWASP Firmware Security Testing Methodology</a>)</li>
+<li>Establish a vulnerability management program that includes regular vulnerability scanning, patch management, and remediation processes: Prioritize critical security updates and patches for OT systems to address high-risk vulnerabilities.</li>
 <li>Implement network segmentation and access controls to limit the impact of security vulnerabilities.</li>
 </ul>
 <h2 id="references">References</h2>
