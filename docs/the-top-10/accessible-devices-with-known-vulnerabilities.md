@@ -16,22 +16,26 @@ As updates are sometimes not possible, mitigations such as network segregation a
 
 To reiterate on the special problems that the OT world faces, we want to give a list of common excuses/reason given that could prevent an easy implementation of a vulnerability management system:
 
-- **You don't just upgrade a medical device or power plant**: this is not your typical desktop PC where you are annoyed if an update breaks your system for a couple of days, this is critical infrastructure upon which lifes potentially depend upon. Imagine you are depending upon a digital pace maker or insulin pump: would you just update it (without making sure that it will not negativly impact you)?
+**You don't just upgrade a medical device or power plant**: this is not your typical desktop PC where you are annoyed if an update breaks your system for a couple of days, this is critical infrastructure upon which lifes potentially depend upon. Imagine you are depending upon a digital pace maker or insulin pump: would you just update it (without making sure that it will not negativly impact you)?
 
-  - **[Problems with the supply chain](./supply_chain_management.md)**: TBD
-    - missing vendor support
-    - missing vendor notifications
-    - tight coupling to few vendors
+**[Problems with the supply chain](./supply_chain_management.md)**: TBD
 
-  - **[Usage of legacy devices](./components-with-insufficient-security-capabilities.md)**: TBD
-    - missing capabilities for vulnerability remediation
-    - long-lifetimes
+- missing vendor support
+- missing vendor notifications
+- tight coupling to few vendors
 
-  - **[Missing Awareness on the OT side](./missing-awareness.md)**: TBD
-    - *why should I update a running system?*
+**[Usage of legacy devices](./components-with-insufficient-security-capabilities.md)**: TBD
 
-  - **[Unknown devices and shadow infrastructure](./unknown-assets-and-admin-access.md)**: TBD
-    - if you don't event know about a device, how should you know that you need to update it?
+- missing capabilities for vulnerability remediation
+- long-lifetimes
+
+**[Missing Awareness on the OT side](./missing-awareness.md)**: TBD
+
+- *why should I update a running system?*
+
+**[Unknown devices and shadow infrastructure](./unknown-assets-and-admin-access.md)**: TBD
+
+- if you don't event know about a device, how should you know that you need to update it?
 
 Please note, that this shows (primarily to IT security people) why upgrading is not as simple as in other domains but **does not mean that we (as OT) can use any of this as an excuse for not having update procedures in place**.
 
@@ -66,28 +70,18 @@ Vulnerable devices bad. Especially in critical infrastructure.
 
 ### Developers/Builders: Design and Implementation
 
-- Try to prevent vulnerabilitites from accessing the system
-    - [OWASP SAMM2](https://owaspsamm.org/)
-
-- Test hardware/software before deploying them in the field
-    - [OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html)
-    - [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology)
-
+- Try to prevent vulnerabilitites from accessing the system ([OWASP SAMM2](https://owaspsamm.org/))
+- Test hardware/software before deploying them in the field ([OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html), [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology))
 - Inform customers about security updates. Provide SBOMs.
-
 - Don't depend upon security-by-obscurity.
-
 - Use memory-safe programming languages and utilize security-features of frameworks.
 
 ### Integrators/Operators: Operational
 
 - Make mandatory vulnerabilty notifications and remediation part of your supplier contracts.
 - Keep an up-to-date asset register with hardware/software versions.
-- Test hardware/software before deploying them in the field
-    - [OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html)
-    - [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology)
-- Establish a vulnerability management program that includes regular vulnerability scanning, patch management, and remediation processes.
-    - Prioritize critical security updates and patches for OT systems to address high-risk vulnerabilities.
+- Test hardware/software before deploying them in the field ([OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html), [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology))
+- Establish a vulnerability management program that includes regular vulnerability scanning, patch management, and remediation processes: Prioritize critical security updates and patches for OT systems to address high-risk vulnerabilities.
 - Implement network segmentation and access controls to limit the impact of security vulnerabilities.
 
 ## References

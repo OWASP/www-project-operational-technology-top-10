@@ -4,11 +4,11 @@ Short Description (one paragraph)
 
 ## Description
 
-  - Missing Monitoring/Logging for Incident Detection (shadow infrastructure?)
-    - Alert fatigue with “dirty” environment
-  - Undefined processes for alert reporting/handling
-  - missing reacting capabilities
-      - Missing configuration backups for OT-Devices
+- Missing Monitoring/Logging for Incident Detection (shadow infrastructure?)
+  - Alert fatigue with “dirty” environment
+- Undefined processes for alert reporting/handling
+- missing reacting capabilities
+  - Missing configuration backups for OT-Devices
 
 ## Rationale
 

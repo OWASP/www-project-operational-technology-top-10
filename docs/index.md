@@ -1,10 +1,15 @@
 !!! Warning "Work in Progress and Help wanted!"
 
-    Please don’t hesitate to contact the OWASP OT Top 10 project with your questions, comments, and ideas, either publicly by adding issues or providing commits on [our github page](https://github.com/OWASP/www-project-operational-technology-top-10).
+    Please don’t hesitate to contact the OWASP OT Top 10 project with your questions, 
+    comments, and ideas, either publicly by adding issues or providing commits on [our
+    github page](https://github.com/OWASP/www-project-operational-technology-top-10).
 
-    Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R) to chat. You can get a free invitation to the OWASP slack server through [this website](https://owasp.org/slack/invite).
+    Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R)
+     to chat. You can get a free invitation to the OWASP slack server
+    through [this website](https://owasp.org/slack/invite).
 
-    Until the Top 10 have stabilized, we aim to do a video conference every two weeks (typically every second and fourth monday).
+    Until the Top 10 have stabilized, we aim to do a video conference every two weeks
+    (typically every second and fourth monday).
 
     ```plain
     OWASP OT Videocall

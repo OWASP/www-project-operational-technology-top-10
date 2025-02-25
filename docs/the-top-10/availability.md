@@ -9,26 +9,27 @@
 
 ### Primitive (D)Dos attacks
 
+- (replace todo in the future)
   - (D)DoS attacks
   - potentially against control infrastructure
     - are there documented attacks against sensor? seems not feasible
 
 ### Real-Time Communication Safety
 
-  - real-time communication safety
-  - 'timing-attacks'?
-  - special protocols and hardware needed?
-  - do we see this as part of availability?
+- real-time communication safety
+- 'timing-attacks'?
+- special protocols and hardware needed?
+- do we see this as part of availability?
 
 ### Availability and Integrity
 
-  - availability vs. integrity -- flooding with fake data
-  - while this is not direct availability, if you cannot trust your data, the datasource become unavailable
-  - might introduce a performance overhead (that would be neglectable in the IT world but can be [problematic in old OT hardware](./components-with-insufficient-security-capabilities.md))
+- availability vs. integrity -- flooding with fake data
+- while this is not direct availability, if you cannot trust your data, the datasource become unavailable
+- might introduce a performance overhead (that would be neglectable in the IT world but can be [problematic in old OT hardware](./components-with-insufficient-security-capabilities.md))
 
 ### Availability and Software Updates
 
-  - think about software updates, quality assurance (crowdstrike incident)
+- think about software updates, quality assurance (crowdstrike incident)
 
 ## Rationale
 
@@ -36,7 +37,7 @@
 
 ## Known Attacks/Examples
 
-- [On Feb. 24, 2022, the night before the Russian government launched its full-scale invasion, Russian-backed hackers targeted thousands of modems linked to Viasat, the U.S.-based satellite and internet communications company, and relied on by the Ukrainian military. The attack — attributed to the Russian government by the United States and its allies — relied on a piece of malware that researchers with SentinelLabs dubbed “AcidRain.” ](https://www.cyberscoop.com/russia-ukraine-viasat-modem-hack-acidrain/)
+- [On Feb. 24, 2022, the night before the Russian government launched its full-scale invasion, Russian-backed hackers targeted thousands of modems linked to Viasat, the U.S.-based satellite and internet communications company, and relied on by the Ukrainian military. The attack — attributed to the Russian government by the United States and its allies — relied on a piece of malware that researchers with SentinelLabs dubbed “AcidRain.”](https://www.cyberscoop.com/russia-ukraine-viasat-modem-hack-acidrain/)
 
 Potential Sources
 
