@@ -22,6 +22,7 @@ Short Description (one paragraph)
 ## Known Attacks/Examples
 
 - [The Register: Iranian hacktivists .. likely broke into the facilities by using defautl passwords for internet-accessible PLCs](https://www.theregister.com/2024/09/07/us_water_cyberattacks/)
+- [Colonial Pipeline Hack](https://en.wikipedia.org/wiki/Colonial_Pipeline_ransomware_attack): The attackers gained access to the system by means of a compromised password for a disused VPN account.
 
 Potential Sources
 

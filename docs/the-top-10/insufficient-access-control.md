@@ -28,6 +28,7 @@ Users have to fulfill different functions with devices. Not every user needs acc
 
 - Misuse of extenal available VNC-Server
 - [After quitting his job at the plant at the beginning of 2019, he then used the remote login system again on March 27, 2019, to shut down the plant and one of its treatment filters..](https://www.ksnt.com/news/local-news/kansas-hacker-pleads-guilty-to-shutting-down-drinking-water-plant-with-phone/)
+- [Colonial Pipeline Hack](https://en.wikipedia.org/wiki/Colonial_Pipeline_ransomware_attack): The attackers gained access to the system by means of a compromised password for a disused VPN account.
 
 Potential Sources
 

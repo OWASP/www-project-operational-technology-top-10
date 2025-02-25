@@ -21,6 +21,8 @@ Short Description (one paragraph)
 
 ## Known Attacks/Examples
 
+- [NotPetya: It was believed that the software update mechanism of M.E.Doc—a Ukrainian tax preparation program that, according to F-Secure analyst Mikko Hyppönen, "appears to be de facto" among companies doing business in the country—had been compromised to spread the malware. Analysis by ESET found that a backdoor had been present in the update system for at least six weeks prior to the attack, describing it as a "thoroughly well-planned and well-executed operation". The developers of M.E.Doc denied that they were entirely responsible for the cyberattack, stating that they too were victims.](https://en.wikipedia.org/wiki/Petya_(malware_family))
+
 Potential Sources
 
 - <https://www.icsadvisoryproject.com>
