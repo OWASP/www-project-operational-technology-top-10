@@ -782,6 +782,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#particularities-of-ot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Particularities of OT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizational-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizational Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementaiton-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementaiton Level
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1149,6 +1182,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#particularities-of-ot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Particularities of OT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizational-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizational Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementaiton-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementaiton Level
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1279,47 +1345,67 @@
 
 
 <h1 id="insufficient-access-control">Insufficient Access Control</h1>
-<p>Short Description (one paragraph)</p>
+<ul>
+<li>multi-level and typically interacts with other problems</li>
+<li>conceptionally speaking: physical, organizational (who needs access?), technical (how to implement access control?)</li>
+</ul>
 <h2 id="description">Description</h2>
 <p>Users have to fulfill different functions with devices. Not every user needs access to all functions. However, many (legacy) devices do not support authentication or authorization. As a result, unauthorized access is possible.</p>
+<h3 id="particularities-of-ot">Particularities of OT</h3>
 <ul>
-<li>Access control is needed on different levels.</li>
-<li>Access to the device/system in the plant from within the plant or company</li>
 <li>
-<p>Access to the device/system in the plant from an external system -&gt; remote access</p>
-</li>
-<li>
-<p>old systems often have only limited authentication functions. they also offer no connection to a central identity management system. This makes it difficult to maintain and respond to changes in the organization's responsibilities on an ongoing basis</p>
-</li>
-<li>
-<p>Access Control: User Identification, Authentication, Authorization</p>
-</li>
-<li>interacts (unmanaged external access, broken zone design)</li>
-<li>Lax access controls  (account /user based)<ul>
-<li>least privilege</li>
-<li>privilege creep</li>
-<li>non-repudiation</li>
+<p>good example: <code>emergency shutdown switches</code>: you do not want to impose any additional latencies activating them (in case of emergency, pushing them is kinda time-critical) but on-the-other-hand you do not want to have them accessible to everyone.</p>
+<ul>
+<li>the same goes for medical devices in hospitals: you do not want to have a password prompt when a doctor wants to use a defibrillator</li>
 </ul>
 </li>
-<li>note for the future: maybe split identification/authentication from authorization</li>
+<li>
+<p>old systems/long lifetimes: imagine a lifetime of 30+ years. What IT security did we have in 1995? How much can you subsequently add to a system that was designed in 1995?</p>
+<ul>
+<li>old systems often have only limited authentication functions. they also offer no connection to a central identity management system. This makes it difficult to maintain and respond to changes in the organization's responsibilities on an ongoing basis</li>
+</ul>
+</li>
+</ul>
+<h3 id="organizational-level">Organizational Level</h3>
+<p>Mention some goals, at least:</p>
+<ul>
+<li>least privilege: users should only have access to the functions they need to perform their job</li>
+<li>privilege creep: users should not accumulate access rights over time</li>
+<li>separation of duties: no single user should have access to all functions</li>
+<li>non-repudiation: the system should be able to prove who did what. This principle is broken if there's a shared user/password list for devices on the factory floor.</li>
+<li>deactivating accounts: when a user leaves the company, their account should be deactivated</li>
+</ul>
+<p>To allow for analysis, trust boundaries have to be defined. This is especially important in the OT world, where the Purdue Model is often used to define trust boundaries.</p>
+<p>Very often, <a href="../missing-awareness/">OT personnel are not aware of the security implications of their actions</a>. This can lead to a situation where a system is not properly secured because the operators do not know how to do it.</p>
+<h3 id="implementaiton-level">Implementaiton Level</h3>
+<ul>
+<li>
+<p>are controls in place? are they well implemented and configured according to best practices?</p>
+</li>
+<li>
+<p>given that we want to control access for, e.g., externally reachable adminitrative interfaces (VPN servers, web-panels), are implemented controls sufficient? Having a remote management solution without mandatory and enforced multi-factor authenticator is not state-of-the-art in 2025. Nor was it in 2024. Nor before.</p>
+</li>
+<li>
+<p>have default passwords been changed? are there any default accounts that have not been disabled?</p>
+</li>
+<li>
+<p>have controls be tested? are they working as intended?</p>
+</li>
+<li>
+<p>have physical access control assumptions been documented and tested? It is easier than some people think to get on a factory floor.</p>
+</li>
 </ul>
 <h2 id="rationale">Rationale</h2>
+<p>The prevalence of:</p>
 <ul>
-<li>why did we include this item in the top 10?</li>
+<li>shared password lists</li>
+<li>over-dependency on physical security</li>
+<li>initial attack vector: remote access without multi-factor authentication</li>
 </ul>
 <h2 id="known-attacksexamples">Known Attacks/Examples</h2>
 <ul>
-<li>Misuse of extenal available VNC-Server</li>
 <li><a href="https://www.ksnt.com/news/local-news/kansas-hacker-pleads-guilty-to-shutting-down-drinking-water-plant-with-phone/">After quitting his job at the plant at the beginning of 2019, he then used the remote login system again on March 27, 2019, to shut down the plant and one of its treatment filters..</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Colonial_Pipeline_ransomware_attack">Colonial Pipeline Hack</a>: The attackers gained access to the system by means of a compromised password for a disused VPN account.</li>
-</ul>
-<p>Potential Sources</p>
-<ul>
-<li><a href="https://www.icsadvisoryproject.com">https://www.icsadvisoryproject.com</a></li>
-<li><a href="https://icsstrive.com/">https://icsstrive.com/</a></li>
-<li><a href="https://emb3d.mitre.org/">https://emb3d.mitre.org/</a></li>
-<li><a href="https://attack.mitre.org/techniques/ics/">https://attack.mitre.org/techniques/ics/</a></li>
-<li>please add more</li>
 </ul>
 <h3 id="how-to-test-have-to-discuss">How-To Test (have to discuss)</h3>
 <ul>
@@ -1330,17 +1416,24 @@
 <h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
 <h3 id="design-and-implementation">Design and Implementation</h3>
 <ul>
+<li>think about applying zero-trust principles</li>
+<li>define the different systems, how they interacts, and the resulting interfaces (trust boundaries)</li>
+<li>define the roles that are needed to interact with the systems</li>
 <li>Define a minimal role concept.  </li>
-<li>e.g. on a sensore<ul>
+<li>e.g. on a sensor<ul>
 <li>administrator -&gt; configuration</li>
 <li>simple user -&gt; only read only access to measuring data</li>
 </ul>
 </li>
+<li>Implement a role-based access control (RBAC) system</li>
+<li>Implement multi-factor authentication</li>
 </ul>
 <h3 id="operational">Operational</h3>
 <ul>
-<li>Adopt the role concept to the machine / plant</li>
+<li>Use the provided features implemented by the vendors</li>
 <li>Change password and default user.</li>
+<li>perform periodic account reviews to counter permission creep</li>
+<li>Implement a process for deactivating accounts when a user leaves the company</li>
 </ul>
 <h2 id="references">References</h2>
 <h3 id="standards">Standards</h3>

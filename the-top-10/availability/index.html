@@ -848,6 +848,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primitive-ddos-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primitive (D)Dos attacks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-communication-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-Time Communication Safety
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#availability-and-integrity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Availability and Integrity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#availability-and-software-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Availability and Software Updates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1149,6 +1191,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primitive-ddos-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primitive (D)Dos attacks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-communication-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-Time Communication Safety
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#availability-and-integrity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Availability and Integrity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#availability-and-software-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Availability and Software Updates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1279,13 +1363,38 @@
 
 
 <h1 id="availability">Availability</h1>
-<p>Short Description (one paragraph)</p>
+<ul>
+<li>paramount and well-understood in the OT world</li>
+<li>still can be problematic, e.g., integrity is part of availability</li>
+</ul>
 <h2 id="description">Description</h2>
 <ul>
+<li>note that we talk about protecting "our" infrastructure from DDoS and do not talk about becoming part of a botnet after a compromise (which is also problematic, but rather a subpart of <a href="../missing-incident-detection-response/">Missing Incident Detection/Reaction Capabilities</a>)</li>
+</ul>
+<h3 id="primitive-ddos-attacks">Primitive (D)Dos attacks</h3>
+<ul>
 <li>(D)DoS attacks</li>
+<li>potentially against control infrastructure<ul>
+<li>are there documented attacks against sensor? seems not feasible</li>
+</ul>
+</li>
+</ul>
+<h3 id="real-time-communication-safety">Real-Time Communication Safety</h3>
+<ul>
 <li>real-time communication safety</li>
+<li>'timing-attacks'?</li>
+<li>special protocols and hardware needed?</li>
+<li>do we see this as part of availability?</li>
+</ul>
+<h3 id="availability-and-integrity">Availability and Integrity</h3>
+<ul>
 <li>availability vs. integrity -- flooding with fake data</li>
-<li>think about software updates (integrity vs. availabilty, supply-chain)</li>
+<li>while this is not direct availability, if you cannot trust your data, the datasource become unavailable</li>
+<li>might introduce a performance overhead (that would be neglectable in the IT world but can be <a href="../components-with-insufficient-security-capabilities/">problematic in old OT hardware</a>)</li>
+</ul>
+<h3 id="availability-and-software-updates">Availability and Software Updates</h3>
+<ul>
+<li>think about software updates, quality assurance (crowdstrike incident)</li>
 </ul>
 <h2 id="rationale">Rationale</h2>
 <ul>
@@ -1314,6 +1423,9 @@
 <li>mitigations for integrators/builders</li>
 </ul>
 <h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&amp;v=6">BSI Industrial Control System Security: Top 10 threats and coutnermeasures 2022</a></li>
+</ul>
 <h3 id="standards">Standards</h3>
 <ul>
 <li>links to relevant standards</li>
