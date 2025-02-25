@@ -65,7 +65,7 @@ Cyber security is not just a hindrance:
 
 ## Compliance
 
-Security is part of most of the common standards nowadays. May it be critical infrastructure or "just" some risk management procedure like IEC 62443, security is part of the process and can not be ignored when wanting to be compliant.
+Security is [part of most of the common standards nowadays](./related-standards.md). May it be critical infrastructure or "just" some risk management procedure like IEC 62443, security is part of the process and can not be ignored when wanting to be compliant.
 
 While the authors have seen organizations that used mandatory standarization to improve their
 security processes and increased their security posture/hygiene, they also have seen

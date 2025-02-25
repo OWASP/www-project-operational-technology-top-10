@@ -100,13 +100,13 @@ importance to prevent such an incident to spread to OT.
 
 Knowing now about the Purdue Model, the question arises about common IT devices such as PCs or printers and their relationship to the OT network and systems. Here we need to remind ourselves that the terms Information Technology and Operational Technology are just terms to describe a broader range of certain devices with a common purpose, not even common functionality. OT and IT are just concepts and have no strict universally applicable definition. Therefore, the question of whether "IT" devices belong in OT or are OT devices is a classic "it depends".
 
-The easiest categorization would be to view everything below Purdue 3.5 (DMZ) as OT regardless of the device. This makes sense when looking at two examples from different fields:
+The easiest categorization would be to view everything below Purdue 3.5 (DMZ) as OT regardless of the device. This makes sense when looking at three examples from different fields:
 
 - An HMI for a CNC machine: The HMI is basically a more or less normal Windows PC that controls the CNC machine directly. The Windows PC is therefore an integral part of the OT infrastructure. The same applies to other devices such as CT scanning or MRI machines in the medical field.
 - SCADA is a term strongly rooted in the OT world. But SCADA is nowadays just Windows PCs with custom software and remote interfaces. No one would argue that a SCADA system is not part of core OT systems. But underneath the visualization, it is "just common IT devices".
 - ERP functions are offloaded into a cloud environment. There exists a site-to-site tunnel that integrates the cloud environment into Purdue Level 3. In this case, that network in the cloud is also part OT and has to be considered when calculating risk for example.
 
-With those two examples and the reasoning above, we can define OT-devices are devices that are part of the OT domain (general domain, not AD) and IT devices are part of the IT domain.
+With those examples and the reasoning above, we can define OT-devices are devices that are part of the OT domain (general domain, not AD) and IT devices are part of the IT domain.
 
 ## Stakeholders
 
