@@ -1,22 +1,23 @@
-# OT and IT: Differences in Security and Culture
+# Safety and Security
 
 Although there is an increasing convergence of IT and OT and regular IT systems
 are just as well used in OT environments, there are nonetheless fundamental
-differences in security goals and security culture.
-
-## Safety vs. Security
-
-Traditionally, security can be defined by the mixture of the three security
-goals confidentiality, integrity, and availability. This is also known as the
-CIA triad.
+differences in security goals and security culture. When assessing the security
+impact of security vulnerabilities, IT security people often refer to the
+"CIA triad". The acronym is built from the starting letters of Confidenciality,
+Integrity and Availability.
 
 While in IT commonly confidentiality and integrity are paramount,
 confidentiality is mostly of lesser importance in OT as it is often employed in
-more or less physically restricted environments. The most important goal in OT
-is safety, as humans can get harmed or even worse get killed when OT systems and
+more or less physically restricted environments. **The most important goal in OT
+is safety, as humans can get harmed** or even worse get killed when OT systems and
 devices malfunction.
 
-### Availability is Paramount
+This is further complicated by the fact, that e.g. in German Safety and Security
+are actually the same world ("Sicherheit"), leading to too many "lost-in-translation"
+effects even while using the same language.
+
+## Availability is Paramount
 
 Besides that, availability is paramount. Be it production
 site, be it critical energy infrastructure – many OT environments cannot afford
@@ -52,10 +53,6 @@ to possible unsafe operations.
 
 ### CIA-Triad in IT and OT
 
-When assessing the security impact of security vulnerabilities, IT security
-people often refer to the "CIA triad". The acronym is built from the starting
-letters of Confidenciality, Integrity and Availability.
-
 In traditional IT systems, we often emphatise Confidenciality and Integrity.
 For example, when you look at a web-shop, it is important that no sensitive
 user data (such as passwords or orders) are exposed (confidenciality) and
@@ -74,7 +71,7 @@ Sometimes, this differentiation is not as clear-cut: imagine an attacker
 can alter transmitted usage data (integrity) and through that misleads
 a power plant to over- or under-produce power (availability).
 
-## System Lifetimes
+## Safety and Security Culture
 
 While security culture is shifting in OT and is undeniably growing in importance
 due to an increasing number of regulations and cyberattacks, this culture shift
@@ -94,7 +91,9 @@ engineers.
 While having a very good understanding of the prevention of accidents
 and therefore required safety measures, the notion that there are indeed
 attackers deliberately causing such “accidents” is not as widespread as much as
-it is needed yet. Additionally, many companies are not as open to vulnerability
+it is needed yet.
+
+Additionally, many companies are not as open to vulnerability
 disclosures as most IT companies yet. Fortunately, this is also currently
 changing and more and more OT organizations see the value in transparent and
 proactive handling of discovered vulnerabilities.
