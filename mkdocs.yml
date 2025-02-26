@@ -77,5 +77,6 @@ nav:
       - 'TBD: Missing Awareness': the-top-10/missing-awareness.md
       - 'TBD: Insufficient Security Capabilitites': the-top-10/components-with-insufficient-security-capabilities.md
   - 'Appendix':
+    - "WIP: What's next?": appendix/whats-next.md
     - 'WIP: How to Test': appendix/how-to-test.md
     - 'WIP: Glossary': appendix/glossary.md
