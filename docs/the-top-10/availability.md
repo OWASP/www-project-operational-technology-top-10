@@ -5,7 +5,7 @@
 
 ## Description
 
-- note that we talk about protecting "our" infrastructure from DDoS and do not talk about becoming part of a botnet after a compromise (which is also problematic, but rather a subpart of [Missing Incident Detection/Reaction Capabilities](./missing-incident-detection-response.md))
+- note that we talk about protecting "our" infrastructure from DDoS and do not talk about becoming part of a botnet after a compromise (which is also problematic, but rather a subpart of [Missing Incident Detection/Reaction Capabilities](./missing-incident-detection-reaction-capabilities.md))
 
 ### Primitive (D)Dos attacks
 

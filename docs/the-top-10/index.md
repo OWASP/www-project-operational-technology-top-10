@@ -20,7 +20,7 @@ In no particular order:
 - [Unknown Assets and Unmanaged External Access](./unknown-assets-and-admin-access.md)
 - [Insufficient Access Control](./insufficient-access-control.md)
 - [Broken Zones and Conduits Design](./broken-zone-and-conduits-design.md)
-- [Missing Incident Detection/Reaction Capabilities](./missing-incident-detection-response.md)
+- [Missing Incident Detection/Reaction Capabilities](./missing-incident-detection-reaction-capabilities.md)
 - [Availability](./availability.md)
 - [Missing Awareness](./missing-awareness.md)
 - [Components/Protocols with Insufficient Security Capabilitites](./components-with-insufficient-security-capabilities.md)
