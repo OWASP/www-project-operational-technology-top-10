@@ -1,6 +1,6 @@
 # Missing Incident Detection/Reaction Capabilities
 
-Notable Common Weakness Enumerations (CWEs) included are *CWE-223: Omission of Security-relevant Information*, *CWE-532:  Insertion of Sensitive Information into Log File*, and *CWE-778: Insufficient Logging*. Notable MITRE ATT&CK items included are *DS0015: Application Log*,*DS0029: Network Traffic*, and *M0931: Network Intrusion Prevention*. 
+Notable Common Weakness Enumerations (CWEs) included are *CWE-223: Omission of Security-relevant Information*, *CWE-532:  Insertion of Sensitive Information into Log File*, and *CWE-778: Insufficient Logging*. Notable MITRE ATT&CK items included are *DS0015: Application Log*, *DS0029: Network Traffic*, and *M0931: Network Intrusion Prevention*. 
 
 ## Description
 
