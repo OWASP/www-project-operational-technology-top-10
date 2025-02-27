@@ -2,7 +2,7 @@
 
 The longer an attacker is able to penetrate the network unnoticed, the higher is the probability that the attacker compromises OT. This also applies if incident reaction is slow or technically inadequate. Without logging and monitoring, breaches cannot be detected. An OT cybersecurity report analysing trends in 2024 shows that 45% of service engagements have a lack of visibility across OT networks, making detections, triage, and response incredibly difficult at scale.
 
-Notable Common Weakness Enumerations (CWEs) included are *CWE-223: Omission of Security-relevant Information*, *CWE-532:  Insertion of Sensitive Information into Log File*, and *CWE-778: Insufficient Logging*. Notable MITRE ATT&CK items included are *DS0015: Application Log*, *DS0029: Network Traffic*, and *M0931: Network Intrusion Prevention*. 
+Notable Common Weakness Enumerations (CWEs) included are *CWE-223: Omission of Security-relevant Information*, *CWE-532:  Insertion of Sensitive Information into Log File*, and *CWE-778: Insufficient Logging*. Notable MITRE ATT&CK items included are *DS0015: Application Log*, *DS0029: Network Traffic*, and *M0931: Network Intrusion Prevention*.
 
 ## Description
 
@@ -22,7 +22,7 @@ Incident detection and reaction capabilities provide security countermeasures ap
 
 ## Known Attacks
 
-- Ukraine Electric Power Attacks (cf. <https://attack.mitre.org/campaigns/C0028/>, <https://attack.mitre.org/campaigns/C0025/>, <https://attack.mitre.org/campaigns/C0034/>, and <https://attack.mitre.org/software/S0089/>). The Ukraine Electric Power Attack was an operation which aims to target and disrupt transmission and distribution substations within the Ukrainian power grid. 
+- Ukraine Electric Power Attacks (cf. <https://attack.mitre.org/campaigns/C0028/>, <https://attack.mitre.org/campaigns/C0025/>, <https://attack.mitre.org/campaigns/C0034/>, and <https://attack.mitre.org/software/S0089/>). The Ukraine Electric Power Attack was an operation which aims to target and disrupt transmission and distribution substations within the Ukrainian power grid.
 - Triton Safety Instrumented System Attack (cf. <https://attack.mitre.org/campaigns/C0030/>, and <https://attack.mitre.org/software/S1009/>). The Triton Safety Instrumented System Attack was a campaign that took advantage of the Triton malware framework to target a petrochemical organisation. The malware and techniques employed in this campaign were designed to infiltrate specific Triconex Safety Controllers within the environment. The incident was eventually exposed due to a safety trip that occurred as a result of an issue in the malware.
 - LockerGoga ransomware infects industrial and manufactoring companies (c.f <https://attack.mitre.org/software/S0372/>, and <https://news.microsoft.com/source/features/digital-transformation/hackers-hit-norsk-hydro-ransomware-company-responded-transparency/>). In March 2019, Norsk Hydro was subjected to a cyberattack that utilised the LockerGoga ransomware to encrypt its computer files. In response, the aluminium and renewable energy company transitioned to manual operations and maintained transparency with the public regarding its progress towards recovery. The security industry has expressed high regard for Norsk Hydro's transparency throughout the discovery and recovery process.
 
@@ -30,8 +30,7 @@ Incident detection and reaction capabilities provide security countermeasures ap
 
 - Perform regular incident detection and response exercises where both technical and organizational aspects are tested.
 - Example of testing technical aspects: Generate harmless test-malware and place it at an asset on the system under consideration (SUC). Verify, if the upload on that asset is already blocked or at least alarmed. If not, execute the test-malware and place it somewhere else in the SUC. If the uplaod to the asset is already blocked, encrypt or encode the malware (with several iterations, if needed) and upload it to the asset again to test if host-based detection is also working besides network-based detection.
-- Example of testing organizational apsects: Perform a table top exercise simulating an incident or emergency. Test especially communication flows, responsabilities of the staff, coordination of conducting incident response, and the on-demand acquiration of forensic knowledge (if not in-house) during the exercise. 
-
+- Example of testing organizational apsects: Perform a table top exercise simulating an incident or emergency. Test especially communication flows, responsabilities of the staff, coordination of conducting incident response, and the on-demand acquiration of forensic knowledge (if not in-house) during the exercise.
 
 ## Mitigation/Countermeasures
 
@@ -76,6 +75,6 @@ Incident detection and reaction capabilities provide security countermeasures ap
 - Eicar malware testfile (cf. <https://www.eicar.org/download-anti-malware-testfile/>)
 - Metasploit framework (cf. <https://www.metasploit.com/>)
 - Graylog (cf. <https://graylog.org/>)
-- Wazuh (cf. <https://wazuh.com/>) 
+- Wazuh (cf. <https://wazuh.com/>)
 - Snort (cf. <https://www.snort.org/>)
 - Suricata (cf. <https://suricata.io/>)
