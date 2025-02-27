@@ -2,94 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ot.owasp.org/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/appendix/glossary/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/appendix/how-to-test/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/appendix/whats-next/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/background-ot/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/background-ot/itsec_for_ot_people/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/background-ot/ot_for_itsec_people/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/background-ot/related-standards/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/background-ot/safety-vs-security/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/introduction/about-owasp/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/introduction/contributing/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/introduction/contributors/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/introduction/related-owasp-projects/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/the-top-10/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
+    </url>
+    <url>
+         <loc>https://ot.owasp.org/the-top-10/Missing_Incident_Detection_Reaction_Capabilities/</loc>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/the-top-10/accessible-devices-with-known-vulnerabilities/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/the-top-10/availability/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/the-top-10/broken-zone-and-conduits-design/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/the-top-10/components-with-insufficient-security-capabilities/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/the-top-10/insufficient-access-control/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/the-top-10/missing-awareness/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/the-top-10/missing-incident-detection-response/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/the-top-10/supply_chain_management/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
     <url>
          <loc>https://ot.owasp.org/the-top-10/unknown-assets-and-admin-access/</loc>
-         <lastmod>2025-02-26</lastmod>
+         <lastmod>2025-02-27</lastmod>
     </url>
 </urlset>
