@@ -16,6 +16,10 @@ Incident detection and reaction capabilities provide security countermeasures ap
 - Technical security tests (e.g., penetration tests, vulnerability scans, and manual security testing) do not trigger alerts.
 - The application cannot detect, escalate, or alert for active attacks in a reasonable short time frame.
 
+## Rationale
+
+- why did we include this item in the top 10?
+
 ## Known Attacks
 
 - Ukraine Electric Power Attacks (cf. <https://attack.mitre.org/campaigns/C0028/>, <https://attack.mitre.org/campaigns/C0025/>, <https://attack.mitre.org/campaigns/C0034/>, and <https://attack.mitre.org/software/S0089/>). The Ukraine Electric Power Attack was an operation which aims to target and disrupt transmission and distribution substations within the Ukrainian power grid. 
