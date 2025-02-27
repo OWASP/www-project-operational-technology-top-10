@@ -1,5 +1,7 @@
 # Missing Incident Detection/Reaction Capabilities
 
+The longer an attacker is able to penetrate the network unnoticed, the higher is the probability that the attacker compromises OT. This also applies if incident reaction is slow or technically inadequate. Without logging and monitoring, breaches cannot be detected. An OT cybersecurity report analysing trends in 2024 shows that 45% of service engagements have a lack of visibility across OT networks, making detections, triage, and response incredibly difficult at scale.
+
 Notable Common Weakness Enumerations (CWEs) included are *CWE-223: Omission of Security-relevant Information*, *CWE-532:  Insertion of Sensitive Information into Log File*, and *CWE-778: Insufficient Logging*. Notable MITRE ATT&CK items included are *DS0015: Application Log*, *DS0029: Network Traffic*, and *M0931: Network Intrusion Prevention*. 
 
 ## Description
@@ -13,10 +15,6 @@ Incident detection and reaction capabilities provide security countermeasures ap
 - Appropriate alerting thresholds and response escalation processes are not in place or effective.
 - Technical security tests (e.g., penetration tests, vulnerability scans, and manual security testing) do not trigger alerts.
 - The application cannot detect, escalate, or alert for active attacks in a reasonable short time frame.
-
-## Rationale
-
-The longer an attacker is able to penetrate the network unnoticed, the higher is the probability that the attacker compromises OT Systems causing e.g., Loss of Control (cf. <https://attack.mitre.org/techniques/T0827/>), Loss of Productivity and Revenue (cf. <https://attack.mitre.org/techniques/T0828/>, Loss of Safety (cf. <https://attack.mitre.org/techniques/T0880/>, and Loss of Protection (cf. <https://attack.mitre.org/techniques/T0837/>). This also applies if incident reaction is slow or technically inadequate. Without logging and monitoring, breaches cannot be detected. 
 
 ## Known Attacks
 
@@ -62,6 +60,12 @@ The longer an attacker is able to penetrate the network unnoticed, the higher is
 - <https://attack.mitre.org/datasources/DS0015/>
 - <https://attack.mitre.org/datasources/DS0029/>
 - <https://attack.mitre.org/mitigations/M0931/>
+- <https://attack.mitre.org/techniques/T0827/>
+- <https://attack.mitre.org/techniques/T0828/>
+- <https://attack.mitre.org/techniques/T0837/>
+- <https://attack.mitre.org/techniques/T0880/>
+- <https://www.dragos.com/ot-cybersecurity-year-in-review/>
+- <https://www.dragos.com/ot-cybersecurity-year-in-review/#anchor-report>
 
 ### Tooling
 
