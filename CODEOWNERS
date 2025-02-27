@@ -1,3 +1,5 @@
 # These owners will be the default owners for everything in
 # the repo unless a later match takes precedence
 * @andreashappe @simonrommer
+
+docs/the-top-10/Missing_Incident_Detection_Reaction_Capabilities.md @SiegfriedHollerer
