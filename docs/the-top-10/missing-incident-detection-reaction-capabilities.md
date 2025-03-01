@@ -18,7 +18,7 @@ Incident detection and reaction capabilities provide security countermeasures ap
 
 ## Rationale
 
-- why did we include this item in the top 10?
+Without logging and monitoring, breaches cannot be detected. An OT cybersecurity report analysing trends in 2024 shows that 45% of service engagements have a lack of visibility across OT networks, making detections, triage, and response incredibly difficult at scale.
 
 ## Known Attacks
 
