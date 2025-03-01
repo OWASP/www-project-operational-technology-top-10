@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.6">
     
     
       
@@ -1304,7 +1304,7 @@
 
 <h1 id="missing-incident-detectionreaction-capabilities">Missing Incident Detection/Reaction Capabilities</h1>
 <p>The longer an attacker is able to penetrate the network unnoticed, the higher is the probability that the attacker compromises OT. This also applies if incident reaction is slow or technically inadequate. Without logging and monitoring, breaches cannot be detected. An OT cybersecurity report analysing trends in 2024 shows that 45% of service engagements have a lack of visibility across OT networks, making detections, triage, and response incredibly difficult at scale.</p>
-<p>Notable Common Weakness Enumerations (CWEs) included are <em>CWE-223: Omission of Security-relevant Information</em>, <em>CWE-532:  Insertion of Sensitive Information into Log File</em>, and <em>CWE-778: Insufficient Logging</em>. Notable MITRE ATT&amp;CK items included are <em>DS0015: Application Log</em>, <em>DS0029: Network Traffic</em>, and <em>M0931: Network Intrusion Prevention</em>. </p>
+<p>Notable Common Weakness Enumerations (CWEs) included are <em>CWE-223: Omission of Security-relevant Information</em>, <em>CWE-532:  Insertion of Sensitive Information into Log File</em>, and <em>CWE-778: Insufficient Logging</em>. Notable MITRE ATT&amp;CK items included are <em>DS0015: Application Log</em>, <em>DS0029: Network Traffic</em>, and <em>M0931: Network Intrusion Prevention</em>.</p>
 <h2 id="description">Description</h2>
 <p>Incident detection and reaction capabilities provide security countermeasures applied when proactive countermeasures did not prevent an attack. The following items introduce vulnerabilities in this category:</p>
 <ul>
@@ -1317,20 +1317,18 @@
 <li>The application cannot detect, escalate, or alert for active attacks in a reasonable short time frame.</li>
 </ul>
 <h2 id="rationale">Rationale</h2>
-<ul>
-<li>why did we include this item in the top 10?</li>
-</ul>
+<p>Without logging and monitoring, breaches cannot be detected. An OT cybersecurity report analysing trends in 2024 shows that 45% of service engagements have a lack of visibility across OT networks, making detections, triage, and response incredibly difficult at scale.</p>
 <h2 id="known-attacks">Known Attacks</h2>
 <ul>
-<li>Ukraine Electric Power Attacks (cf. <a href="https://attack.mitre.org/campaigns/C0028/">https://attack.mitre.org/campaigns/C0028/</a>, <a href="https://attack.mitre.org/campaigns/C0025/">https://attack.mitre.org/campaigns/C0025/</a>, <a href="https://attack.mitre.org/campaigns/C0034/">https://attack.mitre.org/campaigns/C0034/</a>, and <a href="https://attack.mitre.org/software/S0089/">https://attack.mitre.org/software/S0089/</a>). The Ukraine Electric Power Attack was an operation which aims to target and disrupt transmission and distribution substations within the Ukrainian power grid. </li>
+<li>Ukraine Electric Power Attacks (cf. <a href="https://attack.mitre.org/campaigns/C0028/">https://attack.mitre.org/campaigns/C0028/</a>, <a href="https://attack.mitre.org/campaigns/C0025/">https://attack.mitre.org/campaigns/C0025/</a>, <a href="https://attack.mitre.org/campaigns/C0034/">https://attack.mitre.org/campaigns/C0034/</a>, and <a href="https://attack.mitre.org/software/S0089/">https://attack.mitre.org/software/S0089/</a>). The Ukraine Electric Power Attack was an operation which aims to target and disrupt transmission and distribution substations within the Ukrainian power grid.</li>
 <li>Triton Safety Instrumented System Attack (cf. <a href="https://attack.mitre.org/campaigns/C0030/">https://attack.mitre.org/campaigns/C0030/</a>, and <a href="https://attack.mitre.org/software/S1009/">https://attack.mitre.org/software/S1009/</a>). The Triton Safety Instrumented System Attack was a campaign that took advantage of the Triton malware framework to target a petrochemical organisation. The malware and techniques employed in this campaign were designed to infiltrate specific Triconex Safety Controllers within the environment. The incident was eventually exposed due to a safety trip that occurred as a result of an issue in the malware.</li>
-<li>LockerGoga ransomware infects industrial and manufactoring companies (c.f <a href="https://attack.mitre.org/software/S0372/">https://attack.mitre.org/software/S0372/</a>, and <a href="https://news.microsoft.com/source/features/digital-transformation/hackers-hit-norsk-hydro-ransomware-company-responded-transparency/">https://news.microsoft.com/source/features/digital-transformation/hackers-hit-norsk-hydro-ransomware-company-responded-transparency/</a>. In March 2019, Norsk Hydro was subjected to a cyberattack that utilised the LockerGoga ransomware to encrypt its computer files. In response, the aluminium and renewable energy company transitioned to manual operations and maintained transparency with the public regarding its progress towards recovery. The security industry has expressed high regard for Norsk Hydro's transparency throughout the discovery and recovery process.</li>
+<li>LockerGoga ransomware infects industrial and manufactoring companies (c.f <a href="https://attack.mitre.org/software/S0372/">https://attack.mitre.org/software/S0372/</a>, and <a href="https://news.microsoft.com/source/features/digital-transformation/hackers-hit-norsk-hydro-ransomware-company-responded-transparency/">https://news.microsoft.com/source/features/digital-transformation/hackers-hit-norsk-hydro-ransomware-company-responded-transparency/</a>). In March 2019, Norsk Hydro was subjected to a cyberattack that utilised the LockerGoga ransomware to encrypt its computer files. In response, the aluminium and renewable energy company transitioned to manual operations and maintained transparency with the public regarding its progress towards recovery. The security industry has expressed high regard for Norsk Hydro's transparency throughout the discovery and recovery process.</li>
 </ul>
 <h3 id="how-to-test-have-to-discuss">How-To Test (have to discuss)</h3>
 <ul>
 <li>Perform regular incident detection and response exercises where both technical and organizational aspects are tested.</li>
 <li>Example of testing technical aspects: Generate harmless test-malware and place it at an asset on the system under consideration (SUC). Verify, if the upload on that asset is already blocked or at least alarmed. If not, execute the test-malware and place it somewhere else in the SUC. If the uplaod to the asset is already blocked, encrypt or encode the malware (with several iterations, if needed) and upload it to the asset again to test if host-based detection is also working besides network-based detection.</li>
-<li>Example of testig organizational apsects: Perform a table top exercise simulating an incident or emergency. Test especially communication flows, responsabilities of the staff, coordination of conducting incident response, and the on-demand acquiration of forensic knowledge (if not in-house) during the exercise. </li>
+<li>Example of testing organizational apsects: Perform a table top exercise simulating an incident or emergency. Test especially communication flows, responsabilities of the staff, coordination of conducting incident response, and the on-demand acquiration of forensic knowledge (if not in-house) during the exercise.</li>
 </ul>
 <h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
 <h3 id="design-and-implementation">Design and Implementation</h3>
@@ -1373,7 +1371,7 @@
 <li>Eicar malware testfile (cf. <a href="https://www.eicar.org/download-anti-malware-testfile/">https://www.eicar.org/download-anti-malware-testfile/</a>)</li>
 <li>Metasploit framework (cf. <a href="https://www.metasploit.com/">https://www.metasploit.com/</a>)</li>
 <li>Graylog (cf. <a href="https://graylog.org/">https://graylog.org/</a>)</li>
-<li>Wazuh (cf. <a href="https://wazuh.com/">https://wazuh.com/</a>) </li>
+<li>Wazuh (cf. <a href="https://wazuh.com/">https://wazuh.com/</a>)</li>
 <li>Snort (cf. <a href="https://www.snort.org/">https://www.snort.org/</a>)</li>
 <li>Suricata (cf. <a href="https://suricata.io/">https://suricata.io/</a>)</li>
 </ul>
@@ -1462,7 +1460,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.tracking", "navigation.path", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
