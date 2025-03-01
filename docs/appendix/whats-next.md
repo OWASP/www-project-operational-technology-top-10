@@ -18,8 +18,7 @@
 
 - remove the 'how to test' section and add it to an appendix document?
 - rename the 'design/implementation' and 'operational' sections to something more role-specific?
-- unify the 'references' section?
-    - remove the subsections and just add a list with items and their respective descriptions?
+- unify the 'references' section? remove the subsections and just add a list with items and their respective descriptions?
 
 ### Conceptional problems
 

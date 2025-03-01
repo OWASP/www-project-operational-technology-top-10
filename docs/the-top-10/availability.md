@@ -5,7 +5,7 @@
 
 ## Description
 
-- note that we talk about protecting "our" infrastructure from DDoS and do not talk about becoming part of a botnet after a compromise (which is also problematic, but rather a subpart of [Missing Incident Detection/Reaction Capabilities](./missing-incident-detection-response.md))
+- note that we talk about protecting "our" infrastructure from DDoS and do not talk about becoming part of a botnet after a compromise (which is also problematic, but rather a subpart of [Missing Incident Detection/Reaction Capabilities](./missing-incident-detection-reaction-capabilities.md))
 
 ### Primitive (D)Dos attacks
 
@@ -37,7 +37,7 @@
 
 ## Known Attacks/Examples
 
-- [On Feb. 24, 2022, the night before the Russian government launched its full-scale invasion, Russian-backed hackers targeted thousands of modems linked to Viasat, the U.S.-based satellite and internet communications company, and relied on by the Ukrainian military. The attack — attributed to the Russian government by the United States and its allies — relied on a piece of malware that researchers with SentinelLabs dubbed “AcidRain.”](https://www.cyberscoop.com/russia-ukraine-viasat-modem-hack-acidrain/)
+- [On Feb. 24, 2022, the night before the Russian government launched its full-scale invasion, Russian-backed hackers targeted thousands of modems linked to Viasat, the U.S.-based satellite and internet communications company, and relied on by the Ukrainian military. The attack — attributed to the Russian government by the United States and its allies — relied on a piece of malware that researchers with SentinelLabs dubbed “AcidRain.”](https://cyberscoop.com/viasat-malware-wiper-acidrain/)
 
 Potential Sources
 

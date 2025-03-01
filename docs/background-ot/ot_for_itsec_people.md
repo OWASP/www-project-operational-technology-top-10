@@ -104,7 +104,7 @@ Compared to well-maintained traditional IT systems, OT systems often
 also display a lack of recoverability. Very often, compromised companies
 are not able to react to or recover from incidents.
 
-[This is mostly due to](./../the-top-10/missing-incident-detection-response.md):
+[This is mostly due to](./../the-top-10/missing-incident-detection-reaction-capabilities.md):
 
 - missing backups/disaster recovery
 - Missing configuration backups for OT-Devices
