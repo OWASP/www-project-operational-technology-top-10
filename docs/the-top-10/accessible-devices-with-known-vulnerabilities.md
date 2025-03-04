@@ -53,20 +53,19 @@ Vulnerable devices bad. Especially in critical infrastructure.
 
 ## Known Attacks/Examples
 
-!!! warning "given TRISIS: should misconfiguration also be a part of this section, or do we move this to 'missing awareness'"
-
-- [TRISIS: The Triconex SIS controller had the keyswitch in ‘program mode’ during the time of the attack and the SIS was connected to the operations network against best practices. In a proper configuration and with the controller placed in Run mode (program changes not permitted) the attackers would face a more difficult challenge implementing the attack.](https://www.dragos.com/resources/whitepaper/trisis-analyzing-safety-system-targeting-malware/)
 - [APT44 is a persistent and operationally mature adversary that uses diverse initial access methods ranging from common vectors such as phishing, credential harvesting, and known vulnerability exploitation to targeted supply chain compromises.](https://services.google.com/fh/files/misc/apt44-unearthing-sandworm.pdf)
 - [Volt Typhoon typically gains initial access to the IT network by exploiting known or zero-day vulnerabilities in public-facing network appliances](https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a)
 - [Sensitive nuclear information (SNI), the industry’s special classification system, was left vulnerable in part because of the use of “obsolete” technology including Windows 7 and Windows 2008, Lawrence said.](https://www.theguardian.com/business/article/2024/aug/08/sellafield-apologises-guilty-plea-security-failings-nuclear)
 
-### How-To Test (have to discuss)
+### How-To Test
 
-!!! note  "maybe remove this (and add an appendix document with 'how to test' initially?)"
+- [Inventarize your devices and services](./unknown-assets-and-admin-access.md)
+- gather SBOMs and check for known vulnerabilities
+- test your devices and services for known vulnerabilities if possible (pen-testing)
+- create a risk-based treatment plan, start with mitigations that have the highest impact
+- rinse and repeat
 
 ## Mitigation/Countermeasures
-
-!!! note  "maybe renamet his from 'design/implementation' and 'operational' to something more role-specific?"
 
 ### Developers/Builders: Design and Implementation
 
@@ -86,16 +85,17 @@ Vulnerable devices bad. Especially in critical infrastructure.
 
 ## References
 
-!!! note  "maybe remove the subsections and just add a list with items and their respective descriptions"
-
 ### Standards
 
-- links to relevant standards
+- [OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html)
+- [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology)
 
 ### Background information
 
-- links to blogs, etc.
+- [Softare Bill of Materials (SBOM) - CISA](https://www.cisa.gov/sbom)
 
 ### Tooling
 
-- for testing, etc.
+- [shodan.io](https://shodan.io)
+- [OWASP dependency-check](https://owasp.org/www-project-dependency-check/)
+- [OWASP dependency-track](https://owasp.org/www-project-dependency-track/)
