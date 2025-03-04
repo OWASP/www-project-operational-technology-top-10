@@ -78,7 +78,7 @@ The Radio Equipment Directive (RED) regulates the placing of radio equipment on 
 
 !!! todo "Add US regulations like EO14028, should be done by colleagues from the US"
 
-## Existing Vulnerabilty Lists 
+## Existing Vulnerabilty Lists
 
 | Issuer | Title | Description |
 | --- | --- | --- |
