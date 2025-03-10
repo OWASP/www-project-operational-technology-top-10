@@ -54,8 +54,7 @@ Potential Sources
 - mitigations for integrators/builders:  Provide the documentation to the customer/asset owner.
 - Implement asset discovery and inventory management tools to identify and document all assets in the OT environment.
 - Regularly scan and monitor the network for new or unknown devices.
-- Enforce strict access controls and authentication mechanisms to prevent unauthorized devices from connecting to the network. Also assume rouge devices/services in the network when designing security measures.
-
+- Enforce strict access controls and authentication mechanisms to prevent unauthorized devices from connecting to the network. Also assume rogue devices/services in the network when designing security measures.
 ## References
 
 ### Standards
