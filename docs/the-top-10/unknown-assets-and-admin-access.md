@@ -1,7 +1,6 @@
 # Unknown Assets and Undocumented Services
 
-Arugably the biggest threat to a network (IT and OT) is unmanaged and unknown assets. These assets are mostly already or will become outdated over time and introduce vulnerabilities and weaknesses into the system. Such assets can for example be used as initial access points into the network, for priviledge escalation, establishing persistence or lateral movement. Having a full inventory of assets that not only includes devices but also established remote access, deployed priviledges and other services is crucial to understanding the environment we are working with.
-
+Arguably the biggest threat to a network (IT and OT) is unmanaged and unknown assets. These assets are mostly already or will become outdated over time and introduce vulnerabilities and weaknesses into the system. Such assets can for example be used as initial access points into the network, for priviledge escalation, establishing persistence or lateral movement. Having a full inventory of assets that not only includes devices but also established remote access, deployed priviledges and other services is crucial to understanding the environment we are working with.
 ## Description
 
 Unknown assets are devices or systems in an OT environment that are not properly identified or documented. These assets can include legacy systems, unmanaged devices, or unauthorized connections that are not accounted for in the organization's inventory.
