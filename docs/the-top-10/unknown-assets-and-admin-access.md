@@ -18,8 +18,7 @@ Unknown assets are devices or systems in an OT environment that are not properly
 
 ## Rationale
 
-- History has shown that undocumented assets can be used by attackers for everything from initial access, via priviledge escalation up to completing the action on objectives. Hardening and segmentation measures can only be complete if all the assets are known and under consideration. Getting an overview of my network is always and therefore the most crucial step when starting with a security program. It is also the fundamental prequisit for every ISMS, CSMS, and other frameworks.
-
+- History has shown that undocumented assets can be used by attackers for everything from initial access, via priviledge escalation up to completing the action on objectives. Hardening and segmentation measures can only be complete if all the assets are known and under consideration. Getting an overview of my network is always and therefore the most crucial step when starting with a security program. It is also the fundamental prerequisite for every ISMS, CSMS, and other frameworks.
 ## Known Attacks/Examples
 
 - Stuxnet
