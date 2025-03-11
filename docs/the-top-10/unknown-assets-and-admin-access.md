@@ -59,7 +59,7 @@ Potential Sources
 
 ### Standards
 
-- ISA/IEC 62443 1-1 Foundational requriements
+- ISA/IEC 62443 1-1 Foundational requirements
 - ISA/IEC 62443 2-1 Inventory management of IACS hardware/software components and
 network communication
 - NIS Ch.3.2 Primary/Core Assets
