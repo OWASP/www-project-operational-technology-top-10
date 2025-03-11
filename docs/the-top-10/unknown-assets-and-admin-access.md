@@ -46,7 +46,7 @@ Potential Sources
 
 ### Design and Implementation
 
-- OT-environemts are static by design. During the building phase, the designer or integrator normaly provides a detailed description of the environment. Changes to the environment must be documented. It is crucial to have the documentation process as part of the change process or change management policy.
+- OT-environemts are static by design. During the building phase, the designer or integrator normally provides a detailed description of the environment. Changes to the environment must be documented. It is crucial to have the documentation process as part of the change process or change management policy.
 - If one starts with an already existing environment, the first step to a complete asset inventory can be to take a pen and a piece of paper, go through the location and write down every device that can be seen. This is not only restricted to manufacturing or powerplants, but all types of environments we are working in. 
 
 ### Operational
