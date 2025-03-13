@@ -1,8 +1,9 @@
 # Inadequate Supply Chain Management
 
 Supply chain attacks occur when adversaries target weaknesses in an organisation's supply chain - whether it's hardware, software or services provided by third parties. Instead of compromising the target directly, attackers exploit the relationship of trust between the organisation and its vendors or contractors to gain access to sensitive OT systems.
+
 In the context of OT, the supply chain may involve complex vendor ecosystems, including software providers for SCADA systems, hardware manufacturers for industrial equipment, or maintenance services. An attacker infiltrates these supply chain links to gain access to operational technology, bypassing traditional cybersecurity defences.
- 
+
 Notable Common Weakness Enumerations (CWEs) included are *CWE CATEGORY: ICS Supply Chain*, *CWE CATEGORY: ICS Supply Chain: IT/OT Convergence/Expansion*, and *CWE-912: Hidden Functionality*. Notable MITRE ATT&CK items included are *T0862: Supply Chain Compromise*, and *C0024: SolarWinds Compromise*.
 
 ## Description
@@ -20,8 +21,9 @@ The following phases of the lifecycle of OT components or systems have to be con
 
 ## Rationale
 
-Dragos concluded in their threat perspective 2019 that the growing threat of supply chain attacks and vendor compromises allows new avenues for activity groups to 
-compromise IT and OT environments alike. 
+Dragos concluded in their threat perspective 2019 that the growing threat of supply chain attacks and vendor compromises allows new avenues for activity groups to
+compromise IT and OT environments alike.
+
 Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection software demonstrated the scalability of supply chain issues, affecting numerous victims at the same time by the very same issue.
 
 ## Known Attacks
