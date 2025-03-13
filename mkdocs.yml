@@ -67,7 +67,7 @@ nav:
     - 'Standards and Regulations': background-ot/related-standards.md
   - 'The Top 10':
       - the-top-10/index.md
-      - 'TBD: Inadequat Supply Chain Management': the-top-10/inadequate_supply_chain_management.md
+      - 'TBD: Inadequate Supply Chain Management': the-top-10/inadequate_supply_chain_management.md
       - 'TBD: Devices with known Vulnerabilities': the-top-10/accessible-devices-with-known-vulnerabilities.md
       - 'TBD: Unknown Assets and Unmanaged External Access': the-top-10/unknown-assets-and-admin-access.md
       - 'TBD: Insufficient Access Control': the-top-10/insufficient-access-control.md
