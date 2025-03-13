@@ -15,7 +15,7 @@
 
 In no particular order:
 
-- [Supplier/Supply Chain Management](./supply_chain_management.md)
+- [Supplier/Supply Chain Management](./inadequate_supply_chain_management.md)
 - [Devices out there in the Field with known Vulnerabilities/Issues](./accessible-devices-with-known-vulnerabilities.md)
 - [Unknown Assets and Unmanaged External Access](./unknown-assets-and-admin-access.md)
 - [Insufficient Access Control](./insufficient-access-control.md)

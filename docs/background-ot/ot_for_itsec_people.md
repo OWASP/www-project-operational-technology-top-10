@@ -34,7 +34,7 @@ issues in the OT world are:
 
 These are realities within the field with which we have to deal. Very often,
 we do not work in greenfield projects but have to adapt existing systems while
-improving security. In addition, we have security problems such as [vendors not providing security updates](./../the-top-10/supply_chain_management.md) or [devices lacking proper access control mechanisms](./../the-top-10/insufficient-access-control.md).
+improving security. In addition, we have security problems such as [vendors not providing security updates](./../the-top-10/inadequate_supply_chain_management.md) or [devices lacking proper access control mechanisms](./../the-top-10/insufficient-access-control.md).
 
 When you look into recent news, OT security incidents are on the rise. While it
 would be preferable to have a perfect secure solution, sadly we're currently
