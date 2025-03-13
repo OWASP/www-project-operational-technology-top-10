@@ -18,7 +18,7 @@ To reiterate on the special problems that the OT world faces, we want to give a 
 
 **You don't just upgrade a medical device or power plant**: this is not your typical desktop PC where you are annoyed if an update breaks your system for a couple of days, this is critical infrastructure upon which lifes potentially depend upon. Imagine you are depending upon a digital pace maker or insulin pump: would you just update it (without making sure that it will not negativly impact you)?
 
-**[Problems with the supply chain](./supply_chain_management.md)**: TBD
+**[Problems with the supply chain](./inadequate_supply_chain_management.md)**: TBD
 
 - missing vendor support
 - missing vendor notifications

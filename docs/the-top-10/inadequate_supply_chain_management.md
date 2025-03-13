@@ -1,8 +1,9 @@
 # Inadequate Supply Chain Management
 
 Supply chain attacks occur when adversaries target weaknesses in an organisation's supply chain - whether it's hardware, software or services provided by third parties. Instead of compromising the target directly, attackers exploit the relationship of trust between the organisation and its vendors or contractors to gain access to sensitive OT systems.
+
 In the context of OT, the supply chain may involve complex vendor ecosystems, including software providers for SCADA systems, hardware manufacturers for industrial equipment, or maintenance services. An attacker infiltrates these supply chain links to gain access to operational technology, bypassing traditional cybersecurity defences.
- 
+
 Notable Common Weakness Enumerations (CWEs) included are *CWE CATEGORY: ICS Supply Chain*, *CWE CATEGORY: ICS Supply Chain: IT/OT Convergence/Expansion*, and *CWE-912: Hidden Functionality*. Notable MITRE ATT&CK items included are *T0862: Supply Chain Compromise*, and *C0024: SolarWinds Compromise*.
 
 ## Description
@@ -20,10 +21,10 @@ The following phases of the lifecycle of OT components or systems have to be con
 
 ## Rationale
 
-Dragos concluded in their threat perspective 2019 that the growing threat of supply chain attacks and vendor compromises allows new avenues for activity groups to 
-compromise IT and OT environments alike. 
-Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection software demonstrated the scalability of supply chain issues, affecting numerous victims at the same time by the very same issue.
+Dragos concluded in their threat perspective 2019 that the growing threat of supply chain attacks and vendor compromises allows new avenues for activity groups to
+compromise IT and OT environments alike.
 
+Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection software demonstrated the scalability of supply chain issues, affecting numerous victims at the same time by the very same issue.
 
 ## Known Attacks
 
@@ -59,13 +60,16 @@ Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection sof
 ### Standards
 
 Addressing vendors/manufacturers
+
 - IEC 62443-4-1 <https://webstore.iec.ch/en/publication/33615>
 - IEC 62443-4-2 <https://webstore.iec.ch/en/publication/34421>
 
 Addressing integrators
+
 - IEC 62443-2-4 <https://webstore.iec.ch/en/publication/67631>
 
 Addressing asset owners
+
 - NIST Special Publication 800-161 <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-161r1-upd1.pdf>
 - NIST Cyber Security Framework 2.0 - Category GV.SC <https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf>
 - ISO 28000 family <https://www.iso.org/obp/ui/#iso:std:iso:28000:ed-2:v1:en>
@@ -73,16 +77,17 @@ Addressing asset owners
 ### Background information
 
 Relevant CWEs
+
 - <https://cwe.mitre.org/data/definitions/912.html>
 - <https://cwe.mitre.org/data/definitions/1361.html>
 - <https://cwe.mitre.org/data/definitions/1369.html>
 
 Relevant MITRE ATT&CK framework items
+
 - <https://attack.mitre.org/campaigns/C0024/>
 - <https://attack.mitre.org/datasources/DS0029/>
 - <https://attack.mitre.org/techniques/T0862/>
 - <https://attack.mitre.org/mitigations/M0817/>
-
 
 ### Tooling
 
