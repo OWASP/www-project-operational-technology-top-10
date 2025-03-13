@@ -24,7 +24,6 @@ Dragos concluded in their threat perspective 2019 that the growing threat of sup
 compromise IT and OT environments alike. 
 Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection software demonstrated the scalability of supply chain issues, affecting numerous victims at the same time by the very same issue.
 
-
 ## Known Attacks
 
 - SolarWinds Orion Compromise <https://attack.mitre.org/campaigns/C0024/>. The SolarWinds compromise was a sophisticated supply chain cyber operation that was discovered in December 2020. The cyber operation involved the injection of malicious code into the SolarWinds Orion software build process, which was then distributed through a standard software update. The cyber actors also used password spraying, token theft, API abuse, spear phishing and other supply chain attacks to compromise user accounts and leverage their associated access.
@@ -59,13 +58,16 @@ Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection sof
 ### Standards
 
 Addressing vendors/manufacturers
+
 - IEC 62443-4-1 <https://webstore.iec.ch/en/publication/33615>
 - IEC 62443-4-2 <https://webstore.iec.ch/en/publication/34421>
 
 Addressing integrators
+
 - IEC 62443-2-4 <https://webstore.iec.ch/en/publication/67631>
 
 Addressing asset owners
+
 - NIST Special Publication 800-161 <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-161r1-upd1.pdf>
 - NIST Cyber Security Framework 2.0 - Category GV.SC <https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf>
 - ISO 28000 family <https://www.iso.org/obp/ui/#iso:std:iso:28000:ed-2:v1:en>
@@ -73,16 +75,17 @@ Addressing asset owners
 ### Background information
 
 Relevant CWEs
+
 - <https://cwe.mitre.org/data/definitions/912.html>
 - <https://cwe.mitre.org/data/definitions/1361.html>
 - <https://cwe.mitre.org/data/definitions/1369.html>
 
 Relevant MITRE ATT&CK framework items
+
 - <https://attack.mitre.org/campaigns/C0024/>
 - <https://attack.mitre.org/datasources/DS0029/>
 - <https://attack.mitre.org/techniques/T0862/>
 - <https://attack.mitre.org/mitigations/M0817/>
-
 
 ### Tooling
 

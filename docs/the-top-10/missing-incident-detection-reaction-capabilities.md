@@ -58,24 +58,29 @@ Without logging and monitoring, breaches cannot be detected. An OT cybersecurity
 ### Background information
 
 CWEs
+
 - <https://cwe.mitre.org/data/definitions/223.html>
 - <https://cwe.mitre.org/data/definitions/532.html>
 - <https://cwe.mitre.org/data/definitions/778.html>
 
 MITRE ATT&CK framework data sources
+
 - <https://attack.mitre.org/datasources/DS0015/>
 - <https://attack.mitre.org/datasources/DS0029/>
 
 MITRE ATT&CK framework measures
+
 - <https://attack.mitre.org/mitigations/M0931/>
 
 MITRE ATT&CK framework techniques (tactic Impact)
+
 - <https://attack.mitre.org/techniques/T0827/>
 - <https://attack.mitre.org/techniques/T0828/>
 - <https://attack.mitre.org/techniques/T0837/>
 - <https://attack.mitre.org/techniques/T0880/>
 
 Recent OT cyber security report
+
 - <https://www.dragos.com/ot-cybersecurity-year-in-review/>
 - <https://www.dragos.com/ot-cybersecurity-year-in-review/#anchor-report>
 
