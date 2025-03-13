@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.8">
     
     
       
@@ -662,11 +662,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../supply_chain_management/" class="md-nav__link">
+      <a href="../inadequate_supply_chain_management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    TBD: Supply Chain Management
+    TBD: Inadequate Supply Chain Management
     
   </span>
   
@@ -848,9 +848,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-test-have-to-discuss" class="md-nav__link">
+  <a href="#how-to-test" class="md-nav__link">
     <span class="md-ellipsis">
-      How-To Test (have to discuss)
+      How-To Test
     </span>
   </a>
   
@@ -1195,9 +1195,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-test-have-to-discuss" class="md-nav__link">
+  <a href="#how-to-test" class="md-nav__link">
     <span class="md-ellipsis">
-      How-To Test (have to discuss)
+      How-To Test
     </span>
   </a>
   
@@ -1324,7 +1324,7 @@
 <li>Triton Safety Instrumented System Attack (cf. <a href="https://attack.mitre.org/campaigns/C0030/">https://attack.mitre.org/campaigns/C0030/</a>, and <a href="https://attack.mitre.org/software/S1009/">https://attack.mitre.org/software/S1009/</a>). The Triton Safety Instrumented System Attack was a campaign that took advantage of the Triton malware framework to target a petrochemical organisation. The malware and techniques employed in this campaign were designed to infiltrate specific Triconex Safety Controllers within the environment. The incident was eventually exposed due to a safety trip that occurred as a result of an issue in the malware.</li>
 <li>LockerGoga ransomware infects industrial and manufactoring companies (c.f <a href="https://attack.mitre.org/software/S0372/">https://attack.mitre.org/software/S0372/</a>, and <a href="https://news.microsoft.com/source/features/digital-transformation/hackers-hit-norsk-hydro-ransomware-company-responded-transparency/">https://news.microsoft.com/source/features/digital-transformation/hackers-hit-norsk-hydro-ransomware-company-responded-transparency/</a>). In March 2019, Norsk Hydro was subjected to a cyberattack that utilised the LockerGoga ransomware to encrypt its computer files. In response, the aluminium and renewable energy company transitioned to manual operations and maintained transparency with the public regarding its progress towards recovery. The security industry has expressed high regard for Norsk Hydro's transparency throughout the discovery and recovery process.</li>
 </ul>
-<h3 id="how-to-test-have-to-discuss">How-To Test (have to discuss)</h3>
+<h3 id="how-to-test">How-To Test</h3>
 <ul>
 <li>Perform regular incident detection and response exercises where both technical and organizational aspects are tested.</li>
 <li>Example of testing technical aspects: Generate harmless test-malware and place it at an asset on the system under consideration (SUC). Verify, if the upload on that asset is already blocked or at least alarmed. If not, execute the test-malware and place it somewhere else in the SUC. If the uplaod to the asset is already blocked, encrypt or encode the malware (with several iterations, if needed) and upload it to the asset again to test if host-based detection is also working besides network-based detection.</li>
@@ -1348,21 +1348,34 @@
 <h3 id="standards">Standards</h3>
 <ul>
 <li>NIST SP 800-82r3 <a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf">https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf</a></li>
-<li>IEC 62443-3-3 FR6 <a href="https://webstore.iec.ch/en/publication/7033">https://webstore.iec.ch/en/publication/7033</a></li>
+<li>IEC 62443-3-3 Foundational Requirement 6 (FR 6) - Timely Response to Events <a href="https://webstore.iec.ch/en/publication/7033">https://webstore.iec.ch/en/publication/7033</a></li>
 <li>NIST Cyber Security Framework 2.0 - Detect (DE) and Respond (RS) <a href="https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf">https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf</a></li>
 </ul>
 <h3 id="background-information">Background information</h3>
+<p>CWEs</p>
 <ul>
 <li><a href="https://cwe.mitre.org/data/definitions/223.html">https://cwe.mitre.org/data/definitions/223.html</a></li>
 <li><a href="https://cwe.mitre.org/data/definitions/532.html">https://cwe.mitre.org/data/definitions/532.html</a></li>
 <li><a href="https://cwe.mitre.org/data/definitions/778.html">https://cwe.mitre.org/data/definitions/778.html</a></li>
+</ul>
+<p>MITRE ATT&amp;CK framework data sources</p>
+<ul>
 <li><a href="https://attack.mitre.org/datasources/DS0015/">https://attack.mitre.org/datasources/DS0015/</a></li>
 <li><a href="https://attack.mitre.org/datasources/DS0029/">https://attack.mitre.org/datasources/DS0029/</a></li>
+</ul>
+<p>MITRE ATT&amp;CK framework measures</p>
+<ul>
 <li><a href="https://attack.mitre.org/mitigations/M0931/">https://attack.mitre.org/mitigations/M0931/</a></li>
+</ul>
+<p>MITRE ATT&amp;CK framework techniques (tactic Impact)</p>
+<ul>
 <li><a href="https://attack.mitre.org/techniques/T0827/">https://attack.mitre.org/techniques/T0827/</a></li>
 <li><a href="https://attack.mitre.org/techniques/T0828/">https://attack.mitre.org/techniques/T0828/</a></li>
 <li><a href="https://attack.mitre.org/techniques/T0837/">https://attack.mitre.org/techniques/T0837/</a></li>
 <li><a href="https://attack.mitre.org/techniques/T0880/">https://attack.mitre.org/techniques/T0880/</a></li>
+</ul>
+<p>Recent OT cyber security report</p>
+<ul>
 <li><a href="https://www.dragos.com/ot-cybersecurity-year-in-review/">https://www.dragos.com/ot-cybersecurity-year-in-review/</a></li>
 <li><a href="https://www.dragos.com/ot-cybersecurity-year-in-review/#anchor-report">https://www.dragos.com/ot-cybersecurity-year-in-review/#anchor-report</a></li>
 </ul>

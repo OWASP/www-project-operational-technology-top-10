@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.8">
     
     
       
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unknown-assets-and-unmanaged-external-access" class="md-skip">
+        <a href="#unknown-assets-and-undocumented-services" class="md-skip">
           Skip to content
         </a>
       
@@ -662,11 +662,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../supply_chain_management/" class="md-nav__link">
+      <a href="../inadequate_supply_chain_management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    TBD: Supply Chain Management
+    TBD: Inadequate Supply Chain Management
     
   </span>
   
@@ -782,9 +782,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-test-have-to-discuss" class="md-nav__link">
+  <a href="#how-to-test" class="md-nav__link">
     <span class="md-ellipsis">
-      How-To Test (have to discuss)
+      How-To Test
     </span>
   </a>
   
@@ -1195,9 +1195,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-test-have-to-discuss" class="md-nav__link">
+  <a href="#how-to-test" class="md-nav__link">
     <span class="md-ellipsis">
-      How-To Test (have to discuss)
+      How-To Test
     </span>
   </a>
   
@@ -1302,26 +1302,24 @@
   
 
 
-<h1 id="unknown-assets-and-unmanaged-external-access">Unknown Assets and Unmanaged external Access</h1>
-<p>Short Description (one paragraph)</p>
+<h1 id="unknown-assets-and-undocumented-services">Unknown Assets and Undocumented Services</h1>
+<p>Arguably the biggest threat to a network (IT and OT) is unmanaged and unknown assets. These assets are mostly already or will become outdated over time and introduce vulnerabilities and weaknesses into the system. Such assets can for example be used as initial access points into the network, for priviledge escalation, establishing persistence or lateral movement. Having a full inventory of assets that not only includes devices but also established remote access, deployed priviledges and other services is crucial to understanding the environment we are working with.</p>
 <h2 id="description">Description</h2>
 <p>Unknown assets are devices or systems in an OT environment that are not properly identified or documented. These assets can include legacy systems, unmanaged devices, or unauthorized connections that are not accounted for in the organization's inventory.</p>
-<ul>
-<li>inter-section to incident detection (due to missing detection capabilitites), security-misconfiguration</li>
-<li>physical 'stuff'</li>
-<li>manual list</li>
-<li>counter-measures</li>
-<li>network scanning/discovery</li>
-<li>port/traffic monitoring</li>
-<li>Unmanaged external access</li>
-<li>from above purdue model level 3 / IEC62443 zones/conduits</li>
-<li>maintenance access</li>
-<li>this can be related to 'missing awareness'</li>
-</ul>
+<div class="highlight"><pre><span></span><code>NOTES/TODO
+<span class="k">-</span><span class="w"> </span>inter-section to incident detection (due to missing detection capabilitites), security-misconfiguration
+<span class="k">-</span><span class="w"> </span>physical &#39;stuff&#39;
+<span class="w">  </span><span class="k">-</span><span class="w"> </span>manual list
+<span class="k">-</span><span class="w"> </span>counter-measures
+<span class="w">  </span><span class="k">-</span><span class="w"> </span>network scanning/discovery
+<span class="w">  </span><span class="k">-</span><span class="w"> </span>port/traffic monitoring
+<span class="k">-</span><span class="w"> </span>Unmanaged external access
+<span class="w">  </span><span class="k">-</span><span class="w"> </span>from above purdue model level 3 / IEC62443 zones/conduits
+<span class="w">  </span><span class="k">-</span><span class="w"> </span>maintenance access
+<span class="w">  </span><span class="k">-</span><span class="w"> </span>this can be related to &#39;missing awareness&#39;
+</code></pre></div>
 <h2 id="rationale">Rationale</h2>
-<ul>
-<li>why did we include this item in the top 10?</li>
-</ul>
+<p>History has shown that undocumented assets can be used by attackers for everything from initial access, via priviledge escalation up to completing the action on objectives. Hardening and segmentation measures can only be complete if all the assets are known and under consideration. Getting an overview of my network is always and therefore the most crucial step when starting with a security program. It is also the fundamental prerequisite for every ISMS, CSMS, and other frameworks.</p>
 <h2 id="known-attacksexamples">Known Attacks/Examples</h2>
 <ul>
 <li>Stuxnet</li>
@@ -1331,34 +1329,35 @@
 <li><a href="https://www.theregister.com/2021/02/09/florida_water_hacked/">Someone tried to poison a Florida city by hijacking its water treatment plant via TeamViewer, says sheriff</a></li>
 <li><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-water-facilities-to-secure-hmi-systems-exposed-online/">CISA and the Environmental Protection Agency (EPA) warned water facilities today to secure Internet-exposed Human Machine Interfaces (HMIs) from cyberattacks.</a></li>
 </ul>
-<p>Potential Sources</p>
-<ul>
-<li><a href="https://www.icsadvisoryproject.com">https://www.icsadvisoryproject.com</a></li>
-<li><a href="https://icsstrive.com/">https://icsstrive.com/</a></li>
-<li><a href="https://emb3d.mitre.org/">https://emb3d.mitre.org/</a></li>
-<li><a href="https://attack.mitre.org/techniques/ics/">https://attack.mitre.org/techniques/ics/</a></li>
-<li>please add more</li>
-</ul>
-<h3 id="how-to-test-have-to-discuss">How-To Test (have to discuss)</h3>
+<h3 id="how-to-test">How-To Test</h3>
 <ul>
 <li>maybe add this to a separate section?</li>
 </ul>
 <h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
 <h3 id="design-and-implementation">Design and Implementation</h3>
 <ul>
-<li>mitigations for developers/builders</li>
+<li>OT-environemts are static by design. During the building phase, the designer or integrator normally provides a detailed description of the environment. Changes to the environment must be documented. It is crucial to have the documentation process as part of the change process or change management policy.</li>
+<li>If one starts with an already existing environment, the first step to a complete asset inventory can be to take a pen and a piece of paper, go through the location and write down every device that can be seen. This is not only restricted to manufacturing or powerplants, but all types of environments we are working in.</li>
 </ul>
 <h3 id="operational">Operational</h3>
 <ul>
-<li>mitigations for integrators/builders</li>
+<li>mitigations for integrators/builders:  Provide the documentation to the customer/asset owner.</li>
 <li>Implement asset discovery and inventory management tools to identify and document all assets in the OT environment.</li>
 <li>Regularly scan and monitor the network for new or unknown devices.</li>
-<li>Enforce strict access controls and authentication mechanisms to prevent unauthorized devices from connecting to the network.</li>
+<li>Enforce strict access controls and authentication mechanisms to prevent unauthorized devices from connecting to the network. Also assume rogue devices/services in the network when designing security measures.</li>
 </ul>
 <h2 id="references">References</h2>
 <h3 id="standards">Standards</h3>
 <ul>
-<li>links to relevant standards</li>
+<li>ISA/IEC 62443 1-1 Foundational requirements</li>
+<li>ISA/IEC 62443 2-1 Inventory management of IACS hardware/software components and
+network communication</li>
+<li>NIS Ch.3.2 Primary/Core Assets</li>
+<li>NIS Ch.3.3 Network Segmentation</li>
+<li>NERC CIP ID.AM Asset Management</li>
+<li>NERC CIP PR.AC Identity Management and Access Control</li>
+<li>NIST 1800-23 Energy Sector Asset Management: For Electric Utilities, Oil &amp; Gas Industry</li>
+<li>NIST 1800-5 IT Asset Management</li>
 </ul>
 <h3 id="background-information">Background information</h3>
 <ul>

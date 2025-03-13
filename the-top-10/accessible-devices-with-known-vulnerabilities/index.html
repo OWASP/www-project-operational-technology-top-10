@@ -11,14 +11,14 @@
         <link rel="canonical" href="https://ot.owasp.org/the-top-10/accessible-devices-with-known-vulnerabilities/">
       
       
-        <link rel="prev" href="../supply_chain_management/">
+        <link rel="prev" href="../inadequate_supply_chain_management/">
       
       
         <link rel="next" href="../unknown-assets-and-admin-access/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.8">
     
     
       
@@ -662,11 +662,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../supply_chain_management/" class="md-nav__link">
+      <a href="../inadequate_supply_chain_management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    TBD: Supply Chain Management
+    TBD: Inadequate Supply Chain Management
     
   </span>
   
@@ -784,9 +784,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-test-have-to-discuss" class="md-nav__link">
+  <a href="#how-to-test" class="md-nav__link">
     <span class="md-ellipsis">
-      How-To Test (have to discuss)
+      How-To Test
     </span>
   </a>
   
@@ -1243,9 +1243,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-test-have-to-discuss" class="md-nav__link">
+  <a href="#how-to-test" class="md-nav__link">
     <span class="md-ellipsis">
-      How-To Test (have to discuss)
+      How-To Test
     </span>
   </a>
   
@@ -1360,7 +1360,7 @@
 <h3 id="why-cant-we-just-upgrade-all-the-systems">Why can't we just upgrade all the systems?</h3>
 <p>To reiterate on the special problems that the OT world faces, we want to give a list of common excuses/reason given that could prevent an easy implementation of a vulnerability management system:</p>
 <p><strong>You don't just upgrade a medical device or power plant</strong>: this is not your typical desktop PC where you are annoyed if an update breaks your system for a couple of days, this is critical infrastructure upon which lifes potentially depend upon. Imagine you are depending upon a digital pace maker or insulin pump: would you just update it (without making sure that it will not negativly impact you)?</p>
-<p><strong><a href="../supply_chain_management/">Problems with the supply chain</a></strong>: TBD</p>
+<p><strong><a href="../inadequate_supply_chain_management/">Problems with the supply chain</a></strong>: TBD</p>
 <ul>
 <li>missing vendor support</li>
 <li>missing vendor notifications</li>
@@ -1387,23 +1387,20 @@
 <h2 id="rationale">Rationale</h2>
 <p>Vulnerable devices bad. Especially in critical infrastructure.</p>
 <h2 id="known-attacksexamples">Known Attacks/Examples</h2>
-<div class="admonition warning">
-<p class="admonition-title">given TRISIS: should misconfiguration also be a part of this section, or do we move this to 'missing awareness'</p>
-</div>
 <ul>
-<li><a href="https://www.dragos.com/resources/whitepaper/trisis-analyzing-safety-system-targeting-malware/">TRISIS: The Triconex SIS controller had the keyswitch in ‘program mode’ during the time of the attack and the SIS was connected to the operations network against best practices. In a proper configuration and with the controller placed in Run mode (program changes not permitted) the attackers would face a more difficult challenge implementing the attack.</a></li>
 <li><a href="https://services.google.com/fh/files/misc/apt44-unearthing-sandworm.pdf">APT44 is a persistent and operationally mature adversary that uses diverse initial access methods ranging from common vectors such as phishing, credential harvesting, and known vulnerability exploitation to targeted supply chain compromises.</a></li>
 <li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a">Volt Typhoon typically gains initial access to the IT network by exploiting known or zero-day vulnerabilities in public-facing network appliances</a></li>
 <li><a href="https://www.theguardian.com/business/article/2024/aug/08/sellafield-apologises-guilty-plea-security-failings-nuclear">Sensitive nuclear information (SNI), the industry’s special classification system, was left vulnerable in part because of the use of “obsolete” technology including Windows 7 and Windows 2008, Lawrence said.</a></li>
 </ul>
-<h3 id="how-to-test-have-to-discuss">How-To Test (have to discuss)</h3>
-<div class="admonition note">
-<p class="admonition-title">maybe remove this (and add an appendix document with 'how to test' initially?)</p>
-</div>
+<h3 id="how-to-test">How-To Test</h3>
+<ul>
+<li><a href="../unknown-assets-and-admin-access/">Inventarize your devices and services</a></li>
+<li>gather SBOMs and check for known vulnerabilities</li>
+<li>test your devices and services for known vulnerabilities if possible (pen-testing)</li>
+<li>create a risk-based treatment plan, start with mitigations that have the highest impact</li>
+<li>rinse and repeat</li>
+</ul>
 <h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
-<div class="admonition note">
-<p class="admonition-title">maybe renamet his from 'design/implementation' and 'operational' to something more role-specific?</p>
-</div>
 <h3 id="developersbuilders-design-and-implementation">Developers/Builders: Design and Implementation</h3>
 <ul>
 <li>Try to prevent vulnerabilitites from accessing the system (<a href="https://owaspsamm.org/">OWASP SAMM2</a>)</li>
@@ -1421,20 +1418,20 @@
 <li>Implement network segmentation and access controls to limit the impact of security vulnerabilities.</li>
 </ul>
 <h2 id="references">References</h2>
-<div class="admonition note">
-<p class="admonition-title">maybe remove the subsections and just add a list with items and their respective descriptions</p>
-</div>
 <h3 id="standards">Standards</h3>
 <ul>
-<li>links to relevant standards</li>
+<li><a href="https://owasp.org/owasp-istg/index.html">OWASP IoT Security Testing Guide</a></li>
+<li><a href="https://scriptingxss.gitbook.io/firmware-security-testing-methodology">OWASP Firmware Security Testing Methodology</a></li>
 </ul>
 <h3 id="background-information">Background information</h3>
 <ul>
-<li>links to blogs, etc.</li>
+<li><a href="https://www.cisa.gov/sbom">Softare Bill of Materials (SBOM) - CISA</a></li>
 </ul>
 <h3 id="tooling">Tooling</h3>
 <ul>
-<li>for testing, etc.</li>
+<li><a href="https://shodan.io">shodan.io</a></li>
+<li><a href="https://owasp.org/www-project-dependency-check/">OWASP dependency-check</a></li>
+<li><a href="https://owasp.org/www-project-dependency-track/">OWASP dependency-track</a></li>
 </ul>
 
 
