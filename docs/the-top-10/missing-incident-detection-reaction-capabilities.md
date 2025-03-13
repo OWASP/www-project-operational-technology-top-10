@@ -26,7 +26,7 @@ Without logging and monitoring, breaches cannot be detected. An OT cybersecurity
 - Triton Safety Instrumented System Attack (cf. <https://attack.mitre.org/campaigns/C0030/>, and <https://attack.mitre.org/software/S1009/>). The Triton Safety Instrumented System Attack was a campaign that took advantage of the Triton malware framework to target a petrochemical organisation. The malware and techniques employed in this campaign were designed to infiltrate specific Triconex Safety Controllers within the environment. The incident was eventually exposed due to a safety trip that occurred as a result of an issue in the malware.
 - LockerGoga ransomware infects industrial and manufactoring companies (c.f <https://attack.mitre.org/software/S0372/>, and <https://news.microsoft.com/source/features/digital-transformation/hackers-hit-norsk-hydro-ransomware-company-responded-transparency/>). In March 2019, Norsk Hydro was subjected to a cyberattack that utilised the LockerGoga ransomware to encrypt its computer files. In response, the aluminium and renewable energy company transitioned to manual operations and maintained transparency with the public regarding its progress towards recovery. The security industry has expressed high regard for Norsk Hydro's transparency throughout the discovery and recovery process.
 
-### How-To Test (have to discuss)
+### How-To Test
 
 - Perform regular incident detection and response exercises where both technical and organizational aspects are tested.
 - Example of testing technical aspects: Generate harmless test-malware and place it at an asset on the system under consideration (SUC). Verify, if the upload on that asset is already blocked or at least alarmed. If not, execute the test-malware and place it somewhere else in the SUC. If the uplaod to the asset is already blocked, encrypt or encode the malware (with several iterations, if needed) and upload it to the asset again to test if host-based detection is also working besides network-based detection.
@@ -52,21 +52,30 @@ Without logging and monitoring, breaches cannot be detected. An OT cybersecurity
 ### Standards
 
 - NIST SP 800-82r3 <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf>
-- IEC 62443-3-3 FR6 <https://webstore.iec.ch/en/publication/7033>
+- IEC 62443-3-3 Foundational Requirement 6 (FR 6) - Timely Response to Events <https://webstore.iec.ch/en/publication/7033>
 - NIST Cyber Security Framework 2.0 - Detect (DE) and Respond (RS) <https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf>
 
 ### Background information
 
+CWEs
 - <https://cwe.mitre.org/data/definitions/223.html>
 - <https://cwe.mitre.org/data/definitions/532.html>
 - <https://cwe.mitre.org/data/definitions/778.html>
+
+MITRE ATT&CK framework data sources
 - <https://attack.mitre.org/datasources/DS0015/>
 - <https://attack.mitre.org/datasources/DS0029/>
+
+MITRE ATT&CK framework measures
 - <https://attack.mitre.org/mitigations/M0931/>
+
+MITRE ATT&CK framework techniques (tactic Impact)
 - <https://attack.mitre.org/techniques/T0827/>
 - <https://attack.mitre.org/techniques/T0828/>
 - <https://attack.mitre.org/techniques/T0837/>
 - <https://attack.mitre.org/techniques/T0880/>
+
+Recent OT cyber security report
 - <https://www.dragos.com/ot-cybersecurity-year-in-review/>
 - <https://www.dragos.com/ot-cybersecurity-year-in-review/#anchor-report>
 
