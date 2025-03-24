@@ -87,10 +87,29 @@ The prevalence of:
 
 - IEC 62443-4-1
 - IEC 62443-2-1
+- ISO 27001
 
-### Background information
+### Background information on Physical Access Control
 
-- links to blogs, etc.
+- [Disabling unnecessary services and protocols](https://www.cert.govt.nz/information-and-advice/guides/unused-services-and-protocols/disabling-unnecessary-services-and-protocols/)
+- [Why Disabling unused network ports is crucial in OT environents](https://www.mangancyber.com/why-is-it-essential-to-disable-or-safeguard-inactive-ports-in-ot-environments/)
+
+### Background information on Organizational Access Control
+
+**ISO 27001** – Annex A.9: Access Control
+
+Annex A.9 is focuses on safeguarding access to information and ensuring that employees can only view information relevant to their work. It includes sections on:
+
+- Access Control Policies: Establishing and maintaining policies to manage access to information.
+- User Access Management: Procedures for granting and revoking access rights.
+- User Responsibilities: Ensuring users understand their responsibilities regarding access control.
+- System and Application Access Control: Managing access to systems and applications
+
+### Background information on Technical Access Control
+
+**IEC62443-4-2**  - technical security requirements for Industrial Automation and Control Systems (IACS) components
+
+**Lack of Access Control Examples:**
 
 ### Tooling
 
