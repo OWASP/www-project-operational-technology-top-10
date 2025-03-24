@@ -52,9 +52,6 @@ Potential Sources
 
 ### Background information
 
-
-
-  
 ### Tooling
 
 - Bloodhound for AD tree building
