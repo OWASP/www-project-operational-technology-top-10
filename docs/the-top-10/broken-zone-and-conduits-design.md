@@ -50,7 +50,7 @@ Potential Sources
 
 ### Background information
 
-** Examples: **
+**Examples:**
 
 - OT-Devices directly connected to the internet can be found via e.g. shodan.io and accessed via unencrypted and unauthenticated OT protocols as seen at
 the Cyber Attack at Aliquippa water plant in Pennsylvania in November 2023. [Cyber Risk Intelligence:
