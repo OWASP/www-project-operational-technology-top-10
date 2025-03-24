@@ -17,8 +17,9 @@ The most common entry into OT-zones comes from IT environments. For hardware dev
 
 ## Known Attacks/Examples
 
-- [The Register: Iranian hacktivists .. likely broke into the facilities by using defautl passwords for internet-accessible PLCs](https://www.theregister.com/2024/09/07/us_water_cyberattacks/)
-
+- [Cyber Risk Intelligence: Iran-Linked Attack on U.S.Water Treatment Facility](https://securityscorecard.com/wp-content/uploads/2024/01/aliquippa-report.pdf)
+- [Russia-backed hacking group suspected of attack on US water system](https://www.techspot.com/news/102661-russia-backed-hacking-group-suspected-attack-us-water.html)
+- Having e.g. your RDP connections exposed to the internet can have severe consequences as seen with Eternal Blue. ( [What Is EternalBlue and Why Is the MS17-010 Exploit Still Relevant?](https://www.avast.com/c-eternalblue) )
 Potential Sources
 
 - <https://www.icsadvisoryproject.com>
@@ -45,12 +46,12 @@ Potential Sources
 
 ### Standards
 
-- links to relevant standards
+- IEC62443-3-2
+- ISO27001 Annex A.8.22
 
 ### Background information
 
-- links to blogs, etc.
-
 ### Tooling
 
-- for testing, etc.
+- Bloodhound for AD tree building
+- nmap for environment scanning
