@@ -96,7 +96,7 @@ The prevalence of:
 
 ### Background information on Organizational Access Control
 
-**ISO 27001 – Annex A.9: Access Control**
+**ISO 27001** – Annex A.9: Access Control
 
 Annex A.9 is focuses on safeguarding access to information and ensuring that employees can only view information relevant to their work. It includes sections on:
 
@@ -107,7 +107,7 @@ Annex A.9 is focuses on safeguarding access to information and ensuring that emp
 
 ### Background information on Technical Access Control
 
-**IEC62443-4-2  - technical security requirements for Industrial Automation and Control Systems (IACS) components**
+**IEC62443-4-2**  - technical security requirements for Industrial Automation and Control Systems (IACS) components
 
 **Lack of Access Control Examples:**
 
