@@ -41,7 +41,7 @@ $ pip install mkdocs-material
 $ cd owasp-ot-top10
 
 # run the local webserver
-$ mkdocs server
+$ mkdocs serve
 
 # now you can point your browser to http://localhost:8000 and check
 # how your changes will look like
