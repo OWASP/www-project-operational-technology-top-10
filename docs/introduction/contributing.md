@@ -23,6 +23,12 @@ You find the source code of the current version of the OWASP OT Top 10 in the `d
 
 When you check [our open issues on github](https://github.com/OWASP/www-project-operational-technology-top-10/issues), you can see that some issues are tagged with `help wanted` or `good first issue`. Choose these if you want to help out the project!
 
+## Empirical Data Contribution
+
+The OWASP OT Top 10 are created by both discussions with experts as well as through analysis of empirical data (e.g., incident reports, vulnerability databases, etc.). We are looking for empirical data that can help us to identify the most relevant risks and vulnerabilities in the OT domain. This includes data from incident reports, vulnerability databases, and other sources that can provide insights into the security landscape of OT systems.
+
+If you have empirical data that you would like to contribute, please contact us through email ([Andreas Happe](mailto:andreas.happe@owasp.org)). If you are able to contribute data, please make sure that it is appropriately anonymized.
+
 ## How to test your changes locally before submitting
 
 If you can run python, you can locally run the OWASP OT Top 10 website locally. We recommend this to test your changes before pushing them to github.
