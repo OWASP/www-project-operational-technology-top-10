@@ -27,7 +27,7 @@ When you check [our open issues on github](https://github.com/OWASP/www-project-
 
 The OWASP OT Top 10 are created by both discussions with experts as well as through analysis of empirical data (e.g., incident reports, vulnerability databases, etc.). We are looking for empirical data that can help us to identify the most relevant risks and vulnerabilities in the OT domain. This includes data from incident reports, vulnerability databases, and other sources that can provide insights into the security landscape of OT systems.
 
-If you have empirical data that you would like to contribute, please contact us through email ([Andreas Happe](mailto:andreas.happe@owasp.org)). If you are able to contribute data, please make sure that it is approbriatly anonymized.
+If you have empirical data that you would like to contribute, please contact us through email ([Andreas Happe](mailto:andreas.happe@owasp.org)). If you are able to contribute data, please make sure that it is appropriately anonymized.
 
 ## How to test your changes locally before submitting
 
