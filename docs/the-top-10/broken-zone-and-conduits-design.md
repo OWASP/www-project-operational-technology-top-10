@@ -7,7 +7,7 @@ OT assets (like PLCs, Safety PLCs, HMIs, Historians) should be grouped according
 
 - Missing Demilitiarized Zone (DMZ) between IT and OT: Direct connections from IT to OT zones and vice versa are possible without or without prober restriction.
 - Overly broad IP and port ranges in access control lists: ACLs are configured with broad IP and port ranges, permitting entire network segments to establish connections across port ranges rather than enforcing per-host restrictions.
-- Multi-homed-devices: Multi-homed devices have network interfaces in multiple network zones and may allow lateral movement, either through intentionaly enabled routing capabilities or if the device is compromised.
+- Multi-homed-devices: Multi-homed devices have network interfaces in multiple network zones and may allow lateral movement, either through intentionally enabled routing capabilities or if the device is compromised.
 - Possible command and control channels: Protocols such as IMAP and DNS within the OT network introduces the risk of unintended command and control channels, which may be used for lateral movement or data exfiltration.
 
 ```markdown
