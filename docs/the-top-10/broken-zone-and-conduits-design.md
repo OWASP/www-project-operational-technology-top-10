@@ -1,15 +1,24 @@
 # Broken Zones and Conduits Design
 
-Having a sound segmentation concept mitigates already a lot of other security risks. This makes having proper segmentation and secured interfaces between the segments even mroe important. On the other hand, a complex design might introduce errors and loopholes in the design. Therefore, the "correct" design is not the most complex, or micro segmented, but the one that fulfills all the needs without beeing overly complex.
+Having a sound segmentation concept mitigates already a lot of other security risks. This makes having proper segmentation and secured interfaces between the segments even more important. On the other hand, a complex design might introduce errors and loopholes in the design. Therefore, the "correct" design is not the most complex, or micro segmented, but the one that fulfills all the needs without being overly complex.
 
 ## Description
+OT assets (like PLCs, Safety PLCs, HMIs, Historians) should be grouped according to their security requirements in zones. The zones itself can be defined via a risk-based approach (e.g. Threat and Risk Analysis). The objective is to balance operational feasibility (e.g. limited resources) with security considerations (e.g., avoiding overexposure of critical assets). Conduits are controlled communication paths between those zones. Within conduits, communication should be regulated using standard segmentation and segregation controls, such as firewalls and access control lists (ACLs). Segmentation is the process of dividing a network into smaller parts, where the network segments itself should be aligned to the zones defined earlier. Common design errors include:
 
+- Missing demilitarized Zone (DMZ) between IT and OT: Direct connections from IT to OT zones and vice versa are possible without or without proper restriction.
+- Overly broad IP and port ranges in access control lists: ACLs are configured with broad IP and port ranges, permitting entire network segments to establish connections across port ranges rather than enforcing per-host restrictions.
+- Multi-homed-devices: Multi-homed devices have network interfaces in multiple network zones and may allow lateral movement, either through intentionally enabled routing capabilities or if the device is compromised.
+- Possible command and control channels: Protocols such as IMAP and DNS within the OT network introduces the risk of unintended command and control channels, which may be used for lateral movement or data exfiltration.
+
+```markdown
+NOTES
 - risk-based approach (mention threat modeling)
 - goal: least functionality vs. over-exposure of services
 - errors in network segregration
 - potentially can also contain 'external admin access'?
 - potentially 'forgotten hardware debug interfaces'?
 - available JTAG/SWD interface left enabled on production devices
+```
 
 ## Rationale
 
