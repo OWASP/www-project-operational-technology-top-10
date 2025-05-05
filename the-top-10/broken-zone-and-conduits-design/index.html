@@ -1332,16 +1332,23 @@
 
 
 <h1 id="broken-zones-and-conduits-design">Broken Zones and Conduits Design</h1>
-<p>Having a sound segmentation concept mitigates already a lot of other security risks. This makes having proper segmentation and secured interfaces between the segments even mroe important. On the other hand, a complex design might introduce errors and loopholes in the design. Therefore, the "correct" design is not the most complex, or micro segmented, but the one that fulfills all the needs without beeing overly complex.</p>
+<p>Having a sound segmentation concept mitigates already a lot of other security risks. This makes having proper segmentation and secured interfaces between the segments even more important. On the other hand, a complex design might introduce errors and loopholes in the design. Therefore, the "correct" design is not the most complex, or micro segmented, but the one that fulfills all the needs without being overly complex.</p>
 <h2 id="description">Description</h2>
+<p>OT assets (like PLCs, Safety PLCs, HMIs, Historians) should be grouped according to their security requirements in zones. The zones itself can be defined via a risk-based approach (e.g. Threat and Risk Analysis). The objective is to balance operational feasibility (e.g. limited resources) with security considerations (e.g., avoiding overexposure of critical assets). Conduits are controlled communication paths between those zones. Within conduits, communication should be regulated using standard segmentation and segregation controls, such as firewalls and access control lists (ACLs). Segmentation is the process of dividing a network into smaller parts, where the network segments itself should be aligned to the zones defined earlier. Common design errors include:</p>
 <ul>
-<li>risk-based approach (mention threat modeling)</li>
-<li>goal: least functionality vs. over-exposure of services</li>
-<li>errors in network segregration</li>
-<li>potentially can also contain 'external admin access'?</li>
-<li>potentially 'forgotten hardware debug interfaces'?</li>
-<li>available JTAG/SWD interface left enabled on production devices</li>
+<li>Missing demilitarized Zone (DMZ) between IT and OT: Direct connections from IT to OT zones and vice versa are possible without or without proper restriction.</li>
+<li>Overly broad IP and port ranges in access control lists: ACLs are configured with broad IP and port ranges, permitting entire network segments to establish connections across port ranges rather than enforcing per-host restrictions.</li>
+<li>Multi-homed-devices: Multi-homed devices have network interfaces in multiple network zones and may allow lateral movement, either through intentionally enabled routing capabilities or if the device is compromised.</li>
+<li>Possible command and control channels: Protocols such as IMAP and DNS within the OT network introduces the risk of unintended command and control channels, which may be used for lateral movement or data exfiltration.</li>
 </ul>
+<div class="highlight"><pre><span></span><code>NOTES
+<span class="k">-</span><span class="w"> </span>risk-based approach (mention threat modeling)
+<span class="k">-</span><span class="w"> </span>goal: least functionality vs. over-exposure of services
+<span class="k">-</span><span class="w"> </span>errors in network segregration
+<span class="k">-</span><span class="w"> </span>potentially can also contain &#39;external admin access&#39;?
+<span class="k">-</span><span class="w"> </span>potentially &#39;forgotten hardware debug interfaces&#39;?
+<span class="k">-</span><span class="w"> </span>available JTAG/SWD interface left enabled on production devices
+</code></pre></div>
 <h2 id="rationale">Rationale</h2>
 <p>The most common entry into OT-zones comes from IT environments. For hardware devices the most common entry is via debugging interfaces. After getting entry into the system, without segmenting networks and isolating services, an attacker has full access to the network. Unfortunately, in realty networks are very flat. Segmentation or networks and services enables implementation of core principles like "defense in depth" and "need to know".</p>
 <h2 id="known-attacksexamples">Known Attacks/Examples</h2>
