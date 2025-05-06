@@ -38,10 +38,6 @@ Potential Sources
 - <https://attack.mitre.org/techniques/ics/>
 - please add more
 
-### How-To Test
-
-- maybe add this to a separate section?
-
 ## Mitigation/Countermeasures
 
 ### Design and Implementation
@@ -51,6 +47,10 @@ Potential Sources
 ### Operational
 
 - mitigations for integrators/builders
+
+## Next Actionable Steps
+
+- maybe add this to a separate section?
 
 ## References
 

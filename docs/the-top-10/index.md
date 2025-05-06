@@ -35,5 +35,6 @@ Each entry in the OWASP OT Top 10 will be accompanied by a short description, pu
 | Rationale | Why did we find this item important enough for inclusion? |
 | Known OT Attacks utilizing this Item | <https://www.icsadvisoryproject.com>, <https://icsstrive.com/> |
 | Mitigation/Countermeasures | There will be multiple levels: 1) design and implementation level mitigations for developers/builders;  2) operational mitigations for integrators, e.g., air-gapping systems |
+| Next actionable steps | What can be done to identify and mitigate the issue? |
 | References| Relevant standards |
 | Tooling | Links to Tools that can be used to test for the vulnerability|

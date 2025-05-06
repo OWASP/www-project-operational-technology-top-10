@@ -33,10 +33,6 @@ History has shown that undocumented assets can be used by attackers for everythi
 - [Someone tried to poison a Florida city by hijacking its water treatment plant via TeamViewer, says sheriff](https://www.theregister.com/2021/02/09/florida_water_hacked/)
 - [CISA and the Environmental Protection Agency (EPA) warned water facilities today to secure Internet-exposed Human Machine Interfaces (HMIs) from cyberattacks.](https://www.bleepingcomputer.com/news/security/cisa-warns-water-facilities-to-secure-hmi-systems-exposed-online/)
 
-### How-To Test
-
-- maybe add this to a separate section?
-
 ## Mitigation/Countermeasures
 
 ### Design and Implementation
@@ -50,6 +46,13 @@ History has shown that undocumented assets can be used by attackers for everythi
 - Implement asset discovery and inventory management tools to identify and document all assets in the OT environment.
 - Regularly scan and monitor the network for new or unknown devices.
 - Enforce strict access controls and authentication mechanisms to prevent unauthorized devices from connecting to the network. Also assume rogue devices/services in the network when designing security measures.
+
+## Next Actionable Steps
+
+- Conduct a thorough inventory of all devices and systems in the OT environment.
+- Implement network scanning and discovery tools to identify unknown assets.
+- Establish a process for documenting and managing changes to the OT environment.
+- Regularly review and update the asset inventory to ensure accuracy and completeness.
 
 ## References
 

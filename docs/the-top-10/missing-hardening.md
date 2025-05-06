@@ -6,13 +6,13 @@
 
 ## Known Attacks/Examples
 
-### How-To Test
-
 ## Mitigation/Countermeasures
 
 ### Developers/Builders: Design and Implementation
 
 ### Integrators/Operators: Operational
+
+## Next Actionable Steps
 
 ## References
 

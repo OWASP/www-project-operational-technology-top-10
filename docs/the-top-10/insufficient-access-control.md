@@ -54,12 +54,6 @@ The prevalence of:
 - [After quitting his job at the plant at the beginning of 2019, he then used the remote login system again on March 27, 2019, to shut down the plant and one of its treatment filters..](https://www.ksnt.com/news/local-news/kansas-hacker-pleads-guilty-to-shutting-down-drinking-water-plant-with-phone/)
 - [Colonial Pipeline Hack](https://en.wikipedia.org/wiki/Colonial_Pipeline_ransomware_attack): The attackers gained access to the system by means of a compromised password for a disused VPN account.
 
-### How-To Test (have to discuss)
-
-- maybe add this to a separate section?
-- Is sensitive information accessible via the available interfaces?
-- Is there a role concept for the devices/systems and has this been implemented?
-
 ## Mitigation/Countermeasures
 
 ### Design and Implementation
@@ -80,6 +74,11 @@ The prevalence of:
 - Change password and default user.
 - perform periodic account reviews to counter permission creep
 - Implement a process for deactivating accounts when a user leaves the company
+
+## Next Actionable Steps
+
+- Is sensitive information accessible via the available interfaces?
+- Is there a role concept for the devices/systems and has this been implemented?
 
 ## References
 

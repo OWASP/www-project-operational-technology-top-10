@@ -34,12 +34,6 @@ Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection sof
 - NotPetya <https://en.wikipedia.org/wiki/Petya_(malware_family)>. It was believed that the software update mechanism of M.E.Doc—a Ukrainian tax preparation program that, according to F-Secure analyst Mikko Hyppönen, "appears to be de facto" among companies doing business in the country—had been compromised to spread the malware. Analysis by ESET found that a backdoor had been present in the update system for at least six weeks prior to the attack, describing it as a "thoroughly well-planned and well-executed operation". The developers of M.E.Doc denied that they were entirely responsible for the cyberattack, stating that they too were victims.
 - Denmark’s Train Network Frozen Due to Cyberattack on Subcontractor <https://www.bitdefender.com/en-au/blog/hotforsecurity/denmarks-train-network-frozen-due-to-cyberattack-on-subcontractor>.
 
-### How-To Test
-
-- Check on a regular basis that critical suppliers have appropriate and proportionate cyber security risk management measures in place to manage identified supply chain security risks. This may be conducted by supplier assessments or requiring relevant certifications (e.g., IEC 62443-4-1, IEC 62443-4-2).
-- Ensure that relevant entities are resilient to supply chain threats by conducting preparedness or stress tests.
-- Create test platforms or sandbox environments for secure testing.
-
 ## Mitigation/Countermeasures
 
 ### Design and Implementation
@@ -54,6 +48,12 @@ Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection sof
 - It is imperative to undertake a thorough evaluation of the risk profile exhibited by suppliers on a regularly basis. This evaluation should be used to determine the necessity of reducing the risk posed by suppliers deemed to be high-risk. If the circumstances necessitate, it is also crucial to impose restrictions on or to exclude suppliers considered to be high-risk.
 - Promotion of information exchange, awareness and training addressing supply chain risks.
 - Include supply chain attacks in the regular incident, emergency, and crisis management plans and exercises.
+
+## Next Actionable Steps
+
+- Check on a regular basis that critical suppliers have appropriate and proportionate cyber security risk management measures in place to manage identified supply chain security risks. This may be conducted by supplier assessments or requiring relevant certifications (e.g., IEC 62443-4-1, IEC 62443-4-2).
+- Ensure that relevant entities are resilient to supply chain threats by conducting preparedness or stress tests.
+- Create test platforms or sandbox environments for secure testing.
 
 ## References
 

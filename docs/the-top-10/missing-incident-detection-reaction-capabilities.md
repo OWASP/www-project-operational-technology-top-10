@@ -26,12 +26,6 @@ Without logging and monitoring, breaches cannot be detected. An OT cybersecurity
 - Triton Safety Instrumented System Attack (cf. <https://attack.mitre.org/campaigns/C0030/>, and <https://attack.mitre.org/software/S1009/>). The Triton Safety Instrumented System Attack was a campaign that took advantage of the Triton malware framework to target a petrochemical organisation. The malware and techniques employed in this campaign were designed to infiltrate specific Triconex Safety Controllers within the environment. The incident was eventually exposed due to a safety trip that occurred as a result of an issue in the malware.
 - LockerGoga ransomware infects industrial and manufactoring companies (c.f <https://attack.mitre.org/software/S0372/>, and <https://news.microsoft.com/source/features/digital-transformation/hackers-hit-norsk-hydro-ransomware-company-responded-transparency/>). In March 2019, Norsk Hydro was subjected to a cyberattack that utilised the LockerGoga ransomware to encrypt its computer files. In response, the aluminium and renewable energy company transitioned to manual operations and maintained transparency with the public regarding its progress towards recovery. The security industry has expressed high regard for Norsk Hydro's transparency throughout the discovery and recovery process.
 
-### How-To Test
-
-- Perform regular incident detection and response exercises where both technical and organizational aspects are tested.
-- Example of testing technical aspects: Generate harmless test-malware and place it at an asset on the system under consideration (SUC). Verify, if the upload on that asset is already blocked or at least alarmed. If not, execute the test-malware and place it somewhere else in the SUC. If the uplaod to the asset is already blocked, encrypt or encode the malware (with several iterations, if needed) and upload it to the asset again to test if host-based detection is also working besides network-based detection.
-- Example of testing organizational apsects: Perform a table top exercise simulating an incident or emergency. Test especially communication flows, responsabilities of the staff, coordination of conducting incident response, and the on-demand acquiration of forensic knowledge (if not in-house) during the exercise.
-
 ## Mitigation/Countermeasures
 
 ### Design and Implementation
@@ -46,6 +40,13 @@ Without logging and monitoring, breaches cannot be detected. An OT cybersecurity
 - The implementation of intrusion detection signatures at network boundaries is imperative for the effective prevention of unauthorised access. In the context of industrial control environments, the configuration of network intrusion prevention should be configured in a way that it does not disrupt the protocols and communications that are essential for real-time functions related to control or safety.
 - DevSecOps teams should establish effective monitoring and alerting such that suspicious activities are detected and responded to quickly.
 - Establish or adopt an incident response and recovery plan, such as National Institute of Standards and Technology (NIST) 800-61r2 or later.
+
+## Next Actionable Steps
+
+- Perform regular incident detection and response exercises where both technical and organizational aspects are tested.
+- Example of testing technical aspects: Generate harmless test-malware and place it at an asset on the system under consideration (SUC). Verify, if the upload on that asset is already blocked or at least alarmed. If not, execute the test-malware and place it somewhere else in the SUC. If the uplaod to the asset is already blocked, encrypt or encode the malware (with several iterations, if needed) and upload it to the asset again to test if host-based detection is also working besides network-based detection.
+- Example of testing organizational apsects: Perform a table top exercise simulating an incident or emergency. Test especially communication flows, responsabilities of the staff, coordination of conducting incident response, and the on-demand acquiration of forensic knowledge (if not in-house) during the exercise.
+
 
 ## References
 
