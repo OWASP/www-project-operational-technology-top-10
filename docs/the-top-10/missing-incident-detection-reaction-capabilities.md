@@ -44,7 +44,7 @@ Without logging and monitoring, breaches cannot be detected. An OT cybersecurity
 ## Next Actionable Steps
 
 - Perform regular incident detection and response exercises where both technical and organizational aspects are tested.
-- Example of testing technical aspects: Generate harmless test-malware and place it at an asset on the system under consideration (SUC). Verify, if the upload on that asset is already blocked or at least alarmed. If not, execute the test-malware and place it somewhere else in the SUC. If the uplaod to the asset is already blocked, encrypt or encode the malware (with several iterations, if needed) and upload it to the asset again to test if host-based detection is also working besides network-based detection.
+- Example of testing technical aspects: Generate harmless test-malware and place it at an asset on the system under consideration (SUC). Verify, if the upload on that asset is already blocked or at least alarmed. If not, execute the test-malware and place it somewhere else in the SUC. If the upload to the asset is already blocked, encrypt or encode the malware (with several iterations, if needed) and upload it to the asset again to test if host-based detection is also working besides network-based detection.
 - Example of testing organizational apsects: Perform a table top exercise simulating an incident or emergency. Test especially communication flows, responsabilities of the staff, coordination of conducting incident response, and the on-demand acquiration of forensic knowledge (if not in-house) during the exercise.
 
 ## References
