@@ -57,14 +57,6 @@ Vulnerable devices bad. Especially in critical infrastructure.
 - [Volt Typhoon typically gains initial access to the IT network by exploiting known or zero-day vulnerabilities in public-facing network appliances](https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a)
 - [Sensitive nuclear information (SNI), the industry’s special classification system, was left vulnerable in part because of the use of “obsolete” technology including Windows 7 and Windows 2008, Lawrence said.](https://www.theguardian.com/business/article/2024/aug/08/sellafield-apologises-guilty-plea-security-failings-nuclear)
 
-### How-To Test
-
-- [Inventarize your devices and services](./unknown-assets-and-admin-access.md)
-- gather SBOMs and check for known vulnerabilities
-- test your devices and services for known vulnerabilities if possible (pen-testing)
-- create a risk-based treatment plan, start with mitigations that have the highest impact
-- rinse and repeat
-
 ## Mitigation/Countermeasures
 
 ### Developers/Builders: Design and Implementation
@@ -82,6 +74,14 @@ Vulnerable devices bad. Especially in critical infrastructure.
 - Test hardware/software before deploying them in the field ([OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html), [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology))
 - Establish a vulnerability management program that includes regular vulnerability scanning, patch management, and remediation processes: Prioritize critical security updates and patches for OT systems to address high-risk vulnerabilities.
 - Implement network segmentation and access controls to limit the impact of security vulnerabilities.
+
+## Next Actionable Steps
+
+- [Inventarize your devices and services](./unknown-assets-and-admin-access.md)
+- gather SBOMs and check for known vulnerabilities
+- test your devices and services for known vulnerabilities if possible (pen-testing)
+- create a risk-based treatment plan, start with mitigations that have the highest impact
+- rinse and repeat
 
 ## References
 

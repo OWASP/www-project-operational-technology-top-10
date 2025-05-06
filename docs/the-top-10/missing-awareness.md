@@ -4,16 +4,24 @@ Short Description (one paragraph)
 
 ## Description
 
-- trying to wiggle out of security features via deflection to obscurity
 - cyber-security hygiene
+- why are security best-practises not applied? missing knowledge?
+- culture
+- OT guys know something that the IT guys know not
+
+### Security by Obscurity does not work in the long run
+
+- trying to wiggle out of security features via deflection to obscurity
+
+### Security Capabilities are useless if not used
+
 - everything configuration related
   - missing encryption even if available
   - available JTAG/SWD interface left enabled on production devices
   - Intentional misconfiguration for ease of use, e.g., leaving rtu’s in upload mode
   - lack of hardening
-- why are security best-practises not applied? missing knowledge?
-- culture
-- OT guys know something that the IT guys know not
+
+### Add Security Requirements to Tenders
 
 ## Rationale
 
@@ -33,10 +41,6 @@ Potential Sources
 - <https://attack.mitre.org/techniques/ics/>
 - please add more
 
-### How-To Test (have to discuss)
-
-- maybe add this to a separate section?
-
 ## Mitigation/Countermeasures
 
 ### Design and Implementation
@@ -46,6 +50,10 @@ Potential Sources
 ### Operational
 
 - mitigations for integrators/builders
+
+## Next Actionable Steps
+
+- maybe add this to a separate section?
 
 ## References
 
