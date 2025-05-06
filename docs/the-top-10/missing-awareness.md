@@ -13,7 +13,7 @@ Short Description (one paragraph)
 
 - trying to wiggle out of security features via deflection to obscurity
 
-### Security Capabilties are useless if not used
+### Security Capabilities are useless if not used
 
 - everything configuration related
   - missing encryption even if available
