@@ -24,7 +24,7 @@ To reiterate on the special problems that the OT world faces, we want to give a 
 
 **[Missing Security Awareness on the OT side](./missing-awareness.md)**: while safety is a well understood and implement concept in OT, security is often not. This can lead to a situation where the operators do not understand the importance of security updates and do not prioritize them. This can be due to a lack of knowledge or understanding of the risks involved, or it can be due to a lack of resources or time to implement them.
 
-**[Unknown devices and shadow infrastructure](./unknown-assets-and-admin-access.md)**: if you don't event know about a device, how should you know that you need to update it?
+**[Unknown devices and shadow infrastructure](./unknown-assets-and-admin-access.md)**: if you don't even know about a device, how should you know that you need to update it?
 
 Please note, that this shows (primarily to IT security people) why upgrading is not as simple as in other domains but **does not mean that we (as OT) can use any of this as an excuse for not having update procedures in place**.
 
