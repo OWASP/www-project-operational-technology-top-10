@@ -6,7 +6,7 @@ It's not enough to have security capabilities, they need to be used. If no one i
 
 Security awareness is the understanding and knowledge of security risks, threats, and best practices within an organization. It involves educating employees about potential security vulnerabilities and how to mitigate them. In many cases, organizations have security capabilities in place, but employees are not aware of them or do not know how to use them effectively.
 
-There is a connection to [Devices with Missing Capabilities](/the-top-10/components-with-insufficient-security-capabilities/): we need both sdvices with security capabilities and the knowledge to use them. If either is missing, the security capabilities are useless.
+There is a connection to [Devices with Missing Capabilities](/the-top-10/components-with-insufficient-security-capabilities/): we need both devices with security capabilities and the knowledge to use them. If either is missing, the security capabilities are useless.
 
 The same goes for security policies: if there are policies in place, but they are not lived, they are ultimately useless. This can be due to a lack of knowledge or understanding of the policies, or it can be due to a lack of resources or time to implement them. The best way to counteract this is to make employees understand why the security policies were created and how they protect their daily work.
 
