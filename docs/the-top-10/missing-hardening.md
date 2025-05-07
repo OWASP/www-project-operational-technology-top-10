@@ -20,7 +20,7 @@ Hardening itself does not reduce a concrete vulnerability but makes meaningful e
 
 Empirical data, gathered during the development of the OWASP OT Top 10, showed that missing hardening was a common part of successful exploits and comprehensive hardening would have prevented successful exploitation.
 
-Given the requirement of non-stop operation of many OT systems, hardening is crucial as it allows for controlled updates after a security issue has been identified (as the additional security layers uphold the secuirty of the overall system).
+Given the requirement of non-stop operation of many OT systems, hardening is crucial as it allows for controlled updates after a security issue has been identified (as the additional security layers uphold the security of the overall system).
 
 ## Known Attacks/Examples
 
