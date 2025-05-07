@@ -20,7 +20,6 @@ To reiterate on the special problems that the OT world faces, we want to give a 
 
 **[Problems with the supply chain](./inadequate_supply_chain_management.md)**: compared to traditional IT, in the OT world we have fewer vendors. This gives vendors power over customers, which can lead to a lack of motivation to provide security updates or notify if security problems were discovered.
 
-
 **[Usage of legacy devices](./components-with-insufficient-security-capabilities.md)**: due to the long lifetimes of OT systems, many devices are still in use that were designed without security in mind. This can lead to a situation where the device is not able to be updated or patched, even if a vulnerability is discovered. This is especially true for legacy systems, where the vendor may no longer be in business or may not have the resources to provide updates.
 
 **[Missing Security Awareness on the OT side](./missing-awareness.md)**: while safety is a well understood and implement concept in OT, security is often not. This can lead to a situation where the operators do not understand the importance of security updates and do not prioritize them. This can be due to a lack of knowledge or understanding of the risks involved, or it can be due to a lack of resources or time to implement them.
