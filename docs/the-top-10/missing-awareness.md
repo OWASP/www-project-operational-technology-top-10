@@ -1,6 +1,6 @@
 # Missing Awareness
 
-It's not enough to have security capabilities, they need to be used. If noone is aware of potential security issues and how the respective security capabilities can help, employees will not use them and thus finally useless.
+It's not enough to have security capabilities, they need to be used. If no one is aware of potential security issues and how the respective security capabilities can help, employees will not use them and thus finally useless.
 
 ## Description
 
