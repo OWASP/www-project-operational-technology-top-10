@@ -18,7 +18,7 @@ To help with some common concerns and possible frictions, the following paragrap
 
 ### Security vs. Safety
 
-*We do not need security, we have more than enough safety mechanisms in place*
+> We do not need security, we have more than enough safety mechanisms in place
 
 As acknowledged before, safety is paramount – and with good reason! An exploding turbine affecting the lives of operators around it is undeniably more serious than a file server in an office getting encrypted by ransomware. Looking at safety in OT reveals how diligently the OT culture treats risk to life. Most of the time, there are multiple layers of safety mechanisms ensuring that even in face of failure of one layer, another one intervenes.
 
@@ -26,7 +26,7 @@ On a side note, this concept, commonly referred to as “defense in depth”, is
 
 ### Security vs. Availability
 
-*We cannot harden/update systems to make them secure as we cannot afford the downtime*
+> We cannot harden/update systems to make them secure as we cannot afford the downtime
 
 System availability is only second to safety in most cases, so naturally many systems cannot simply be taken down to introduce updates or change configurations. This is often hard to grasp for security professionals coming from an IT background. Every downtime has to be meticulously planned in advance. But this does not mean that downtimes are impossible in general. They do happen! Every component needs maintenance at some point in time and OT staff is usually highly experienced to align such maintenance downtimes with business goals and possibly existing regulatory requirements.
 
@@ -36,13 +36,13 @@ So, unlike in IT, more uncritical patches can be postponed to a later point in t
 
 ### Trusting the Blast Zones
 
-*Our systems are isolated so there is no way to access them anyway. We therefore do not need further measures*
+> Our systems are isolated so there is no way to access them anyway. We therefore do not need further measures
 
 Physical security and isolation are often a major strength in OT environments, far surpassing typical IT environments in that regard. Nonetheless, relying on access control alone can be deceptive. Surely, most environments won’t face the kind of intricacy and effort of nation-state attacks like Stuxnet (which breached air-gapped systems), but just think about a scenario, where an employee plugs in an USB stick that is privately owned. If the stick is infected with malware, your OT environment can be compromised soon – without any connection to the outside! This is a good case for “defense in depth” again: Physical access control and network segmentation are both important factors in a comprehensive security strategy. Without them, the strategy can barely be called comprehensive, but on their own they also are not sufficient for modern threat landscapes.
 
 ### Security vs. Performance
 
-*We cannot afford to have any delays in network/system/etc. performance caused by security technology*
+> We cannot afford to have any delays in network/system/etc. performance caused by security technology
 
 This can indeed be a major problem. Especially OT protocols often cater to very specific performance requirements like real-time communication. As most of these protocols are quite old, security was not taken into account during creation. While there are some newer protocols with security features (like OPC UA) and some older ones offer security extensions (like PROFINET), these are often not supported by vendors or are not applicable to certain tasks. This should not discourage anybody from looking for alternative security measures.
 
@@ -50,7 +50,7 @@ If the protocol layer cannot be secured, then other mitigations like careful net
 
 ### Knowledge Gaps
 
-*We are engineers, we do not have knowledge about security*
+> We are engineers, we do not have knowledge about security
 
 This is also described in the beginning above. OT staff has in general a completely different background and view on security/safety than IT staff. While this at first seems to be a hindrance, it does not have to be that way. In-depth OT-specific knowledge is crucial in securing OT environments as well as in detecting and responding to security incidents. Typically, the engineers working with the systems are the first to notice strange behavior, being the primary source of (human) detection of attacks. They also know the specific characteristics, the requirements and the processes coming with their systems. Without this knowledge it is nigh impossible to craft a tailored security strategy like described above. The lack of security know-how can be tackled in several ways and depends on the organization of the company/organization: If there already is security personnel and no specific OT security team is planned, a closer collaboration between IT and OT staff can lead to greater understanding on both sides.
 
@@ -60,13 +60,13 @@ There is also a steady increase in educational material for OT security, be it i
 
 ### Security by Obscurity
 
-*We are a small power plant/production site/or similar. Nobody will make the effort to attack us*
+> We are a small power plant/production site/or similar. Nobody will make the effort to attack us
 
 This is a sentiment that is often also shared by IT. Plain and simple, this is a dangerous fallacy that does not resemble ongoing threats. While sophisticated nation-state attacks surely affect only a very small subset of all OT environments, threat reports show that the awareness of malicious actors – be it criminal, be it hacktivists – for OT is on the rise. While not nearly as dangerous as advanced threat groups, also rudimentary malware can lead to disruption and availability issues. One especially concerning trend is the rise of OT ransomware, a type of malware that has been haunting IT for years now. In general, more and more OT incidents do not happen because of a specific interest in the target, but due to opportunism and the chance to extort money or amplify a certain political message  by attacking a coincidentally vulnerable OT environments (e.g. think of a newly vulnerable remote access solutions that has to be reachable over the Internet).
 
 ### Problems with the supply chain
 
-*Even if we want to integrate security more, many of our suppliers do not feature security in their products*
+> Even if we want to integrate security more, many of our suppliers do not feature security in their products
 
 Yes, this can be a problem. While regulations force more and more vendors to consider security in their new products, this does not help with already existing systems. Nonetheless, security can be done in many ways and as described before, there are security workarounds for almost all problems.  “Defense in depth” is again the keyword to look for. If there is no security control for one specific component (e.g. a PLC), then the additional layers of a DiD approach can provide security by for example monitoring the network of the PLCs, restricting access to this network segment, providing strict access control for engineering via dedicated and isolated workstations and so on.
 
