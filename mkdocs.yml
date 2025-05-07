@@ -78,5 +78,5 @@ nav:
       - '9. Availability': the-top-10/availability.md
       - '10. Missing Hardening': the-top-10/missing-hardening.md
   - 'Appendix':
-    - "WIP: What's next?": appendix/whats-next.md
-    - 'WIP: Glossary': appendix/glossary.md
+    - "What's next?": appendix/whats-next.md
+    - 'Glossary': appendix/glossary.md
