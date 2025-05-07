@@ -20,7 +20,7 @@ A good way to counteract this is to add security requirements to tenders. By inc
 
 OT and IT are often not integrated, leading to a lack of communication and understanding between the two teams. This can result in security gaps and vulnerabilities that are not addressed.
 
-IT security people often wonder why even basic secruity hygiene is not applied in OT environments. This can be due to a lack of understanding of the unique challenges and requirements of OT systems. While OT people are in possessin of the ground truth, they often wonder why security is now being pushed into their environments.
+IT security people often wonder why even basic security hygiene is not applied in OT environments. This can be due to a lack of understanding of the unique challenges and requirements of OT systems. While OT people are in possession of the ground truth, they often wonder why security is now being pushed into their environments.
 
 Many OT systems are designed to operate continuously and cannot be easily patched or updated without causing downtime. This can lead to a culture of "if it ain't broke, don't fix it" that can leave systems vulnerable to attacks.
 
