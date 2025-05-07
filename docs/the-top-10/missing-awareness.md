@@ -6,7 +6,7 @@ It's not enough to have security capabilities, they need to be used. If no one i
 
 Security awareness is the understanding and knowledge of security risks, threats, and best practices within an organization. It involves educating employees about potential security vulnerabilities and how to mitigate them. In many cases, organizations have security capabilities in place, but employees are not aware of them or do not know how to use them effectively.
 
-There is a connection to [Devices with Missing Capabilities](/the-top-10/components-with-insufficient-security-capabilities/): we need both devices with security capabilities and the knowledge to use them. If either is missing, the security capabilities are useless.
+There is a connection to [Devices with Missing Capabilities](components-with-insufficient-security-capabilities.md): we need both devices with security capabilities and the knowledge to use them. If either is missing, the security capabilities are useless.
 
 The same goes for security policies: if there are policies in place, but they are not lived, they are ultimately useless. This can be due to a lack of knowledge or understanding of the policies, or it can be due to a lack of resources or time to implement them. The best way to counteract this is to make employees understand why the security policies were created and how they protect their daily work.
 
@@ -36,7 +36,7 @@ Security by obscurity can be used to make an attacker's job more difficult, but 
 
 ### Security Capabilities are useless if not used
 
-In OT, we often have the initial problem of long-lived [components with missing capabilities](/the-top-10/components-with-insufficient-security-capabilities/), but even if we have the needed capabilities, they are often not used. This can be due to a lack of knowledge or understanding of the capabilities.
+In OT, we often have the initial problem of long-lived [components with missing capabilities](components-with-insufficient-security-capabilities.md), but even if we have the needed capabilities, they are often not used. This can be due to a lack of knowledge or understanding of the capabilities.
 
 Educating employees (in the sense of "explaining the reasons for the measures taken" and not "preaching security") thus is of high importance to ensure that security capabilities are used effectively. This includes providing training and resources to help employees understand how to use security capabilities, as well as creating a culture of security awareness within the organization.
 
