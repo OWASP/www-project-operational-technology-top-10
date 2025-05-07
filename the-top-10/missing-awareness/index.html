@@ -876,6 +876,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#add-security-requirements-to-tenders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Security Requirements to Tenders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ot-and-it-are-often-not-integrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      OT and IT are often not integrated
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#security-by-obscurity-does-not-work-in-the-long-run" class="md-nav__link">
     <span class="md-ellipsis">
       Security by Obscurity does not work in the long run
@@ -888,15 +906,6 @@
   <a href="#security-capabilities-are-useless-if-not-used" class="md-nav__link">
     <span class="md-ellipsis">
       Security Capabilities are useless if not used
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-security-requirements-to-tenders" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add Security Requirements to Tenders
     </span>
   </a>
   
@@ -1155,7 +1164,7 @@
   
   
   <span class="md-ellipsis">
-    WIP: What's next?
+    What's next?
     
   </span>
   
@@ -1178,7 +1187,7 @@
   
   
   <span class="md-ellipsis">
-    WIP: Glossary
+    Glossary
     
   </span>
   
@@ -1233,6 +1242,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#add-security-requirements-to-tenders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Security Requirements to Tenders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ot-and-it-are-often-not-integrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      OT and IT are often not integrated
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#security-by-obscurity-does-not-work-in-the-long-run" class="md-nav__link">
     <span class="md-ellipsis">
       Security by Obscurity does not work in the long run
@@ -1245,15 +1272,6 @@
   <a href="#security-capabilities-are-useless-if-not-used" class="md-nav__link">
     <span class="md-ellipsis">
       Security Capabilities are useless if not used
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-security-requirements-to-tenders" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add Security Requirements to Tenders
     </span>
   </a>
   
@@ -1386,71 +1404,68 @@
 
 
 <h1 id="missing-awareness">Missing Awareness</h1>
-<p>Short Description (one paragraph)</p>
+<p>It's not enough to have security capabilities, they need to be used. If no one is aware of potential security issues and how the respective security capabilities can help, employees will not use them and thus finally useless.</p>
 <h2 id="description">Description</h2>
-<ul>
-<li>cyber-security hygiene</li>
-<li>why are security best-practises not applied? missing knowledge?</li>
-<li>culture</li>
-<li>OT guys know something that the IT guys know not</li>
-</ul>
+<p>Security awareness is the understanding and knowledge of security risks, threats, and best practices within an organization. It involves educating employees about potential security vulnerabilities and how to mitigate them. In many cases, organizations have security capabilities in place, but employees are not aware of them or do not know how to use them effectively.</p>
+<p>There is a connection to <a href="../components-with-insufficient-security-capabilities/">Devices with Missing Capabilities</a>: we need both devices with security capabilities and the knowledge to use them. If either is missing, the security capabilities are useless.</p>
+<p>The same goes for security policies: if there are policies in place, but they are not lived, they are ultimately useless. This can be due to a lack of knowledge or understanding of the policies, or it can be due to a lack of resources or time to implement them. The best way to counteract this is to make employees understand why the security policies were created and how they protect their daily work.</p>
+<h3 id="add-security-requirements-to-tenders">Add Security Requirements to Tenders</h3>
+<p>Very often security is an afterthought leading to problems such as insecure designs that are expensive to fix, as well as missing resources for security. This is especially problematic in the OT world with its long-running lifetimes: if security is not part of the design process, fixes can become prohibitively expensive and applying those fixes will lead to downtimes.</p>
+<p>A good way to counteract this is to add security requirements to tenders. By including these requirements in tenders, organizations can ensure that security is considered from the outset of the project. Making security tests a part of acceptance tests also gives the "customer" more leverage when negotiating security fixes with the vendor.</p>
+<h3 id="ot-and-it-are-often-not-integrated">OT and IT are often not integrated</h3>
+<p>OT and IT are often not integrated, leading to a lack of communication and understanding between the two teams. This can result in security gaps and vulnerabilities that are not addressed.</p>
+<p>IT security people often wonder why even basic security hygiene is not applied in OT environments. This can be due to a lack of understanding of the unique challenges and requirements of OT systems. While OT people are in possession of the ground truth, they often wonder why security is now being pushed into their environments.</p>
+<p>Many OT systems are designed to operate continuously and cannot be easily patched or updated without causing downtime. This can lead to a culture of "if it ain't broke, don't fix it" that can leave systems vulnerable to attacks.</p>
 <h3 id="security-by-obscurity-does-not-work-in-the-long-run">Security by Obscurity does not work in the long run</h3>
-<ul>
-<li>trying to wiggle out of security features via deflection to obscurity</li>
-</ul>
+<p>Security by obscurity is the practice of keeping security measures secret in order to protect them from attackers. This can include using proprietary protocols, custom hardware, or other techniques that are not widely known or understood. The idea is that if attackers do not know how the system works, they will not be able to exploit it.</p>
+<p>However, this approach is flawed. Attackers can often reverse-engineer systems or find other ways to discover vulnerabilities, even if the details of the system are not publicly available. Security by obscurity can create a false sense of security and lead to complacency in addressing vulnerabilities.</p>
+<p>This approach is often used in OT environments, where systems are not well documented or understood. However, this approach is not effective in the long run, as attackers can still find ways to exploit vulnerabilities.</p>
+<p>Security by obscurity can be used to make an attacker's job more difficult, but it should not be relied upon as the sole means of protection.</p>
 <h3 id="security-capabilities-are-useless-if-not-used">Security Capabilities are useless if not used</h3>
+<p>In OT, we often have the initial problem of long-lived <a href="../components-with-insufficient-security-capabilities/">components with missing capabilities</a>, but even if we have the needed capabilities, they are often not used. This can be due to a lack of knowledge or understanding of the capabilities.</p>
+<p>Educating employees (in the sense of "explaining the reasons for the measures taken" and not "preaching security") thus is of high importance to ensure that security capabilities are used effectively. This includes providing training and resources to help employees understand how to use security capabilities, as well as creating a culture of security awareness within the organization.</p>
+<p>Examples of security problems introduced by missing awareness include:</p>
 <ul>
 <li>everything configuration related</li>
 <li>missing encryption even if available</li>
 <li>available JTAG/SWD interface left enabled on production devices</li>
 <li>Intentional misconfiguration for ease of use, e.g., leaving rtu’s in upload mode</li>
-<li>lack of hardening</li>
 </ul>
-<h3 id="add-security-requirements-to-tenders">Add Security Requirements to Tenders</h3>
 <h2 id="rationale">Rationale</h2>
-<ul>
-<li>why did we include this item in the top 10?</li>
-</ul>
+<p>The best hardware with the best security capabilities is useless if no one is aware of them and how to use them. Educating employees about security risks and best practices can help mitigate vulnerabilities and improve overall security posture.</p>
 <h2 id="known-attacksexamples">Known Attacks/Examples</h2>
 <ul>
 <li><a href="https://www.theregister.com/2024/09/07/us_water_cyberattacks/">The Register: Iranian hacktivists .. likely broke into the facilities by using defautl passwords for internet-accessible PLCs</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Colonial_Pipeline_ransomware_attack">Colonial Pipeline Hack</a>: The attackers gained access to the system by means of a compromised password for a disused VPN account.</li>
 <li><a href="https://www.dragos.com/resources/whitepaper/trisis-analyzing-safety-system-targeting-malware/">TRISIS: The Triconex SIS controller had the keyswitch in ‘program mode’ during the time of the attack and the SIS was connected to the operations network against best practices. In a proper configuration and with the controller placed in Run mode (program changes not permitted) the attackers would face a more difficult challenge implementing the attack.</a></li>
 </ul>
-<p>Potential Sources</p>
-<ul>
-<li><a href="https://www.icsadvisoryproject.com">https://www.icsadvisoryproject.com</a></li>
-<li><a href="https://icsstrive.com/">https://icsstrive.com/</a></li>
-<li><a href="https://emb3d.mitre.org/">https://emb3d.mitre.org/</a></li>
-<li><a href="https://attack.mitre.org/techniques/ics/">https://attack.mitre.org/techniques/ics/</a></li>
-<li>please add more</li>
-</ul>
 <h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
 <h3 id="design-and-implementation">Design and Implementation</h3>
 <ul>
-<li>mitigations for developers/builders</li>
+<li>capture security requirements in the design process</li>
+<li>explain OT-specific security requirements to software developers (if development is part of the implementation/design process)</li>
 </ul>
 <h3 id="operational">Operational</h3>
 <ul>
-<li>mitigations for integrators/builders</li>
+<li>add security requirements to tenders</li>
+<li>make security tests part of acceptance tests</li>
+<li>create a culture of security awareness</li>
+<li>provide training and resources to employees to help them understand and use security capabilities effectively.</li>
+<li>implement security policies and procedures that are easy to understand and follow</li>
 </ul>
 <h2 id="next-actionable-steps">Next Actionable Steps</h2>
 <ul>
-<li>maybe add this to a separate section?</li>
+<li>add security requirements to tenders</li>
+<li>create a culture of security awareness: help employees understand why the security controls taken are important for their work.</li>
+<li>provide training and resources to employees to help them understand and use security capabilities effectively.</li>
 </ul>
 <h2 id="references">References</h2>
 <h3 id="standards">Standards</h3>
 <ul>
-<li>links to relevant standards</li>
+<li>ISA/IEC 62443 1-1 Foundational requirements</li>
 </ul>
 <h3 id="background-information">Background information</h3>
-<ul>
-<li>links to blogs, etc.</li>
-</ul>
 <h3 id="tooling">Tooling</h3>
-<ul>
-<li>for testing, etc.</li>
-</ul>
 
 
 

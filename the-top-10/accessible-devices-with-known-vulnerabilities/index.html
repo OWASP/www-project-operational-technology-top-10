@@ -1146,7 +1146,7 @@
   
   
   <span class="md-ellipsis">
-    WIP: What's next?
+    What's next?
     
   </span>
   
@@ -1169,7 +1169,7 @@
   
   
   <span class="md-ellipsis">
-    WIP: Glossary
+    Glossary
     
   </span>
   
@@ -1377,30 +1377,14 @@
 <h3 id="why-cant-we-just-upgrade-all-the-systems">Why can't we just upgrade all the systems?</h3>
 <p>To reiterate on the special problems that the OT world faces, we want to give a list of common excuses/reason given that could prevent an easy implementation of a vulnerability management system:</p>
 <p><strong>You don't just upgrade a medical device or power plant</strong>: this is not your typical desktop PC where you are annoyed if an update breaks your system for a couple of days, this is critical infrastructure upon which lifes potentially depend upon. Imagine you are depending upon a digital pace maker or insulin pump: would you just update it (without making sure that it will not negativly impact you)?</p>
-<p><strong><a href="../inadequate_supply_chain_management/">Problems with the supply chain</a></strong>: TBD</p>
-<ul>
-<li>missing vendor support</li>
-<li>missing vendor notifications</li>
-<li>tight coupling to few vendors</li>
-</ul>
-<p><strong><a href="../components-with-insufficient-security-capabilities/">Usage of legacy devices</a></strong>: TBD</p>
-<ul>
-<li>missing capabilities for vulnerability remediation</li>
-<li>long-lifetimes</li>
-</ul>
-<p><strong><a href="../missing-awareness/">Missing Awareness on the OT side</a></strong>: TBD</p>
-<ul>
-<li><em>why should I update a running system?</em></li>
-</ul>
-<p><strong><a href="../unknown-assets-and-admin-access/">Unknown devices and shadow infrastructure</a></strong>: TBD</p>
-<ul>
-<li>if you don't event know about a device, how should you know that you need to update it?</li>
-</ul>
+<p><strong><a href="../inadequate_supply_chain_management/">Problems with the supply chain</a></strong>: compared to traditional IT, in the OT world we have fewer vendors. This gives vendors power over customers, which can lead to a lack of motivation to provide security updates or notify if security problems were discovered.</p>
+<p><strong><a href="../components-with-insufficient-security-capabilities/">Usage of legacy devices</a></strong>: due to the long lifetimes of OT systems, many devices are still in use that were designed without security in mind. This can lead to a situation where the device is not able to be updated or patched, even if a vulnerability is discovered. This is especially true for legacy systems, where the vendor may no longer be in business or may not have the resources to provide updates.</p>
+<p><strong><a href="../missing-awareness/">Missing Security Awareness on the OT side</a></strong>: while safety is a well understood and implement concept in OT, security is often not. This can lead to a situation where the operators do not understand the importance of security updates and do not prioritize them. This can be due to a lack of knowledge or understanding of the risks involved, or it can be due to a lack of resources or time to implement them.</p>
+<p><strong><a href="../unknown-assets-and-admin-access/">Unknown devices and shadow infrastructure</a></strong>: if you don't even know about a device, how should you know that you need to update it?</p>
 <p>Please note, that this shows (primarily to IT security people) why upgrading is not as simple as in other domains but <strong>does not mean that we (as OT) can use any of this as an excuse for not having update procedures in place</strong>.</p>
 <h3 id="vulnerability-mangement">Vulnerability Mangement?</h3>
 <p>Insufficient or missing vulnerability management practices in an OT environment can leave systems exposed to known security vulnerabilities. Not installing security patches eventually, will lead to an amplification effect when (not if) the attacker is within the system.</p>
 <p>Even if all the issues mentioned in the last section do not apply for an OT system, security updates are very often not applied. The reason for that is <strong>missing vulnerability management</strong>.</p>
-<p>TBD: what is part of vulnerability managenet? What are concrete first steps that an organization can do to establish a vulnerabilty management process?</p>
 <h2 id="rationale">Rationale</h2>
 <p>Vulnerable devices bad. Especially in critical infrastructure.</p>
 <h2 id="known-attacksexamples">Known Attacks/Examples</h2>

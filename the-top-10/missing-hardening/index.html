@@ -941,6 +941,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apply-established-hardening-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apply established hardening guidelines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-default-accounts-and-passwords" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable default accounts and passwords
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1122,7 +1146,7 @@
   
   
   <span class="md-ellipsis">
-    WIP: What's next?
+    What's next?
     
   </span>
   
@@ -1145,7 +1169,7 @@
   
   
   <span class="md-ellipsis">
-    WIP: Glossary
+    Glossary
     
   </span>
   
@@ -1195,6 +1219,30 @@
       Description
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apply-established-hardening-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apply established hardening guidelines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-default-accounts-and-passwords" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable default accounts and passwords
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1320,16 +1368,34 @@
 
 
 <h1 id="missing-hardening">Missing Hardening</h1>
+<p>Hardening is usually done to make a system more secure, typically by reducing or restricting features which inherently reduces a system's attack surface. Another form of hardening is enabling additional layers of security so that an attacker has to overcome multiple hurdles to gain access to a system.</p>
 <h2 id="description">Description</h2>
+<p>Hardening is the process of securing a system by reducing its surface of vulnerability. This can be achieved by removing unnecessary services, closing unused ports, and applying security patches. Hardening is an essential step in securing any system, as it reduces the number of potential entry points for attackers.</p>
+<p>Another way of hardening is to apply additional layers of security, such as firewalls, intrusion detection systems, and encryption. These additional layers can help protect against attacks even if the underlying system is compromised. In the context of OT, hardening is particularly important due to the unique challenges and requirements of these systems. OT systems are often designed to operate continuously and cannot be easily patched or updated without causing downtime.</p>
+<h3 id="apply-established-hardening-guidelines">Apply established hardening guidelines</h3>
+<h3 id="disable-default-accounts-and-passwords">Disable default accounts and passwords</h3>
 <h2 id="rationale">Rationale</h2>
+<p>Inclusion of hardening in the OWASP OT Top 10 was a point of serious discussion.</p>
+<p>Hardening itself does not reduce a concrete vulnerability but makes meaningful exploitation of vulnerabilities harder for attackers.</p>
+<p>Empirical data, gathered during the development of the OWASP OT Top 10, showed that missing hardening was a common part of successful exploits and comprehensive hardening would have prevented successful exploitation.</p>
+<p>Given the requirement of non-stop operation of many OT systems, hardening is crucial as it allows for controlled updates after a security issue has been identified (as the additional security layers uphold the security of the overall system).</p>
 <h2 id="known-attacksexamples">Known Attacks/Examples</h2>
 <h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
 <h3 id="developersbuilders-design-and-implementation">Developers/Builders: Design and Implementation</h3>
 <h3 id="integratorsoperators-operational">Integrators/Operators: Operational</h3>
 <h2 id="next-actionable-steps">Next Actionable Steps</h2>
+<ul>
+<li>identify applicable hardening guidelines for your environment</li>
+<li>implement hardening guidelines</li>
+<li>disable default accounts and passwords</li>
+</ul>
 <h2 id="references">References</h2>
 <h3 id="standards">Standards</h3>
 <h3 id="background-information">Background information</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Hardening_(computing)">https://en.wikipedia.org/wiki/Hardening_(computing)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Defense_in_depth_(computing)">https://en.wikipedia.org/wiki/Defense_in_depth_(computing)</a></li>
+</ul>
 <h3 id="tooling">Tooling</h3>
 
 

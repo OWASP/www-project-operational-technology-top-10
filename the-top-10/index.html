@@ -969,7 +969,7 @@
   
   
   <span class="md-ellipsis">
-    WIP: What's next?
+    What's next?
     
   </span>
   
@@ -992,7 +992,7 @@
   
   
   <span class="md-ellipsis">
-    WIP: Glossary
+    Glossary
     
   </span>
   
@@ -1070,9 +1070,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#preliminary-top-10-list" class="md-nav__link">
+  <a href="#the-owasp-operational-technology-top-10-list" class="md-nav__link">
     <span class="md-ellipsis">
-      Preliminary Top 10 List
+      The OWASP Operational Technology Top 10 List
     </span>
   </a>
   
@@ -1111,25 +1111,31 @@
 <h3 id="how-were-the-ot-top-10-created">How were the OT Top 10 created?</h3>
 <ul>
 <li>meetings every two weeks to gather the top 10 list</li>
-<li>quantitative discussion to form the top 10</li>
+<li>qualitative discussion to form the top 10</li>
 </ul>
 <h3 id="how-did-we-make-sure-that-we-covered-reality">How did we make sure that we covered reality?</h3>
-<ul>
-<li>check existing OT incident reports and see if the proposed top 10 fit</li>
-</ul>
-<h2 id="preliminary-top-10-list">Preliminary Top 10 List</h2>
-<ul>
+<p>We gathered empirical data from both offensive and defensive companies and experts. This data was used to validate the proposed top 10 list and ensure that it accurately reflects the current state of OT security.</p>
+<h2 id="the-owasp-operational-technology-top-10-list">The OWASP Operational Technology Top 10 List</h2>
+<p>During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective.</p>
+<p>The selected the Top 3 items as there was consensus that these are fundamental for OT security:</p>
+<ol>
 <li><a href="unknown-assets-and-admin-access/">Unknown Assets and Unmanaged External Access</a></li>
 <li><a href="accessible-devices-with-known-vulnerabilities/">Devices with known Vulnerabilities/Issues</a></li>
 <li><a href="inadequate_supply_chain_management/">Inadequate Supplier/Supply Chain Management</a></li>
+</ol>
+<p>The next six items were all deemed to be of similar high importance:</p>
+<ol start="4">
 <li><a href="insufficient-access-control/">Insufficient Access Control</a></li>
 <li><a href="missing-incident-detection-reaction-capabilities/">Missing Incident Detection/Reaction Capabilities</a></li>
 <li><a href="broken-zone-and-conduits-design/">Broken Zones and Conduits Design</a></li>
 <li><a href="missing-awareness/">Missing Awareness</a></li>
-<li><a href="components-with-insufficient-security-capabilities/">Components/Protocols with Insufficient Security Capabilitites</a></li>
+<li><a href="components-with-insufficient-security-capabilities/">Components/Protocols with Insufficient Security Capabilities</a></li>
 <li><a href="availability/">Availability</a></li>
+</ol>
+<p>The final item is not a security issue by itself but would have prevented many of the incidents reported from the field. We thus included it as final item in the Top 10 list:</p>
+<ol start="10">
 <li><a href="missing-hardening/">Missing Hardening</a></li>
-</ul>
+</ol>
 <h2 id="structure-of-each-top-10-item">Structure of each Top 10 Item</h2>
 <p>Each entry in the OWASP OT Top 10 will be accompanied by a short description, public incidents exploiting that entry, recommended mitigation and countermeasures, as well as references and tooling to assist in addressing the identified risks.</p>
 <table>
