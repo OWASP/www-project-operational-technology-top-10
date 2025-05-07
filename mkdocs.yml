@@ -34,6 +34,7 @@ markdown_extensions:
   - tables
   - pymdownx.details
   - pymdownx.superfences
+  - sane_lists
 
 extra:
   social:
