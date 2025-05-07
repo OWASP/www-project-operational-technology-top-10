@@ -40,7 +40,7 @@ In OT, we often have the initial probelm of long-lived [components with missing 
 
 Educating employees (in the sense of "explaining the reasons for the measures taken" and not "preaching security") thus is of high importance to ensure that security capabilities are used effectively. This includes providing training and resources to help employees understand how to use security capabilities, as well as creating a culture of security awareness within the organization.
 
-Examples of security problems introduces by missing awareness include:
+Examples of security problems introduced by missing awareness include:
 
 - everything configuration related
 - missing encryption even if available
