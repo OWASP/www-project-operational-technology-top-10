@@ -49,7 +49,7 @@ Examples of security problems introduced by missing awareness include:
 
 ## Rationale
 
-The best hardware with the best security capabilities is useless if noone is aware of them and how to use them. Educating employees about security risks and best practices can help mitigate vulnerabilities and improve overall security posture.
+The best hardware with the best security capabilities is useless if no one is aware of them and how to use them. Educating employees about security risks and best practices can help mitigate vulnerabilities and improve overall security posture.
 
 ## Known Attacks/Examples
 
