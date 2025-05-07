@@ -27,7 +27,7 @@ The next six items were all deemed to be of similar high importance:
 5. [Missing Incident Detection/Reaction Capabilities](./missing-incident-detection-reaction-capabilities.md)
 6. [Broken Zones and Conduits Design](./broken-zone-and-conduits-design.md)
 7. [Missing Awareness](./missing-awareness.md)
-8. [Components/Protocols with Insufficient Security Capabilitites](./components-with-insufficient-security-capabilities.md)
+8. [Components/Protocols with Insufficient Security Capabilities](./components-with-insufficient-security-capabilities.md)
 9. [Availability](./availability.md)
 
 The final item is not a security issue by itself but would have prevented many of the incidents reported from the field. We thus included it as final item in the Top 10 list:
