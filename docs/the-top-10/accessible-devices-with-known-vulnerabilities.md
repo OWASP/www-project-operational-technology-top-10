@@ -18,24 +18,13 @@ To reiterate on the special problems that the OT world faces, we want to give a 
 
 **You don't just upgrade a medical device or power plant**: this is not your typical desktop PC where you are annoyed if an update breaks your system for a couple of days, this is critical infrastructure upon which lifes potentially depend upon. Imagine you are depending upon a digital pace maker or insulin pump: would you just update it (without making sure that it will not negativly impact you)?
 
-**[Problems with the supply chain](./inadequate_supply_chain_management.md)**: TBD
+**[Problems with the supply chain](./inadequate_supply_chain_management.md)**: compared to traditional IT, in the OT world we have fewer vendors. This gives vendors power over customers, which can lead to a lack of motivation to provide security updates or notify if security problems were discovered.
 
-- missing vendor support
-- missing vendor notifications
-- tight coupling to few vendors
+**[Usage of legacy devices](./components-with-insufficient-security-capabilities.md)**: due to the long lifetimes of OT systems, many devices are still in use that were designed without security in mind. This can lead to a situation where the device is not able to be updated or patched, even if a vulnerability is discovered. This is especially true for legacy systems, where the vendor may no longer be in business or may not have the resources to provide updates.
 
-**[Usage of legacy devices](./components-with-insufficient-security-capabilities.md)**: TBD
+**[Missing Security Awareness on the OT side](./missing-awareness.md)**: while safety is a well understood and implement concept in OT, security is often not. This can lead to a situation where the operators do not understand the importance of security updates and do not prioritize them. This can be due to a lack of knowledge or understanding of the risks involved, or it can be due to a lack of resources or time to implement them.
 
-- missing capabilities for vulnerability remediation
-- long-lifetimes
-
-**[Missing Awareness on the OT side](./missing-awareness.md)**: TBD
-
-- *why should I update a running system?*
-
-**[Unknown devices and shadow infrastructure](./unknown-assets-and-admin-access.md)**: TBD
-
-- if you don't event know about a device, how should you know that you need to update it?
+**[Unknown devices and shadow infrastructure](./unknown-assets-and-admin-access.md)**: if you don't even know about a device, how should you know that you need to update it?
 
 Please note, that this shows (primarily to IT security people) why upgrading is not as simple as in other domains but **does not mean that we (as OT) can use any of this as an excuse for not having update procedures in place**.
 
@@ -44,8 +33,6 @@ Please note, that this shows (primarily to IT security people) why upgrading is 
 Insufficient or missing vulnerability management practices in an OT environment can leave systems exposed to known security vulnerabilities. Not installing security patches eventually, will lead to an amplification effect when (not if) the attacker is within the system.
 
 Even if all the issues mentioned in the last section do not apply for an OT system, security updates are very often not applied. The reason for that is **missing vulnerability management**.
-
-TBD: what is part of vulnerability managenet? What are concrete first steps that an organization can do to establish a vulnerabilty management process?
 
 ## Rationale
 
