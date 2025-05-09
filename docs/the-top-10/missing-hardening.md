@@ -24,14 +24,25 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 
 ## Known Attacks/Examples
 
+- [Stuxnet](https://de.wikipedia.org/wiki/Stuxnet): Disabling USB ports could have avoided initial compromise.
+- more to come
+
 ## Mitigation/Countermeasures
 
-### Developers/Builders: Design and Implementation
+### Developers/Component Suppliers/Integrators: Design and Implementation
+- Disable unnecessary services and interfaces (e.g. USB ports, unsecure protocols like Telnet, web server, JTAG/SWD interfaces)
+- Start with established hardening benchmarks and gradually relax controls only as necessary to ensure your component or system functions properly
+- Include Application Whitelisting if possible
+- Provide your component or system with a secure default configuration
+- Provide a hardening guideline for you component or system to customers
 
-### Integrators/Operators: Operational
+### Operators: Operational
+- Make sure hardening is reapplied after maintenance
+- Request documentation of hardening measures
+- Include hardening requirements in the tender, ideally with the integrator providing their own hardening concept
+- Make sure hardening is actually implemented with a Pentest or some kind of Cybersecurity Acceptance Test (during SAT/FAT)
 
 ## Next Actionable Steps
-
 - identify applicable hardening guidelines for your environment
 - implement hardening guidelines
 - disable default accounts and passwords
