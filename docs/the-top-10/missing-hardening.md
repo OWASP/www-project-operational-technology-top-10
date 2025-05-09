@@ -60,7 +60,7 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 OT-specific hardening guides are often provided by the system integrator or product supplier.  
 - An example is the guide *"System Hardening for Substation Automation and Protection"* for SICAM/SIPROTEC, which includes hardening measures at the solution level as well as for individual components.
 
-Several organizations provide configuration baselines and benchmarks to for common systems:
+Several organizations provide configuration baselines and benchmarks for common systems:
 
 - The **Center for Internet Security (CIS)** offers **Benchmarks** for various systems, including operating systems, network devices, and commonly used applications. In OT environments, relevant benchmarks cover operating systems, network infrastructure, and supporting applications.  
 - The **Defense Information Systems Agency (DISA)** publishes **Security Technical Implementation Guides (STIGs)**, which define configuration standards for securing Department of Defense (DoD) IT systems and are also widely adopted in other sectors.  
