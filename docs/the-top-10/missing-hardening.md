@@ -30,7 +30,7 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 ## Mitigation/Countermeasures
 
 ### Developers/Component Suppliers/Integrators: Design and Implementation
-- Disable unnecessary services and interfaces (e.g. USB ports, unsecure protocols like Telnet, web server, JTAG/SWD interfaces)
+- Disable unnecessary services and interfaces (e.g. USB ports, insecure protocols like Telnet, web server, JTAG/SWD interfaces)
 - Start with established hardening benchmarks and gradually relax controls only as necessary to ensure your component or system functions properly
 - Include Application Whitelisting if possible
 - Provide your component or system with a secure default configuration
