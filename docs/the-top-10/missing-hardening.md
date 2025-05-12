@@ -25,7 +25,7 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 ## Known Attacks/Examples
 
 - [Stuxnet](https://de.wikipedia.org/wiki/Stuxnet): Disabling USB ports could have avoided initial compromise.
-- more to come
+- [NotPetya](https://en.wikipedia.org/wiki/NotPetya): Proper network segmentation and hardening could have limited the spread of the malware.
 
 ## Mitigation/Countermeasures
 
