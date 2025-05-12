@@ -34,7 +34,7 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 - Start with established hardening benchmarks and gradually relax controls only as necessary to ensure your component or system functions properly
 - Include Application Whitelisting if possible
 - Provide your component or system with a secure default configuration
-- Provide a hardening guideline for you component or system to customers
+- Provide a hardening guideline for your component or system to customers
 
 ### Operators: Operational
 - Make sure hardening is reapplied after maintenance
