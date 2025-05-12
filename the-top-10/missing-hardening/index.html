@@ -1407,7 +1407,7 @@
 <ul>
 <li>Disable unnecessary services and interfaces (e.g. USB ports, insecure protocols like Telnet, web server, JTAG/SWD interfaces)</li>
 <li>Start with established hardening benchmarks and gradually relax controls only as necessary to ensure your component or system functions properly</li>
-<li>Include Application Whitelisting if possible</li>
+<li>Include Application allow-listing if possible</li>
 <li>Provide your component or system with a secure default configuration</li>
 <li>Provide a hardening guideline for your component or system to customers</li>
 </ul>
@@ -1432,8 +1432,10 @@
 <li>IEC 62443-2-4:2024 - SP.02.03 - Hardening guidelines</li>
 </ul>
 <h3 id="benchmarks">Benchmarks</h3>
-<p>OT-specific hardening guides are often provided by the system integrator or product supplier.<br />
-- An example is the guide <em>"System Hardening for Substation Automation and Protection"</em> for SICAM/SIPROTEC, which includes hardening measures at the solution level as well as for individual components.</p>
+<p>OT-specific hardening guides are often provided by the system integrator or product supplier, for example:</p>
+<ul>
+<li><em>"System Hardening for Substation Automation and Protection"</em> for SICAM/SIPROTEC, which includes hardening measures at the solution level as well as for individual components.</li>
+</ul>
 <p>Several organizations provide configuration baselines and benchmarks for common systems:</p>
 <ul>
 <li>The <strong>Center for Internet Security (CIS)</strong> offers <strong>Benchmarks</strong> for various systems, including operating systems, network devices, and commonly used applications. In OT environments, relevant benchmarks cover operating systems, network infrastructure, and supporting applications.  </li>
