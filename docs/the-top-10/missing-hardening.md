@@ -24,14 +24,25 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 
 ## Known Attacks/Examples
 
+- [Stuxnet](https://de.wikipedia.org/wiki/Stuxnet): Disabling USB ports could have avoided initial compromise.
+- [NotPetya](https://en.wikipedia.org/wiki/NotPetya): Proper network segmentation and hardening could have limited the spread of the malware.
+
 ## Mitigation/Countermeasures
 
-### Developers/Builders: Design and Implementation
+### Developers/Component Suppliers/Integrators: Design and Implementation
+- Disable unnecessary services and interfaces (e.g. USB ports, insecure protocols like Telnet, web server, JTAG/SWD interfaces)
+- Start with established hardening benchmarks and gradually relax controls only as necessary to ensure your component or system functions properly
+- Include Application Whitelisting if possible
+- Provide your component or system with a secure default configuration
+- Provide a hardening guideline for your component or system to customers
 
-### Integrators/Operators: Operational
+### Operators: Operational
+- Make sure hardening is reapplied after maintenance
+- Request documentation of hardening measures
+- Include hardening requirements in the tender, ideally with the integrator providing their own hardening concept
+- Make sure hardening is actually implemented with a Pentest or some kind of Cybersecurity Acceptance Test (during SAT/FAT)
 
 ## Next Actionable Steps
-
 - identify applicable hardening guidelines for your environment
 - implement hardening guidelines
 - disable default accounts and passwords
@@ -40,9 +51,29 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 
 ### Standards
 
+- IEC 62443-4-1:2018 - 12.4 SG-3 - Security hardening guidelines
+- IEC 62443-2-1:2024 - COMP 1.1 - Component hardening
+- IEC 62443-2-4:2024 - SP.02.03 - Hardening guidelines
+
+### Benchmarks 
+
+OT-specific hardening guides are often provided by the system integrator or product supplier.  
+- An example is the guide *"System Hardening for Substation Automation and Protection"* for SICAM/SIPROTEC, which includes hardening measures at the solution level as well as for individual components.
+
+Several organizations provide configuration baselines and benchmarks for common systems:
+
+- The **Center for Internet Security (CIS)** offers **Benchmarks** for various systems, including operating systems, network devices, and commonly used applications. In OT environments, relevant benchmarks cover operating systems, network infrastructure, and supporting applications.  
+- The **Defense Information Systems Agency (DISA)** publishes **Security Technical Implementation Guides (STIGs)**, which define configuration standards for securing Department of Defense (DoD) IT systems and are also widely adopted in other sectors.  
+- **Microsoft Security Baselines** recommend security settings for Windows operating systems and Microsoft applications.
+
 ### Background information
 
 - <https://en.wikipedia.org/wiki/Hardening_(computing)>
 - <https://en.wikipedia.org/wiki/Defense_in_depth_(computing)>
 
 ### Tooling
+
+- Tenable Nessus, with compliance Scanning
+- CIS-CAT Lite/Pro
+- Microsoft Security Compliance Toolkit
+
