@@ -60,7 +60,9 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 
 ### Benchmarks
 
-OT-specific hardening guides are often provided by the system integrator or product supplier. An example is the guide *"System Hardening for Substation Automation and Protection"* for SICAM/SIPROTEC, which includes hardening measures at the solution level as well as for individual components.
+OT-specific hardening guides are often provided by the system integrator or product supplier, for example:
+
+- *"System Hardening for Substation Automation and Protection"* for SICAM/SIPROTEC, which includes hardening measures at the solution level as well as for individual components.
 
 Several organizations provide configuration baselines and benchmarks for common systems:
 
