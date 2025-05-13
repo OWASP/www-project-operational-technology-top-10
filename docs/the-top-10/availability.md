@@ -1,6 +1,6 @@
 # Availability
 
-Availabilty, esp. in the context of Safety, is paramount and well-understood in the OT world. However, some aspects of availability are still problematic, e.g., integrity is part of availability.
+Availability, esp. in the context of Safety, is paramount and well-understood in the OT world. However, some aspects of availability are still problematic, e.g., integrity is part of availability.
 
 Please note that we talk about protecting "our" infrastructure from DDoS and do not talk about becoming part of a botnet after a compromise (which is also problematic, but rather a subpart of [Missing Incident Detection/Reaction Capabilities](./missing-incident-detection-reaction-capabilities.md))
 
