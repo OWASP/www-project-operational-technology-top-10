@@ -1,6 +1,6 @@
 # Insufficient Access Control
 
-Access Control is a critical aspect of security in any system, but it is especially important in Operational Technology (OT) environments. Insufficient access control can lead to unauthorized access to sensitive systems and data, prodcing serious consequences for safety and security.
+Access Control is a critical aspect of security in any system, but it is especially important in Operational Technology (OT) environments. Insufficient access control can lead to unauthorized access to sensitive systems and data, producing serious consequences for safety and security.
 
 This is an intricate problem that touches on multiple levels of security, including physical, organizational, and technical measures.
 
