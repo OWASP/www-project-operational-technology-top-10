@@ -9,7 +9,7 @@ This is an intricate problem that touches on multiple levels of security, includ
 Access Control is the process of restricting access to systems and data to authorized users. Access Control is performed on multiple levels:
 
 - **Organizational**: Organizational access control measures, such as policies and procedures, are designed to ensure that only authorized personnel have access to sensitive systems and data. If an organisation has no written down access matrix (`which employee is allowed to operate what?`), implementing the respective technical access control system is not possible.
-- **Technical**: Technical access control measures, such as authentication and authorization mechanisms must be implemented within the used components. This is mostly a topic for system designers and implementors. During operation, these available techincal access control measures must be used and enforced by the operators and employees.
+- **Technical**: Technical access control measures, such as authentication and authorization mechanisms must be implemented within the used components. This is mostly a topic for system designers and implementors. During operation, these available technical access control measures must be used and enforced by the operators and employees.
 - **Physical**: Physical access control measures, such as locks and security guards, are often the first line of defense against unauthorized access in OT environments. However, they are often over-relied upon, leading to a false sense of security.
 
 ### Particularities of OT
