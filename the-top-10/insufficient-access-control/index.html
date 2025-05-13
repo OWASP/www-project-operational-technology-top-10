@@ -813,6 +813,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Particularities of OT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#emergency-situations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emergency Situations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legacy-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legacy Systems
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -825,9 +849,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#implementaiton-level" class="md-nav__link">
+  <a href="#implementation-level" class="md-nav__link">
     <span class="md-ellipsis">
-      Implementaiton Level
+      Implementation Level
     </span>
   </a>
   
@@ -1257,6 +1281,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Particularities of OT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#emergency-situations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emergency Situations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legacy-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legacy Systems
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1269,9 +1317,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#implementaiton-level" class="md-nav__link">
+  <a href="#implementation-level" class="md-nav__link">
     <span class="md-ellipsis">
-      Implementaiton Level
+      Implementation Level
     </span>
   </a>
   
@@ -1422,21 +1470,21 @@
 
 
 <h1 id="insufficient-access-control">Insufficient Access Control</h1>
-<ul>
-<li>multi-level and typically interacts with other problems</li>
-<li>conceptionally speaking: physical, organizational (who needs access?), technical (how to implement access control?)</li>
-</ul>
+<p>Access Control is a critical aspect of security in any system, but it is especially important in Operational Technology (OT) environments. Insufficient access control can lead to unauthorized access to sensitive systems and data, producing serious consequences for safety and security.</p>
+<p>This is an intricate problem that touches on multiple levels of security, including physical, organizational, and technical measures.</p>
 <h2 id="description">Description</h2>
-<p>Users have to fulfill different functions with devices. Not every user needs access to all functions. However, many (legacy) devices do not support authentication or authorization. As a result, unauthorized access is possible.</p>
-<h3 id="particularities-of-ot">Particularities of OT</h3>
+<p>Access Control is the process of restricting access to systems and data to authorized users. Access Control is performed on multiple levels:</p>
 <ul>
-<li>
-<p>good example: <code>emergency shutdown switches</code>: you do not want to impose any additional latencies activating them (in case of emergency, pushing them is kinda time-critical) but on-the-other-hand you do not want to have them accessible to everyone. The same goes for medical devices in hospitals: you do not want to have a password prompt when a doctor wants to use a defibrillator</p>
-</li>
-<li>
-<p>old systems/long lifetimes: imagine a lifetime of 30+ years. What IT security did we have in 1995? How much can you subsequently add to a system that was designed in 1995?</p>
-</li>
+<li><strong>Organizational</strong>: Organizational access control measures, such as policies and procedures, are designed to ensure that only authorized personnel have access to sensitive systems and data. If an organisation has no written down access matrix (<code>which employee is allowed to operate what?</code>), implementing the respective technical access control system is not possible.</li>
+<li><strong>Technical</strong>: Technical access control measures, such as authentication and authorization mechanisms must be implemented within the used components. This is mostly a topic for system designers and implementors. During operation, these available technical access control measures must be used and enforced by the operators and employees.</li>
+<li><strong>Physical</strong>: Physical access control measures, such as locks and security guards, are often the first line of defense against unauthorized access in OT environments. However, they are often over-relied upon, leading to a false sense of security.</li>
 </ul>
+<h3 id="particularities-of-ot">Particularities of OT</h3>
+<h4 id="emergency-situations">Emergency Situations</h4>
+<p>Access Control and Safety can be conflicting. A good example is the use of emergency stop buttons. In an emergency situation, it is critical that the emergency stop button can be activated quickly and easily. However, this can lead to a situation where unauthorized personnel can also activate the emergency stop button, leading to potential safety hazards.</p>
+<p>Another good example are medical devices in hospitals: you do not want to have a password prompt when a doctor wants to use a defibrillator</p>
+<h4 id="legacy-systems">Legacy Systems</h4>
+<p>Users have to fulfill different functions with devices. Not every user needs access to all functions. However, many (legacy) devices do not support authentication or authorization. As a result, unauthorized access is possible.</p>
 <p>Old systems often have only limited authentication functions. they also offer no connection to a central identity management system. This makes it difficult to maintain and respond to changes in the organization's responsibilities on an ongoing basis</p>
 <h3 id="organizational-level">Organizational Level</h3>
 <p>Mention some goals, at least:</p>
@@ -1449,7 +1497,7 @@
 </ul>
 <p>To allow for analysis, trust boundaries have to be defined. This is especially important in the OT world, where the Purdue Model is often used to define trust boundaries.</p>
 <p>Very often, <a href="../missing-awareness/">OT personnel are not aware of the security implications of their actions</a>. This can lead to a situation where a system is not properly secured because the operators do not know how to do it.</p>
-<h3 id="implementaiton-level">Implementaiton Level</h3>
+<h3 id="implementation-level">Implementation Level</h3>
 <ul>
 <li>
 <p>are controls in place? are they well implemented and configured according to best practices?</p>

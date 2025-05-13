@@ -922,9 +922,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#primitive-ddos-attacks" class="md-nav__link">
+  <a href="#denial-of-service-attacks" class="md-nav__link">
     <span class="md-ellipsis">
-      Primitive (D)Dos attacks
+      Denial-of-Service Attacks
     </span>
   </a>
   
@@ -1242,9 +1242,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#primitive-ddos-attacks" class="md-nav__link">
+  <a href="#denial-of-service-attacks" class="md-nav__link">
     <span class="md-ellipsis">
-      Primitive (D)Dos attacks
+      Denial-of-Service Attacks
     </span>
   </a>
   
@@ -1404,23 +1404,14 @@
 
 
 <h1 id="availability">Availability</h1>
-<ul>
-<li>paramount and well-understood in the OT world</li>
-<li>still can be problematic, e.g., integrity is part of availability</li>
-</ul>
+<p>Availability, esp. in the context of Safety, is paramount and well-understood in the OT world. However, some aspects of availability are still problematic, e.g., integrity is part of availability.</p>
+<p>Please note that we talk about protecting "our" infrastructure from DDoS and do not talk about becoming part of a botnet after a compromise (which is also problematic, but rather a subpart of <a href="../missing-incident-detection-reaction-capabilities/">Missing Incident Detection/Reaction Capabilities</a>)</p>
 <h2 id="description">Description</h2>
-<ul>
-<li>note that we talk about protecting "our" infrastructure from DDoS and do not talk about becoming part of a botnet after a compromise (which is also problematic, but rather a subpart of <a href="../missing-incident-detection-reaction-capabilities/">Missing Incident Detection/Reaction Capabilities</a>)</li>
-</ul>
-<h3 id="primitive-ddos-attacks">Primitive (D)Dos attacks</h3>
-<ul>
-<li>(replace todo in the future)</li>
-<li>(D)DoS attacks</li>
-<li>potentially against control infrastructure<ul>
-<li>are there documented attacks against sensor? seems not feasible</li>
-</ul>
-</li>
-</ul>
+<p>Availability is the property of being accessible and usable upon demand by an authorized entity. In the context of OT, availability is crucial as many systems are designed to operate continuously and cannot be easily patched or updated without causing downtime.</p>
+<h3 id="denial-of-service-attacks">Denial-of-Service Attacks</h3>
+<p>Denial-of-Service (DoS) attacks are a common threat to availability. These attacks can take many forms, including network flooding, resource exhaustion, and application-layer attacks.</p>
+<p>In the context of OT, DoS attacks can disrupt critical systems and services, leading to significant downtime and potential safety hazards. It is important to note that we care about the protection of the OT system itself: if a connected cloud-managed system
+becomes target of a DoS attack and becomes not available while the OT system/process is still available, this is not an OT availability problem for us.</p>
 <h3 id="real-time-communication-safety">Real-Time Communication Safety</h3>
 <ul>
 <li>real-time communication safety</li>
@@ -1429,30 +1420,23 @@
 <li>do we see this as part of availability?</li>
 </ul>
 <h3 id="availability-and-integrity">Availability and Integrity</h3>
-<ul>
-<li>availability vs. integrity -- flooding with fake data</li>
-<li>while this is not direct availability, if you cannot trust your data, the datasource become unavailable</li>
-<li>might introduce a performance overhead (that would be neglectable in the IT world but can be <a href="../components-with-insufficient-security-capabilities/">problematic in old OT hardware</a>)</li>
-</ul>
+<p>The well known CIA triad (Confidentiality, Integrity, Availability) is often misinterpreted in the context of OT. While integrity is often seen as a separate property, it is actually a crucial aspect of availability.</p>
+<p>Imagine a sensor network that is used to monitor the temperature of a critical process. A direct attack against availability would be the destruction of the connected sensors. But if an attacker would perform an Integrity attack, e.g., floods the sensor network with fake temperature data, then the sensor network itself is still available but its sole goal (providing a correct temperature reading) is compromised and thus destroys the availabilty of the overall system.</p>
+<p>To protect against integrity attacks, typically cryptographic measures such as signatures or MACs are used. However, these measures can introduce performance overhead and may not be suitable for all OT systems. For example, <a href="../components-with-insufficient-security-capabilities/">some legacy systems may not have the processing power or memory</a> to support cryptographic algorithms.</p>
 <h3 id="availability-and-software-updates">Availability and Software Updates</h3>
 <ul>
 <li>think about software updates, quality assurance (crowdstrike incident)</li>
 </ul>
 <h2 id="rationale">Rationale</h2>
 <ul>
-<li>why did we include this item in the top 10?</li>
+<li>availability is paramount for the safety of OT systems</li>
+<li>recent incidents such as the CrowdStrike incident</li>
+<li>the impact of integrity on availability is often overlooked</li>
 </ul>
 <h2 id="known-attacksexamples">Known Attacks/Examples</h2>
 <ul>
 <li><a href="https://cyberscoop.com/viasat-malware-wiper-acidrain/">On Feb. 24, 2022, the night before the Russian government launched its full-scale invasion, Russian-backed hackers targeted thousands of modems linked to Viasat, the U.S.-based satellite and internet communications company, and relied on by the Ukrainian military. The attack — attributed to the Russian government by the United States and its allies — relied on a piece of malware that researchers with SentinelLabs dubbed “AcidRain.”</a></li>
-</ul>
-<p>Potential Sources</p>
-<ul>
-<li><a href="https://www.icsadvisoryproject.com">https://www.icsadvisoryproject.com</a></li>
-<li><a href="https://icsstrive.com/">https://icsstrive.com/</a></li>
-<li><a href="https://emb3d.mitre.org/">https://emb3d.mitre.org/</a></li>
-<li><a href="https://attack.mitre.org/techniques/ics/">https://attack.mitre.org/techniques/ics/</a></li>
-<li>please add more</li>
+<li><a href="https://en.wikipedia.org/wiki/Stuxnet">Stuxnet</a>: both as an attack against availability and as an example of violating integrity with fake data</li>
 </ul>
 <h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
 <h3 id="design-and-implementation">Design and Implementation</h3>
