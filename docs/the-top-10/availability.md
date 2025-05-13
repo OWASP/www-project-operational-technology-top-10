@@ -24,10 +24,11 @@ becomes target of a DoS attack and becomes not available while the OT system/pro
 
 ### Availability and Integrity
 
-- availability vs. integrity -- flooding with fake data
-- while this is not direct availability, if you cannot trust your data, the datasource become unavailable
-- stuxnet: flooding with fake data
-- might introduce a performance overhead (that would be neglectable in the IT world but can be [problematic in old OT hardware](./components-with-insufficient-security-capabilities.md))
+The well known CIA triad (Confidentiality, Integrity, Availability) is often misinterpreted in the context of OT. While integrity is often seen as a separate property, it is actually a crucial aspect of availability.
+
+Imagine a sensor network that is used to monitor the temperature of a critical process. A direct attack against availability would be the destruction of the connected sensors. But if an attacker would perform an Integrity attack, e.g., floods the sensor network with fake temperature data, then the sensor network itself is still available but its sole goal (providing a correct temperature reading) is compromised and thus destroys the availabilty of the overall system.
+
+To protect against integrity attacks, typcially cryptographic measures such as signatures or MACs are used. However, these measures can introduce performance overhead and may not be suitable for all OT systems. For example, [some legacy systems may not have the processing power or memory](./components-with-insufficient-security-capabilities.md) to support cryptographic algorithms.
 
 ### Availability and Software Updates
 
@@ -42,7 +43,7 @@ becomes target of a DoS attack and becomes not available while the OT system/pro
 ## Known Attacks/Examples
 
 - [On Feb. 24, 2022, the night before the Russian government launched its full-scale invasion, Russian-backed hackers targeted thousands of modems linked to Viasat, the U.S.-based satellite and internet communications company, and relied on by the Ukrainian military. The attack — attributed to the Russian government by the United States and its allies — relied on a piece of malware that researchers with SentinelLabs dubbed “AcidRain.”](https://cyberscoop.com/viasat-malware-wiper-acidrain/)
-- Stuxnet
+- [Stuxnet](https://en.wikipedia.org/wiki/Stuxnet): both as an attack against availability and as an example of violating integrity with fake data
 
 ## Mitigation/Countermeasures
 
