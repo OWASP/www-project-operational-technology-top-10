@@ -1,17 +1,28 @@
 # Insufficient Access Control
 
-- multi-level and typically interacts with other problems
-- conceptionally speaking: physical, organizational (who needs access?), technical (how to implement access control?)
+Access Control is a critical aspect of security in any system, but it is especially important in Operational Technology (OT) environments. Insufficient access control can lead to unauthorized access to sensitive systems and data, producing serious consequences for safety and security.
+
+This is an intricate problem that touches on multiple levels of security, including physical, organizational, and technical measures.
 
 ## Description
 
-Users have to fulfill different functions with devices. Not every user needs access to all functions. However, many (legacy) devices do not support authentication or authorization. As a result, unauthorized access is possible.
+Access Control is the process of restricting access to systems and data to authorized users. Access Control is performed on multiple levels:
+
+- **Organizational**: Organizational access control measures, such as policies and procedures, are designed to ensure that only authorized personnel have access to sensitive systems and data. If an organisation has no written down access matrix (`which employee is allowed to operate what?`), implementing the respective technical access control system is not possible.
+- **Technical**: Technical access control measures, such as authentication and authorization mechanisms must be implemented within the used components. This is mostly a topic for system designers and implementors. During operation, these available technical access control measures must be used and enforced by the operators and employees.
+- **Physical**: Physical access control measures, such as locks and security guards, are often the first line of defense against unauthorized access in OT environments. However, they are often over-relied upon, leading to a false sense of security.
 
 ### Particularities of OT
 
-- good example: `emergency shutdown switches`: you do not want to impose any additional latencies activating them (in case of emergency, pushing them is kinda time-critical) but on-the-other-hand you do not want to have them accessible to everyone. The same goes for medical devices in hospitals: you do not want to have a password prompt when a doctor wants to use a defibrillator
-  
-- old systems/long lifetimes: imagine a lifetime of 30+ years. What IT security did we have in 1995? How much can you subsequently add to a system that was designed in 1995?
+#### Emergency Situations
+
+Access Control and Safety can be conflicting. A good example is the use of emergency stop buttons. In an emergency situation, it is critical that the emergency stop button can be activated quickly and easily. However, this can lead to a situation where unauthorized personnel can also activate the emergency stop button, leading to potential safety hazards.
+
+Another good example are medical devices in hospitals: you do not want to have a password prompt when a doctor wants to use a defibrillator
+
+#### Legacy Systems
+
+Users have to fulfill different functions with devices. Not every user needs access to all functions. However, many (legacy) devices do not support authentication or authorization. As a result, unauthorized access is possible.
   
 Old systems often have only limited authentication functions. they also offer no connection to a central identity management system. This makes it difficult to maintain and respond to changes in the organization's responsibilities on an ongoing basis
 
@@ -29,7 +40,7 @@ To allow for analysis, trust boundaries have to be defined. This is especially i
 
 Very often, [OT personnel are not aware of the security implications of their actions](./missing-awareness.md). This can lead to a situation where a system is not properly secured because the operators do not know how to do it.
 
-### Implementaiton Level
+### Implementation Level
 
 - are controls in place? are they well implemented and configured according to best practices?
 
