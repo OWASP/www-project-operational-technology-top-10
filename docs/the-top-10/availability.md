@@ -28,7 +28,7 @@ The well known CIA triad (Confidentiality, Integrity, Availability) is often mis
 
 Imagine a sensor network that is used to monitor the temperature of a critical process. A direct attack against availability would be the destruction of the connected sensors. But if an attacker would perform an Integrity attack, e.g., floods the sensor network with fake temperature data, then the sensor network itself is still available but its sole goal (providing a correct temperature reading) is compromised and thus destroys the availabilty of the overall system.
 
-To protect against integrity attacks, typcially cryptographic measures such as signatures or MACs are used. However, these measures can introduce performance overhead and may not be suitable for all OT systems. For example, [some legacy systems may not have the processing power or memory](./components-with-insufficient-security-capabilities.md) to support cryptographic algorithms.
+To protect against integrity attacks, typically cryptographic measures such as signatures or MACs are used. However, these measures can introduce performance overhead and may not be suitable for all OT systems. For example, [some legacy systems may not have the processing power or memory](./components-with-insufficient-security-capabilities.md) to support cryptographic algorithms.
 
 ### Availability and Software Updates
 
