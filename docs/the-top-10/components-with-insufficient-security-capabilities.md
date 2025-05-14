@@ -1,38 +1,38 @@
 # Selection of components/protocols with insufficient security capabilities
 
-- legacy-devices-to-be, remember 30y+ lifetimes
-- if we design new systems there should be slack for future security features
+Given the long, potentially multi-decades, lifetimes of OT system, it becomes udnerstandable why OT components become legacy systems over time. Many of the mentioned countermeasures try to deal with the existance of legacy systems.
 
-differentiation to [missing awareness](./missing-awareness.md):
+When designing new systems, however, the best way to deal with legacy systems is to not use them in the first place. If we design new systems there should be slack for future security features.
 
-- here: security feature is not available
-- 'missing awareness': feature is availabe, but not configured
+This Top 10 items is related to [missing awareness](./missing-awareness.md). While missing awareness is about the lack of knowledge about security features, this item is about the lack of security features in the first place.
 
 ## Description
 
-- we define legacy systems as systems with security and cryptography capabilities that are not up to date
-
-### Don't use Legacy Protocols if possible
-
-- typcially [without integrity](./availability.md) or without [sufficient authentication mechanisms](./insufficient-access-control.md)
-- weak built-in security features like basic Bluetooth
-- protocols missing confidenciality/integrity (depends upon trust-zone)
+We define legacy systems as systems with security and cryptography capabilities that do not conform to current best practices. This includes systems that are not able to be updated or patched, as well as systems that are not able to be replaced.
 
 ### Don't use Legacy Systems for new Deployments
 
+Obviously, if you are designing a new system, you should not use legacy systems. This is especially true for systems that are not able to be updated or patched. If you are designing a new system, you should use systems that are able to be updated or patched.
+
+Deployments are seldom new green-field installations. Most of the time, new systems are deployed in existing environments (think about the long lifetimes of OT systems). If new components are added to an existing environment, they often have to conform and interact with the existing environment, often mandating usage of legacy protocols. If this is the case, it would be preferable to use components that (while they provide the legacy feature set) also incorporate capabilities for state-of-the-art security features so that the installation can be updated in the future.
+
+### Don't use Legacy Protocols if possible
+
+Components commonly use standardized protocols to communicate with each other or with other systems. When designing a new system, chosen protocols should heed best security practices and legacy protocols should be avoided if feasible.
+
+Legacy protocols often have security issues:
+
+- They often lack integrity protection and thus [can lead to availability problems](./availability.md).
+- They do not offer thorough or [sufficient authentication mechanisms](./insufficient-access-control.md) and thus can lead to unauthorized access to systems and data.
+- They have weak built-in security features like basic Bluetooth.
+
 ## Rationale
 
-- why did we include this item in the top 10?
+- given the long lifetimes of OT systems, parts of them becoming legacy systems will happen
+- there is economic pressure to use existing legacy systems for new deployments:w
+- there is a lack of awareness about the security implications of using legacy systems
 
 ## Known Attacks/Examples
-
-Potential Sources
-
-- <https://www.icsadvisoryproject.com>
-- <https://icsstrive.com/>
-- <https://emb3d.mitre.org/>
-- <https://attack.mitre.org/techniques/ics/>
-- please add more
 
 ## Mitigation/Countermeasures
 
