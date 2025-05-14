@@ -734,6 +734,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unmanaged-external-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unmanaged External Access
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1196,6 +1211,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unmanaged-external-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unmanaged External Access
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1320,21 +1350,18 @@
 
 
 <h1 id="unknown-assets-and-undocumented-services">Unknown Assets and Undocumented Services</h1>
-<p>Arguably the biggest threat to a network (IT and OT) is unmanaged and unknown assets. These assets are mostly already or will become outdated over time and introduce vulnerabilities and weaknesses into the system. Such assets can for example be used as initial access points into the network, for priviledge escalation, establishing persistence or lateral movement. Having a full inventory of assets that not only includes devices but also established remote access, deployed priviledges and other services is crucial to understanding the environment we are working with.</p>
+<p>Arguably the biggest threat to a network (IT and OT) is unmanaged and unknown assets.  This can either be unknown assets that are plugged into your local OT network, or undocumented services (in the worst-case available from the public internet and <a href="../insufficient-access-control/">without sufficient access control</a>.</p>
+<p>There is an overlap with the <a href="../missing-incident-detection-reaction-capabilities/">Missing Incident Detection/Reaction Capabilities</a> as incident detection depends upon having a complete inventory of the environment. If we do not know what is in our environment, we cannot detect if something is happening to it.</p>
 <h2 id="description">Description</h2>
 <p>Unknown assets are devices or systems in an OT environment that are not properly identified or documented. These assets can include legacy systems, unmanaged devices, or unauthorized connections that are not accounted for in the organization's inventory.</p>
-<div class="highlight"><pre><span></span><code>NOTES/TODO
-<span class="k">-</span><span class="w"> </span>inter-section to incident detection (due to missing detection capabilitites), security-misconfiguration
-<span class="k">-</span><span class="w"> </span>physical &#39;stuff&#39;
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>manual list
-<span class="k">-</span><span class="w"> </span>counter-measures
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>network scanning/discovery
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>port/traffic monitoring
-<span class="k">-</span><span class="w"> </span>Unmanaged external access
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>from above purdue model level 3 / IEC62443 zones/conduits
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>maintenance access
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>this can be related to &#39;missing awareness&#39;
-</code></pre></div>
+<p>This is your typical "shadow IT" problem, but in the OT world, it can be even more dangerous. Unknown assets can be anything from a rogue device connected to the network to an undocumented service running on a server. These assets can introduce vulnerabilities and weaknesses into the system, making it easier for attackers to gain access and move laterally within the network.</p>
+<p>These assets are mostly already or will become outdated over time and introduce vulnerabilities and weaknesses into the system. Such assets can for example be used as initial access points into the network, for privilege escalation, establishing persistence or lateral movement. Having a full inventory of assets that not only includes devices but also established remote access, deployed privileges and other services is crucial to understanding the environment we are working with.</p>
+<h3 id="unmanaged-external-access">Unmanaged External Access</h3>
+<ul>
+<li>from above purdue model level 3 / IEC62443 zones/conduits</li>
+<li>maintenance access</li>
+<li>this can be related to <a href="../missing-awareness/">missing awareness</a></li>
+</ul>
 <h2 id="rationale">Rationale</h2>
 <p>History has shown that undocumented assets can be used by attackers for everything from initial access, via priviledge escalation up to completing the action on objectives. Hardening and segmentation measures can only be complete if all the assets are known and under consideration. Getting an overview of my network is always and therefore the most crucial step when starting with a security program. It is also the fundamental prerequisite for every ISMS, CSMS, and other frameworks.</p>
 <h2 id="known-attacksexamples">Known Attacks/Examples</h2>
@@ -1357,6 +1384,7 @@
 <li>mitigations for integrators/builders:  Provide the documentation to the customer/asset owner.</li>
 <li>Implement asset discovery and inventory management tools to identify and document all assets in the OT environment.</li>
 <li>Regularly scan and monitor the network for new or unknown devices.</li>
+<li>Perform port/traffic monitoring.</li>
 <li>Enforce strict access controls and authentication mechanisms to prevent unauthorized devices from connecting to the network. Also assume rogue devices/services in the network when designing security measures.</li>
 </ul>
 <h2 id="next-actionable-steps">Next Actionable Steps</h2>
