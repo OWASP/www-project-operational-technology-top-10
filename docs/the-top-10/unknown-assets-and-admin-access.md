@@ -1,6 +1,6 @@
 # Unknown Assets and Undocumented Services
 
-Arguably the biggest threat to a network (IT and OT) is unmanaged and unknown assets.  This can either be unknown assests that are plugged into your local OT network, or undocumented services (in the worst-case available from the public internet and [without sufficient access control](./insufficient-access-control.md).
+Arguably the biggest threat to a network (IT and OT) is unmanaged and unknown assets.  This can either be unknown assets that are plugged into your local OT network, or undocumented services (in the worst-case available from the public internet and [without sufficient access control](./insufficient-access-control.md).
 
 There is an overlap with the [Missing Incident Detection/Reaction Capabilities](./missing-incident-detection-reaction-capabilities.md) as incident detection depends upon having a complete inventory of the environment. If we do not know what is in our environment, we cannot detect if something is happening to it.
 
