@@ -58,8 +58,6 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 - IEC 62443-2-1:2024 - COMP 1.1 - Component hardening
 - IEC 62443-2-4:2024 - SP.02.03 - Hardening guidelines
 
-### Benchmarks
-
 OT-specific hardening guides are often provided by the system integrator or product supplier, for example:
 
 - *"System Hardening for Substation Automation and Protection"* for SICAM/SIPROTEC, which includes hardening measures at the solution level as well as for individual components.

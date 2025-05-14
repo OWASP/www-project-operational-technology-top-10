@@ -32,12 +32,6 @@ The most common entry into OT-zones comes from IT environments. For hardware dev
 - Having e.g. your RDP connections exposed to the internet can have severe consequences as seen with Eternal Blue. ( [What Is EternalBlue and Why Is the MS17-010 Exploit Still Relevant?](https://www.avast.com/c-eternalblue) )
 Potential Sources
 
-- <https://www.icsadvisoryproject.com>
-- <https://icsstrive.com/>
-- <https://emb3d.mitre.org/>
-- <https://attack.mitre.org/techniques/ics/>
-- please add more
-
 ## Mitigation/Countermeasures
 
 ### Design and Implementation

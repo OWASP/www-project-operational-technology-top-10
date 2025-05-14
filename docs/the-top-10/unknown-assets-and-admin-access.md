@@ -1,24 +1,22 @@
 # Unknown Assets and Undocumented Services
 
-Arguably the biggest threat to a network (IT and OT) is unmanaged and unknown assets. These assets are mostly already or will become outdated over time and introduce vulnerabilities and weaknesses into the system. Such assets can for example be used as initial access points into the network, for priviledge escalation, establishing persistence or lateral movement. Having a full inventory of assets that not only includes devices but also established remote access, deployed priviledges and other services is crucial to understanding the environment we are working with.
+Arguably the biggest threat to a network (IT and OT) is unmanaged and unknown assets.  This can either be unknown assets that are plugged into your local OT network, or undocumented services (in the worst-case available from the public internet and [without sufficient access control](./insufficient-access-control.md).
+
+There is an overlap with the [Missing Incident Detection/Reaction Capabilities](./missing-incident-detection-reaction-capabilities.md) as incident detection depends upon having a complete inventory of the environment. If we do not know what is in our environment, we cannot detect if something is happening to it.
 
 ## Description
 
 Unknown assets are devices or systems in an OT environment that are not properly identified or documented. These assets can include legacy systems, unmanaged devices, or unauthorized connections that are not accounted for in the organization's inventory.
 
-```markdown
-NOTES/TODO
-- inter-section to incident detection (due to missing detection capabilitites), security-misconfiguration
-- physical 'stuff'
-  - manual list
-- counter-measures
-  - network scanning/discovery
-  - port/traffic monitoring
-- Unmanaged external access
-  - from above purdue model level 3 / IEC62443 zones/conduits
-  - maintenance access
-  - this can be related to 'missing awareness'
-```
+This is your typical "shadow IT" problem, but in the OT world, it can be even more dangerous. Unknown assets can be anything from a rogue device connected to the network to an undocumented service running on a server. These assets can introduce vulnerabilities and weaknesses into the system, making it easier for attackers to gain access and move laterally within the network.
+
+These assets are mostly already or will become outdated over time and introduce vulnerabilities and weaknesses into the system. Such assets can for example be used as initial access points into the network, for privilege escalation, establishing persistence or lateral movement. Having a full inventory of assets that not only includes devices but also established remote access, deployed privileges and other services is crucial to understanding the environment we are working with.
+
+### Unmanaged External Access
+
+- from above purdue model level 3 / IEC62443 zones/conduits
+- maintenance access
+- this can be related to [missing awareness](./missing-awareness.md)
 
 ## Rationale
 
@@ -45,6 +43,7 @@ History has shown that undocumented assets can be used by attackers for everythi
 - mitigations for integrators/builders:  Provide the documentation to the customer/asset owner.
 - Implement asset discovery and inventory management tools to identify and document all assets in the OT environment.
 - Regularly scan and monitor the network for new or unknown devices.
+- Perform port/traffic monitoring.
 - Enforce strict access controls and authentication mechanisms to prevent unauthorized devices from connecting to the network. Also assume rogue devices/services in the network when designing security measures.
 
 ## Next Actionable Steps
