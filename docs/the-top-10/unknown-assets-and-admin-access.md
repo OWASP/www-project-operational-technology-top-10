@@ -10,7 +10,7 @@ Unknown assets are devices or systems in an OT environment that are not properly
 
 This is your typical "shadow IT" problem, but in the OT world, it can be even more dangerous. Unknown assets can be anything from a rogue device connected to the network to an undocumented service running on a server. These assets can introduce vulnerabilities and weaknesses into the system, making it easier for attackers to gain access and move laterally within the network.
 
-These assets are mostly already or will become outdated over time and introduce vulnerabilities and weaknesses into the system. Such assets can for example be used as initial access points into the network, for priviledge escalation, establishing persistence or lateral movement. Having a full inventory of assets that not only includes devices but also established remote access, deployed priviledges and other services is crucial to understanding the environment we are working with.
+These assets are mostly already or will become outdated over time and introduce vulnerabilities and weaknesses into the system. Such assets can for example be used as initial access points into the network, for privilege escalation, establishing persistence or lateral movement. Having a full inventory of assets that not only includes devices but also established remote access, deployed privileges and other services is crucial to understanding the environment we are working with.
 
 ### Unmanaged External Access
 
