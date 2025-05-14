@@ -1,6 +1,6 @@
 # Selection of components/protocols with insufficient security capabilities
 
-Given the long, potentially multi-decades, lifetimes of OT system, it becomes udnerstandable why OT components become legacy systems over time. Many of the mentioned countermeasures try to deal with the existance of legacy systems.
+Given the long, potentially multi-decades, lifetimes of OT system, it becomes understandable why OT components become legacy systems over time. Many of the mentioned countermeasures try to deal with the existence of legacy systems.
 
 When designing new systems, however, the best way to deal with legacy systems is to not use them in the first place. If we design new systems there should be slack for future security features.
 
