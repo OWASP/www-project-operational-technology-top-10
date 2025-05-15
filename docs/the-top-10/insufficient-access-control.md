@@ -22,23 +22,22 @@ Another good example are medical devices in hospitals: you do not want to have a
 
 #### Legacy Systems
 
-Users have to fulfill different functions with devices. Not every user needs access to all functions. However, many (legacy) devices do not support authentication or authorization. As a result, unauthorized access is possible.
+Old systems often have only [limited security functions](./components-with-insufficient-security-capabilities.md). Many (legacy) devices do not support authentication or authorization. As a result, unauthorized access is possible.
   
-Old systems often have only limited authentication functions. they also offer no connection to a central identity management system. This makes it difficult to maintain and respond to changes in the organization's responsibilities on an ongoing basis
+Legacy devices often also offer no connection to a central identity management system. This makes it difficult to maintain and respond to changes in the organization's responsibilities on an ongoing basis
 
 ### Organizational Level
 
-Mention some goals, at least:
+On an organizational level, poorly defined access control can result in "privilege creep," where users accumulate more access than necessary for their job, potentially granting them access to systems and data they should not have.
 
-- least privilege: users should only have access to the functions they need to perform their job
-- privilege creep: users should not accumulate access rights over time
-- separation of duties: no single user should have access to all functions
-- non-repudiation: the system should be able to prove who did what. This principle is broken if there's a shared user/password list for devices on the factory floor.
-- deactivating accounts: when a user leaves the company, their account should be deactivated
+A well designed access control system should incorporate the following principles:
 
-To allow for analysis, trust boundaries have to be defined. This is especially important in the OT world, where the Purdue Model is often used to define trust boundaries.
-
-Very often, [OT personnel are not aware of the security implications of their actions](./missing-awareness.md). This can lead to a situation where a system is not properly secured because the operators do not know how to do it.
+- **Role-Based Access Control**: Users should be assigned roles based on their job responsibilities. This can help to ensure that users only have access to the systems and data that they need to perform their job and prevents privilege creep, where users accumulate access rights over time.
+- **Least Privilege**: Users/roles should only have access to the functions and data they need to perform their job.
+- **Separation of Duties**: More than one person is required to perform a task. This should be implemented for critical tasks.
+- **Clear Trust Boundaries**: To allow for analysis, [trust boundaries](./broken-zone-and-conduits-design.md) have to be defined. This is especially important in the OT world, where the Purdue Model is often used to define trust boundaries.
+- **Ongoing Employee Training**: Very often, [OT personnel are not aware of the security implications of their actions](./missing-awareness.md). This can lead to a situation where a system is not properly secured because the operators do not know how to do it.
+- **Deactivating Accounts**: When a user leaves the company, their account should be deactivated.
 
 ### Implementation Level
 
@@ -51,6 +50,8 @@ Very often, [OT personnel are not aware of the security implications of their ac
 - have controls be tested? are they working as intended?
 
 - have physical access control assumptions been documented and tested? It is easier than some people think to get on a factory floor.
+
+- **non-repudiation**: the system should be able to prove who did what. This principle is broken if there's a shared user/password list for devices on the factory floor.
 
 ## Rationale
 
