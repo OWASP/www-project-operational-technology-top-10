@@ -1484,19 +1484,19 @@
 <p>Access Control and Safety can be conflicting. A good example is the use of emergency stop buttons. In an emergency situation, it is critical that the emergency stop button can be activated quickly and easily. However, this can lead to a situation where unauthorized personnel can also activate the emergency stop button, leading to potential safety hazards.</p>
 <p>Another good example are medical devices in hospitals: you do not want to have a password prompt when a doctor wants to use a defibrillator</p>
 <h4 id="legacy-systems">Legacy Systems</h4>
-<p>Users have to fulfill different functions with devices. Not every user needs access to all functions. However, many (legacy) devices do not support authentication or authorization. As a result, unauthorized access is possible.</p>
-<p>Old systems often have only limited authentication functions. they also offer no connection to a central identity management system. This makes it difficult to maintain and respond to changes in the organization's responsibilities on an ongoing basis</p>
+<p>Old systems often have only <a href="../components-with-insufficient-security-capabilities/">limited security functions</a>. Many (legacy) devices do not support authentication or authorization. As a result, unauthorized access is possible.</p>
+<p>Legacy devices often also offer no connection to a central identity management system. This makes it difficult to maintain and respond to changes in the organization's responsibilities on an ongoing basis</p>
 <h3 id="organizational-level">Organizational Level</h3>
-<p>Mention some goals, at least:</p>
+<p>On an organizational level, poorly defined access control can result in "privilege creep," where users accumulate more access than necessary for their job, potentially granting them access to systems and data they should not have.</p>
+<p>A well designed access control system should incorporate the following principles:</p>
 <ul>
-<li>least privilege: users should only have access to the functions they need to perform their job</li>
-<li>privilege creep: users should not accumulate access rights over time</li>
-<li>separation of duties: no single user should have access to all functions</li>
-<li>non-repudiation: the system should be able to prove who did what. This principle is broken if there's a shared user/password list for devices on the factory floor.</li>
-<li>deactivating accounts: when a user leaves the company, their account should be deactivated</li>
+<li><strong>Role-Based Access Control</strong>: Users should be assigned roles based on their job responsibilities. This can help to ensure that users only have access to the systems and data that they need to perform their job and prevents privilege creep, where users accumulate access rights over time.</li>
+<li><strong>Least Privilege</strong>: Users/roles should only have access to the functions and data they need to perform their job.</li>
+<li><strong>Separation of Duties</strong>: More than one person is required to perform a task. This should be implemented for critical tasks.</li>
+<li><strong>Clear Trust Boundaries</strong>: To allow for analysis, <a href="../broken-zone-and-conduits-design/">trust boundaries</a> have to be defined. This is especially important in the OT world, where the Purdue Model is often used to define trust boundaries.</li>
+<li><strong>Ongoing Employee Training</strong>: Very often, <a href="../missing-awareness/">OT personnel are not aware of the security implications of their actions</a>. This can lead to a situation where a system is not properly secured because the operators do not know how to do it.</li>
+<li><strong>Deactivating Accounts</strong>: When a user leaves the company, their account should be deactivated.</li>
 </ul>
-<p>To allow for analysis, trust boundaries have to be defined. This is especially important in the OT world, where the Purdue Model is often used to define trust boundaries.</p>
-<p>Very often, <a href="../missing-awareness/">OT personnel are not aware of the security implications of their actions</a>. This can lead to a situation where a system is not properly secured because the operators do not know how to do it.</p>
 <h3 id="implementation-level">Implementation Level</h3>
 <ul>
 <li>
@@ -1513,6 +1513,9 @@
 </li>
 <li>
 <p>have physical access control assumptions been documented and tested? It is easier than some people think to get on a factory floor.</p>
+</li>
+<li>
+<p><strong>non-repudiation</strong>: the system should be able to prove who did what. This principle is broken if there's a shared user/password list for devices on the factory floor.</p>
 </li>
 </ul>
 <h2 id="rationale">Rationale</h2>
