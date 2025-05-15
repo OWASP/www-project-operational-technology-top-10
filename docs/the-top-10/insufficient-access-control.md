@@ -24,7 +24,7 @@ Another good example are medical devices in hospitals: you do not want to have a
 
 Old systems often have only [limited security functions](./components-with-insufficient-security-capabilities.md). Many (legacy) devices do not support authentication or authorization. As a result, unauthorized access is possible.
   
-They often also offer no connection to a central identity management system. This makes it difficult to maintain and respond to changes in the organization's responsibilities on an ongoing basis
+Legacy devices often also offer no connection to a central identity management system. This makes it difficult to maintain and respond to changes in the organization's responsibilities on an ongoing basis
 
 ### Organizational Level
 
