@@ -32,12 +32,12 @@ On an organizational level, poorly defined access control can result in "privile
 
 A well designed access control system should incorporate the following principles:
 
-- **role based access control**: users should be assigned roles based on their job responsibilities. This can help to ensure that users only have access to the systems and data that they need to perform their job and prevents privilege creep where users accumulate access rights over time.
-- **least privilege**: users/roles should only have access to the functions and data they need to perform their job.
-- **separation of duties**: more than one person is required to perform a task. This should be implemented for critical tasks.
-- **clear trust boundaries**: to allow for analysis, [trust boundaries](./broken-zone-and-conduits-design.md) have to be defined. This is especially important in the OT world, where the Purdue Model is often used to define trust boundaries.
-- **ongoing employee training**: very often, [OT personnel are not aware of the security implications of their actions](./missing-awareness.md). This can lead to a situation where a system is not properly secured because the operators do not know how to do it.
-- **deactivating accounts**: when a user leaves the company, their account should be deactivated
+- **Role-Based Access Control**: Users should be assigned roles based on their job responsibilities. This can help to ensure that users only have access to the systems and data that they need to perform their job and prevents privilege creep, where users accumulate access rights over time.
+- **Least Privilege**: Users/roles should only have access to the functions and data they need to perform their job.
+- **Separation of Duties**: More than one person is required to perform a task. This should be implemented for critical tasks.
+- **Clear Trust Boundaries**: To allow for analysis, [trust boundaries](./broken-zone-and-conduits-design.md) have to be defined. This is especially important in the OT world, where the Purdue Model is often used to define trust boundaries.
+- **Ongoing Employee Training**: Very often, [OT personnel are not aware of the security implications of their actions](./missing-awareness.md). This can lead to a situation where a system is not properly secured because the operators do not know how to do it.
+- **Deactivating Accounts**: When a user leaves the company, their account should be deactivated.
 
 ### Implementation Level
 
