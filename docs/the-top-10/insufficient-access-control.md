@@ -21,6 +21,7 @@ Access Control and Safety can be conflicting. A good example is the use of emerg
 Another good example are medical devices in hospitals: you do not want to have a password prompt when a doctor wants to use a defibrillator
 
 #### Legacy Systems
+
 Old systems often have only [limited security functions](./components-with-insufficient-security-capabilities.md). Many (legacy) devices do not support authentication or authorization. As a result, unauthorized access is possible.
   
 They often also offer no connection to a central identity management system. This makes it difficult to maintain and respond to changes in the organization's responsibilities on an ongoing basis
