@@ -28,7 +28,7 @@ Legacy devices often also offer no connection to a central identity management s
 
 ### Organizational Level
 
-On an organizational level, access control is often not well defined. This can lead to a situation where users have more access than they need to perform their job. This is often referred to as "privilege creep". It can also lead to a situation where users have access to systems and data that they should not have access to.
+On an organizational level, poorly defined access control can result in "privilege creep," where users accumulate more access than necessary for their job, potentially granting them access to systems and data they should not have.
 
 A well designed access control system should incorporate the following principles:
 
