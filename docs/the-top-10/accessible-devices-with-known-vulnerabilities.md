@@ -76,6 +76,14 @@ Vulnerable devices bad. Especially in critical infrastructure.
 
 - [OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html)
 - [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology)
+- IEC 62443 FR 3
+- IEC 62443 FR 4
+- IEC 62443-3-2:2020 ZCR 5.2
+- IEC 62443-3-3:2020 SR 3.X
+- IEC 62443-3-3:2020 SR 4.X
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.5
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.6
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.10
 
 ### Background information
 
