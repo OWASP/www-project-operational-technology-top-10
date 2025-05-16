@@ -96,9 +96,23 @@ The prevalence of:
 
 ### Standards
 
-- IEC 62443-4-1
-- IEC 62443-2-1
-- ISO 27001
+- IEC 62443 FR 1 
+- IEC 62443 FR 2
+- IEC 62443-2-1:2019 SPE 6
+- IEC 62443-3-3:2020 SR 1.X
+- IEC 62443-3-3:2020 SR 2.X
+- NIST CSF 2.0 PR.AA
+- NIST CSF 2.0 PR.IR-01
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.7
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 11.X
+- MITRE ATT&CK M0800
+- MITRE ATT&CK M0801
+- MITRE ATT&CK M0804
+- MITRE ATT&CK M0807
+- MITRE ATT&CK M0813
+- MITRE ATT&CK M0918
+- MITRE ATT&CK M0922
+- MITRE ATT&CK M0926
 
 ### Background information on Physical Access Control
 
