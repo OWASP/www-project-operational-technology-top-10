@@ -57,11 +57,29 @@ History has shown that undocumented assets can be used by attackers for everythi
 
 ### Standards
 
-- ISA/IEC 62443 1-1 Foundational requirements
-- ISA/IEC 62443 2-1 Inventory management of IACS hardware/software components and
-network communication
-- NIS Ch.3.2 Primary/Core Assets
-- NIS Ch.3.3 Network Segmentation
+- IEC 62443 FR 2
+- IEC 62443-2-1:2019 CM 1
+- IEC 62443-2-1:2019 NET 3.X
+- IEC 62443-3-2:2020 ZCR 1
+- IEC 62443-3-2:2020 ZCR 3.6
+- IEC 62443-3-3:2020 SR 2.X
+- IEC 62443-3-3:2020 SR 7.8
+- NIST CSF 2.0 ID.AM
+- NIST CSF 2.0 PR.AA
+- NIST CSF 2.0 PR.IR-01
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.7
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 11.X
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 12.2
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 12.4
+- MITRE ATT&CK M0800
+- MITRE ATT&CK M0801
+- MITRE ATT&CK M0804
+- MITRE ATT&CK M0807
+- MITRE ATT&CK M0813
+- MITRE ATT&CK M0918
+- MITRE ATT&CK M0922
+- MITRE ATT&CK M0926
+- MITRE ATT&CK M0932
 - NERC CIP ID.AM Asset Management
 - NERC CIP PR.AC Identity Management and Access Control
 - NIST 1800-23 Energy Sector Asset Management: For Electric Utilities, Oil & Gas Industry
