@@ -59,20 +59,16 @@ Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection sof
 
 ### Standards
 
-Addressing vendors/manufacturers
-
-- IEC 62443-4-1 <https://webstore.iec.ch/en/publication/33615>
-- IEC 62443-4-2 <https://webstore.iec.ch/en/publication/34421>
-
-Addressing integrators
-
-- IEC 62443-2-4 <https://webstore.iec.ch/en/publication/67631>
-
-Addressing asset owners
-
-- NIST Special Publication 800-161 <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-161r1-upd1.pdf>
-- NIST Cyber Security Framework 2.0 - Category GV.SC <https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf>
-- ISO 28000 family <https://www.iso.org/obp/ui/#iso:std:iso:28000:ed-2:v1:en>
+- ISO 28000 family
+- IEC 62443-2-1:2019 ORG 1.6
+- IEC 62443-3-2:2020 ZCR 5.X
+- NIST CSF 2.0 GV.OC-02
+- NIST CSF 2.0 GV.OC-04
+- NIST CSF 2.0 GV.SC
+- NIST Special Publication 800-161
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 5.X
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.1  
+- MITRE ATT&CK M0817
 
 ### Background information
 
