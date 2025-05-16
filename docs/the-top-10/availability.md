@@ -65,7 +65,24 @@ To protect against integrity attacks, typically cryptographic measures such as s
 
 ### Standards
 
-- links to relevant standards
+- IEC 62443 FR 7
+- IEC 62443-2-1:2019 DATA 1.3
+- IEC 62443-2-1:2019 DATA 1.4
+- IEC 62443-2-1:2019 SPE 8
+- IEC 62443-3-3:2020 SR 7.X
+- NIST CSF 2.0 PR.IR-02
+- NIST CSF 2.0 PR.IR-03
+- NIST CSF 2.0 PR.IR-04
+- NIST CSF 2.0 RC
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 4.X
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.4
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 13.1
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 13.2
+- MITRE ATT&CK M0803
+- MITRE ATT&CK M0811
+- MITRE ATT&CK M0812
+- MITRE ATT&CK M0815
+- MITRE ATT&CK M0953
 
 ### Background information
 
