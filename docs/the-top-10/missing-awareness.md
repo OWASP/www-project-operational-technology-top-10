@@ -82,7 +82,13 @@ The best hardware with the best security capabilities is useless if no one is aw
 
 ### Standards
 
-- ISA/IEC 62443 1-1 Foundational requirements
+- IEC 62443-2-1:2019 ORG 1.4
+- IEC 62443-3-3:2020 SR 7.6
+- IEC 62443-3-3:2020 SR 7.7
+- NIST CSF 2.0 PR.AT
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 8.1
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 8.2
+- MITRE ATT&CK M0917
 
 ### Background information
 
