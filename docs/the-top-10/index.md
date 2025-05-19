@@ -1,6 +1,6 @@
 # The OWASP Operational Technology Top 10
 
-This is the preliniary list of the OWASP Operational Technology Top 10. The list is a work in progress and will be updated as we gather more information and feedback from the community.
+This is the preliminary list of the OWASP Operational Technology Top 10. The list is a work in progress and will be updated as we gather more information and feedback from the community.
 
 During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective. The selected the Top 3 items as there was consensus that these are fundamental for OT security:
 
