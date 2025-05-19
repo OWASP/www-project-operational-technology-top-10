@@ -57,10 +57,6 @@
          <lastmod>2025-05-19</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/the-top-10/availability/</loc>
-         <lastmod>2025-05-19</lastmod>
-    </url>
-    <url>
          <loc>https://ot.owasp.org/the-top-10/broken-zone-and-conduits-design/</loc>
          <lastmod>2025-05-19</lastmod>
     </url>
@@ -74,6 +70,10 @@
     </url>
     <url>
          <loc>https://ot.owasp.org/the-top-10/insufficient-access-control/</loc>
+         <lastmod>2025-05-19</lastmod>
+    </url>
+    <url>
+         <loc>https://ot.owasp.org/the-top-10/loss-of-availability/</loc>
          <lastmod>2025-05-19</lastmod>
     </url>
     <url>
