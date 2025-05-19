@@ -58,7 +58,7 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 - IEC 62443-2-1:2024 - COMP 1.1 - Component hardening
 - IEC 62443-2-4:2024 - SP.02.03 - Hardening guidelines
 - IEC 62443-4-1:2018 - 12.4 SG-3 - Security hardening guidelines
-- IEC 62443-4-2 
+- IEC 62443-4-2
 - NIST CSF 2.0 PR.PS
 - EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.3
 - EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.9
