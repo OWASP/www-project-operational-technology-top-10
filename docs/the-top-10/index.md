@@ -37,6 +37,6 @@ Each entry in the OWASP OT Top 10 will be accompanied by a short description, pu
 
 ## Methodology
 
-The project started Autumn 2024 with a meeting of the OWASP OT Top 10 leaders and subsequent announcements to the community. During montly meetings we discussed potential Top 10 items and their relevance. Starting with 2025, we increased the frequence to one meeting every two weeks to finalize the alpha version.
+The project started Autumn 2024 with a meeting of the OWASP OT Top 10 leaders and subsequent announcements to the community. During monthly meetings we discussed potential Top 10 items and their relevance. Starting with 2025, we increased the frequency to one meeting every two weeks to finalize the alpha version.
 
 In addition to the expert opinions, we also gathered empirical data from both offensive and defensive companies and experts. This data was used to validate the proposed top 10 list and ensure that it accurately reflects the current state of OT security.
