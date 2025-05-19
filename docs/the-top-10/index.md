@@ -1,21 +1,8 @@
-# The Top 10
+# The OWASP Operational Technology Top 10
 
-## Methodology
+This is the preliniary list of the OWASP Operational Technology Top 10. The list is a work in progress and will be updated as we gather more information and feedback from the community.
 
-### How were the OT Top 10 created?
-
-- meetings every two weeks to gather the top 10 list
-- qualitative discussion to form the top 10
-
-### How did we make sure that we covered reality?
-
-We gathered empirical data from both offensive and defensive companies and experts. This data was used to validate the proposed top 10 list and ensure that it accurately reflects the current state of OT security.
-
-## The OWASP Operational Technology Top 10 List
-
-During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective.
-
-The selected the Top 3 items as there was consensus that these are fundamental for OT security:
+During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective. The selected the Top 3 items as there was consensus that these are fundamental for OT security:
 
 1. [Unknown Assets and Unmanaged External Access](./unknown-assets-and-admin-access.md)
 2. [Devices with known Vulnerabilities/Issues](./accessible-devices-with-known-vulnerabilities.md)
@@ -43,8 +30,13 @@ Each entry in the OWASP OT Top 10 will be accompanied by a short description, pu
 | Name | Name/Title of the Item |
 | Description | Show description of the item |
 | Rationale | Why did we find this item important enough for inclusion? |
-| Known OT Attacks utilizing this Item | <https://www.icsadvisoryproject.com>, <https://icsstrive.com/> |
+| Known Attacks/Examples | What are documented attacks that utilized the respective Top 10 item? |
 | Mitigation/Countermeasures | There will be multiple levels: 1) design and implementation level mitigations for developers/builders;  2) operational mitigations for integrators, e.g., air-gapping systems |
-| Next actionable steps | What can be done to identify and/or mitigate the issue? |
-| References| Relevant standards |
-| Tooling | Links to Tools that can be used to test for the vulnerability|
+| Next Actionable Steps | What can be done to identify and/or mitigate the issue? |
+| References| Relevant standards, Links to Tools, and Background Information |
+
+## Methodology
+
+The project started Autumn 2024 with a meeting of the OWASP OT Top 10 leaders and subsequent announcements to the community. During montly meetings we discussed potential Top 10 items and their relevance. Starting with 2025, we increased the frequence to one meeting every two weeks to finalize the alpha version.
+
+In addition to the expert opinions, we also gathered empirical data from both offensive and defensive companies and experts. This data was used to validate the proposed top 10 list and ensure that it accurately reflects the current state of OT security.
