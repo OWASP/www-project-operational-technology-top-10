@@ -51,9 +51,17 @@ Without logging and monitoring, breaches cannot be detected. An OT cybersecurity
 
 ### Standards
 
+- IEC 62443 FR 6
+- IEC 62443-2-1:2019 ORG 2.2
+- IEC 62443-2-1:2019 SPE 7
+- IEC 62443-3-2:2020 ZCR 5.1
+- IEC 62443-3-3:2020 SR 6.X
+- NIST CSF 2.0 DE
+- NIST CSF 2.0 RS
 - NIST SP 800-82r3 <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf>
-- IEC 62443-3-3 Foundational Requirement 6 (FR 6) - Timely Response to Events <https://webstore.iec.ch/en/publication/7033>
-- NIST Cyber Security Framework 2.0 - Detect (DE) and Respond (RS) <https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf>
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 3.X 
+- MITRE ATT&CK M0919
+- MITRE ATT&CK M0931
 
 ### Background information
 
