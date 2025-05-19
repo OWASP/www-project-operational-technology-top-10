@@ -22,7 +22,7 @@ Components commonly use standardized protocols to communicate with each other or
 
 Legacy protocols often have security issues:
 
-- They often lack integrity protection and thus [can lead to availability problems](./availability.md).
+- They often lack integrity protection and thus [can lead to availability problems](./loss-of-availability.md).
 - They do not offer thorough or [sufficient authentication mechanisms](./insufficient-access-control.md) and thus can lead to unauthorized access to systems and data.
 - They have weak built-in security features like basic Bluetooth.
 

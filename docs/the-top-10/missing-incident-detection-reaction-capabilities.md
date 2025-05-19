@@ -59,7 +59,7 @@ Without logging and monitoring, breaches cannot be detected. An OT cybersecurity
 - NIST CSF 2.0 DE
 - NIST CSF 2.0 RS
 - NIST SP 800-82r3 <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf>
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 3.X 
+- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 3.X
 - MITRE ATT&CK M0919
 - MITRE ATT&CK M0931
 

@@ -96,7 +96,7 @@ The prevalence of:
 
 ### Standards
 
-- IEC 62443 FR 1 
+- IEC 62443 FR 1
 - IEC 62443 FR 2
 - IEC 62443-2-1:2019 SPE 6
 - IEC 62443-3-3:2020 SR 1.X

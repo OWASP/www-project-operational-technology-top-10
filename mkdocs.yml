@@ -76,7 +76,7 @@ nav:
       - '6. Broken Zones and Conduits Design': the-top-10/broken-zone-and-conduits-design.md
       - '7. Missing Awareness': the-top-10/missing-awareness.md
       - '8. Insufficient Security Capabilities': the-top-10/components-with-insufficient-security-capabilities.md
-      - '9. Availability': the-top-10/availability.md
+      - '9. Loss of Availability': the-top-10/loss-of-availability.md
       - '10. Missing Hardening': the-top-10/missing-hardening.md
   - 'Appendix':
     - "What's next?": appendix/whats-next.md
