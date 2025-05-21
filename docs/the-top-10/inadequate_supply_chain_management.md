@@ -84,7 +84,6 @@ Technique [Supply Chain Compromise](https://attack.mitre.org/techniques/T0862/).
 
 Measure [Supply Chain Management](https://attack.mitre.org/mitigations/M0817/). Establish a supply chain management program that includes policies and procedures to ensure all devices and components come from trusted suppliers and are tested to confirm their integrity.
 
-
 ### Tooling
 
 - TBD/N.A.
