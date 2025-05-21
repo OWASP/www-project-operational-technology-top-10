@@ -28,11 +28,11 @@ Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection sof
 
 ## Known Attacks
 
-- SolarWinds Orion Compromise <https://attack.mitre.org/campaigns/C0024/>. The SolarWinds compromise was a sophisticated supply chain cyber operation that was discovered in December 2020. The cyber operation involved the injection of malicious code into the SolarWinds Orion software build process, which was then distributed through a standard software update. The cyber actors also used password spraying, token theft, API abuse, spear phishing and other supply chain attacks to compromise user accounts and leverage their associated access.
-- CrowdStrike Compromise <https://www.sygnia.co/blog/crowdstrike-outage-security-vs-operational-stability/>. In 2024, a content update for CrowdStrike's Falcon sensor software caused global system disruptions. The "Blue Screen of Death" (BSOD) was triggered by a "Named Pipes" update intended to improve threat detection. An error in the update file's formatting led to the CrowdStrike driver accessing a non-existent memory address, triggering the BSOD. This affected numerous industries, including airlines, which canceled or delayed flights; healthcare, which experienced issues with medical records; and emergency 911 call centers, of which up to 100 in the US reported downtime. The outage disrupted businesses relying on OT and conventional IT, highlighting the widespread dependency on reliable technological services.
-- Dragonfly <https://docs.broadcom.com/doc/dragonfly_threat_against_western_energy_suppliers>. A cyber espionage campaign against a range of targets, primarily in the energy sector, provided the attackers with the capability to carry out sabotage operations against their victims. The attackers were able to infiltrate a number of strategically significant organisations for the purpose of espionage. Had they chosen to utilise the sabotage capabilities at their disposal, they could have potentially caused damage or disruption to the energy supply in the affected countries.
-- NotPetya <https://en.wikipedia.org/wiki/Petya_(malware_family)>. It was believed that the software update mechanism of M.E.Doc—a Ukrainian tax preparation program that, according to F-Secure analyst Mikko Hyppönen, "appears to be de facto" among companies doing business in the country—had been compromised to spread the malware. Analysis by ESET found that a backdoor had been present in the update system for at least six weeks prior to the attack, describing it as a "thoroughly well-planned and well-executed operation". The developers of M.E.Doc denied that they were entirely responsible for the cyberattack, stating that they too were victims.
-- Denmark’s Train Network Frozen Due to Cyberattack on Subcontractor <https://www.bitdefender.com/en-au/blog/hotforsecurity/denmarks-train-network-frozen-due-to-cyberattack-on-subcontractor>.
+- [SolarWinds Orion Compromise](https://attack.mitre.org/campaigns/C0024/). The SolarWinds compromise was a sophisticated supply chain cyber operation that was discovered in December 2020. The cyber operation involved the injection of malicious code into the SolarWinds Orion software build process, which was then distributed through a standard software update. The cyber actors also used password spraying, token theft, API abuse, spear phishing and other supply chain attacks to compromise user accounts and leverage their associated access.
+- [CrowdStrike Compromise](https://www.sygnia.co/blog/crowdstrike-outage-security-vs-operational-stability/). In 2024, a content update for CrowdStrike's Falcon sensor software caused global system disruptions. The "Blue Screen of Death" (BSOD) was triggered by a "Named Pipes" update intended to improve threat detection. An error in the update file's formatting led to the CrowdStrike driver accessing a non-existent memory address, triggering the BSOD. This affected numerous industries, including airlines, which canceled or delayed flights; healthcare, which experienced issues with medical records; and emergency 911 call centers, of which up to 100 in the US reported downtime. The outage disrupted businesses relying on OT and conventional IT, highlighting the widespread dependency on reliable technological services.
+- [Dragonfly](https://docs.broadcom.com/doc/dragonfly_threat_against_western_energy_suppliers). A cyber espionage campaign against a range of targets, primarily in the energy sector, provided the attackers with the capability to carry out sabotage operations against their victims. The attackers were able to infiltrate a number of strategically significant organisations for the purpose of espionage. Had they chosen to utilise the sabotage capabilities at their disposal, they could have potentially caused damage or disruption to the energy supply in the affected countries.
+- [NotPetya](https://en.wikipedia.org/wiki/Petya_(malware_family)). It was believed that the software update mechanism of M.E.Doc—a Ukrainian tax preparation program that, according to F-Secure analyst Mikko Hyppönen, "appears to be de facto" among companies doing business in the country—had been compromised to spread the malware. Analysis by ESET found that a backdoor had been present in the update system for at least six weeks prior to the attack, describing it as a "thoroughly well-planned and well-executed operation". The developers of M.E.Doc denied that they were entirely responsible for the cyberattack, stating that they too were victims.
+- [Denmark’s Train Network Frozen Due to Cyberattack on Subcontractor](https://www.bitdefender.com/en-au/blog/hotforsecurity/denmarks-train-network-frozen-due-to-cyberattack-on-subcontractor).
 
 ## Mitigation/Countermeasures
 
@@ -74,16 +74,15 @@ Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection sof
 
 Relevant CWEs
 
-- <https://cwe.mitre.org/data/definitions/912.html>
-- <https://cwe.mitre.org/data/definitions/1361.html>
-- <https://cwe.mitre.org/data/definitions/1369.html>
+[CWE-912: Hidden Functionality](https://cwe.mitre.org/data/definitions/912.html) describes an asset that includes functionality which is undocumented, not specified, and not accessible through any interface or command sequence that is apparent to the asset's users or administrators.
+
+[CWE-1361: ICS Supply Chain](https://cwe.mitre.org/data/definitions/1361.html) is a weakness category describes ICS supply chain risks in general. Weakness in this category address for instance the [IT/OT Convergence/Expansion](https://cwe.mitre.org/data/definitions/1369.html), [Common Mode Frailties](https://cwe.mitre.org/data/definitions/1370.html), [Poorly Documented or Undocumented Features](https://cwe.mitre.org/data/definitions/1371.html), and [OT Coutnerfeit and Malicious Corruption](https://cwe.mitre.org/data/definitions/1372.html).
 
 Relevant MITRE ATT&CK framework items
 
-- <https://attack.mitre.org/campaigns/C0024/>
-- <https://attack.mitre.org/datasources/DS0029/>
-- <https://attack.mitre.org/techniques/T0862/>
-- <https://attack.mitre.org/mitigations/M0817/>
+Technique [Supply Chain Compromise](https://attack.mitre.org/techniques/T0862/). Adversaries may compromise the supply chain to gain access to control systems environments by introducing infected products, software, or workflows. Supply chain compromise involves manipulating products—such as devices or software—or their delivery methods before they reach the end consumer. The goal of this manipulation is to facilitate data or system compromise once the infected products are integrated into the target environment.
+
+Measure [Supply Chain Management](https://attack.mitre.org/mitigations/M0817/). Establish a supply chain management program that includes policies and procedures to ensure all devices and components come from trusted suppliers and are tested to confirm their integrity.
 
 ### Tooling
 
