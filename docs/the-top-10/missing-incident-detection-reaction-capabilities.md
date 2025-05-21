@@ -71,7 +71,7 @@ CWEs
 
 [CWE-532: Insertion of Sensitive Information into Log File](https://cwe.mitre.org/data/definitions/532.html). The product logs sensitive information, e.g.; passwords, hashes, or credentials.
 
-[CWE-778: Insufficient Logging](https://cwe.mitre.org/data/definitions/778.html). When a security-critical event occurs, the product either fails to log the event or omits key details in the log. 
+[CWE-778: Insufficient Logging](https://cwe.mitre.org/data/definitions/778.html). When a security-critical event occurs, the product either fails to log the event or omits key details in the log.
 
 MITRE ATT&CK framework data sources
 
@@ -85,15 +85,15 @@ MITRE ATT&CK framework measures
 
 MITRE ATT&CK framework techniques (tactic Impact)
 
-[Loss of Control][https://attack.mitre.org/techniques/T0827/]. Adversaries may seek to cause a sustained loss of control, or a runaway condition, whereby operators are unable to issue commands, even when the malicious interference has subsided.
+[Loss of Control](https://attack.mitre.org/techniques/T0827/). Adversaries may seek to cause a sustained loss of control, or a runaway condition, whereby operators are unable to issue commands, even when the malicious interference has subsided.
 
 [Loss of Productivity and Revenue](https://attack.mitre.org/techniques/T0828/). Adversaries may cause a loss of productivity and revenue by disrupting or damaging the availability and integrity of control system operations, devices and related processes. This may be a direct result of an attack targeting ICS or an indirect result of an attack targeting IT in non-segregated environments. If these operations or services are halted, the loss of productivity may eventually affect end users or consumers of products and services. A disrupted supply chain may result in shortages and increased prices, among other consequences.
 
-[Loss of Protection](https://attack.mitre.org/techniques/T0837/). Adversaries may compromise the functions of protective systems designed to prevent the effects of faults and abnormal conditions. This can result in equipment damage, prolonged process disruption and hazards to personnel.Many faults and abnormal conditions in process control occur too quickly for a human operator to react to. It is therefore critical to act quickly to correct these conditions and limit the risk of serious consequences such as loss of control and property damage. 
+[Loss of Protection](https://attack.mitre.org/techniques/T0837/). Adversaries may compromise the functions of protective systems designed to prevent the effects of faults and abnormal conditions. This can result in equipment damage, prolonged process disruption and hazards to personnel.Many faults and abnormal conditions in process control occur too quickly for a human operator to react to. It is therefore critical to act quickly to correct these conditions and limit the risk of serious consequences such as loss of control and property damage.
 Adversaries may target and disable protective system functions in preparation for a subsequent attack or to allow future faults and abnormal conditions to go unchecked. If operators detect a loss of protection, they may shut down the process due to strict protection system policies. This can result in a loss of productivity and revenue, which may align with the technical objectives of adversaries seeking to cause process disruptions.
 
-[Loss of Safety](https://attack.mitre.org/techniques/T0880/). Adversaries may compromise the functions of safety systems, which are designed to ensure the safe operation of a process when unacceptable or dangerous conditions occur. Although safety systems often comprise the same elements as control systems, their sole purpose is to ensure that the process fails in a predetermined safe manner. 
-Many unsafe conditions in process control happen too quickly for a human operator to react. It is therefore critical to act quickly to correct these conditions and limit the risk of serious consequences such as loss of control and property damage. 
+[Loss of Safety](https://attack.mitre.org/techniques/T0880/). Adversaries may compromise the functions of safety systems, which are designed to ensure the safe operation of a process when unacceptable or dangerous conditions occur. Although safety systems often comprise the same elements as control systems, their sole purpose is to ensure that the process fails in a predetermined safe manner.
+Many unsafe conditions in process control happen too quickly for a human operator to react. It is therefore critical to act quickly to correct these conditions and limit the risk of serious consequences such as loss of control and property damage.
 Adversaries may target and disable safety system functions as a prerequisite for subsequent attacks or to allow future unsafe conditions to go unchecked. Operators detecting a loss of safety may shut down the process due to strict safety system policies. This can result in a loss of productivity and revenue, which may align with the technical objectives of adversaries seeking to cause process disruptions.
 
 ### Tooling
