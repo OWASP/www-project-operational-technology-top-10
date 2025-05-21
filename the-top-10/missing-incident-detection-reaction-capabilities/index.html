@@ -1337,9 +1337,9 @@
 <p>Without logging and monitoring, breaches cannot be detected. An OT cybersecurity report analysing trends in 2024 shows that 45% of service engagements have a lack of visibility across OT networks, making detections, triage, and response incredibly difficult at scale.</p>
 <h2 id="known-attacks">Known Attacks</h2>
 <ul>
-<li>Ukraine Electric Power Attacks (cf. <a href="https://attack.mitre.org/campaigns/C0028/">https://attack.mitre.org/campaigns/C0028/</a>, <a href="https://attack.mitre.org/campaigns/C0025/">https://attack.mitre.org/campaigns/C0025/</a>, <a href="https://attack.mitre.org/campaigns/C0034/">https://attack.mitre.org/campaigns/C0034/</a>, and <a href="https://attack.mitre.org/software/S0089/">https://attack.mitre.org/software/S0089/</a>). The Ukraine Electric Power Attack was an operation which aims to target and disrupt transmission and distribution substations within the Ukrainian power grid.</li>
-<li>Triton Safety Instrumented System Attack (cf. <a href="https://attack.mitre.org/campaigns/C0030/">https://attack.mitre.org/campaigns/C0030/</a>, and <a href="https://attack.mitre.org/software/S1009/">https://attack.mitre.org/software/S1009/</a>). The Triton Safety Instrumented System Attack was a campaign that took advantage of the Triton malware framework to target a petrochemical organisation. The malware and techniques employed in this campaign were designed to infiltrate specific Triconex Safety Controllers within the environment. The incident was eventually exposed due to a safety trip that occurred as a result of an issue in the malware.</li>
-<li>LockerGoga ransomware infects industrial and manufactoring companies (c.f <a href="https://attack.mitre.org/software/S0372/">https://attack.mitre.org/software/S0372/</a>, and <a href="https://news.microsoft.com/source/features/digital-transformation/hackers-hit-norsk-hydro-ransomware-company-responded-transparency/">https://news.microsoft.com/source/features/digital-transformation/hackers-hit-norsk-hydro-ransomware-company-responded-transparency/</a>). In March 2019, Norsk Hydro was subjected to a cyberattack that utilised the LockerGoga ransomware to encrypt its computer files. In response, the aluminium and renewable energy company transitioned to manual operations and maintained transparency with the public regarding its progress towards recovery. The security industry has expressed high regard for Norsk Hydro's transparency throughout the discovery and recovery process.</li>
+<li><a href="https://attack.mitre.org/campaigns/C0034/">Ukraine Electric Power Attacks</a>. The Ukraine Electric Power Attack was an operation which aims to target and disrupt transmission and distribution substations within the Ukrainian power grid.</li>
+<li><a href="https://attack.mitre.org/campaigns/C0030/">Triton Safety Instrumented System Attack</a>. The Triton Safety Instrumented System Attack was a campaign that took advantage of the Triton malware framework to target a petrochemical organisation. The malware and techniques employed in this campaign were designed to infiltrate specific Triconex Safety Controllers within the environment. The incident was eventually exposed due to a safety trip that occurred as a result of an issue in the malware.</li>
+<li><a href="https://attack.mitre.org/software/S0372/">LockerGoga ransomware</a> infects industrial and manufactoring companies. In March 2019, Norsk Hydro was subjected to a cyberattack that utilised the LockerGoga ransomware to encrypt its computer files. In response, the aluminium and renewable energy company transitioned to manual operations and maintained transparency with the public regarding its progress towards recovery. The security industry has expressed high regard for Norsk Hydro's transparency throughout the discovery and recovery process.</li>
 </ul>
 <h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
 <h3 id="design-and-implementation">Design and Implementation</h3>
@@ -1378,41 +1378,30 @@
 </ul>
 <h3 id="background-information">Background information</h3>
 <p>CWEs</p>
-<ul>
-<li><a href="https://cwe.mitre.org/data/definitions/223.html">https://cwe.mitre.org/data/definitions/223.html</a></li>
-<li><a href="https://cwe.mitre.org/data/definitions/532.html">https://cwe.mitre.org/data/definitions/532.html</a></li>
-<li><a href="https://cwe.mitre.org/data/definitions/778.html">https://cwe.mitre.org/data/definitions/778.html</a></li>
-</ul>
+<p><a href="https://cwe.mitre.org/data/definitions/223.html">CWE-223: Omission of Security-relevant Information</a>. The product fails to record or display information that is essential for identifying the source or nature of an attack, or for assessing whether an action is safe.</p>
+<p><a href="https://cwe.mitre.org/data/definitions/532.html">CWE-532: Insertion of Sensitive Information into Log File</a>. The product logs sensitive information, e.g.; passwords, hashes, or credentials.</p>
+<p><a href="https://cwe.mitre.org/data/definitions/778.html">CWE-778: Insufficient Logging</a>. When a security-critical event occurs, the product either fails to log the event or omits key details in the log.</p>
 <p>MITRE ATT&amp;CK framework data sources</p>
-<ul>
-<li><a href="https://attack.mitre.org/datasources/DS0015/">https://attack.mitre.org/datasources/DS0015/</a></li>
-<li><a href="https://attack.mitre.org/datasources/DS0029/">https://attack.mitre.org/datasources/DS0029/</a></li>
-</ul>
+<p><a href="https://attack.mitre.org/datasources/DS0015/">Application Log</a>. These are events collected by third-party services, such as mail servers, web applications or other appliances, rather than by the native operating system or platform.</p>
+<p><a href="https://attack.mitre.org/datasources/DS0029/">Network Traffic</a>. Data transmitted across a network (e.g. the web, DNS, email, files, etc.) that is either summarised (e.g. NetFlow) and/or captured as raw, analysable data (e.g. PCAP).</p>
 <p>MITRE ATT&amp;CK framework measures</p>
-<ul>
-<li><a href="https://attack.mitre.org/mitigations/M0931/">https://attack.mitre.org/mitigations/M0931/</a></li>
-</ul>
+<p><a href="https://attack.mitre.org/mitigations/M0931/">Network Intrusion Prevention</a>. At network boundaries, traffic should be blocked using intrusion detection signatures. When it comes to industrial control environments, network intrusion prevention should be configured so that it will not disrupt protocols and communications responsible for real-time functions related to control or safety.</p>
 <p>MITRE ATT&amp;CK framework techniques (tactic Impact)</p>
-<ul>
-<li><a href="https://attack.mitre.org/techniques/T0827/">https://attack.mitre.org/techniques/T0827/</a></li>
-<li><a href="https://attack.mitre.org/techniques/T0828/">https://attack.mitre.org/techniques/T0828/</a></li>
-<li><a href="https://attack.mitre.org/techniques/T0837/">https://attack.mitre.org/techniques/T0837/</a></li>
-<li><a href="https://attack.mitre.org/techniques/T0880/">https://attack.mitre.org/techniques/T0880/</a></li>
-</ul>
-<p>Recent OT cyber security report</p>
-<ul>
-<li><a href="https://www.dragos.com/ot-cybersecurity-year-in-review/">https://www.dragos.com/ot-cybersecurity-year-in-review/</a></li>
-<li><a href="https://www.dragos.com/ot-cybersecurity-year-in-review/#anchor-report">https://www.dragos.com/ot-cybersecurity-year-in-review/#anchor-report</a></li>
-</ul>
+<p><a href="https://attack.mitre.org/techniques/T0827/">Loss of Control</a>. Adversaries may seek to cause a sustained loss of control, or a runaway condition, whereby operators are unable to issue commands, even when the malicious interference has subsided.</p>
+<p><a href="https://attack.mitre.org/techniques/T0828/">Loss of Productivity and Revenue</a>. Adversaries may cause a loss of productivity and revenue by disrupting or damaging the availability and integrity of control system operations, devices and related processes. This may be a direct result of an attack targeting ICS or an indirect result of an attack targeting IT in non-segregated environments. If these operations or services are halted, the loss of productivity may eventually affect end users or consumers of products and services. A disrupted supply chain may result in shortages and increased prices, among other consequences.</p>
+<p><a href="https://attack.mitre.org/techniques/T0837/">Loss of Protection</a>. Adversaries may compromise the functions of protective systems designed to prevent the effects of faults and abnormal conditions. This can result in equipment damage, prolonged process disruption and hazards to personnel.Many faults and abnormal conditions in process control occur too quickly for a human operator to react to. It is therefore critical to act quickly to correct these conditions and limit the risk of serious consequences such as loss of control and property damage.
+Adversaries may target and disable protective system functions in preparation for a subsequent attack or to allow future faults and abnormal conditions to go unchecked. If operators detect a loss of protection, they may shut down the process due to strict protection system policies. This can result in a loss of productivity and revenue, which may align with the technical objectives of adversaries seeking to cause process disruptions.</p>
+<p><a href="https://attack.mitre.org/techniques/T0880/">Loss of Safety</a>. Adversaries may compromise the functions of safety systems, which are designed to ensure the safe operation of a process when unacceptable or dangerous conditions occur. Although safety systems often comprise the same elements as control systems, their sole purpose is to ensure that the process fails in a predetermined safe manner.
+Many unsafe conditions in process control happen too quickly for a human operator to react. It is therefore critical to act quickly to correct these conditions and limit the risk of serious consequences such as loss of control and property damage.
+Adversaries may target and disable safety system functions as a prerequisite for subsequent attacks or to allow future unsafe conditions to go unchecked. Operators detecting a loss of safety may shut down the process due to strict safety system policies. This can result in a loss of productivity and revenue, which may align with the technical objectives of adversaries seeking to cause process disruptions.</p>
 <h3 id="tooling">Tooling</h3>
-<ul>
-<li>Eicar malware testfile (cf. <a href="https://www.eicar.org/download-anti-malware-testfile/">https://www.eicar.org/download-anti-malware-testfile/</a>)</li>
-<li>Metasploit framework (cf. <a href="https://www.metasploit.com/">https://www.metasploit.com/</a>)</li>
-<li>Graylog (cf. <a href="https://graylog.org/">https://graylog.org/</a>)</li>
-<li>Wazuh (cf. <a href="https://wazuh.com/">https://wazuh.com/</a>)</li>
-<li>Snort (cf. <a href="https://www.snort.org/">https://www.snort.org/</a>)</li>
-<li>Suricata (cf. <a href="https://suricata.io/">https://suricata.io/</a>)</li>
-</ul>
+<p><a href="https://www.eicar.org/download-anti-malware-testfile/">Eicar malware testfile</a>. The EICAR Anti-Virus Test File, also known as the EICAR Test File, is a computer file developed by the European Institute for Computer Antivirus Research (EICAR) and the Computer Antivirus Research Organisation (CARO) to test how computer antivirus programs respond.</p>
+<p><a href="https://www.metasploit.com/">Metasploit framework</a>. The Metasploit Framework is a modular, Ruby-based penetration testing platform that allows you to write, test and execute exploit code. It contains a suite of tools for testing security vulnerabilities, enumerating networks, executing attacks and evading detection. At its core, the framework is a collection of commonly used tools that provide a complete environment for penetration testing and exploit development.</p>
+<p><a href="https://graylog.org/">Graylog</a>. A free SIEM tool enabling central log management.</p>
+<p><a href="https://wazuh.com/">Wazuh</a>. A open source unified XDR and SIEM protection for endpoints and cloud workloads.</p>
+<p><a href="https://www.snort.org/">Snort</a>. Snort is a open-source intrusion prevention system (IPS). Snort IPS uses a series of rules to help define malicious network activity, identifying packets that match these rules and generating alerts for users.
+Snort can also be deployed in line to block these packets. Snort has three primary uses: It can be used as a packet sniffer, like tcpdump; as a packet logger, which is useful for debugging network traffic; or as a full-blown network intrusion prevention system. Snort can be downloaded and configured for personal and business use.</p>
+<p><a href="https://suricata.io/">Suricata</a>. Suricata is a open-source network analysis and threat detection software used by private and public organisations, as well as being embedded by vendors to protect their assets.</p>
 
 
 
