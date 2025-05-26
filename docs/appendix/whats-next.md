@@ -20,7 +20,7 @@ Using a continously improvement approach can help you to not get overwhelmed and
 
 ## For new Systems/Components
 
-If you are in the process of designing a new system or component, you have the advantage of being able to start with security in mind from the very beginning. This is often referred to as "security by design.
+If you are in the process of designing a new system or component, you have the advantage of being able to start with security in mind from the very beginning. This is often referred to as "security by design".
 
 If you are currently in progress of buying a new system or component:
 
