@@ -86,7 +86,7 @@ Level 0 and Level 1 are limited to the direct process (“shopfloor”), Level 2
 already comprises a whole local station.
 
 ![Purdue Model Architecture Example](../assets/images/limes_purdue_model_example.png)<br>
-*Source: Limes Security ICS.211 Industrial Security Training Advanced Technical Expert, p. 345*
+*Source: Limes Security*
 
 It has to be noted that the Purdue Model should not be seen as a strict,
 universal architecture, but a reference to think about how the overall system
