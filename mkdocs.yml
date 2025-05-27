@@ -80,4 +80,5 @@ nav:
       - '10. Missing Hardening': the-top-10/missing-hardening.md
   - 'Appendix':
     - "What's next?": appendix/whats-next.md
+    - 'Standards Mapping Table': appendix/mappingTable.md
     - 'Glossary': appendix/glossary.md
