@@ -1,10 +1,9 @@
-
 # Mapping table
 
 The following table maps the OWASP OT top 10 items to relevant standard and legislative requirements.
 
 |OWASP OT top 10 item|Standard/Law|Requirement-ID|
-|--|--|--|--|
+|--|--|--|
 |1. Unknown Assets and Unmanaged External Access|IEC 62443|FR 2|
 ||IEC 62443-2-1:2019| CM 1|
 ||IEC 62443-2-1:2019|NET 3.X|
