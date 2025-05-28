@@ -1,8 +1,14 @@
 # Missing Incident Detection/Reaction Capabilities
 
-The longer an attacker is able to penetrate the network unnoticed, the higher is the probability that the attacker compromises OT. This also applies if incident reaction is slow or technically inadequate. Without logging and monitoring, breaches cannot be detected. An OT cybersecurity report analysing trends in 2024 shows that 45% of service engagements have a lack of visibility across OT networks, making detections, triage, and response incredibly difficult at scale.
+The longer an attacker is able to penetrate the network unnoticed, the higher is the probability that the attacker compromises OT. This also applies if incident reaction is slow or technically inadequate. Without logging and monitoring, breaches cannot be detected. An [OT cybersecurity report analysing trends in 2024](https://www.dragos.com/ot-cybersecurity-year-in-review/#anchor-report) shows that 45% of service engagements have a lack of visibility across OT networks, making detections, triage, and response incredibly difficult at scale.
 
-Notable Common Weakness Enumerations (CWEs) included are *CWE-223: Omission of Security-relevant Information*, *CWE-532:  Insertion of Sensitive Information into Log File*, and *CWE-778: Insufficient Logging*. Notable MITRE ATT&CK items included are *DS0015: Application Log*, *DS0029: Network Traffic*, and *M0931: Network Intrusion Prevention*.
+Adversaries may seek to cause [Loss of Control](https://attack.mitre.org/techniques/T0827/), whereby operators are unable to issue commands, even when the malicious interference has subsided.
+
+Another motivation for attackers may be [Loss of Productivity and Revenue](https://attack.mitre.org/techniques/T0828/) by disrupting or damaging the availability and integrity of control system operations, devices and related processes.
+
+Furthermore, [Loss of Protection](https://attack.mitre.org/techniques/T0837/) leading to the compromise of the functions of protective systems designed to prevent the effects of faults and abnormal conditions may be a motivation. This can result in equipment damage, prolonged process disruption and hazards to personnel. 
+
+Finally, [Loss of Safety](https://attack.mitre.org/techniques/T0880/) leading to the compromise the functions of safety systems, which are designed to ensure the safe operation of a process when unacceptable or dangerous conditions occur may be a result of a attack. Adversaries may target and disable safety system functions as a prerequisite for subsequent attacks or to allow future unsafe conditions to go unchecked. 
 
 ## Description
 
@@ -28,6 +34,10 @@ Without logging and monitoring, breaches cannot be detected. An OT cybersecurity
 
 ## Mitigation/Countermeasures
 
+### General
+
+Implement [Network Intrusion Prevention](https://attack.mitre.org/mitigations/M0931/). At network boundaries, traffic should be blocked using intrusion detection signatures. When it comes to industrial control environments, network intrusion prevention should be configured so that it will not disrupt protocols and communications responsible for real-time functions related to control or safety.
+
 ### Design and Implementation
 
 - Ensure all login, access control, and server-side input validation failures can be logged with sufficient user context to identify suspicious or malicious accounts and held for enough time to allow delayed forensic analysis.
@@ -51,21 +61,11 @@ Without logging and monitoring, breaches cannot be detected. An OT cybersecurity
 
 ### Standards
 
-- IEC 62443 FR 6
-- IEC 62443-2-1:2019 ORG 2.2
-- IEC 62443-2-1:2019 SPE 7
-- IEC 62443-3-2:2020 ZCR 5.1
-- IEC 62443-3-3:2020 SR 6.X
-- NIST CSF 2.0 DE
-- NIST CSF 2.0 RS
-- NIST SP 800-82r3 <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf>
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 3.X
-- MITRE ATT&CK M0919
-- MITRE ATT&CK M0931
+Applicable standard requirements are listed in the provided mapping table in the appendix.  
 
 ### Background information
 
-CWEs
+#### Notable CWEs
 
 [CWE-223: Omission of Security-relevant Information](https://cwe.mitre.org/data/definitions/223.html). The product fails to record or display information that is essential for identifying the source or nature of an attack, or for assessing whether an action is safe.
 
@@ -73,28 +73,12 @@ CWEs
 
 [CWE-778: Insufficient Logging](https://cwe.mitre.org/data/definitions/778.html). When a security-critical event occurs, the product either fails to log the event or omits key details in the log.
 
-MITRE ATT&CK framework data sources
+#### Notable MITRE ATT&CK framework data sources
 
 [Application Log](https://attack.mitre.org/datasources/DS0015/). These are events collected by third-party services, such as mail servers, web applications or other appliances, rather than by the native operating system or platform.
 
 [Network Traffic](https://attack.mitre.org/datasources/DS0029/). Data transmitted across a network (e.g. the web, DNS, email, files, etc.) that is either summarised (e.g. NetFlow) and/or captured as raw, analysable data (e.g. PCAP).
 
-MITRE ATT&CK framework measures
-
-[Network Intrusion Prevention](https://attack.mitre.org/mitigations/M0931/). At network boundaries, traffic should be blocked using intrusion detection signatures. When it comes to industrial control environments, network intrusion prevention should be configured so that it will not disrupt protocols and communications responsible for real-time functions related to control or safety.
-
-MITRE ATT&CK framework techniques (tactic Impact)
-
-[Loss of Control](https://attack.mitre.org/techniques/T0827/). Adversaries may seek to cause a sustained loss of control, or a runaway condition, whereby operators are unable to issue commands, even when the malicious interference has subsided.
-
-[Loss of Productivity and Revenue](https://attack.mitre.org/techniques/T0828/). Adversaries may cause a loss of productivity and revenue by disrupting or damaging the availability and integrity of control system operations, devices and related processes. This may be a direct result of an attack targeting ICS or an indirect result of an attack targeting IT in non-segregated environments. If these operations or services are halted, the loss of productivity may eventually affect end users or consumers of products and services. A disrupted supply chain may result in shortages and increased prices, among other consequences.
-
-[Loss of Protection](https://attack.mitre.org/techniques/T0837/). Adversaries may compromise the functions of protective systems designed to prevent the effects of faults and abnormal conditions. This can result in equipment damage, prolonged process disruption and hazards to personnel.Many faults and abnormal conditions in process control occur too quickly for a human operator to react to. It is therefore critical to act quickly to correct these conditions and limit the risk of serious consequences such as loss of control and property damage.
-Adversaries may target and disable protective system functions in preparation for a subsequent attack or to allow future faults and abnormal conditions to go unchecked. If operators detect a loss of protection, they may shut down the process due to strict protection system policies. This can result in a loss of productivity and revenue, which may align with the technical objectives of adversaries seeking to cause process disruptions.
-
-[Loss of Safety](https://attack.mitre.org/techniques/T0880/). Adversaries may compromise the functions of safety systems, which are designed to ensure the safe operation of a process when unacceptable or dangerous conditions occur. Although safety systems often comprise the same elements as control systems, their sole purpose is to ensure that the process fails in a predetermined safe manner.
-Many unsafe conditions in process control happen too quickly for a human operator to react. It is therefore critical to act quickly to correct these conditions and limit the risk of serious consequences such as loss of control and property damage.
-Adversaries may target and disable safety system functions as a prerequisite for subsequent attacks or to allow future unsafe conditions to go unchecked. Operators detecting a loss of safety may shut down the process due to strict safety system policies. This can result in a loss of productivity and revenue, which may align with the technical objectives of adversaries seeking to cause process disruptions.
 
 ### Tooling
 
