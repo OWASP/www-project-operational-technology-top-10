@@ -79,7 +79,7 @@ Vulnerable devices bad. Especially in critical infrastructure.
 ### Background information
 
 - ***OWASP*** maintains the [OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html) as well as the [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology), both of which provide guidance on how to test for vulnerabilities in IoT and firmware systems.
-- [Software Bill of Materials (SBOM) - CISA](https://www.cisa.gov/sbom) describe a component's dependencies and vulnerabilities in a machine-readable format. This can be used to track known vulnerabilities in your software supply chain.
+- [Software Bill of Materials (SBOM) - CISA](https://www.cisa.gov/sbom) describes a component's dependencies and vulnerabilities in a machine-readable format. This can be used to track known vulnerabilities in your software supply chain.
 
 ### Tooling
 
