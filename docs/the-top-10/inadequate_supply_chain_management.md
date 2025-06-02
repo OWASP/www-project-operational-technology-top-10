@@ -1,10 +1,8 @@
 # Inadequate Supply Chain Management
 
-Supply chain attacks occur when adversaries target weaknesses in an organisation's supply chain - whether it's hardware, software or services provided by third parties. Instead of compromising the target directly, attackers exploit the relationship of trust between the organisation and its vendors or contractors to gain access to sensitive OT systems.
+[Supply Chain Compromise](https://attack.mitre.org/techniques/T0862/) occur when adversaries target weaknesses in an organisation's supply chain - whether it's hardware, software or services provided by third parties. Instead of compromising the target directly, attackers exploit the relationship of trust between the organisation and its vendors or contractors to gain access to sensitive OT systems.
 
 In the context of OT, the supply chain may involve complex vendor ecosystems, including software providers for SCADA systems, hardware manufacturers for industrial equipment, or maintenance services. An attacker infiltrates these supply chain links to gain access to operational technology, bypassing traditional cybersecurity defences.
-
-Notable Common Weakness Enumerations (CWEs) included are *CWE CATEGORY: ICS Supply Chain*, *CWE CATEGORY: ICS Supply Chain: IT/OT Convergence/Expansion*, and *CWE-912: Hidden Functionality*. Notable MITRE ATT&CK items included are *T0862: Supply Chain Compromise*, and *C0024: SolarWinds Compromise*.
 
 ## Description
 
@@ -21,8 +19,7 @@ The following phases of the lifecycle of OT components or systems have to be con
 
 ## Rationale
 
-Dragos concluded in their threat perspective 2019 that the growing threat of supply chain attacks and vendor compromises allows new avenues for activity groups to
-compromise IT and OT environments alike.
+Dragos concluded in their [gloabl oil and gas cyber threat perspective](https://www.dragos.com/wp-content/uploads/Dragos-Oil-and-Gas-Threat-Perspective-2019.pdf) in August 2019 that the growing threat of supply chain attacks and vendor compromises allows new avenues for activity groups to compromise IT and OT environments alike.
 
 Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection software demonstrated the scalability of supply chain issues, affecting numerous victims at the same time by the very same issue.
 
@@ -35,6 +32,10 @@ Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection sof
 - [Denmark’s Train Network Frozen Due to Cyberattack on Subcontractor](https://www.bitdefender.com/en-au/blog/hotforsecurity/denmarks-train-network-frozen-due-to-cyberattack-on-subcontractor).
 
 ## Mitigation/Countermeasures
+
+### General
+
+Establish a [Supply Chain Management](https://attack.mitre.org/mitigations/M0817/) that includes policies and procedures to ensure all devices and components come from trusted suppliers and are tested to confirm their integrity.
 
 ### Design and Implementation
 
@@ -59,31 +60,16 @@ Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection sof
 
 ### Standards
 
-- ISO 28000 family
-- IEC 62443-2-1:2019 ORG 1.6
-- IEC 62443-3-2:2020 ZCR 5.X
-- NIST CSF 2.0 GV.OC-02
-- NIST CSF 2.0 GV.OC-04
-- NIST CSF 2.0 GV.SC
-- NIST Special Publication 800-161
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 5.X
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.1  
-- MITRE ATT&CK M0817
+Applicable standard requirements are listed in the provided mapping table in the appendix.  
 
 ### Background information
 
-Relevant CWEs
+#### Notable CWEs
 
 [CWE-912: Hidden Functionality](https://cwe.mitre.org/data/definitions/912.html) describes an asset that includes functionality which is undocumented, not specified, and not accessible through any interface or command sequence that is apparent to the asset's users or administrators.
 
 [CWE-1361: ICS Supply Chain](https://cwe.mitre.org/data/definitions/1361.html) is a weakness category describes ICS supply chain risks in general. Weakness in this category address for instance the [IT/OT Convergence/Expansion](https://cwe.mitre.org/data/definitions/1369.html), [Common Mode Frailties](https://cwe.mitre.org/data/definitions/1370.html), [Poorly Documented or Undocumented Features](https://cwe.mitre.org/data/definitions/1371.html), and [OT Coutnerfeit and Malicious Corruption](https://cwe.mitre.org/data/definitions/1372.html).
 
-Relevant MITRE ATT&CK framework items
-
-Technique [Supply Chain Compromise](https://attack.mitre.org/techniques/T0862/). Adversaries may compromise the supply chain to gain access to control systems environments by introducing infected products, software, or workflows. Supply chain compromise involves manipulating products—such as devices or software—or their delivery methods before they reach the end consumer. The goal of this manipulation is to facilitate data or system compromise once the infected products are integrated into the target environment.
-
-Measure [Supply Chain Management](https://attack.mitre.org/mitigations/M0817/). Establish a supply chain management program that includes policies and procedures to ensure all devices and components come from trusted suppliers and are tested to confirm their integrity.
-
 ### Tooling
 
-- TBD/N.A.
+N.A.
