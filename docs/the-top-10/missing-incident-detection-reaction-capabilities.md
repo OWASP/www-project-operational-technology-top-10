@@ -6,9 +6,9 @@ Adversaries may seek to cause [Loss of Control](https://attack.mitre.org/techniq
 
 Another motivation for attackers may be [Loss of Productivity and Revenue](https://attack.mitre.org/techniques/T0828/) by disrupting or damaging the availability and integrity of control system operations, devices and related processes.
 
-Furthermore, [Loss of Protection](https://attack.mitre.org/techniques/T0837/) leading to the compromise of the functions of protective systems designed to prevent the effects of faults and abnormal conditions may be a motivation. This can result in equipment damage, prolonged process disruption and hazards to personnel. 
+Furthermore, [Loss of Protection](https://attack.mitre.org/techniques/T0837/) leading to the compromise of the functions of protective systems designed to prevent the effects of faults and abnormal conditions may be a motivation. This can result in equipment damage, prolonged process disruption and hazards to personnel.
 
-Finally, [Loss of Safety](https://attack.mitre.org/techniques/T0880/) leading to the compromise the functions of safety systems, which are designed to ensure the safe operation of a process when unacceptable or dangerous conditions occur may be a result of a attack. Adversaries may target and disable safety system functions as a prerequisite for subsequent attacks or to allow future unsafe conditions to go unchecked. 
+Finally, [Loss of Safety](https://attack.mitre.org/techniques/T0880/) leading to the compromise the functions of safety systems, which are designed to ensure the safe operation of a process when unacceptable or dangerous conditions occur may be a result of a attack. Adversaries may target and disable safety system functions as a prerequisite for subsequent attacks or to allow future unsafe conditions to go unchecked.
 
 ## Description
 
@@ -78,7 +78,6 @@ Applicable standard requirements are listed in the provided mapping table in the
 [Application Log](https://attack.mitre.org/datasources/DS0015/). These are events collected by third-party services, such as mail servers, web applications or other appliances, rather than by the native operating system or platform.
 
 [Network Traffic](https://attack.mitre.org/datasources/DS0029/). Data transmitted across a network (e.g. the web, DNS, email, files, etc.) that is either summarised (e.g. NetFlow) and/or captured as raw, analysable data (e.g. PCAP).
-
 
 ### Tooling
 
