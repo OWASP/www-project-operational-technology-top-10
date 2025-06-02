@@ -96,46 +96,15 @@ The prevalence of:
 
 ### Standards
 
-- IEC 62443 FR 1
-- IEC 62443 FR 2
+- Applicable standard requirements are listed in the [provided mapping table in the appendix](./../appendix/mappingTable.md).
 - IEC 62443-2-1:2019 SPE 6
-- IEC 62443-3-3:2020 SR 1.X
-- IEC 62443-3-3:2020 SR 2.X
-- NIST CSF 2.0 PR.AA
-- NIST CSF 2.0 PR.IR-01
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.7
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 11.X
-- MITRE ATT&CK M0800
-- MITRE ATT&CK M0801
-- MITRE ATT&CK M0804
-- MITRE ATT&CK M0807
-- MITRE ATT&CK M0813
-- MITRE ATT&CK M0918
-- MITRE ATT&CK M0922
-- MITRE ATT&CK M0926
 
-### Background information on Physical Access Control
+### Background Information
 
-- [Disabling unnecessary services and protocols](https://www.cert.govt.nz/information-and-advice/guides/unused-services-and-protocols/disabling-unnecessary-services-and-protocols/)
-- [Why Disabling unused network ports is crucial in OT environents](https://www.mangancyber.com/why-is-it-essential-to-disable-or-safeguard-inactive-ports-in-ot-environments/)
-
-### Background information on Organizational Access Control
-
-**ISO 27001** – Annex A.9: Access Control
-
-Annex A.9 is focuses on safeguarding access to information and ensuring that employees can only view information relevant to their work. It includes sections on:
-
-- Access Control Policies: Establishing and maintaining policies to manage access to information.
-- User Access Management: Procedures for granting and revoking access rights.
-- User Responsibilities: Ensuring users understand their responsibilities regarding access control.
-- System and Application Access Control: Managing access to systems and applications
-
-### Background information on Technical Access Control
-
-**IEC62443-4-2**  - technical security requirements for Industrial Automation and Control Systems (IACS) components
-
-**Lack of Access Control Examples:**
+- ***Physical Access Control***
+    - [Disabling unnecessary services and protocols](https://www.cert.govt.nz/information-and-advice/guides/unused-services-and-protocols/disabling-unnecessary-services-and-protocols/)
+    - [Why Disabling unused network ports is crucial in OT environents](https://www.mangancyber.com/why-is-it-essential-to-disable-or-safeguard-inactive-ports-in-ot-environments/)
 
 ### Tooling
 
-- for testing, etc.
+- N.A.

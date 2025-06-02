@@ -54,40 +54,13 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 
 ### Standards
 
-- IEC 62443-2-1:2019 ORG 1.5
-- IEC 62443-2-1:2024 - COMP 1.1 - Component hardening
-- IEC 62443-2-4:2024 - SP.02.03 - Hardening guidelines
-- IEC 62443-4-1:2018 - 12.4 SG-3 - Security hardening guidelines
-- IEC 62443-4-2
-- NIST CSF 2.0 PR.PS
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.3
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.9
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 12.3
-- MITRE ATT&CK M0806
-- MITRE ATT&CK M0818
-- MITRE ATT&CK M0921
-- MITRE ATT&CK M0924
-- MITRE ATT&CK M0927
-- MITRE ATT&CK M0928
-- MITRE ATT&CK M0934
-- MITRE ATT&CK M0936
-- MITRE ATT&CK M0938
-- MITRE ATT&CK M0942
-- MITRE ATT&CK M0944
-- MITRE ATT&CK M0949
-- MITRE ATT&CK M0950
-- MITRE ATT&CK M0951
-- MITRE ATT&CK M0954
-
-OT-specific hardening guides are often provided by the system integrator or product supplier, for example:
-
-- *"System Hardening for Substation Automation and Protection"* for SICAM/SIPROTEC, which includes hardening measures at the solution level as well as for individual components.
-
-Several organizations provide configuration baselines and benchmarks for common systems:
-
-- The **Center for Internet Security (CIS)** offers **Benchmarks** for various systems, including operating systems, network devices, and commonly used applications. In OT environments, relevant benchmarks cover operating systems, network infrastructure, and supporting applications.  
-- The **Defense Information Systems Agency (DISA)** publishes **Security Technical Implementation Guides (STIGs)**, which define configuration standards for securing Department of Defense (DoD) IT systems and are also widely adopted in other sectors.  
-- **Microsoft Security Baselines** recommend security settings for Windows operating systems and Microsoft applications.
+- Applicable standard requirements are listed in the [provided mapping table in the appendix](./../appendix/mappingTable.md).
+- OT-specific hardening guides are often provided by the system integrator or product supplier, for example:
+    - *"System Hardening for Substation Automation and Protection"* for SICAM/SIPROTEC, which includes hardening measures at the solution level as well as for individual components.
+- Several organizations provide configuration baselines and benchmarks for common systems:
+    - The **Center for Internet Security (CIS)** offers **Benchmarks** for various systems, including operating systems, network devices, and commonly used applications. In OT environments, relevant benchmarks cover operating systems, network infrastructure, and supporting applications.  
+    - The **Defense Information Systems Agency (DISA)** publishes **Security Technical Implementation Guides (STIGs)**, which define configuration standards for securing Department of Defense (DoD) IT systems and are also widely adopted in other sectors.  
+    - **Microsoft Security Baselines** recommend security settings for Windows operating systems and Microsoft applications.
 
 ### Background information
 
