@@ -811,6 +811,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    <span class="md-ellipsis">
+      General
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#design-and-implementation" class="md-nav__link">
     <span class="md-ellipsis">
       Design and Implementation
@@ -867,6 +876,21 @@
       Background information
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Background information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notable-cwes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notable CWEs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1252,6 +1276,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    <span class="md-ellipsis">
+      General
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#design-and-implementation" class="md-nav__link">
     <span class="md-ellipsis">
       Design and Implementation
@@ -1309,6 +1342,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Background information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notable-cwes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notable CWEs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1345,9 +1393,8 @@
 
 
 <h1 id="inadequate-supply-chain-management">Inadequate Supply Chain Management</h1>
-<p>Supply chain attacks occur when adversaries target weaknesses in an organisation's supply chain - whether it's hardware, software or services provided by third parties. Instead of compromising the target directly, attackers exploit the relationship of trust between the organisation and its vendors or contractors to gain access to sensitive OT systems.</p>
+<p><a href="https://attack.mitre.org/techniques/T0862/">Supply Chain Compromise</a> occur when adversaries target weaknesses in an organisation's supply chain - whether it's hardware, software or services provided by third parties. Instead of compromising the target directly, attackers exploit the relationship of trust between the organisation and its vendors or contractors to gain access to sensitive OT systems.</p>
 <p>In the context of OT, the supply chain may involve complex vendor ecosystems, including software providers for SCADA systems, hardware manufacturers for industrial equipment, or maintenance services. An attacker infiltrates these supply chain links to gain access to operational technology, bypassing traditional cybersecurity defences.</p>
-<p>Notable Common Weakness Enumerations (CWEs) included are <em>CWE CATEGORY: ICS Supply Chain</em>, <em>CWE CATEGORY: ICS Supply Chain: IT/OT Convergence/Expansion</em>, and <em>CWE-912: Hidden Functionality</em>. Notable MITRE ATT&amp;CK items included are <em>T0862: Supply Chain Compromise</em>, and <em>C0024: SolarWinds Compromise</em>.</p>
 <h2 id="description">Description</h2>
 <p>It is vital to protect OT supply chains, given their critical role in enabling modern society to function and generate economic prosperity. These supply chains facilitate the production, distribution, and maintenance of essential OT products, systems, and services that underpin various sectors, including healthcare, finance, transportation, and national security.
 The following phases of the lifecycle of OT components or systems have to be considered when dealing with OT supply chains:</p>
@@ -1361,8 +1408,7 @@ The following phases of the lifecycle of OT components or systems have to be con
 <li>Disposal/decommissioning</li>
 </ul>
 <h2 id="rationale">Rationale</h2>
-<p>Dragos concluded in their threat perspective 2019 that the growing threat of supply chain attacks and vendor compromises allows new avenues for activity groups to
-compromise IT and OT environments alike.</p>
+<p>Dragos concluded in their <a href="https://www.dragos.com/wp-content/uploads/Dragos-Oil-and-Gas-Threat-Perspective-2019.pdf">gloabl oil and gas cyber threat perspective</a> in August 2019 that the growing threat of supply chain attacks and vendor compromises allows new avenues for activity groups to compromise IT and OT environments alike.</p>
 <p>Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection software demonstrated the scalability of supply chain issues, affecting numerous victims at the same time by the very same issue.</p>
 <h2 id="known-attacks">Known Attacks</h2>
 <ul>
@@ -1373,6 +1419,8 @@ compromise IT and OT environments alike.</p>
 <li><a href="https://www.bitdefender.com/en-au/blog/hotforsecurity/denmarks-train-network-frozen-due-to-cyberattack-on-subcontractor">Denmark’s Train Network Frozen Due to Cyberattack on Subcontractor</a>.</li>
 </ul>
 <h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
+<h3 id="general">General</h3>
+<p>Establish a <a href="https://attack.mitre.org/mitigations/M0817/">Supply Chain Management</a> that includes policies and procedures to ensure all devices and components come from trusted suppliers and are tested to confirm their integrity.</p>
 <h3 id="design-and-implementation">Design and Implementation</h3>
 <ul>
 <li>It is vital that manufacturers of connectable software and hardware products ensure that such products are developed in line with security-by-default and security-by-design principles, and that their security is maintained during a support period.</li>
@@ -1394,29 +1442,13 @@ compromise IT and OT environments alike.</p>
 </ul>
 <h2 id="references">References</h2>
 <h3 id="standards">Standards</h3>
-<ul>
-<li>ISO 28000 family</li>
-<li>IEC 62443-2-1:2019 ORG 1.6</li>
-<li>IEC 62443-3-2:2020 ZCR 5.X</li>
-<li>NIST CSF 2.0 GV.OC-02</li>
-<li>NIST CSF 2.0 GV.OC-04</li>
-<li>NIST CSF 2.0 GV.SC</li>
-<li>NIST Special Publication 800-161</li>
-<li>EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 5.X</li>
-<li>EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.1  </li>
-<li>MITRE ATT&amp;CK M0817</li>
-</ul>
+<p>Applicable standard requirements are listed in the provided mapping table in the appendix.  </p>
 <h3 id="background-information">Background information</h3>
-<p>Relevant CWEs</p>
+<h4 id="notable-cwes">Notable CWEs</h4>
 <p><a href="https://cwe.mitre.org/data/definitions/912.html">CWE-912: Hidden Functionality</a> describes an asset that includes functionality which is undocumented, not specified, and not accessible through any interface or command sequence that is apparent to the asset's users or administrators.</p>
 <p><a href="https://cwe.mitre.org/data/definitions/1361.html">CWE-1361: ICS Supply Chain</a> is a weakness category describes ICS supply chain risks in general. Weakness in this category address for instance the <a href="https://cwe.mitre.org/data/definitions/1369.html">IT/OT Convergence/Expansion</a>, <a href="https://cwe.mitre.org/data/definitions/1370.html">Common Mode Frailties</a>, <a href="https://cwe.mitre.org/data/definitions/1371.html">Poorly Documented or Undocumented Features</a>, and <a href="https://cwe.mitre.org/data/definitions/1372.html">OT Coutnerfeit and Malicious Corruption</a>.</p>
-<p>Relevant MITRE ATT&amp;CK framework items</p>
-<p>Technique <a href="https://attack.mitre.org/techniques/T0862/">Supply Chain Compromise</a>. Adversaries may compromise the supply chain to gain access to control systems environments by introducing infected products, software, or workflows. Supply chain compromise involves manipulating products—such as devices or software—or their delivery methods before they reach the end consumer. The goal of this manipulation is to facilitate data or system compromise once the infected products are integrated into the target environment.</p>
-<p>Measure <a href="https://attack.mitre.org/mitigations/M0817/">Supply Chain Management</a>. Establish a supply chain management program that includes policies and procedures to ensure all devices and components come from trusted suppliers and are tested to confirm their integrity.</p>
 <h3 id="tooling">Tooling</h3>
-<ul>
-<li>TBD/N.A.</li>
-</ul>
+<p>N.A.</p>
 
 
 
