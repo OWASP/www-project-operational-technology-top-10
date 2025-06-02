@@ -64,7 +64,7 @@ To protect against integrity attacks, typically cryptographic measures such as s
 ### Standards
 
 - Applicable standard requirements are listed in the [provided mapping table in the appendix](./../appendix/mappingTable.md).
-- [BSI Industrial Control System Security: Top 10 threats and coutnermeasures 2022](https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&v=6)
+- [BSI Industrial Control System Security: Top 10 threats and countermeasures 2022](https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&v=6)
 
 ### Background information
 
