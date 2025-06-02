@@ -923,30 +923,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Background information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#notable-cwes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notable CWEs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#notable-mitre-attck-framework-data-sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notable MITRE ATT&amp;CK framework data sources
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -1351,30 +1327,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Background information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#notable-cwes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notable CWEs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#notable-mitre-attck-framework-data-sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notable MITRE ATT&amp;CK framework data sources
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -1459,23 +1411,46 @@
 </ul>
 <h2 id="references">References</h2>
 <h3 id="standards">Standards</h3>
-<p>Applicable standard requirements are listed in the provided mapping table in the appendix.  </p>
+<p>Applicable standard requirements are listed in the <a href="../../appendix/mappingTable/">provided mapping table in the appendix</a>.</p>
 <h3 id="background-information">Background information</h3>
-<h4 id="notable-cwes">Notable CWEs</h4>
-<p><a href="https://cwe.mitre.org/data/definitions/223.html">CWE-223: Omission of Security-relevant Information</a>. The product fails to record or display information that is essential for identifying the source or nature of an attack, or for assessing whether an action is safe.</p>
-<p><a href="https://cwe.mitre.org/data/definitions/532.html">CWE-532: Insertion of Sensitive Information into Log File</a>. The product logs sensitive information, e.g.; passwords, hashes, or credentials.</p>
-<p><a href="https://cwe.mitre.org/data/definitions/778.html">CWE-778: Insufficient Logging</a>. When a security-critical event occurs, the product either fails to log the event or omits key details in the log.</p>
-<h4 id="notable-mitre-attck-framework-data-sources">Notable MITRE ATT&amp;CK framework data sources</h4>
-<p><a href="https://attack.mitre.org/datasources/DS0015/">Application Log</a>. These are events collected by third-party services, such as mail servers, web applications or other appliances, rather than by the native operating system or platform.</p>
-<p><a href="https://attack.mitre.org/datasources/DS0029/">Network Traffic</a>. Data transmitted across a network (e.g. the web, DNS, email, files, etc.) that is either summarised (e.g. NetFlow) and/or captured as raw, analysable data (e.g. PCAP).</p>
+<ul>
+<li>
+<p><strong><em>Noteable CWSs</em></strong>: the following Common Weakness Enumeration idenifier are highly relevant to this Top 10 item:</p>
+<ul>
+<li><a href="https://cwe.mitre.org/data/definitions/223.html">CWE-223: Omission of Security-relevant Information</a>. The product fails to record or display information that is essential for identifying the source or nature of an attack, or for assessing whether an action is safe.</li>
+<li><a href="https://cwe.mitre.org/data/definitions/532.html">CWE-532: Insertion of Sensitive Information into Log File</a>. The product logs sensitive information, e.g.; passwords, hashes, or credentials.</li>
+<li><a href="https://cwe.mitre.org/data/definitions/778.html">CWE-778: Insufficient Logging</a>. When a security-critical event occurs, the product either fails to log the event or omits key details in the log.</li>
+</ul>
+</li>
+<li>
+<p><strong><em>Notable MITRE ATT&amp;CK framework data sources</em></strong>: <a href="https://attack.mitre.org/datasources/DS0015/">Application Logs</a> are events collected by third-party services, such as mail servers, web applications or other appliances, rather than by the native operating system or platform. <a href="https://attack.mitre.org/datasources/DS0029/">Network Traffic</a> is data transmitted across a network (e.g. the web, DNS, email, files, etc.) that is either summarised (e.g. NetFlow) and/or captured as raw, analysable data (e.g. PCAP).</p>
+</li>
+</ul>
 <h3 id="tooling">Tooling</h3>
-<p><a href="https://www.eicar.org/download-anti-malware-testfile/">Eicar malware testfile</a>. The EICAR Anti-Virus Test File, also known as the EICAR Test File, is a computer file developed by the European Institute for Computer Antivirus Research (EICAR) and the Computer Antivirus Research Organisation (CARO) to test how computer antivirus programs respond.</p>
-<p><a href="https://www.metasploit.com/">Metasploit framework</a>. The Metasploit Framework is a modular, Ruby-based penetration testing platform that allows you to write, test and execute exploit code. It contains a suite of tools for testing security vulnerabilities, enumerating networks, executing attacks and evading detection. At its core, the framework is a collection of commonly used tools that provide a complete environment for penetration testing and exploit development.</p>
-<p><a href="https://graylog.org/">Graylog</a>. A free SIEM tool enabling central log management.</p>
-<p><a href="https://wazuh.com/">Wazuh</a>. A open source unified XDR and SIEM protection for endpoints and cloud workloads.</p>
-<p><a href="https://www.snort.org/">Snort</a>. Snort is a open-source intrusion prevention system (IPS). Snort IPS uses a series of rules to help define malicious network activity, identifying packets that match these rules and generating alerts for users.
-Snort can also be deployed in line to block these packets. Snort has three primary uses: It can be used as a packet sniffer, like tcpdump; as a packet logger, which is useful for debugging network traffic; or as a full-blown network intrusion prevention system. Snort can be downloaded and configured for personal and business use.</p>
-<p><a href="https://suricata.io/">Suricata</a>. Suricata is a open-source network analysis and threat detection software used by private and public organisations, as well as being embedded by vendors to protect their assets.</p>
+<ul>
+<li>
+<p><strong><em>Simulating Attacks</em></strong>: it is highly recommended to verify one's attack detection capabilities. Common approaches are:</p>
+<ul>
+<li><a href="https://www.eicar.org/download-anti-malware-testfile/">Eicar malware testfile</a>. The EICAR Anti-Virus Test File, also known as the EICAR Test File, is a computer file developed by the European Institute for Computer Antivirus Research (EICAR) and the Computer Antivirus Research Organisation (CARO) to test how computer antivirus programs respond.</li>
+<li><a href="https://www.metasploit.com/">Metasploit framework</a>. The Metasploit Framework is a modular, Ruby-based penetration testing platform that allows you to write, test and execute exploit code. It contains a suite of tools for testing security vulnerabilities, enumerating networks, executing attacks and evading detection. At its core, the framework is a collection of commonly used tools that provide a complete environment for penetration testing and exploit development.</li>
+</ul>
+</li>
+<li>
+<p><strong><em>Host-centric Logging and Monitoring Tools</em></strong> allow for the collection and analysis of logs from individual hosts, such as servers, workstations, and network devices:</p>
+<ul>
+<li><a href="https://graylog.org/">Graylog</a> is a free SIEM tool enabling central log management.</li>
+<li><a href="https://wazuh.com/">Wazuh</a> is an open source unified XDR and SIEM protection for endpoints and cloud workloads.</li>
+</ul>
+</li>
+<li>
+<p><strong><em>Network-centric Logging and Monitoring Tools</em></strong> are used to monitor network traffic and detect anomalies or malicious activities:</p>
+<ul>
+<li><a href="https://www.snort.org/">Snort</a> is a open-source intrusion prevention system (IPS). Snort IPS uses a series of rules to help define malicious network activity, identifying packets that match these rules and generating alerts for users.
+Snort can also be deployed in line to block these packets. Snort has three primary uses: It can be used as a packet sniffer, like tcpdump; as a packet logger, which is useful for debugging network traffic; or as a full-blown network intrusion prevention system. Snort can be downloaded and configured for personal and business use.</li>
+<li><a href="https://suricata.io/">Suricata</a> is a open-source network analysis and threat detection software used by private and public organisations, as well as being embedded by vendors to protect their assets.</li>
+</ul>
+</li>
+</ul>
 
 
 

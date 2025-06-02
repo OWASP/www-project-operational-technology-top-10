@@ -1446,26 +1446,17 @@
 <h2 id="references">References</h2>
 <h3 id="standards">Standards</h3>
 <ul>
-<li><a href="https://owasp.org/owasp-istg/index.html">OWASP IoT Security Testing Guide</a></li>
-<li><a href="https://scriptingxss.gitbook.io/firmware-security-testing-methodology">OWASP Firmware Security Testing Methodology</a></li>
-<li>IEC 62443 FR 3</li>
-<li>IEC 62443 FR 4</li>
-<li>IEC 62443-3-2:2020 ZCR 5.2</li>
-<li>IEC 62443-3-3:2020 SR 3.X</li>
-<li>IEC 62443-3-3:2020 SR 4.X</li>
-<li>EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.5</li>
-<li>EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.6</li>
-<li>EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.10</li>
+<li>Applicable standard requirements are listed in the <a href="../../appendix/mappingTable/">provided mapping table in the appendix</a>.</li>
 </ul>
 <h3 id="background-information">Background information</h3>
 <ul>
-<li><a href="https://www.cisa.gov/sbom">Softare Bill of Materials (SBOM) - CISA</a></li>
+<li><strong><em>OWASP</em></strong> maintains the <a href="https://owasp.org/owasp-istg/index.html">OWASP IoT Security Testing Guide</a> as well as the <a href="https://scriptingxss.gitbook.io/firmware-security-testing-methodology">OWASP Firmware Security Testing Methodology</a>, both of which provide guidance on how to test for vulnerabilities in IoT and firmware systems.</li>
+<li><a href="https://www.cisa.gov/sbom">Software Bill of Materials (SBOM) - CISA</a> describes a component's dependencies and vulnerabilities in a machine-readable format. This can be used to track known vulnerabilities in your software supply chain.</li>
 </ul>
 <h3 id="tooling">Tooling</h3>
 <ul>
-<li><a href="https://shodan.io">shodan.io</a></li>
-<li><a href="https://owasp.org/www-project-dependency-check/">OWASP dependency-check</a></li>
-<li><a href="https://owasp.org/www-project-dependency-track/">OWASP dependency-track</a></li>
+<li><a href="https://shodan.io">shodan.io</a> allows you to search for devices connected to the internet, including those with known vulnerabilities.</li>
+<li><a href="https://owasp.org/www-project-dependency-check/">OWASP dependency-check</a> allows you to scan you Java projects for known vulnerabilities in dependencies. It is typically called manually during software development, but can also be integrated into CI/CD pipelines. <a href="https://owasp.org/www-project-dependency-track/">OWASP dependency-track</a> accepts SBOMs and can be used to periodically track known vulnerabilities in your software supply chain. It can notify you when new vulnerabilities are discovered.</li>
 </ul>
 
 
