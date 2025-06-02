@@ -40,6 +40,7 @@ These are just some of the most infamous attacks, showcasing how security incide
 While cultural security issues mentioned above still persist (but are decreasing), OT often suffers from additional structural and organizational problems when trying to tackle the growing threat from malicious actors.
 
 ### Key Issues:
+
 - Many organizations simply **cannot easily update** or substitute vulnerable systems like it is mostly possible in IT
 - The adage *"never change a running system"* becomes even more true when dealing with critical infrastructure
 - Systems have a **very long lifetime**, exposing them to outdated software and subsequent known vulnerabilities
@@ -100,6 +101,7 @@ Of special concern is patch management, as:
 2. Older systems often do not receive patches at all
 
 **Solutions:**
+
 - Establish a process rating the severity of a patch
 - Align updates and their urgency with maintenance tasks
 - More uncritical patches can be postponed to a later point in time
@@ -175,6 +177,7 @@ If there already is security personnel and no specific OT security team is plann
 
 **Option 2: Training and Education**
 There is a steady increase in educational material for OT security:
+
 - Free documents on the Internet
 - Instructor-led training programs
 - Specific OT security teams (requires time and money investment)
@@ -199,6 +202,7 @@ This is a sentiment that is often also shared by IT. **Plain and simple, this is
 #### Opportunistic Attacks
 
 In general, more and more OT incidents do not happen because of a specific interest in the target, but due to:
+
 - **Opportunism**
 - Chance to extort money
 - Amplify a certain political message
@@ -218,6 +222,7 @@ Yes, this can be a problem. While regulations force more and more vendors to con
 #### Example Approach:
 
 If there is no security control for one specific component (e.g., a PLC), then the additional layers of a DiD approach can provide security by:
+
 - Monitoring the network of the PLCs
 - Restricting access to this network segment
 - Providing strict access control for engineering via dedicated and isolated workstations
