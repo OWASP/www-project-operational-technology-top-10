@@ -60,16 +60,16 @@ Establish a [Supply Chain Management](https://attack.mitre.org/mitigations/M0817
 
 ### Standards
 
-Applicable standard requirements are listed in the provided mapping table in the appendix.  
+- Applicable standard requirements are listed in the [provided mapping table in the appendix](./../appendix/mappingTable.md).
 
 ### Background information
 
-#### Notable CWEs
+- ***Noteable CWSs***: the following Common Weakness Enumeration idenifier are highly relevant to this Top 10 item:
 
-[CWE-912: Hidden Functionality](https://cwe.mitre.org/data/definitions/912.html) describes an asset that includes functionality which is undocumented, not specified, and not accessible through any interface or command sequence that is apparent to the asset's users or administrators.
+    - [CWE-912: Hidden Functionality](https://cwe.mitre.org/data/definitions/912.html) describes an asset that includes functionality which is undocumented, not specified, and not accessible through any interface or command sequence that is apparent to the asset's users or administrators.
 
-[CWE-1361: ICS Supply Chain](https://cwe.mitre.org/data/definitions/1361.html) is a weakness category describes ICS supply chain risks in general. Weakness in this category address for instance the [IT/OT Convergence/Expansion](https://cwe.mitre.org/data/definitions/1369.html), [Common Mode Frailties](https://cwe.mitre.org/data/definitions/1370.html), [Poorly Documented or Undocumented Features](https://cwe.mitre.org/data/definitions/1371.html), and [OT Coutnerfeit and Malicious Corruption](https://cwe.mitre.org/data/definitions/1372.html).
+    - [CWE-1361: ICS Supply Chain](https://cwe.mitre.org/data/definitions/1361.html) is a weakness category describes ICS supply chain risks in general. Weakness in this category address for instance the [IT/OT Convergence/Expansion](https://cwe.mitre.org/data/definitions/1369.html), [Common Mode Frailties](https://cwe.mitre.org/data/definitions/1370.html), [Poorly Documented or Undocumented Features](https://cwe.mitre.org/data/definitions/1371.html), and [OT Coutnerfeit and Malicious Corruption](https://cwe.mitre.org/data/definitions/1372.html).
 
 ### Tooling
 
-N.A.
+- N.A.

@@ -74,23 +74,15 @@ Vulnerable devices bad. Especially in critical infrastructure.
 
 ### Standards
 
-- [OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html)
-- [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology)
-- IEC 62443 FR 3
-- IEC 62443 FR 4
-- IEC 62443-3-2:2020 ZCR 5.2
-- IEC 62443-3-3:2020 SR 3.X
-- IEC 62443-3-3:2020 SR 4.X
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.5
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.6
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.10
+- Applicable standard requirements are listed in the [provided mapping table in the appendix](./../appendix/mappingTable.md).
 
 ### Background information
 
-- [Softare Bill of Materials (SBOM) - CISA](https://www.cisa.gov/sbom)
+- ***OWASP*** maintains the [OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html) as well as the [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology), both of which provide guidance on how to test for vulnerabilities in IoT and firmware systems.
+- [Software Bill of Materials (SBOM) - CISA](https://www.cisa.gov/sbom) describe a component's dependencies and vulnerabilities in a machine-readable format. This can be used to track known vulnerabilities in your software supply chain.
 
 ### Tooling
 
-- [shodan.io](https://shodan.io)
-- [OWASP dependency-check](https://owasp.org/www-project-dependency-check/)
-- [OWASP dependency-track](https://owasp.org/www-project-dependency-track/)
+- [shodan.io](https://shodan.io) allows you to search for devices connected to the internet, including those with known vulnerabilities.
+- [OWASP dependency-check](https://owasp.org/www-project-dependency-check/) allows you to scan you Java projects for known vulnerabilities in dependencies. It is typically called manually during software development, but can also be integrated into CI/CD pipelines. [OWASP dependency-track](https://owasp.org/www-project-dependency-track/) accepts SBOMs and can be used to periodically track known vulnerabilities in your software supply chain. It can notify you when new vulnerabilities are discovered.
+

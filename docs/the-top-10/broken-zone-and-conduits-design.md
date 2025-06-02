@@ -49,18 +49,11 @@ The most common entry into OT-zones comes from IT environments. For hardware dev
 
 ### Standards
 
-- ISO27001 Annex A.8.22
-- IEC 62443 FR 5
-- IEC 62443-2-1:2019 SPE 3
-- IEC 62443-3-2:2020 ZCR 3.X
-- IEC 62443-3-3:2020 SR 5.X
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.7
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.8
-- MITRE ATT&CK M0930
-- MITRE ATT&CK M0935
-- MITRE ATT&CK M0937
+- Applicable standard requirements are listed in the [provided mapping table in the appendix](./../appendix/mappingTable.md).
 
 ### Background information
+
+- N.A.
 
 ### Tooling
 

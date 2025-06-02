@@ -52,19 +52,12 @@ Legacy protocols often have security issues:
 
 ### Standards
 
-- IEC 62443-2-4:2024 SP.03.03
-- IEC 62443-3-2:2020 ZCR 5.X
-- IEC 62443-4-2:2020 CCSC 2
-- NIST CSF 2.0 PR.AA-02
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.3
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.5
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 6.10
-- EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX 12.2
+- Applicable standard requirements are listed in the [provided mapping table in the appendix](./../appendix/mappingTable.md).
 
 ### Background information
 
-- links to blogs, etc.
+- N.A.
 
 ### Tooling
 
-- for testing, etc.
+- N.A.

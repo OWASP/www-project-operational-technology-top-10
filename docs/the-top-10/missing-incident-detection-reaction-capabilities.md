@@ -61,35 +61,32 @@ Implement [Network Intrusion Prevention](https://attack.mitre.org/mitigations/M0
 
 ### Standards
 
-Applicable standard requirements are listed in the provided mapping table in the appendix.  
+Applicable standard requirements are listed in the [provided mapping table in the appendix](./../appendix/mappingTable.md).
 
 ### Background information
 
-#### Notable CWEs
+- ***Noteable CWSs***: the following Common Weakness Enumeration idenifier are highly relevant to this Top 10 item:
 
-[CWE-223: Omission of Security-relevant Information](https://cwe.mitre.org/data/definitions/223.html). The product fails to record or display information that is essential for identifying the source or nature of an attack, or for assessing whether an action is safe.
+    - [CWE-223: Omission of Security-relevant Information](https://cwe.mitre.org/data/definitions/223.html). The product fails to record or display information that is essential for identifying the source or nature of an attack, or for assessing whether an action is safe.
+    - [CWE-532: Insertion of Sensitive Information into Log File](https://cwe.mitre.org/data/definitions/532.html). The product logs sensitive information, e.g.; passwords, hashes, or credentials.
+    - [CWE-778: Insufficient Logging](https://cwe.mitre.org/data/definitions/778.html). When a security-critical event occurs, the product either fails to log the event or omits key details in the log.
 
-[CWE-532: Insertion of Sensitive Information into Log File](https://cwe.mitre.org/data/definitions/532.html). The product logs sensitive information, e.g.; passwords, hashes, or credentials.
-
-[CWE-778: Insufficient Logging](https://cwe.mitre.org/data/definitions/778.html). When a security-critical event occurs, the product either fails to log the event or omits key details in the log.
-
-#### Notable MITRE ATT&CK framework data sources
-
-[Application Log](https://attack.mitre.org/datasources/DS0015/). These are events collected by third-party services, such as mail servers, web applications or other appliances, rather than by the native operating system or platform.
-
-[Network Traffic](https://attack.mitre.org/datasources/DS0029/). Data transmitted across a network (e.g. the web, DNS, email, files, etc.) that is either summarised (e.g. NetFlow) and/or captured as raw, analysable data (e.g. PCAP).
+- ***Notable MITRE ATT&CK framework data sources***: [Application Logs](https://attack.mitre.org/datasources/DS0015/) are events collected by third-party services, such as mail servers, web applications or other appliances, rather than by the native operating system or platform. [Network Traffic](https://attack.mitre.org/datasources/DS0029/) is data transmitted across a network (e.g. the web, DNS, email, files, etc.) that is either summarised (e.g. NetFlow) and/or captured as raw, analysable data (e.g. PCAP).
 
 ### Tooling
 
-[Eicar malware testfile](https://www.eicar.org/download-anti-malware-testfile/). The EICAR Anti-Virus Test File, also known as the EICAR Test File, is a computer file developed by the European Institute for Computer Antivirus Research (EICAR) and the Computer Antivirus Research Organisation (CARO) to test how computer antivirus programs respond.
+- ***Simulating Attacks***: it is highly recommended to verify one's attack detection capabilities. Common approaches are:
 
-[Metasploit framework](https://www.metasploit.com/). The Metasploit Framework is a modular, Ruby-based penetration testing platform that allows you to write, test and execute exploit code. It contains a suite of tools for testing security vulnerabilities, enumerating networks, executing attacks and evading detection. At its core, the framework is a collection of commonly used tools that provide a complete environment for penetration testing and exploit development.
+    - [Eicar malware testfile](https://www.eicar.org/download-anti-malware-testfile/). The EICAR Anti-Virus Test File, also known as the EICAR Test File, is a computer file developed by the European Institute for Computer Antivirus Research (EICAR) and the Computer Antivirus Research Organisation (CARO) to test how computer antivirus programs respond.
+    - [Metasploit framework](https://www.metasploit.com/). The Metasploit Framework is a modular, Ruby-based penetration testing platform that allows you to write, test and execute exploit code. It contains a suite of tools for testing security vulnerabilities, enumerating networks, executing attacks and evading detection. At its core, the framework is a collection of commonly used tools that provide a complete environment for penetration testing and exploit development.
 
-[Graylog](https://graylog.org/). A free SIEM tool enabling central log management.
+- ***Host-centric Logging and Monitoring Tools*** allow for the collection and analysis of logs from individual hosts, such as servers, workstations, and network devices:
 
-[Wazuh](https://wazuh.com/). A open source unified XDR and SIEM protection for endpoints and cloud workloads.
+    - [Graylog](https://graylog.org/) is a free SIEM tool enabling central log management.
+    - [Wazuh](https://wazuh.com/) is an open source unified XDR and SIEM protection for endpoints and cloud workloads.
 
-[Snort](https://www.snort.org/). Snort is a open-source intrusion prevention system (IPS). Snort IPS uses a series of rules to help define malicious network activity, identifying packets that match these rules and generating alerts for users.
+- ***Network-centric Logging and Monitoring Tools*** are used to monitor network traffic and detect anomalies or malicious activities:
+
+    - [Snort](https://www.snort.org/) is a open-source intrusion prevention system (IPS). Snort IPS uses a series of rules to help define malicious network activity, identifying packets that match these rules and generating alerts for users.
 Snort can also be deployed in line to block these packets. Snort has three primary uses: It can be used as a packet sniffer, like tcpdump; as a packet logger, which is useful for debugging network traffic; or as a full-blown network intrusion prevention system. Snort can be downloaded and configured for personal and business use.
-
-[Suricata](https://suricata.io/). Suricata is a open-source network analysis and threat detection software used by private and public organisations, as well as being embedded by vendors to protect their assets.
+    - [Suricata](https://suricata.io/) is a open-source network analysis and threat detection software used by private and public organisations, as well as being embedded by vendors to protect their assets.
