@@ -35,7 +35,7 @@ To protect against integrity attacks, typically cryptographic measures such as s
 
 In the context of OT, software updates are often seen as a risk to availability. This is because many OT systems are designed to operate continuously and cannot be easily patched or updated without causing downtime. However, software updates are also crucial for [maintaining the security and integrity of OT systems](./accessible-devices-with-known-vulnerabilities.md).
 
-The [2024 CrowdStrike incident](https://www.crowdstrike.com/blog/crowdstrike-incident-response-team-cirt-responds-to-cyberattack-on-its-own-infrastructure/) is a recent example of how software updates can impact availability. In this case, automatic EDR updates causing significant disruption in multiple OT-areas, e.g., gas stations and hospitals.
+The [2024 CrowdStrike incident](https://en.wikipedia.org/wiki/2024_CrowdStrike-related_IT_outages) is a recent example of how software updates can impact availability. In this case, automatic EDR updates causing significant disruption in multiple OT-areas, e.g., gas stations and hospitals.
 
 ## Rationale
 
