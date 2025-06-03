@@ -85,4 +85,3 @@ Vulnerable devices bad. Especially in critical infrastructure.
 
 - [shodan.io](https://shodan.io) allows you to search for devices connected to the internet, including those with known vulnerabilities.
 - [OWASP dependency-check](https://owasp.org/www-project-dependency-check/) allows you to scan you Java projects for known vulnerabilities in dependencies. It is typically called manually during software development, but can also be integrated into CI/CD pipelines. [OWASP dependency-track](https://owasp.org/www-project-dependency-track/) accepts SBOMs and can be used to periodically track known vulnerabilities in your software supply chain. It can notify you when new vulnerabilities are discovered.
-
