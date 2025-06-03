@@ -41,7 +41,7 @@ The [2024 CrowdStrike incident](https://www.crowdstrike.com/blog/crowdstrike-inc
 
 - availability is paramount for the safety of OT systems
 - the impact of integrity on availability is often overlooked
-- recent incidents such as the CrowdStrike incident show that event non-malicious software updates can have a significant impact on availability
+- recent incidents such as the CrowdStrike incident show that even non-malicious software updates can have a significant impact on availability
 
 ## Known Attacks/Examples
 
