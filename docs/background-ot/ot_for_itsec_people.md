@@ -71,7 +71,7 @@ These remediations are not a "get out of jail free" card and impose limitations 
 
 ### The Risk Calculation Problem
 
-As risk is typically calculated by **"Risk = Likelihood × Impact"** and these mitigations would theoretically reduce the likelihood to zero, we should be able to close the case, right? 
+As risk is typically calculated by **"Risk = Likelihood × Impact"** and these mitigations would theoretically reduce the likelihood to zero, we should be able to close the case, right?
 
 **Sadly, NO.** This is where the fragility of the approach becomes apparent.
 
@@ -157,7 +157,7 @@ You can reboot your computer or server, but rebooting a whole factory or connect
 
 ## The Path Forward
 
-We hope this introduction explains why we often have to make compromises to achieve meaningful security improvements in OT environments. In legacy settings, this mostly means depending upon mitigations such as network segmentation and physical access management. 
+We hope this introduction explains why we often have to make compromises to achieve meaningful security improvements in OT environments. In legacy settings, this mostly means depending upon mitigations such as network segmentation and physical access management.
 
 While newer systems will eventually alleviate many of these problems, **we still have to deal with legacy systems to keep existing critical infrastructure running.** The alternative - replacing all legacy OT systems immediately - is neither economically feasible nor operationally safe.
 
