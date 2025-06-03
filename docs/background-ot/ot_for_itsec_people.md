@@ -49,19 +49,19 @@ When you look into recent news, OT security incidents are on the rise. While it 
 
 ## The Mitigation-First Approach
 
-As shown above, in the OT world we often have to deal with potentially inherently insecure devices that might not be updated or upgraded. 
+As shown above, in the OT world we often have to deal with potentially inherently insecure devices that might not be updated or upgraded. The fundamental approach becomes:
 
-**The fundamental approach becomes:** if we cannot make the devices themselves secure, we try to prevent attackers from accessing them in the first place.
+> If we cannot make the devices themselves secure, we try to prevent attackers from accessing them in the first place.
 
 This is typically accomplished through mitigations such as:
 
-**Network Separation**
+### Network Separation
 
 - Air-gapped networks where possible
 - VLANs and network segmentation
 - Strict firewall rules between IT and OT networks
 
-**Physical Security Controls**
+### Physical Security Controls
 
 - Locked control rooms and equipment cabinets
 - Badge access systems and restricted access to industrial floors
@@ -69,7 +69,9 @@ This is typically accomplished through mitigations such as:
 
 These remediations are not a "get out of jail free" card and impose limitations as well as maintenance burden. Please note that we would prefer to have secure devices (or even zero-trust enabled devices) but until then, often those mitigations are the only way of keeping critical infrastructure operational.
 
-**The Risk Calculation Problem:** As risk is typically calculated by **"Risk = Likelihood × Impact"** and these mitigations would theoretically reduce the likelihood to zero, we should be able to close the case, right? 
+### The Risk Calculation Problem
+
+As risk is typically calculated by **"Risk = Likelihood × Impact"** and these mitigations would theoretically reduce the likelihood to zero, we should be able to close the case, right?
 
 **Sadly, NO.** This is where the fragility of the approach becomes apparent.
 
@@ -81,22 +83,22 @@ The overall architecture of "protecting insecure devices by preventing attackers
 
 What could go wrong with our mitigations? Consider these real-world scenarios:
 
-**The Insider Threat**
+### The Insider Threat
 
 - Your system depends upon no one introducing malware into an internal network, but users attach infected USB sticks
 - **Stuxnet case study:** Even air-gapped systems proved vulnerable when the attack vector came from within ([stuxnet](https://en.wikipedia.org/wiki/Stuxnet))
 
-**Network Segmentation Failures** 
+### Network Segmentation Failures
 
 - Missing network segmentation between factory floor and office networks leads to numerous incidents
 - Many reported "OT incidents" are actually ransomware attacks that originated in attached IT infrastructure and spread due to poor network boundaries
 
-**Physical Security Breaches**
+### Physical Security Breaches
 
 - Problems with physical security allow unauthorized personnel to access factory floors and directly manipulate control systems
 - Unlike IT systems protected by multiple authentication layers, OT devices often assume anyone with physical access is authorized
 
-**Management Interface Vulnerabilities**
+### Management Interface Vulnerabilities
 
 - IT professionals use BMC for out-of-band administration
 - Similar remote management capabilities in OT networks can provide attackers with direct pathways from IT to OT networks, bypassing traditional security controls ([if similar things are used within OT networks](https://www.nohat.it/slides/2022/palanca.pdf))
@@ -105,19 +107,19 @@ What could go wrong with our mitigations? Consider these real-world scenarios:
 
 If attackers successfully compromise the perimeter, we typically encounter recurring major problems:
 
-**Inherent Device Vulnerabilities**
+### Inherent Device Vulnerabilities
 
 - The insecure devices are, by design, easy to exploit
 - Communication between devices can be intercepted and altered due to lack of encryption or integrity protection
 - Default credentials and weak authentication are common
 
-**Large Blast Zones**
+### Large Blast Zones
 
 - Attackers can use compromised devices to further propagate and pivot into other 'secured' networks and devices
 - Trust relationships between systems assume all connected devices are legitimate
 - Network protocols designed for operational efficiency facilitate rapid compromise propagation
 
-**Operational Impact**
+### Operational Impact
 
 - Unlike IT systems, OT compromises can affect physical processes
 - Safety systems may be targeted or inadvertently affected
@@ -131,14 +133,15 @@ Compared to well-maintained traditional IT systems, **OT systems often display a
 
 [This limitation stems from several factors](./../the-top-10/missing-incident-detection-reaction-capabilities.md):
 
-**Backup and Recovery Gaps**
+### Backup and Recovery Gaps
 
 - Missing backups/disaster recovery plans for critical control systems
 - Missing configuration backups for OT devices, making restoration difficult or impossible
 - Undefined processes for alert reporting/handling
 - Limited testing of recovery procedures due to operational constraints
 
-**The "Reboot" Problem**
+### The "Reboot" Problem
+
 Traditional IT incident response relies on the ability to "easily" reboot systems, reimage machines, and restore from known-good backups. **This assumption breaks down in OT environments.**
 
 You can reboot your computer or server, but rebooting a whole factory or connected power station requires:
@@ -154,7 +157,7 @@ You can reboot your computer or server, but rebooting a whole factory or connect
 
 ## The Path Forward
 
-We hope this introduction explains why we often have to make compromises to achieve meaningful security improvements in OT environments. In legacy settings, this mostly means depending upon mitigations such as network segmentation and physical access management. 
+We hope this introduction explains why we often have to make compromises to achieve meaningful security improvements in OT environments. In legacy settings, this mostly means depending upon mitigations such as network segmentation and physical access management.
 
 While newer systems will eventually alleviate many of these problems, **we still have to deal with legacy systems to keep existing critical infrastructure running.** The alternative - replacing all legacy OT systems immediately - is neither economically feasible nor operationally safe.
 
