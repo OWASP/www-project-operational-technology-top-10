@@ -8,7 +8,7 @@ Please note that we talk about protecting "our" infrastructure from DDoS and do 
 
 Availability is the property of being accessible and usable upon demand by an authorized entity. In the context of OT, availability is crucial as many systems are designed to operate continuously and cannot be easily patched or updated without causing downtime.
 
-It's a common joke in the OT world that "availability is the only security property that matters". While this is an exaggeration, it highlights the importance of availability in OT systems. If a system is not available, it cannot perform its intended function, which can lead to safety hazards and other issues. To contrast that, there is ample anecdotal evidence of OT components crashing during a network scan.
+In the OT domain, availability is often regarded as the most critical security property due to its direct impact on system functionality and safety. If a system is not available, it cannot perform its intended function, which can lead to safety hazards and other issues. Additionally, there is anecdotal evidence of OT components crashing during network scans, underscoring the importance of maintaining availability.
 
 ### Denial-of-Service Attacks
 
