@@ -8,6 +8,8 @@ Please note that we talk about protecting "our" infrastructure from DDoS and do 
 
 Availability is the property of being accessible and usable upon demand by an authorized entity. In the context of OT, availability is crucial as many systems are designed to operate continuously and cannot be easily patched or updated without causing downtime.
 
+It's a common joke in the OT world that "availability is the only security property that matters". While this is an exaggeration, it highlights the importance of availability in OT systems. If a system is not available, it cannot perform its intended function, which can lead to safety hazards and other issues. To contrast that, there is amble anectodal evidence of OT components crashing during a network scan.
+
 ### Denial-of-Service Attacks
 
 Denial-of-Service (DoS) attacks are a common threat to availability. These attacks can take many forms, including network flooding, resource exhaustion, and application-layer attacks.
@@ -17,10 +19,9 @@ becomes target of a DoS attack and becomes not available while the OT system/pro
 
 ### Real-Time Communication Safety
 
-- real-time communication safety
-- 'timing-attacks'?
-- special protocols and hardware needed?
-- do we see this as part of availability?
+One special aspect of availability in OT is the need for real-time communication safety. Many OT systems rely on real-time communication protocols to ensure that data is transmitted and processed in a timely manner, e.g., for controlling medical devices or factory automations. If these protocols are disrupted, it can lead to delays or failures in critical processes.
+
+Typical IT network protocols such as TCP/IP are not designed for real-time communication and can introduce latency and jitter that can disrupt the operation of OT systems. Therefore, specialized protocols and hardware are often needed to ensure real-time communication safety in OT environments. Thus, real-time communication safety is a crucial aspect of availability in OT.
 
 ### Availability and Integrity
 
@@ -32,43 +33,48 @@ To protect against integrity attacks, typically cryptographic measures such as s
 
 ### Availability and Software Updates
 
-- think about software updates, quality assurance (crowdstrike incident)
+In the context of OT, software updates are often seen as a risk to availability. This is because many OT systems are designed to operate continuously and cannot be easily patched or updated without causing downtime. However, software updates are also crucial for [maintaining the security and integrity of OT systems](./accessible-devices-with-known-vulnerabilities.md).
+
+The [2024 CrowdStrike incident](https://www.crowdstrike.com/blog/crowdstrike-incident-response-team-cirt-responds-to-cyberattack-on-its-own-infrastructure/) is a recent example of how software updates can impact availability. In this case, automatic EDR updates causing significant disruption in multiple OT-areas, e.g., gas stations and hospitals.
 
 ## Rationale
 
 - availability is paramount for the safety of OT systems
-- recent incidents such as the CrowdStrike incident
 - the impact of integrity on availability is often overlooked
+- recent incidents such as the CrowdStrike incident show that event non-malicious software updates can have a significant impact on availability
 
 ## Known Attacks/Examples
 
-- [On Feb. 24, 2022, the night before the Russian government launched its full-scale invasion, Russian-backed hackers targeted thousands of modems linked to Viasat, the U.S.-based satellite and internet communications company, and relied on by the Ukrainian military. The attack — attributed to the Russian government by the United States and its allies — relied on a piece of malware that researchers with SentinelLabs dubbed “AcidRain.”](https://cyberscoop.com/viasat-malware-wiper-acidrain/)
-- [Stuxnet](https://en.wikipedia.org/wiki/Stuxnet): both as an attack against availability and as an example of violating integrity with fake data
+- On Feb. 24, 2022, the night before the Russian government launched its full-scale invasion, [Russian-backed hackers targeted thousands of modems linked to Viasat](https://cyberscoop.com/viasat-malware-wiper-acidrain/), the U.S.-based satellite and internet communications company, and relied on by the Ukrainian military. The attack — attributed to the Russian government by the United States and its allies — relied on a piece of malware that researchers with SentinelLabs dubbed "AcidRain."
+- [Stuxnet](https://en.wikipedia.org/wiki/Stuxnet): both as an attack against availability and as an example of violating integrity with fake data.
 
 ## Mitigation/Countermeasures
 
 ### Design and Implementation
 
-- mitigations for developers/builders
+- perform a risk assessment to identify potential availability threats and vulnerabilities in OT systems
+- implement redundancy and failover mechanisms to ensure continuous operation in case of a failure or attack
+- use specialized real-time communication protocols and hardware to ensure real-time communication safety
+- implement cryptographic measures such as signatures or MACs to protect against integrity attacks, while considering the performance overhead and suitability for the specific OT system
 
 ### Operational
 
-- mitigations for integrators/builders
+- implement redundancy and failover mechanisms to ensure continuous operation in case of a failure or attack
 
 ## Next Actionable Steps
 
-- maybe add this to a separate section?
+- perform a risk assessment to identify potential availability threats and vulnerabilities in OT systems
 
 ## References
 
 ### Standards
 
 - Applicable standard requirements are listed in the [provided mapping table in the appendix](./../appendix/mappingTable.md).
-- [BSI Industrial Control System Security: Top 10 threats and countermeasures 2022](https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&v=6)
+- The [BSI Industrial Control System Security: Top 10 threats and countermeasures 2022](https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_005E.pdf?__blob=publicationFile&v=6) contains multiple threats directly related to availability, e.g., "Sabotage", "(D)DoS attacks", "Technical failure and force majeure".
 
 ### Background information
 
-- N.A.
+- [PLCs: To Scan or Not to Scan? (youtube, 20.6.2024)](https://www.youtube.com/watch?v=yqhn4xPwbfQ): presentation analyzing the impact of active scanning as well as OT-specific targeted scanning on PLCs, showing that even benign scans can cause crashes and disrupt availability.
 
 ### Tooling
 
