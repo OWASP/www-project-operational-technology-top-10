@@ -1003,7 +1003,7 @@
           <li class="md-nav__item">
   <a href="#background-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Background information
+      Background Information
     </span>
   </a>
   
@@ -1353,7 +1353,7 @@
           <li class="md-nav__item">
   <a href="#background-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Background information
+      Background Information
     </span>
   </a>
   
@@ -1419,22 +1419,32 @@
 <h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
 <h3 id="design-and-implementation">Design and Implementation</h3>
 <ul>
-<li>mitigations for developers/builders</li>
+<li>don't use legacy systems or protocols for new deployments</li>
+<li>use components that are able to be updated or patched</li>
+<li>incorporate some slack for future security features in new designs</li>
 </ul>
 <h3 id="operational">Operational</h3>
+<p>Sadly, there are no operational countermeasures that can be applied to legacy systems. The best way to deal with legacy systems is to not use them in the first place. If you have to use legacy systems, you can try to mitigate the risks by applying the following countermeasures:</p>
 <ul>
-<li>mitigations for integrators/builders</li>
+<li>isolate legacy systems from the rest of the network</li>
+<li>monitor legacy systems for unusual activity</li>
+<li>apply compensating controls to mitigate the risks of legacy systems</li>
+<li>apply compensating controls to mitigate the risks of legacy protocols</li>
 </ul>
 <h2 id="next-actionable-steps">Next Actionable Steps</h2>
 <ul>
-<li>maybe add this to a separate section?</li>
+<li>evaluate the components and protocols used in your systems</li>
+<li>identify legacy systems and protocols in your environment</li>
+<li>evaluate the security capabilities of these systems and protocols</li>
+<li>if possible, replace legacy systems and protocols with state-of-the-art components and protocols</li>
+<li>if replacement is not possible, apply compensating controls to mitigate the risks of legacy systems and protocols</li>
 </ul>
 <h2 id="references">References</h2>
 <h3 id="standards">Standards</h3>
 <ul>
 <li>Applicable standard requirements are listed in the <a href="../../appendix/mappingTable/">provided mapping table in the appendix</a>.</li>
 </ul>
-<h3 id="background-information">Background information</h3>
+<h3 id="background-information">Background Information</h3>
 <ul>
 <li>N.A.</li>
 </ul>
