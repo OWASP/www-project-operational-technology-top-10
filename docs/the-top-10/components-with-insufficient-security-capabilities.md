@@ -38,15 +38,26 @@ Legacy protocols often have security issues:
 
 ### Design and Implementation
 
-- mitigations for developers/builders
+- don't use legacy systems or protocols for new deployments
+- use components that are able to be updated or patched
+- incorporate some slack for future security features in new designs
 
 ### Operational
 
-- mitigations for integrators/builders
+Sadly, there are no operational countermeasures that can be applied to legacy systems. The best way to deal with legacy systems is to not use them in the first place. If you have to use legacy systems, you can try to mitigate the risks by applying the following countermeasures:
+
+- isolate legacy systems from the rest of the network
+- monitor legacy systems for unusual activity
+- apply compensating controls to mitigate the risks of legacy systems
+- apply compensating controls to mitigate the risks of legacy protocols
 
 ## Next Actionable Steps
 
-- maybe add this to a separate section?
+- evaluate the components and protocols used in your systems
+- identify legacy systems and protocols in your environment
+- evaluate the security capabilities of these systems and protocols
+- if possible, replace legacy systems and protocols with state-of-the-art components and protocols
+- if replacement is not possible, apply compensating controls to mitigate the risks of legacy systems and protocols
 
 ## References
 
@@ -54,7 +65,7 @@ Legacy protocols often have security issues:
 
 - Applicable standard requirements are listed in the [provided mapping table in the appendix](./../appendix/mappingTable.md).
 
-### Background information
+### Background Information
 
 - N.A.
 
