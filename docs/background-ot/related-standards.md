@@ -76,8 +76,6 @@ importers and distributors.
 
 The Radio Equipment Directive (RED) regulates the placing of radio equipment on the EU market for manufacturers and importers. Additional to existing requirements concerning safety, radio performance and electromagnetic compatibility, an extending requirement aiming to improve cybersecurity, privacy and data protection of radio equipment will come into force on 1 August 2025.
 
-!!! todo "Add US regulations like EO14028, should be done by colleagues from the US"
-
 ## Existing Vulnerabilty Lists
 
 | Issuer | Title | Description |
@@ -88,3 +86,7 @@ The Radio Equipment Directive (RED) regulates the placing of radio equipment on 
 | [ENISA](https://www.enisa.europa.eu) | [Transport Threat Landscape](https://www.enisa.europa.eu/publications/enisa-transport-threat-landscape?v1=1#contentList) | |
 | [ENISA](https://www.enisa.europa.eu) | [Cyber security and resilience for Smart Hospitals](https://www.enisa.europa.eu/publications/cyber-security-and-resilience-for-smart-hospitals?v1=1#contentList) ||
 | [ENISA](https://www.enisa.europa.eu) | [ENISA Threat Landscape 2023](https://www.enisa.europa.eu/publications/enisa-threat-landscape-2024) | Figure 8 (Page 16), gives a per-sector attack overview|
+
+## Mapping Table
+
+A [Mapping table](https://ot.owasp.org/appendix/mappingTable/) linking the OWASP OT Top 10 items to some of the mentioned relevant standard and regulation requirements is provided.
