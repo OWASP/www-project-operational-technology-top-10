@@ -1353,17 +1353,11 @@
 <li>Overly broad IP and port ranges in access control lists: ACLs are configured with broad IP and port ranges, permitting entire network segments to establish connections across port ranges rather than enforcing per-host restrictions.</li>
 <li>Multi-homed-devices: Multi-homed devices have network interfaces in multiple network zones and may allow lateral movement, either through intentionally enabled routing capabilities or if the device is compromised.</li>
 <li>Possible command and control channels: Protocols such as IMAP and DNS within the OT network introduces the risk of unintended command and control channels, which may be used for lateral movement or data exfiltration.</li>
+<li>Hardware debug interfaces act as backdoors into zones: When debug interfaces like JTAG or SWD are forgotten to be deactivated, they can act as an entry point into otherwise highly secured zones. By gaining access to e.g. a device on the shopfloor via physical access, this enables an attacker to potentially move laterally to other systems in the same zone and compromise it completely.</li>
+<li>Forgotten remote access: While remote access via different protocols and solutions is more or less a necessity in most modern OT environments, they too can act as effective bypasses for defined zone access controls when not considered from the start and isolated accordingly. By acting as kind of an out-of-bound conduit that was not defined beforehand, this can result in a potential point of entry into a otherwise highly isolated zone. </li>
 </ul>
-<div class="highlight"><pre><span></span><code>NOTES
-<span class="k">-</span><span class="w"> </span>risk-based approach (mention threat modeling)
-<span class="k">-</span><span class="w"> </span>goal: least functionality vs. over-exposure of services
-<span class="k">-</span><span class="w"> </span>errors in network segregration
-<span class="k">-</span><span class="w"> </span>potentially can also contain &#39;external admin access&#39;?
-<span class="k">-</span><span class="w"> </span>potentially &#39;forgotten hardware debug interfaces&#39;?
-<span class="k">-</span><span class="w"> </span>available JTAG/SWD interface left enabled on production devices
-</code></pre></div>
 <h2 id="rationale">Rationale</h2>
-<p>The most common entry into OT-zones comes from IT environments. For hardware devices the most common entry is via debugging interfaces. After getting entry into the system, without segmenting networks and isolating services, an attacker has full access to the network. Unfortunately, in realty networks are very flat. Segmentation or networks and services enables implementation of core principles like "defense in depth" and "need to know".</p>
+<p>The most common entry into OT-zones comes from IT environments. For hardware devices the most common entry is via debugging interfaces. After getting entry into the system, without segmenting networks and isolating services, an attacker has full access to the network. Unfortunately, in realty networks are very flat. Segmentation or networks and services enables implementation of core principles like "defense in depth" and "least privilege". </p>
 <h2 id="known-attacksexamples">Known Attacks/Examples</h2>
 <ul>
 <li><a href="https://securityscorecard.com/wp-content/uploads/2024/01/aliquippa-report.pdf">Cyber Risk Intelligence: Iran-Linked Attack on U.S.Water Treatment Facility</a></li>
@@ -1372,16 +1366,26 @@
 </ul>
 <h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
 <h3 id="design-and-implementation">Design and Implementation</h3>
-<ul>
-<li>mitigations for developers/builders</li>
-</ul>
+<p>IEC 62443-3-2 suggests a full methodology for the establishment of zones and conduits. While details can be found there, a short summary should be given at this point:</p>
+<ol>
+<li><strong>Identification of the System under Consideration (SuC)</strong>: Identify all systems (hardware and software), network devices and communications links that should be secured by zones and conduits.</li>
+<li><strong>Perform an initial cyber security risk assessment</strong>: A high level risk assessment helps in identifying possible threats and worst case risks for the assets in the SuC. This allows prioritization of available resources where they are needed most.</li>
+<li><strong>Partition of the SUC into zones and conduits</strong>: Assets are grouped in segments on basis of the results of the initial risk assessment. Further criteria that can influence grouping are criticality of assets, physical and/or logical location, functionality or required access (“Least Privilege”). Conduits are then to be defined between zones. They should be as tightly controlled and minimized as possible.</li>
+<li><strong>Check if initial risk exceeds tolerable risk</strong>: If the results of Step 2 exceed the tolerable risk of the organization, an additional detailed risk assessment (Step 5) should be conducted. Otherwise, Step 5 can be omitted.</li>
+<li><strong>Perform a detailed cyber security risk assessment</strong>: For each zone and conduit, a more granular threat and risk assessment should be executed. This process should result in appropriate risk reduction measures and aims to identify any gaps in controls already put in place.</li>
+<li><strong>Document cyber security requirements, assumptions and constraints</strong>: All technical requirements for each zone and conduits, all assumptions made during the whole process and all constraints (legacy systems, technological issues, budgetary issues) must be documented for full transparency.</li>
+<li><strong>Get asset owner approval</strong>: Owners of affected assets have to review and approve results of the process.</li>
+</ol>
 <h3 id="operational">Operational</h3>
 <ul>
-<li>mitigations for integrators/builders</li>
+<li>Once zones and conduits are implemented, the have to be steadily monitored and reassessed for further improvements and adaptions. Especially network and system changes can require adaptions in the established zoning concept.</li>
 </ul>
 <h2 id="next-actionable-steps">Next Actionable Steps</h2>
 <ul>
-<li>maybe add this to a separate section?</li>
+<li>Inventorize your assets (including all required interfaces)</li>
+<li>Monitor your networks to get insights in what systems communicate with each other</li>
+<li>Follow the steps outlined above</li>
+<li>For more information, consult IEC 62443-3-2</li>
 </ul>
 <h2 id="references">References</h2>
 <h3 id="standards">Standards</h3>
@@ -1396,6 +1400,7 @@
 <ul>
 <li>Bloodhound for AD tree building</li>
 <li>nmap for environment scanning</li>
+<li>Network monitoring tools for traffic analysis (especially useful for determination of needed conduits)</li>
 </ul>
 
 
