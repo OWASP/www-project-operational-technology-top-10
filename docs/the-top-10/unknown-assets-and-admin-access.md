@@ -12,11 +12,19 @@ This is your typical "shadow IT" problem, but in the OT world, it can be even mo
 
 These assets are mostly already or will become outdated over time and introduce vulnerabilities and weaknesses into the system. Such assets can for example be used as initial access points into the network, for privilege escalation, establishing persistence or lateral movement. Having a full inventory of assets that not only includes devices but also established remote access, deployed privileges and other services is crucial to understanding the environment we are working with.
 
+Undocumented services can be any service that is not properly documented or managed, such as remote access solutions, cloud services, or third-party applications. These services can introduce vulnerabilities and weaknesses into the system, making it easier for attackers to gain access and move laterally within the network.
+
+A special case of undocumented services are unmanaged external maintenance accounts. They are often used for increased convienience but offer adversaries ample attack opportunities. This can be seen as a case of [missing awareness](./missing-awareness.md).
+
 ### Unmanaged External Access
 
-- from above purdue model level 3 / IEC62443 zones/conduits
-- maintenance access
-- this can be related to [missing awareness](./missing-awareness.md)
+Unmanaged external access refers to connections to the OT environment that are not properly controlled or monitored. This can include remote access solutions, such as TeamViewer or VPNs, that are not documented or managed by the organization. These unmanaged connections can provide attackers with a way to bypass security controls and gain unauthorized access to the OT environment.
+
+### Unmanaged Access for Maintenance
+
+Unmanaged access for external personnel refers to situations where third-party vendors, contractors, or maintenance personnel have access to from within the OT environment without proper oversight or documentation. This can lead to unauthorized changes, vulnerabilities, and potential security breaches.
+
+An example would be third-party contractor (that is connected to the internal network through VPN) that has access to the OT environment for maintenance purposes but does not follow proper security protocols or does not have their access documented. This can lead to unauthorized changes, vulnerabilities, and potential security breaches.
 
 ## Rationale
 
