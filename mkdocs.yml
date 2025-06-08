@@ -4,11 +4,12 @@ repo_url: https://github.com/OWASP/www-project-operational-technology-top-10
 theme:
   name: material
   features:
-    - navigation.sections
+    #- navigation.sections
+    #- navigation.expand
     - navigation.tracking
     - navigation.path
     - navigation.top
-    - navigation.indexes
+    #- navigation.indexes
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -54,8 +55,8 @@ copyright: |
   </span><br><span style="font-size: smaller">OWASP &#174; is a registered trademark of the OWASP Foundation, Inc.</span> <span>This website uses cookies to analyze our traffic and only share that information with our analytics partners. <a href="https://github.com/OWASP/owasp-mastg/blob/master/about_cookies.md">Learn more</a>.</span>
 
 nav:
+  - 'Start Here': index.md
   - 'Introduction':
-    - index.md
     - 'About OWASP': introduction/about-owasp.md
     - 'How to contribute?': introduction/contributing.md
     - 'Contributors': introduction/contributors.md
@@ -68,7 +69,7 @@ nav:
     - 'Standards and Regulations': background-ot/related-standards.md
   - 'The Top 10':
       - the-top-10/index.md
-      - '1. Unknown Assets and Unmanaged External Access': the-top-10/unknown-assets-and-admin-access.md
+      - '1. Unknown Assets and Undocumented Services': the-top-10/unknown-assets-and-admin-access.md
       - '2. Devices with known Vulnerabilities': the-top-10/accessible-devices-with-known-vulnerabilities.md
       - '3. Inadequate Supply Chain Management': the-top-10/inadequate_supply_chain_management.md
       - '4. Insufficient Access Control': the-top-10/insufficient-access-control.md

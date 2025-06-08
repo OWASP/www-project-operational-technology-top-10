@@ -10,7 +10,13 @@ Another way of hardening is to apply additional layers of security, such as fire
 
 ### Apply established hardening guidelines
 
+Hardening guidelines are established best practices for securing systems and networks. These guidelines provide a framework for identifying and mitigating vulnerabilities, and they can help organizations implement effective security measures.
+
+Some well-known hardening guidelines include the Center for Internet Security (CIS) benchmarks or the Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIGs).
+
 ### Disable default accounts and passwords
+
+Default accounts and passwords are often used in OT systems, and they can pose a significant security risk if not properly managed. Attackers can easily exploit these default credentials to gain unauthorized access to systems and networks. It is essential to disable or change default accounts and passwords during the hardening process to reduce the risk of unauthorized access.
 
 ## Rationale
 
@@ -64,11 +70,11 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 
 ### Background information
 
+- [BSI IT-Security in der Industrie (german)](https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/leitfaden-it-security-i40.pdf?__blob=publicationFile&v=1)
 - <https://en.wikipedia.org/wiki/Hardening_(computing)>
 - <https://en.wikipedia.org/wiki/Defense_in_depth_(computing)>
 
 ### Tooling
 
-- Tenable Nessus, with compliance Scanning
-- CIS-CAT Lite/Pro
+- Tenable Nessus / OpenVAS, with compliance Scanning
 - Microsoft Security Compliance Toolkit

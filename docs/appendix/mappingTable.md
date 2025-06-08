@@ -153,6 +153,7 @@ The following table maps the OWASP OT top 10 items to relevant standard and legi
 |10. Missing Hardening|IEC 62443-2-1:2019|ORG 1.5|
 ||IEC 62443-2-1:2024|COMP 1.1|
 ||IEC 62443-2-4:2024|SP.02.03|
+||IEC 62443-3-3:2024||
 ||IEC 62443-4-1:2018|SG-3|
 ||IEC 62443-4-2||
 ||NIST CSF 2.0|PR.PS|
