@@ -97,7 +97,6 @@ The prevalence of:
 ### Standards
 
 - Applicable standard requirements are listed in the [provided mapping table in the appendix](./../appendix/mappingTable.md).
-- IEC 62443-2-1:2019 SPE 6
 
 ### Background Information
 
