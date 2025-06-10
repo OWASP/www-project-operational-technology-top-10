@@ -66,11 +66,11 @@ History has shown that undocumented assets can be used by attackers for everythi
 ### Standards
 
 - Applicable standard requirements are listed in the [provided mapping table in the appendix](./../appendix/mappingTable.md).
-- Following additional standards are relevant:
-    - NERC CIP ID.AM Asset Management
-    - NERC CIP PR.AC Identity Management and Access Control
-    - NIST 1800-23 Energy Sector Asset Management: For Electric Utilities, Oil & Gas Industry
-    - NIST 1800-5 IT Asset Management
+[//]:<- Following additional standards are relevant:>
+[//]:<   - NERC CIP ID.AM Asset Management>
+[//]:<   - NERC CIP PR.AC Identity Management and Access Control>
+[//]:<   - NIST 1800-23 Energy Sector Asset Management: For Electric Utilities, Oil & Gas Industry>
+[//]:<   - NIST 1800-5 IT Asset Management>
 
 ### Background information
 
