@@ -34,8 +34,11 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 - [NotPetya](https://en.wikipedia.org/wiki/NotPetya): Proper network segmentation and hardening could have limited the spread of the malware.
 
 ## Mitigation/Countermeasures
+Mitigation and countermeasures can be applied along the supply chain. Starting from the vendor over the integrator to the asset owner.
 
 ### Developers/Component Suppliers/Integrators: Design and Implementation
+
+To ensure robust software security across the development lifecycle, component suppliers, and integrators—must adopt proactive countermeasures:
 
 - Disable unnecessary services and interfaces (e.g. USB ports, insecure protocols like Telnet, web server, JTAG/SWD interfaces)
 - Start with established hardening benchmarks and gradually relax controls only as necessary to ensure your component or system functions properly
@@ -45,12 +48,16 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 
 ### Operators: Operational
 
+Operators play a critical role in maintaining the security and resilience of deployed systems. To reduce risk and ensure operational integrity, the following countermeasures are essential:
+
 - Make sure hardening is reapplied after maintenance
 - Request documentation of hardening measures
 - Include hardening requirements in the tender, ideally with the integrator providing their own hardening concept
 - Make sure hardening is actually implemented with a Pentest or some kind of Cybersecurity Acceptance Test (during SAT/FAT)
 
 ## Next Actionable Steps
+
+To be able to implement sensible measures one could follow these steps:
 
 - identify applicable hardening guidelines for your environment
 - implement hardening guidelines
