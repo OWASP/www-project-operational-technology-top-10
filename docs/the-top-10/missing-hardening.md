@@ -59,9 +59,9 @@ Operators play a critical role in maintaining the security and resilience of dep
 
 To be able to implement sensible measures one could follow these steps:
 
-- identify applicable hardening guidelines for your environment
-- implement hardening guidelines
-- disable default accounts and passwords
+- identify applicable hardening guidelines for your environment: Every environment is different and therefore has different needs and priotitizes different topics. Finding the right measures for the system under consideration is the first and most crucial step when trying to improve the security posture of a system.
+- implement hardening guidelines: After identifying the shortcomings, hardening guidelines for the insecure systems can help to provide a good baseline to improve from.
+- disable default accounts and passwords: Default credentials are commonly used and misused way of getting access to permissions that should normally be behind proper safeguards.
 
 ## References
 
