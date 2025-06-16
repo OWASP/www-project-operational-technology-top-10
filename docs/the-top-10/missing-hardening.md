@@ -34,8 +34,11 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 - [NotPetya](https://en.wikipedia.org/wiki/NotPetya): Proper network segmentation and hardening could have limited the spread of the malware.
 
 ## Mitigation/Countermeasures
+Mitigation and countermeasures can be applied along the supply chain. Starting from the vendor over the integrator to the asset owner.
 
 ### Developers/Component Suppliers/Integrators: Design and Implementation
+
+To ensure robust software security across the development lifecycle, component suppliers, and integrators—must adopt proactive countermeasures:
 
 - Disable unnecessary services and interfaces (e.g. USB ports, insecure protocols like Telnet, web server, JTAG/SWD interfaces)
 - Start with established hardening benchmarks and gradually relax controls only as necessary to ensure your component or system functions properly
@@ -45,6 +48,8 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 
 ### Operators: Operational
 
+Operators play a critical role in maintaining the security and resilience of deployed systems. To reduce risk and ensure operational integrity, the following countermeasures are essential:
+
 - Make sure hardening is reapplied after maintenance
 - Request documentation of hardening measures
 - Include hardening requirements in the tender, ideally with the integrator providing their own hardening concept
@@ -52,9 +57,11 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 
 ## Next Actionable Steps
 
-- identify applicable hardening guidelines for your environment
-- implement hardening guidelines
-- disable default accounts and passwords
+To be able to implement sensible measures one could follow these steps:
+
+- identify applicable hardening guidelines for your environment: Every environment is different and therefore has different needs and priotitizes different topics. Finding the right measures for the system under consideration is the first and most crucial step when trying to improve the security posture of a system.
+- implement hardening guidelines: After identifying the shortcomings, hardening guidelines for the insecure systems can help to provide a good baseline to improve from.
+- disable default accounts and passwords: Default credentials are commonly used and misused way of getting access to permissions that should normally be behind proper safeguards.
 
 ## References
 
