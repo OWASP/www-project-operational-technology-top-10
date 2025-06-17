@@ -1,4 +1,4 @@
-# List of our Contributors
+# List of Our Contributors
 
 The OT Top 10 wouldn't be possible without our awesome contributors:
 

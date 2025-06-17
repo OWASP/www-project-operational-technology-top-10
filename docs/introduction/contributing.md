@@ -8,14 +8,14 @@ Until the Top 10 have stabilized, we aim to do a video conference every two week
 
 ```plain
 OWASP OT Videocall
-Monday, January 27 · 5:00 – 6:00pm
+Monday, 5:00 – 6:00pm
 Time zone: Europe/Vienna
 Google Meet joining info
 Video call link: https://meet.google.com/fmu-sokc-gei
 Or dial: ‪(US) +1 669-244-0206‬ PIN: ‪940 723 699‬#
 ```
 
-## How to Contribute??
+## How to Contribute?
 
 We're currently discussing and selecting the potential top 10 entries and are looking for new suggestions. If you have one, please add them as new markdown file in the `/docs/the-top-10/` directory and link it from within [index.md](../the-top-10/index.md)'s list of potential top 10.
 
@@ -29,7 +29,7 @@ The OWASP OT Top 10 are created by both discussions with experts as well as thro
 
 If you have empirical data that you would like to contribute, please contact us through email ([Andreas Happe](mailto:andreas.happe@owasp.org)). If you are able to contribute data, please make sure that it is appropriately anonymized.
 
-## How to test your changes locally before submitting
+## How to Test Your Changes Locally Before Submitting
 
 If you can run python, you can locally run the OWASP OT Top 10 website locally. We recommend this to test your changes before pushing them to github.
 

@@ -16,7 +16,7 @@ Very often security is an afterthought leading to problems such as insecure desi
 
 A good way to counteract this is to add security requirements to tenders. By including these requirements in tenders, organizations can ensure that security is considered from the outset of the project. Making security tests a part of acceptance tests also gives the "customer" more leverage when negotiating security fixes with the vendor.
 
-### OT and IT are often not integrated
+### OT and IT Are Often Not Integrated
 
 OT and IT are often not integrated, leading to a lack of communication and understanding between the two teams. This can result in security gaps and vulnerabilities that are not addressed.
 
@@ -24,7 +24,7 @@ IT security people often wonder why even basic security hygiene is not applied i
 
 Many OT systems are designed to operate continuously and cannot be easily patched or updated without causing downtime. This can lead to a culture of "if it ain't broke, don't fix it" that can leave systems vulnerable to attacks.
 
-### Security by Obscurity does not work in the long run
+### Security by Obscurity Does Not Work in the Long Run
 
 Security by obscurity is the practice of keeping security measures secret in order to protect them from attackers. This can include using proprietary protocols, custom hardware, or other techniques that are not widely known or understood. The idea is that if attackers do not know how the system works, they will not be able to exploit it.
 
@@ -34,7 +34,7 @@ This approach is often used in OT environments, where systems are not well docum
 
 Security by obscurity can be used to make an attacker's job more difficult, but it should not be relied upon as the sole means of protection.
 
-### Security Capabilities are useless if not used
+### Security Capabilities Are Useless If Not Used
 
 In OT, we often have the initial problem of long-lived [components with missing capabilities](components-with-insufficient-security-capabilities.md), but even if we have the needed capabilities, they are often not used. This can be due to a lack of knowledge or understanding of the capabilities.
 

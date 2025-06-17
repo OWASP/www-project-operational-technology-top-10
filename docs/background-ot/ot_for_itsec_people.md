@@ -1,4 +1,4 @@
-# OT for IT Sec People
+# OT for IT Security People
 
 This introduction explains why OT security looks the way it often looks, specifically for IT security professionals who may be encountering operational technology environments for the first time.
 

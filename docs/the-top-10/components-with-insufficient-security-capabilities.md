@@ -1,4 +1,4 @@
-# Selection of components/protocols with insufficient security capabilities
+# Selection of Components/Protocols With Insufficient Security Capabilities
 
 Given the long, potentially multi-decades, lifetimes of OT system, it becomes understandable why OT components become legacy systems over time. Many of the mentioned countermeasures try to deal with the existence of legacy systems.
 
@@ -10,13 +10,13 @@ This Top 10 items is related to [missing awareness](./missing-awareness.md). Whi
 
 We define legacy systems as systems with security and cryptography capabilities that do not conform to current best practices. This includes systems that are not able to be updated or patched, as well as systems that are not able to be replaced.
 
-### Don't use Legacy Systems for new Deployments
+### Don’t Use Legacy Systems for New Deployments
 
 Obviously, if you are designing a new system, you should not use legacy systems. This is especially true for systems that are not able to be updated or patched. If you are designing a new system, you should use systems that are able to be updated or patched.
 
 Deployments are seldom new green-field installations. Most of the time, new systems are deployed in existing environments (think about the long lifetimes of OT systems). If new components are added to an existing environment, they often have to conform and interact with the existing environment, often mandating usage of legacy protocols. If this is the case, it would be preferable to use components that (while they provide the legacy feature set) also incorporate capabilities for state-of-the-art security features so that the installation can be updated in the future.
 
-### Don't use Legacy Protocols if possible
+### Don’t Use Legacy Protocols if Possible
 
 Components commonly use standardized protocols to communicate with each other or with other systems. When designing a new system, chosen protocols should heed best security practices and legacy protocols should be avoided if feasible.
 

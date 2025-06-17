@@ -44,11 +44,11 @@ This document is written for two main target audiences: system developers, opera
 
 However, development managers, product owners, Q/A professionals, program managers, and anyone involved in building software can also benefit from this document.
 
-## How to Use this Document
+## How to Use This Document
 
 This document’s main purpose is to provide a solid foundation of topics to help introduce developers and integrators to the OT world an its very special set of requirements.
 
-## Project Leaders (in alphabetical order)
+## Project Leaders (in Alphabetical Order)
 
 - [Andreas Happe](mailto:andreas.happe@owasp.org)
 - [Simon Rommer](mailto:simon.rommer@owasp.org)
