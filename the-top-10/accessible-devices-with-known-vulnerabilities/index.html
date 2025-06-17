@@ -22,7 +22,7 @@
     
     
       
-        <title>2. Devices with known Vulnerabilities - OWASP Operational Technology (OT) Top 10</title>
+        <title>2. Devices with Known Vulnerabilities - OWASP Operational Technology (OT) Top 10</title>
       
     
     
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2. Devices with known Vulnerabilities
+              2. Devices with Known Vulnerabilities
             
           </span>
         </div>
@@ -470,7 +470,7 @@
   
   
   <span class="md-ellipsis">
-    What is OT?
+    What Is OT?
     
   </span>
   
@@ -687,7 +687,7 @@
   
   
   <span class="md-ellipsis">
-    2. Devices with known Vulnerabilities
+    2. Devices with Known Vulnerabilities
     
   </span>
   
@@ -700,7 +700,7 @@
   
   
   <span class="md-ellipsis">
-    2. Devices with known Vulnerabilities
+    2. Devices with Known Vulnerabilities
     
   </span>
   
@@ -735,7 +735,7 @@
           <li class="md-nav__item">
   <a href="#why-cant-we-just-upgrade-all-the-systems" class="md-nav__link">
     <span class="md-ellipsis">
-      Why can't we just upgrade all the systems?
+      Why Can’t We Just Upgrade All the Systems?
     </span>
   </a>
   
@@ -1107,7 +1107,7 @@
   
   
   <span class="md-ellipsis">
-    What's next?
+    What's Next?
     
   </span>
   
@@ -1210,7 +1210,7 @@
           <li class="md-nav__item">
   <a href="#why-cant-we-just-upgrade-all-the-systems" class="md-nav__link">
     <span class="md-ellipsis">
-      Why can't we just upgrade all the systems?
+      Why Can’t We Just Upgrade All the Systems?
     </span>
   </a>
   
@@ -1351,14 +1351,14 @@
   
 
 
-<h1 id="accessible-devices-with-known-vulnerabilitiesissues">(Accessible) Devices with known Vulnerabilities/Issues</h1>
+<h1 id="accessible-devices-with-known-vulnerabilitiesissues">(Accessible) Devices with Known Vulnerabilities/Issues</h1>
 <p>Attackers love to find software/hardware with known vulnerabilities, especially if exploits are already available. Given a sufficiently devastating vulnerability, all other defenses are naught and the attacker can take over the device.</p>
 <p>This can be used for initial access, e.g., when exploiting public facing services such as VPNs, or can be used within the target network for Lateral-Movement or Privilege-Escalation.</p>
 <h2 id="description">Description</h2>
 <p>If an attacker is able to access a system with known exploitable vulnerable components, most other defense mechanisms are useless. The attacker will be able to take over the system, the only defenses that remain are those that reduce the pwned device's blast radius, i.e., reduces the systems that an attacker can attack "out-going" from the comproised device.</p>
 <p>In traditional IT, the typical recommendation is to upgrade. This does not work in OT due to safety concerns, mandatory update time-windows, and generally longer lifetimes of used components. Compared to IT, OT works at a glacial pace.</p>
 <p>As updates are sometimes not possible, mitigations such as network segregation are used. This prevents vulnerable systems to become accessible to attackers. Alas, these counter-measures do not solve the problem: if there is a vulnerability within the counter-measure, the original vulnerability can still be exploited. This often makes OT systems <a href="../unknown-assets-and-admin-access/">very vulnerable against unexpected admin access</a> or <a href="../broken-zone-and-conduits-design/">badly designed zones</a>: once the attacker is in the network, they have access to exploitable systems and can commence from there.</p>
-<h3 id="why-cant-we-just-upgrade-all-the-systems">Why can't we just upgrade all the systems?</h3>
+<h3 id="why-cant-we-just-upgrade-all-the-systems">Why Can’t We Just Upgrade All the Systems?</h3>
 <p>To reiterate on the special problems that the OT world faces, we want to give a list of common excuses/reason given that could prevent an easy implementation of a vulnerability management system:</p>
 <p><strong>You don't just upgrade a medical device or power plant</strong>: this is not your typical desktop PC where you are annoyed if an update breaks your system for a couple of days, this is critical infrastructure upon which lifes potentially depend upon. Imagine you are depending upon a digital pace maker or insulin pump: would you just update it (without making sure that it will not negativly impact you)?</p>
 <p><strong><a href="../inadequate_supply_chain_management/">Problems with the supply chain</a></strong>: compared to traditional IT, in the OT world we have fewer vendors. This gives vendors power over customers, which can lead to a lack of motivation to provide security updates or notify if security problems were discovered.</p>
