@@ -1,4 +1,4 @@
-# Availability
+# Loss of Availability
 
 Availability, esp. in the context of Safety, is paramount and well-understood in the OT world. However, some aspects of availability are still problematic, e.g., integrity is part of availability.
 

@@ -70,7 +70,7 @@ nav:
   - 'The Top 10':
       - the-top-10/index.md
       - '1. Unknown Assets and Undocumented Services': the-top-10/unknown-assets-and-admin-access.md
-      - '2. Devices with known Vulnerabilities': the-top-10/accessible-devices-with-known-vulnerabilities.md
+      - '2. Devices with Known Vulnerabilities': the-top-10/accessible-devices-with-known-vulnerabilities.md
       - '3. Inadequate Supply Chain Management': the-top-10/inadequate_supply_chain_management.md
       - '4. Insufficient Access Control': the-top-10/insufficient-access-control.md
       - '5. Missing Incident Detection/Reaction Capabilities': the-top-10/missing-incident-detection-reaction-capabilities.md
@@ -80,6 +80,6 @@ nav:
       - '9. Loss of Availability': the-top-10/loss-of-availability.md
       - '10. Missing Hardening': the-top-10/missing-hardening.md
   - 'Appendix':
-    - "What's next?": appendix/whats-next.md
+    - "What's Next?": appendix/whats-next.md
     - 'Standards Mapping Table': appendix/mappingTable.md
     - 'Glossary': appendix/glossary.md

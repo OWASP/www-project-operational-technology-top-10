@@ -1,4 +1,4 @@
-# (Accessible) Devices with known Vulnerabilities/Issues
+# (Accessible) Devices with Known Vulnerabilities/Issues
 
 Attackers love to find software/hardware with known vulnerabilities, especially if exploits are already available. Given a sufficiently devastating vulnerability, all other defenses are naught and the attacker can take over the device.
 
@@ -12,7 +12,7 @@ In traditional IT, the typical recommendation is to upgrade. This does not work 
 
 As updates are sometimes not possible, mitigations such as network segregation are used. This prevents vulnerable systems to become accessible to attackers. Alas, these counter-measures do not solve the problem: if there is a vulnerability within the counter-measure, the original vulnerability can still be exploited. This often makes OT systems [very vulnerable against unexpected admin access](./unknown-assets-and-admin-access.md) or [badly designed zones](./broken-zone-and-conduits-design.md): once the attacker is in the network, they have access to exploitable systems and can commence from there.
 
-### Why can't we just upgrade all the systems?
+### Why Can’t We Just Upgrade All the Systems?
 
 To reiterate on the special problems that the OT world faces, we want to give a list of common excuses/reason given that could prevent an easy implementation of a vulnerability management system:
 

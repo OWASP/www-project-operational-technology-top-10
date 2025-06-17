@@ -21,7 +21,7 @@ The final item is not a security issue by itself but would have prevented many o
 
 10. [Missing Hardening](./missing-hardening.md)
 
-## Structure of each Top 10 Item
+## Structure of Each Top 10 Item
 
 Each entry in the OWASP OT Top 10 will be accompanied by a short description, public incidents exploiting that entry, recommended mitigation and countermeasures, as well as references and tooling to assist in addressing the identified risks.
 

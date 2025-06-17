@@ -1,4 +1,4 @@
-# What is OT?
+# What Is OT?
 
 Operational Technology or short OT refers to a broad range of programmable
 systems and devices that directly or indirectly interact with the physical

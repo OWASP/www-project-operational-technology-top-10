@@ -8,13 +8,13 @@ Hardening is the process of securing a system by reducing its surface of vulnera
 
 Another way of hardening is to apply additional layers of security, such as firewalls, intrusion detection systems, and encryption. These additional layers can help protect against attacks even if the underlying system is compromised. In the context of OT, hardening is particularly important due to the unique challenges and requirements of these systems. OT systems are often designed to operate continuously and cannot be easily patched or updated without causing downtime.
 
-### Apply established hardening guidelines
+### Apply Established Hardening Guidelines
 
 Hardening guidelines are established best practices for securing systems and networks. These guidelines provide a framework for identifying and mitigating vulnerabilities, and they can help organizations implement effective security measures.
 
 Some well-known hardening guidelines include the Center for Internet Security (CIS) benchmarks or the Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIGs).
 
-### Disable default accounts and passwords
+### Disable Default Accounts and Passwords
 
 Default accounts and passwords are often used in OT systems, and they can pose a significant security risk if not properly managed. Attackers can easily exploit these default credentials to gain unauthorized access to systems and networks. It is essential to disable or change default accounts and passwords during the hardening process to reduce the risk of unauthorized access.
 

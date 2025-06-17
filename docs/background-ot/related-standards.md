@@ -14,7 +14,7 @@ The MITRE ATT&CK framework is a comprehensive knowledge base of cyber adversary 
 The MITRE ATT&CK framework is a living framework that is regularly updated based on real-world observations of attacker behaviour.
 It provides a structured way to describe how attackers operate, with a focus on how they compromise systems and move through a network.
 
-## Standards of other organizations
+## Standards of Other Organizations
 
 ### IEC 62443
 
