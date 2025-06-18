@@ -52,6 +52,7 @@ This document’s main purpose is to provide a solid foundation of topics to hel
 
 - [Andreas Happe](mailto:andreas.happe@owasp.org)
 - [Simon Rommer](mailto:simon.rommer@owasp.org)
+- [Siegfried Hollerer](mailto:siegfried.hollerer@owasp.org)
 
 ## Copyright and License
 
