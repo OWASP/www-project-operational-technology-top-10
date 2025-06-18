@@ -1,6 +1,6 @@
 # These owners will be the default owners for everything in
 # the repo unless a later match takes precedence
-* @andreashappe @simonrommer
+* @andreashappe @simonrommer @SiegfriedHollerer
 
 docs/the-top-10/missing-incident-detection-reaction-capabilities.md @SiegfriedHollerer
 docs/the-top-10/inadequate_supply_chain_management.md @SiegfriedHollerer
