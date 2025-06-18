@@ -51,8 +51,8 @@ This document’s main purpose is to provide a solid foundation of topics to hel
 ## Project Leaders (in Alphabetical Order)
 
 - [Andreas Happe](mailto:andreas.happe@owasp.org)
-- [Simon Rommer](mailto:simon.rommer@owasp.org)
 - [Siegfried Hollerer](mailto:siegfried.hollerer@owasp.org)
+- [Simon Rommer](mailto:simon.rommer@owasp.org)
 
 ## Copyright and License
 
