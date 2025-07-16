@@ -20,5 +20,8 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
       - name: Install Dependencies
-        run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force --clean
+        run: pip install mkdocs-material mkdocs-pdf-export-plugin
+      - name: Build documentation with PDF
+        run: ENABLE_PDF_EXPORT=1 mkdocs build
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force --clean
