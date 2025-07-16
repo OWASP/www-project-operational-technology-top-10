@@ -22,6 +22,8 @@
 
 # OWASP OT Top 10
 
+**📄 [Download PDF Version](OWASP-OT-Top-10-2025.pdf)** - Get the complete OWASP OT Top 10 2025 document as a PDF for offline reading.
+
 Operational Technology (OT) encompasses a wide variety of programmable systems and devices that have direct or indirect interactions with the physical environment. These technologies are integral to numerous sectors such as manufacturing, energy, transportation, medical, and utilities, where they play a crucial role in the operation and management of physical processes.
 
 As OT systems become more interconnected and integrated with Information Technology (IT) networks, they face increased vulnerability to large-scale cyber attacks. This integration, while beneficial for operational efficiency and data sharing, exposes OT systems to the same cyber threats that typically target IT environments.

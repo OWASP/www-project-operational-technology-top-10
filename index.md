@@ -11,6 +11,8 @@ pitch: A very brief, one-line description of your project
 
 The OWASP OT Top 10 is a comprehensive list of the top security risks and vulnerabilities specific to Operational Technology (OT) environments. OT systems, which include industrial control systems and critical infrastructure, are increasingly being targeted by malicious actors. This list aims to provide guidance and best practices for securing OT systems and mitigating these risks.
 
+**📄 [Download PDF Version](OWASP-OT-Top-10-2025.pdf)** - Get the complete OWASP OT Top 10 2025 document as a PDF for offline reading.
+
 By raising awareness and providing actionable recommendations, we aim to improve the security posture of OT systems and protect critical infrastructure from cyber threats.
 
 # Find the OWASP OT Top 10 at https://ot.owasp.org .

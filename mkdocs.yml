@@ -30,6 +30,14 @@ theme:
       primary: teal
       accent: lime
 
+plugins:
+  - search
+  - pdf-export:
+      verbose: true
+      enabled_if_env: ENABLE_PDF_EXPORT
+      combined: true
+      combined_output_path: OWASP-OT-Top-10-2025.pdf
+
 markdown_extensions:
   - admonition
   - tables
