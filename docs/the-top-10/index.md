@@ -2,20 +2,20 @@
 
 This is the preliminary list of the OWASP Operational Technology Top 10. The list is a work in progress and will be updated as we gather more information and feedback from the community.
 
-During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective. The selected the Top 3 items as there was consensus that these are fundamental for OT security:
+During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective. The selected the Top 4 items as there was consensus that these are fundamental for OT security:
 
 1. [Unknown Assets and Unmanaged External Access](./unknown-assets-and-admin-access.md)
 2. [Devices with known Vulnerabilities/Issues](./accessible-devices-with-known-vulnerabilities.md)
 3. [Inadequate Supplier/Supply Chain Management](./inadequate_supply_chain_management.md)
+4. [Availability](./loss-of-availability.md)
 
-The next six items were all deemed to be of similar high importance:
+The next five items were all deemed to be of similar high importance:
 
-4. [Insufficient Access Control](./insufficient-access-control.md)
-5. [Missing Incident Detection/Reaction Capabilities](./missing-incident-detection-reaction-capabilities.md)
-6. [Broken Zones and Conduits Design](./broken-zone-and-conduits-design.md)
-7. [Missing Awareness](./missing-awareness.md)
-8. [Components/Protocols with Insufficient Security Capabilities](./components-with-insufficient-security-capabilities.md)
-9. [Availability](./loss-of-availability.md)
+5. [Insufficient Access Control](./insufficient-access-control.md)
+6. [Missing Incident Detection/Reaction Capabilities](./missing-incident-detection-reaction-capabilities.md)
+7. [Broken Zones and Conduits Design](./broken-zone-and-conduits-design.md)
+8. [Missing Awareness](./missing-awareness.md)
+9. [Components/Protocols with Insufficient Security Capabilities](./components-with-insufficient-security-capabilities.md)
 
 The final item is not a security issue by itself but would have prevented many of the incidents reported from the field. We thus included it as final item in the Top 10 list:
 
