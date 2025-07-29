@@ -40,7 +40,7 @@ The scope includes all the devices in the OT-domain. This includes devices that 
 
 ## Target Audience
 
-This document is written for two main target audiences: system developers, operators, and integrators. This mirrors the OT world in which system components are developed and integrated (i.e., configured and setup on-site) by different parties with different capabilities. While developers can pro-actively create secure components, integrators are often limited to implement mitigations.
+This document is written for two main target audiences: On one side we have system developers, operators, and integrators. This mirrors the OT world in which system components are developed and integrated (i.e., configured and setup on-site) by different parties with different capabilities. On the other side we have developers who can pro-actively create secure components, integrators are often limited to implement mitigations.
 
 However, development managers, product owners, Q/A professionals, program managers, and anyone involved in building software can also benefit from this document.
 
