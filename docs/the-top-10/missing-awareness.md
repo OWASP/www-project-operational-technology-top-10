@@ -45,7 +45,15 @@ Examples of security problems introduced by missing awareness include:
 - everything configuration related
 - missing encryption even if available
 - available JTAG/SWD interface left enabled on production devices
-- Intentional misconfiguration for ease of use, e.g., leaving rtu’s in upload mode
+- Intentional misconfiguration for ease of use, e.g., leaving rtu's in upload mode
+
+### Training Beyond Compliance
+
+Training must evolve beyond compliance checkboxes to prepare personnel for real-world scenarios where cyber incidents can appear as equipment failures. The "grey zone" between mechanical failure and cyber attack presents a particular challenge - operators must quickly determine whether they're facing a component failure or a cyberattack.
+
+### Third-Party Blind Spot
+
+A critical gap exists in extending cybersecurity awareness to contractors, vendors, and third-party technicians. These individuals often have privileged access to OT systems but operate with little-to-no cybersecurity awareness. This [supply chain vulnerability](inadequate_supply_chain_management.md) is increasingly exploited by threat actors, as third parties may have elevated or unrestricted access with far less security training compared to in-house personnel.
 
 ## Rationale
 
@@ -53,7 +61,7 @@ The best hardware with the best security capabilities is useless if no one is aw
 
 ## Known Attacks/Examples
 
-- [The Register: Iranian hacktivists .. likely broke into the facilities by using defautl passwords for internet-accessible PLCs](https://www.theregister.com/2024/09/07/us_water_cyberattacks/)
+- [The Register: Iranian hacktivists .. likely broke into the facilities by using default passwords for internet-accessible PLCs](https://www.theregister.com/2024/09/07/us_water_cyberattacks/)
 - [Colonial Pipeline Hack](https://en.wikipedia.org/wiki/Colonial_Pipeline_ransomware_attack): The attackers gained access to the system by means of a compromised password for a disused VPN account.
 - [TRISIS: The Triconex SIS controller had the keyswitch in ‘program mode’ during the time of the attack and the SIS was connected to the operations network against best practices. In a proper configuration and with the controller placed in Run mode (program changes not permitted) the attackers would face a more difficult challenge implementing the attack.](https://www.dragos.com/resources/whitepaper/trisis-analyzing-safety-system-targeting-malware/)
 
@@ -69,14 +77,20 @@ The best hardware with the best security capabilities is useless if no one is aw
 - add security requirements to tenders
 - make security tests part of acceptance tests
 - create a culture of security awareness
-- provide training and resources to employees to help them understand and use security capabilities effectively.
+- provide training and resources to employees to help them understand and use security capabilities effectively
 - implement security policies and procedures that are easy to understand and follow
+- integrate cybersecurity into existing safety programs (HSSE)
+- conduct live simulation exercises that test response to ambiguous incidents
+- extend training requirements to third-party contractors and vendors before granting access
+- develop role-based training tailored to specific operational roles
 
 ## Next Actionable Steps
 
 - add security requirements to tenders
-- create a culture of security awareness: help employees understand why the security controls taken are important for their work.
-- provide training and resources to employees to help them understand and use security capabilities effectively.
+- create a culture of security awareness: help employees understand why the security controls taken are important for their work
+- provide training and resources to employees to help them understand and use security capabilities effectively
+- integrate cybersecurity awareness into existing safety training programs
+- implement live simulation exercises for ambiguous incident response
 
 ## References
 
