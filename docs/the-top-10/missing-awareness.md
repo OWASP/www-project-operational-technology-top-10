@@ -53,7 +53,7 @@ Training must evolve beyond compliance checkboxes to prepare personnel for real-
 
 ### Third-Party Blind Spot
 
-A critical gap exists in extending cybersecurity awareness to contractors, vendors, and third-party technicians. These individuals often have privileged access to OT systems but operate with little-to-no cybersecurity awareness. This supply chain vulnerability is increasingly exploited by threat actors, as third parties may have elevated or unrestricted access with far less security training compared to in-house personnel.
+A critical gap exists in extending cybersecurity awareness to contractors, vendors, and third-party technicians. These individuals often have privileged access to OT systems but operate with little-to-no cybersecurity awareness. This [supply chain vulnerability](inadequate_supply_chain_management.md) is increasingly exploited by threat actors, as third parties may have elevated or unrestricted access with far less security training compared to in-house personnel.
 
 ## Rationale
 
@@ -61,7 +61,7 @@ The best hardware with the best security capabilities is useless if no one is aw
 
 ## Known Attacks/Examples
 
-- [The Register: Iranian hacktivists .. likely broke into the facilities by using defautl passwords for internet-accessible PLCs](https://www.theregister.com/2024/09/07/us_water_cyberattacks/)
+- [The Register: Iranian hacktivists .. likely broke into the facilities by using default passwords for internet-accessible PLCs](https://www.theregister.com/2024/09/07/us_water_cyberattacks/)
 - [Colonial Pipeline Hack](https://en.wikipedia.org/wiki/Colonial_Pipeline_ransomware_attack): The attackers gained access to the system by means of a compromised password for a disused VPN account.
 - [TRISIS: The Triconex SIS controller had the keyswitch in ‘program mode’ during the time of the attack and the SIS was connected to the operations network against best practices. In a proper configuration and with the controller placed in Run mode (program changes not permitted) the attackers would face a more difficult challenge implementing the attack.](https://www.dragos.com/resources/whitepaper/trisis-analyzing-safety-system-targeting-malware/)
 
