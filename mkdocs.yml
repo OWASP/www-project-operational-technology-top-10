@@ -70,7 +70,6 @@ nav:
   - 'The Top 10':
       - the-top-10/index.md
       - '1. Unknown Assets and Undocumented Services': the-top-10/unknown-assets-and-admin-access.md
-
       - '2. Devices with Known Vulnerabilities': the-top-10/accessible-devices-with-known-vulnerabilities.md
       - '3. Inadequate Supply Chain Management': the-top-10/inadequate_supply_chain_management.md
       - '4. Loss of Availability': the-top-10/loss-of-availability.md
