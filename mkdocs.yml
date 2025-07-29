@@ -70,15 +70,16 @@ nav:
   - 'The Top 10':
       - the-top-10/index.md
       - '1. Unknown Assets and Undocumented Services': the-top-10/unknown-assets-and-admin-access.md
-      - '2. Loss of Availability': the-top-10/loss-of-availability.md
-      - '3. Devices with Known Vulnerabilities': the-top-10/accessible-devices-with-known-vulnerabilities.md
-      - '4. Insufficient Access Control': the-top-10/insufficient-access-control.md
-      - '5. Broken Zones and Conduits Design': the-top-10/broken-zone-and-conduits-design.md
-      - '6. Missing Incident Detection/Response Capabilities': the-top-10/missing-incident-detection-reaction-capabilities.md
-      - '7. Inadequate Supply Chain Management': the-top-10/inadequate_supply_chain_management.md
-      - '8. Missing Hardening': the-top-10/missing-hardening.md
+
+      - '2. Devices with Known Vulnerabilities': the-top-10/accessible-devices-with-known-vulnerabilities.md
+      - '3. Inadequate Supply Chain Management': the-top-10/inadequate_supply_chain_management.md
+      - '4. Loss of Availability': the-top-10/loss-of-availability.md
+      - '5. Insufficient Access Control': the-top-10/insufficient-access-control.md
+      - '6. Missing Incident Detection/Reaction Capabilities': the-top-10/missing-incident-detection-reaction-capabilities.md
+      - '7. Broken Zones and Conduits Design': the-top-10/broken-zone-and-conduits-design.md
+      - '8. Missing Awareness': the-top-10/missing-awareness.md
       - '9. Insufficient Security Capabilities': the-top-10/components-with-insufficient-security-capabilities.md
-      - '10. Missing Awareness': the-top-10/missing-awareness.md
+      - '10. Missing Hardening': the-top-10/missing-hardening.md
   - 'Appendix':
     - "What's Next?": appendix/whats-next.md
     - 'Standards Mapping Table': appendix/mappingTable.md
