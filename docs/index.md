@@ -45,7 +45,7 @@ This document is written for two main target audiences: On one side we have syst
 However, development managers, product owners, Q/A professionals, program managers, and anyone involved in building software can also benefit from this document.
 
 Especially for groups that are not yet aware of the (security risks) in this space, awareness on what issues may arise is key.
-Even though awareness, or the lack thereof rather, is its own major talking point in the following list, reading this document already shows some kind of awareness for the problems that might occur. We also have to differentiate between awareness measures that are introduced by policy or internal guidelines, and measures that are mandated by supply chain management requirements. The former is part of what is commonly understood when we talk about "awareness," while the latter is arguably part of [supply chain management](the-top-10/inadequate_supply_chain_management.md) in general.
+Even though awareness, or the lack thereof rather, is its own major talking point in the following list, reading this document already shows some kind of awareness for the problems that might occur. We also have to differentiate between awareness measures that are introduced by policy or internal guidelines, and measures that are mandated by supply chain management requirements. The former is part of what is commonly understood when we talk about "awareness," while the latter is arguably part of [supply chain management](v/2025/the-top-10/inadequate_supply_chain_management.md) in general.
 
 The goal is to make the target audience aware of what can (and most likely will) go wrong.
 
