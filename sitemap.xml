@@ -5,95 +5,99 @@
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/appendix/glossary/</loc>
+         <loc>https://ot.owasp.org/v/2025/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/appendix/mappingTable/</loc>
+         <loc>https://ot.owasp.org/v/2025/appendix/glossary/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/appendix/whats-next/</loc>
+         <loc>https://ot.owasp.org/v/2025/appendix/mappingTable/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/background-ot/</loc>
+         <loc>https://ot.owasp.org/v/2025/appendix/whats-next/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/background-ot/itsec_for_ot_people/</loc>
+         <loc>https://ot.owasp.org/v/2025/background-ot/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/background-ot/ot_for_itsec_people/</loc>
+         <loc>https://ot.owasp.org/v/2025/background-ot/itsec_for_ot_people/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/background-ot/related-standards/</loc>
+         <loc>https://ot.owasp.org/v/2025/background-ot/ot_for_itsec_people/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/background-ot/safety-vs-security/</loc>
+         <loc>https://ot.owasp.org/v/2025/background-ot/related-standards/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/introduction/about-owasp/</loc>
+         <loc>https://ot.owasp.org/v/2025/background-ot/safety-vs-security/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/introduction/contributing/</loc>
+         <loc>https://ot.owasp.org/v/2025/introduction/about-owasp/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/introduction/contributors/</loc>
+         <loc>https://ot.owasp.org/v/2025/introduction/contributing/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/introduction/related-owasp-projects/</loc>
+         <loc>https://ot.owasp.org/v/2025/introduction/contributors/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/the-top-10/</loc>
+         <loc>https://ot.owasp.org/v/2025/introduction/related-owasp-projects/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/the-top-10/accessible-devices-with-known-vulnerabilities/</loc>
+         <loc>https://ot.owasp.org/v/2025/the-top-10/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/the-top-10/broken-zone-and-conduits-design/</loc>
+         <loc>https://ot.owasp.org/v/2025/the-top-10/accessible-devices-with-known-vulnerabilities/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/the-top-10/components-with-insufficient-security-capabilities/</loc>
+         <loc>https://ot.owasp.org/v/2025/the-top-10/broken-zone-and-conduits-design/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/the-top-10/inadequate_supply_chain_management/</loc>
+         <loc>https://ot.owasp.org/v/2025/the-top-10/components-with-insufficient-security-capabilities/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/the-top-10/insufficient-access-control/</loc>
+         <loc>https://ot.owasp.org/v/2025/the-top-10/inadequate_supply_chain_management/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/the-top-10/loss-of-availability/</loc>
+         <loc>https://ot.owasp.org/v/2025/the-top-10/insufficient-access-control/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/the-top-10/missing-awareness/</loc>
+         <loc>https://ot.owasp.org/v/2025/the-top-10/loss-of-availability/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/the-top-10/missing-hardening/</loc>
+         <loc>https://ot.owasp.org/v/2025/the-top-10/missing-awareness/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/the-top-10/missing-incident-detection-reaction-capabilities/</loc>
+         <loc>https://ot.owasp.org/v/2025/the-top-10/missing-hardening/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
     <url>
-         <loc>https://ot.owasp.org/the-top-10/unknown-assets-and-admin-access/</loc>
+         <loc>https://ot.owasp.org/v/2025/the-top-10/missing-incident-detection-reaction-capabilities/</loc>
+         <lastmod>2025-07-30</lastmod>
+    </url>
+    <url>
+         <loc>https://ot.owasp.org/v/2025/the-top-10/unknown-assets-and-admin-access/</loc>
          <lastmod>2025-07-30</lastmod>
     </url>
 </urlset>

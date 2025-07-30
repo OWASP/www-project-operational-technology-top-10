@@ -8,22 +8,28 @@
       
       
       
+        <link rel="canonical" href="https://ot.owasp.org/v/2025/the-top-10/broken-zone-and-conduits-design/">
       
       
+        <link rel="prev" href="../missing-incident-detection-reaction-capabilities/">
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      
+        <link rel="next" href="../missing-awareness/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>OWASP Operational Technology (OT) Top 10</title>
+        <title>7. Broken Zones and Conduits Design - OWASP Operational Technology (OT) Top 10</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -42,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -77,6 +83,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#broken-zones-and-conduits-design" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +100,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="OWASP Operational Technology (OT) Top 10" class="md-header__button md-logo" aria-label="OWASP Operational Technology (OT) Top 10" data-md-component="logo">
+    <a href="../../../.." title="OWASP Operational Technology (OT) Top 10" class="md-header__button md-logo" aria-label="OWASP Operational Technology (OT) Top 10" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -109,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              7. Broken Zones and Conduits Design
             
           </span>
         </div>
@@ -227,7 +238,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="OWASP Operational Technology (OT) Top 10" class="md-nav__button md-logo" aria-label="OWASP Operational Technology (OT) Top 10" data-md-component="logo">
+    <a href="../../../.." title="OWASP Operational Technology (OT) Top 10" class="md-nav__button md-logo" aria-label="OWASP Operational Technology (OT) Top 10" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -257,7 +268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -317,7 +328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/introduction/about-owasp/" class="md-nav__link">
+      <a href="../../introduction/about-owasp/" class="md-nav__link">
         
   
   
@@ -340,7 +351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/introduction/contributing/" class="md-nav__link">
+      <a href="../../introduction/contributing/" class="md-nav__link">
         
   
   
@@ -363,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/introduction/contributors/" class="md-nav__link">
+      <a href="../../introduction/contributors/" class="md-nav__link">
         
   
   
@@ -386,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/introduction/related-owasp-projects/" class="md-nav__link">
+      <a href="../../introduction/related-owasp-projects/" class="md-nav__link">
         
   
   
@@ -454,7 +465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/background-ot/" class="md-nav__link">
+      <a href="../../background-ot/" class="md-nav__link">
         
   
   
@@ -477,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/background-ot/safety-vs-security/" class="md-nav__link">
+      <a href="../../background-ot/safety-vs-security/" class="md-nav__link">
         
   
   
@@ -500,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/background-ot/ot_for_itsec_people/" class="md-nav__link">
+      <a href="../../background-ot/ot_for_itsec_people/" class="md-nav__link">
         
   
   
@@ -523,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/background-ot/itsec_for_ot_people/" class="md-nav__link">
+      <a href="../../background-ot/itsec_for_ot_people/" class="md-nav__link">
         
   
   
@@ -546,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/background-ot/related-standards/" class="md-nav__link">
+      <a href="../../background-ot/related-standards/" class="md-nav__link">
         
   
   
@@ -573,18 +584,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -600,7 +613,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             The Top 10
@@ -614,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/the-top-10/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -637,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/the-top-10/unknown-assets-and-admin-access/" class="md-nav__link">
+      <a href="../unknown-assets-and-admin-access/" class="md-nav__link">
         
   
   
@@ -660,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/the-top-10/accessible-devices-with-known-vulnerabilities/" class="md-nav__link">
+      <a href="../accessible-devices-with-known-vulnerabilities/" class="md-nav__link">
         
   
   
@@ -683,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/the-top-10/inadequate_supply_chain_management/" class="md-nav__link">
+      <a href="../inadequate_supply_chain_management/" class="md-nav__link">
         
   
   
@@ -706,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/the-top-10/loss-of-availability/" class="md-nav__link">
+      <a href="../loss-of-availability/" class="md-nav__link">
         
   
   
@@ -729,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/the-top-10/insufficient-access-control/" class="md-nav__link">
+      <a href="../insufficient-access-control/" class="md-nav__link">
         
   
   
@@ -752,7 +765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/the-top-10/missing-incident-detection-reaction-capabilities/" class="md-nav__link">
+      <a href="../missing-incident-detection-reaction-capabilities/" class="md-nav__link">
         
   
   
@@ -772,10 +785,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/v/2025/the-top-10/broken-zone-and-conduits-design/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    7. Broken Zones and Conduits Design
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -786,6 +821,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rationale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationale
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-attacksexamples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Known Attacks/Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitigationcountermeasures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mitigation/Countermeasures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mitigation/Countermeasures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-and-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operational
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-actionable-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Actionable Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="References">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#background-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tooling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tooling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -798,7 +964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/the-top-10/missing-awareness/" class="md-nav__link">
+      <a href="../missing-awareness/" class="md-nav__link">
         
   
   
@@ -821,7 +987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/the-top-10/components-with-insufficient-security-capabilities/" class="md-nav__link">
+      <a href="../components-with-insufficient-security-capabilities/" class="md-nav__link">
         
   
   
@@ -844,7 +1010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/the-top-10/missing-hardening/" class="md-nav__link">
+      <a href="../missing-hardening/" class="md-nav__link">
         
   
   
@@ -912,7 +1078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/appendix/whats-next/" class="md-nav__link">
+      <a href="../../appendix/whats-next/" class="md-nav__link">
         
   
   
@@ -935,7 +1101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/appendix/mappingTable/" class="md-nav__link">
+      <a href="../../appendix/mappingTable/" class="md-nav__link">
         
   
   
@@ -958,7 +1124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/v/2025/appendix/glossary/" class="md-nav__link">
+      <a href="../../appendix/glossary/" class="md-nav__link">
         
   
   
@@ -998,6 +1164,127 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rationale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationale
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-attacksexamples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Known Attacks/Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitigationcountermeasures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mitigation/Countermeasures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mitigation/Countermeasures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-and-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operational
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-actionable-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Actionable Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="References">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#background-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tooling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tooling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1009,8 +1296,86 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="broken-zones-and-conduits-design">Broken Zones and Conduits Design</h1>
+<p>Having a sound segmentation concept mitigates already a lot of other security risks. This makes having proper segmentation and secured interfaces between the segments even more important. On the other hand, a complex design might introduce errors and loopholes in the design. Therefore, the "correct" design is not the most complex, or micro segmented, but the one that fulfills all the needs without being overly complex.</p>
+<h2 id="description">Description</h2>
+<p>OT assets (like PLCs, Safety PLCs, HMIs, Historians) should be grouped according to their security requirements in zones. The zones itself can be defined via a risk-based approach (e.g. Threat and Risk Analysis). The objective is to balance operational feasibility (e.g. limited resources) with security considerations (e.g., avoiding overexposure of critical assets). Conduits are controlled communication paths between those zones. Within conduits, communication should be regulated using standard segmentation and segregation controls, such as firewalls and access control lists (ACLs). Segmentation is the process of dividing a network into smaller parts, where the network segments itself should be aligned to the zones defined earlier. Common design errors include:</p>
+<ul>
+<li>Missing demilitarized Zone (DMZ) between IT and OT: Direct connections from IT to OT zones and vice versa are possible without or without proper restriction.</li>
+<li>Overly broad IP and port ranges in access control lists: ACLs are configured with broad IP and port ranges, permitting entire network segments to establish connections across port ranges rather than enforcing per-host restrictions.</li>
+<li>Multi-homed-devices: Multi-homed devices have network interfaces in multiple network zones and may allow lateral movement, either through intentionally enabled routing capabilities or if the device is compromised.</li>
+<li>Possible command and control channels: Protocols such as IMAP and DNS within the OT network introduces the risk of unintended command and control channels, which may be used for lateral movement or data exfiltration.</li>
+<li>Hardware debug interfaces act as backdoors into zones: When debug interfaces like JTAG or SWD are forgotten to be deactivated, they can act as an entry point into otherwise highly secured zones. By gaining access to e.g. a device on the shopfloor via physical access, this enables an attacker to potentially move laterally to other systems in the same zone and compromise it completely.</li>
+<li>Forgotten remote access: While remote access via different protocols and solutions is more or less a necessity in most modern OT environments, they too can act as effective bypasses for defined zone access controls when not considered from the start and isolated accordingly. By acting as kind of an out-of-bound conduit that was not defined beforehand, this can result in a potential point of entry into a otherwise highly isolated zone. </li>
+</ul>
+<h2 id="rationale">Rationale</h2>
+<p>The most common entry into OT-zones comes from IT environments. For hardware devices the most common entry is via debugging interfaces. After getting entry into the system, without segmenting networks and isolating services, an attacker has full access to the network. Unfortunately, in realty networks are very flat. Segmentation or networks and services enables implementation of core principles like "defense in depth" and "least privilege". </p>
+<h2 id="known-attacksexamples">Known Attacks/Examples</h2>
+<ul>
+<li><a href="https://securityscorecard.com/wp-content/uploads/2024/01/aliquippa-report.pdf">Cyber Risk Intelligence: Iran-Linked Attack on U.S.Water Treatment Facility</a></li>
+<li><a href="https://www.techspot.com/news/102661-russia-backed-hacking-group-suspected-attack-us-water.html">Russia-backed hacking group suspected of attack on US water system</a></li>
+<li>Having e.g., your RDP connections exposed to the internet can have severe consequences as seen with Eternal Blue (<a href="https://www.avast.com/c-eternalblue">What Is EternalBlue and Why Is the MS17-010 Exploit Still Relevant?</a>).</li>
+</ul>
+<h2 id="mitigationcountermeasures">Mitigation/Countermeasures</h2>
+<h3 id="design-and-implementation">Design and Implementation</h3>
+<p>IEC 62443-3-2 suggests a full methodology for the establishment of zones and conduits. While details can be found there, a short summary should be given at this point:</p>
+<ol>
+<li><strong>Identification of the System under Consideration (SuC)</strong>: Identify all systems (hardware and software), network devices and communications links that should be secured by zones and conduits.</li>
+<li><strong>Perform an initial cyber security risk assessment</strong>: A high level risk assessment helps in identifying possible threats and worst case risks for the assets in the SuC. This allows prioritization of available resources where they are needed most.</li>
+<li><strong>Partition of the SUC into zones and conduits</strong>: Assets are grouped in segments on basis of the results of the initial risk assessment. Further criteria that can influence grouping are criticality of assets, physical and/or logical location, functionality or required access (“Least Privilege”). Conduits are then to be defined between zones. They should be as tightly controlled and minimized as possible.</li>
+<li><strong>Check if initial risk exceeds tolerable risk</strong>: If the results of Step 2 exceed the tolerable risk of the organization, an additional detailed risk assessment (Step 5) should be conducted. Otherwise, Step 5 can be omitted.</li>
+<li><strong>Perform a detailed cyber security risk assessment</strong>: For each zone and conduit, a more granular threat and risk assessment should be executed. This process should result in appropriate risk reduction measures and aims to identify any gaps in controls already put in place.</li>
+<li><strong>Document cyber security requirements, assumptions and constraints</strong>: All technical requirements for each zone and conduits, all assumptions made during the whole process and all constraints (legacy systems, technological issues, budgetary issues) must be documented for full transparency.</li>
+<li><strong>Get asset owner approval</strong>: Owners of affected assets have to review and approve results of the process.</li>
+</ol>
+<h3 id="operational">Operational</h3>
+<ul>
+<li>Once zones and conduits are implemented, the have to be steadily monitored and reassessed for further improvements and adaptions. Especially network and system changes can require adaptions in the established zoning concept.</li>
+</ul>
+<h2 id="next-actionable-steps">Next Actionable Steps</h2>
+<ul>
+<li>Inventorize your assets (including all required interfaces)</li>
+<li>Monitor your networks to get insights in what systems communicate with each other</li>
+<li>Follow the steps outlined above</li>
+<li>For more information, consult IEC 62443-3-2</li>
+</ul>
+<h2 id="references">References</h2>
+<h3 id="standards">Standards</h3>
+<ul>
+<li>Applicable standard requirements are listed in the <a href="../../appendix/mappingTable/">provided mapping table in the appendix</a>.</li>
+</ul>
+<h3 id="background-information">Background information</h3>
+<ul>
+<li>N.A.</li>
+</ul>
+<h3 id="tooling">Tooling</h3>
+<ul>
+<li>Bloodhound for AD tree building</li>
+<li>nmap for environment scanning</li>
+<li>Network monitoring tools for traffic analysis (especially useful for determination of needed conduits)</li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
               </article>
             </div>
           
@@ -1080,10 +1445,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tracking", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tracking", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.50899def.min.js"></script>
       
     
   </body>
