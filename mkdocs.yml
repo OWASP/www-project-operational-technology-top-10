@@ -63,7 +63,7 @@ nav:
     - 'Related OWASP Projects': v/2025/introduction/related-owasp-projects.md
   - 'Operation Technology (OT)':
     - v/2025/background-ot/index.md
-    - 'Saftey vs. Security': v/2025/background-ot/safety-vs-security.md
+    - 'Safety vs. Security': v/2025/background-ot/safety-vs-security.md
     - "OT for IT Sec People": v/2025/background-ot/ot_for_itsec_people.md
     - "IT Sec for OT People": v/2025/background-ot/itsec_for_ot_people.md
     - 'Standards and Regulations': v/2025/background-ot/related-standards.md
