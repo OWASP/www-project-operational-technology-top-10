@@ -91,4 +91,4 @@ The Radio Equipment Directive (RED) regulates the placing of radio equipment on 
 
 ## Mapping Table
 
-A [Mapping table](https://ot.owasp.org/appendix/mappingTable/) linking the OWASP OT Top 10 items to some of the mentioned relevant standard and regulation requirements is provided.
+A [Mapping table](../appendix/mappingTable.md) linking the OWASP OT Top 10 items to some of the mentioned relevant standard and regulation requirements is provided.
