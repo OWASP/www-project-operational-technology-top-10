@@ -7,10 +7,14 @@
     to chat. You can get a free invitation to the OWASP slack server through
     [this website](https://owasp.org/slack/invite).
     
-    We do a video conference every first monday of a month from 4pm to 5pm CET using [https://meet.google.com/fmu-sokc-gei](https://meet.google.com/fmu-sokc-gei). If 
+    We do a video conference every first monday of a month from 4pm to 5pm CET using
+    [https://meet.google.com/fmu-sokc-gei](https://meet.google.com/fmu-sokc-gei). If
     you want to contribute, please see our [contributing guide](v/2025/introduction/contributing.md).
 
-    We will give a talk at the [IT SecX 2025](https://itsecx.fhstp.ac.at/) conference in Austria on October 3rd 2025, as well as at the [OWASP BeNeLux 2025](https://2025.owaspbenelux.eu/) conference in Brussels on December 2nd/3rd 2025.
+    We will give a talk at the [IT SecX 2025](https://itsecx.fhstp.ac.at/)
+    conference in Austria on October 3rd 2025, as well as at the
+    [OWASP BeNeLux 2025](https://2025.owaspbenelux.eu/) conference in Brussels on
+    December 2nd/3rd 2025.
 
 # OWASP OT Top 10
 
@@ -41,7 +45,7 @@ The goal of the **OWASP Operational Technology (OT) Top 10** is to raise awarene
 
 ## Scope
 
-The scope includes all the devices in the OT-domain. This includes devices that are part of the core functionality of the system (CNC machines, SCADA systems, centrifuges, insulin pumps, HVAC,...) as well as all related devices (HMI, barcodescanner, surveillance  cameras on the shop floor, virtualization servers and VMs with core functionality,...). Office IT and edge devices that are not directly related to the main OT purpose are not in scope
+The scope includes all the devices in the OT-domain. This includes devices that are part of the core functionality of the system (CNC machines, SCADA systems, centrifuges, insulin pumps, HVAC,...) as well as all related devices (HMI, barcodescanner, surveillance  cameras on the shop floor, virtualization servers and VMs with core functionality,...). Office IT and edge devices that are not directly related to the main OT purpose are not in scope.
 
 ## Target Audience
 
@@ -56,7 +60,7 @@ The goal is to make the target audience aware of what can (and most likely will)
 
 ## How to Use This Document
 
-This document’s main purpose is to create awareness for possible common security problems in the OT space and provide a solid foundation of topics to help introduce developers and integrators to the OT world an its very special set of requirements. 
+This document’s main purpose is to create awareness for possible common security problems in the OT space and provide a solid foundation of topics to help introduce developers and integrators to the OT world and its very special set of requirements.
 
 ## Project Leaders (in Alphabetical Order)
 

@@ -7,10 +7,13 @@
     to chat. You can get a free invitation to the OWASP slack server through
     [this website](https://owasp.org/slack/invite).
     
-    We do a video conference every first monday of a month from 4pm to 5pm CET using [https://meet.google.com/fmu-sokc-gei](https://meet.google.com/fmu-sokc-gei). If 
+    We do a video conference every first monday of a month from 4pm to 5pm CET using
+    [https://meet.google.com/fmu-sokc-gei](https://meet.google.com/fmu-sokc-gei). If
     you want to contribute, please see our [contributing guide](v/2025/introduction/contributing.md).
 
-    We will give a talk at the [IT SecX 2025](https://itsecx.fhstp.ac.at/) conference in Austria on October 3rd 2025, as well as at the [OWASP BeNeLux 2025](https://2025.owaspbenelux.eu/) conference in Brussels on December 2nd/3rd 2025.
+    We will give a talk at the [IT SecX 2025](https://itsecx.fhstp.ac.at/) conference
+    in Austria on October 3rd 2025, as well as at the
+    [OWASP BeNeLux 2025](https://2025.owaspbenelux.eu/) conference in Brussels on December 2nd/3rd 2025.
 
 # OWASP OT Top 10
 
@@ -43,7 +46,7 @@ The goal is to make the target audience aware of what can (and most likely will)
 
 ## How to Use This Document
 
-This document’s main purpose is to create awareness for possible common security problems in the OT space and provide a solid foundation of topics to help introduce developers and integrators to the OT world an its very special set of requirements. 
+This document’s main purpose is to create awareness for possible common security problems in the OT space and provide a solid foundation of topics to help introduce developers and integrators to the OT world and its very special set of requirements.
 
 ## Project Leaders (in Alphabetical Order)
 
