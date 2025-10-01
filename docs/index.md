@@ -1,24 +1,12 @@
-!!! Warning "Work in Progress and Help wanted!"
+!!! info "Community and Contributing"
 
-    Please don’t hesitate to contact the OWASP OT Top 10 project with your questions, 
-    comments, and ideas, either publicly by adding issues or providing commits on [our
-    github page](https://github.com/OWASP/www-project-operational-technology-top-10).
+    Please don’t hesitate to contact the OWASP OT Top 10 project with your questions, comments, and ideas, either publicly by adding issues or providing commits on [our github page](https://github.com/OWASP/www-project-operational-technology-top-10). Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R) to chat. You can get a free invitation to the OWASP slack server through [this website](https://owasp.org/slack/invite).
+    
+    We do a video conference every first monday of a month from 4pm to 5pm CET using [https://meet.google.com/fmu-sokc-gei](https://meet.google.com/fmu-sokc-gei).
 
-    Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R)
-     to chat. You can get a free invitation to the OWASP slack server
-    through [this website](https://owasp.org/slack/invite).
+    We will give a talk at the [IT SecX 2025](https://itsecx.fhstp.ac.at/) conference in Austria on October 3rd 2025, as well as at the [OWASP BeNeLux 2025](https://2025.owaspbenelux.eu/) conference in Brussels on December 2nd/3rd 2025.
 
-    Until the Top 10 have stabilized, we aim to do a video conference every two weeks
-    (typically every second and fourth monday).
-
-    ```plain
-    OWASP OT Videocall
-    Monday, January 27 · 5:00 – 6:00pm
-    Time zone: Europe/Vienna
-    Google Meet joining info
-    Video call link: https://meet.google.com/fmu-sokc-gei
-    Or dial: ‪(US) +1 669-244-0206‬ PIN: ‪940 723 699‬#
-    ```
+    If you want to contribute, please see our [contributing guide](v/2025/introduction/contributing.md).
 
 # OWASP OT Top 10
 
