@@ -2,18 +2,7 @@
 
 Please don’t hesitate to contact the OWASP OT Top 10 project with your questions, comments, and ideas, either publicly by adding issues or providing commits on [our github page](https://github.com/OWASP/www-project-operational-technology-top-10).
 
-Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R) to chat. You can get a free invitation to the OWASP slack server through [this website](https://owasp.org/slack/invite).
-
-Until the Top 10 have stabilized, we aim to do a video conference every two weeks (typically every second and fourth monday).
-
-```plain
-OWASP OT Videocall
-Monday, 5:00 – 6:00pm
-Time zone: Europe/Vienna
-Google Meet joining info
-Video call link: https://meet.google.com/fmu-sokc-gei
-Or dial: ‪(US) +1 669-244-0206‬ PIN: ‪940 723 699‬#
-```
+Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R) to chat. You can get a free invitation to the OWASP slack server through [this website](https://owasp.org/slack/invite). We do a video conference every first monday of a month from 4pm to 5pm CET using [google meets](https://meet.google.com/fmu-sokc-gei).
 
 ## How to Contribute?
 
