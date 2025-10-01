@@ -34,6 +34,7 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 - [NotPetya](https://en.wikipedia.org/wiki/NotPetya): Proper network segmentation and hardening could have limited the spread of the malware.
 
 ## Mitigation/Countermeasures
+
 Mitigation and countermeasures can be applied along the supply chain. Starting from the vendor over the integrator to the asset owner.
 
 ### Developers/Component Suppliers/Integrators: Design and Implementation

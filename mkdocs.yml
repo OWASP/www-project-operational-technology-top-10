@@ -3,6 +3,7 @@ site_url: https://ot.owasp.org
 repo_url: https://github.com/OWASP/www-project-operational-technology-top-10
 theme:
   name: material
+  favicon: images/favicon.png
   features:
     #- navigation.sections
     #- navigation.expand

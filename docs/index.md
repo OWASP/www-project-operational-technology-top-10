@@ -1,12 +1,19 @@
 !!! info "Community and Contributing"
 
-    Please don’t hesitate to contact the OWASP OT Top 10 project with your questions, comments, and ideas, either publicly by adding issues or providing commits on [our github page](https://github.com/OWASP/www-project-operational-technology-top-10). Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R) to chat. You can get a free invitation to the OWASP slack server through [this website](https://owasp.org/slack/invite).
+    Please don’t hesitate to contact the OWASP OT Top 10 project with your questions
+    comments, and ideas, either publicly by adding issues or providing commits on
+    [our github page](https://github.com/OWASP/www-project-operational-technology-top-10).
+    Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R)
+    to chat. You can get a free invitation to the OWASP slack server through
+    [this website](https://owasp.org/slack/invite).
     
-    We do a video conference every first monday of a month from 4pm to 5pm CET using [https://meet.google.com/fmu-sokc-gei](https://meet.google.com/fmu-sokc-gei).
+    We do a video conference every first monday of a month from 4pm to 5pm CET using
+    [https://meet.google.com/fmu-sokc-gei](https://meet.google.com/fmu-sokc-gei). If
+    you want to contribute, please see our [contributing guide](v/2025/introduction/contributing.md).
 
-    We will give a talk at the [IT SecX 2025](https://itsecx.fhstp.ac.at/) conference in Austria on October 3rd 2025, as well as at the [OWASP BeNeLux 2025](https://2025.owaspbenelux.eu/) conference in Brussels on December 2nd/3rd 2025.
-
-    If you want to contribute, please see our [contributing guide](v/2025/introduction/contributing.md).
+    We will give a talk at the [IT SecX 2025](https://itsecx.fhstp.ac.at/) conference
+    in Austria on October 3rd 2025, as well as at the
+    [OWASP BeNeLux 2025](https://2025.owaspbenelux.eu/) conference in Brussels on December 2nd/3rd 2025.
 
 # OWASP OT Top 10
 
@@ -39,7 +46,28 @@ The goal is to make the target audience aware of what can (and most likely will)
 
 ## How to Use This Document
 
-This document’s main purpose is to create awareness for possible common security problems in the OT space and provide a solid foundation of topics to help introduce developers and integrators to the OT world an its very special set of requirements. 
+This document’s main purpose is to create awareness for possible common security problems in the OT space and provide a solid foundation of topics to help introduce developers and integrators to the OT world and its very special set of requirements.
+
+## The Top 10 List
+
+During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective. The selected the Top 4 items as there was consensus that these are fundamental for OT security:
+
+1. [Unknown Assets and Unmanaged External Access](v/2025/the-top-10/unknown-assets-and-admin-access.md)
+2. [Devices with known Vulnerabilities/Issues](v/2025/the-top-10/accessible-devices-with-known-vulnerabilities.md)
+3. [Inadequate Supplier/Supply Chain Management](v/2025/the-top-10/inadequate_supply_chain_management.md)
+4. [Loss of Availability](v/2025/the-top-10/loss-of-availability.md)
+
+The next five items were all deemed to be of similar high importance:
+
+5. [Insufficient Access Control](v/2025/the-top-10/insufficient-access-control.md)
+6. [Missing Incident Detection/Reaction Capabilities](v/2025/the-top-10/missing-incident-detection-reaction-capabilities.md)
+7. [Broken Zones and Conduits Design](v/2025/the-top-10/broken-zone-and-conduits-design.md)
+8. [Missing Awareness](v/2025/the-top-10/missing-awareness.md)
+9. [Components/Protocols with Insufficient Security Capabilities](v/2025/the-top-10/components-with-insufficient-security-capabilities.md)
+
+The final item is not a security issue by itself but would have prevented many of the incidents reported from the field. We thus included it as final item in the Top 10 list:
+
+10. [Missing Hardening](v/2025/the-top-10/missing-hardening.md)
 
 ## Project Leaders (in Alphabetical Order)
 

@@ -101,7 +101,7 @@ The prevalence of:
 ### Background Information
 
 - ***Physical Access Control***
-    - [Disabling unnecessary services and protocols](https://www.cert.govt.nz/information-and-advice/guides/unused-services-and-protocols/disabling-unnecessary-services-and-protocols/)
+    - [Disabling unnecessary services and protocols](https://web.archive.org/web/20250224015400/https://www.cert.govt.nz/information-and-advice/guides/unused-services-and-protocols/disabling-unnecessary-services-and-protocols/)
     - [Why Disabling unused network ports is crucial in OT environents](https://www.mangancyber.com/why-is-it-essential-to-disable-or-safeguard-inactive-ports-in-ot-environments/)
 
 ### Tooling
