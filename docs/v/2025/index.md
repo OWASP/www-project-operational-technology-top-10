@@ -4,7 +4,9 @@
     
     We do a video conference every first monday of a month from 4pm to 5pm CET using [https://meet.google.com/fmu-sokc-gei](https://meet.google.com/fmu-sokc-gei).
 
-    If you want to contribute, please see our [contributing guide](v/2025/introduction/contributing.md).
+    We will give a talk at the [IT SecX 2025](https://itsecx.fhstp.ac.at/) conference in Austria on October 3rd 2025, as well as at the [OWASP BeNeLux 2025](https://2025.owaspbenelux.eu/) conference in Brussels on December 2nd/3rd 2025.
+
+    If you want to contribute, please see our [contributing guide](introduction/contributing.md).
 
 # OWASP OT Top 10
 
