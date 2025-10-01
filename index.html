@@ -13,7 +13,7 @@
       
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
@@ -1073,6 +1073,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#the-top-10-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Top 10 List
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#project-leaders-in-alphabetical-order" class="md-nav__link">
     <span class="md-ellipsis">
       Project Leaders (in Alphabetical Order)
@@ -1111,10 +1120,18 @@
 
 <div class="admonition info">
 <p class="admonition-title">Community and Contributing</p>
-<p>Please don’t hesitate to contact the OWASP OT Top 10 project with your questions, comments, and ideas, either publicly by adding issues or providing commits on <a href="https://github.com/OWASP/www-project-operational-technology-top-10">our github page</a>. Please join the <a href="https://owasp.slack.com/archives/C07HDTYRA6R">OWASP OT Top 10 Slack Channel</a> to chat. You can get a free invitation to the OWASP slack server through <a href="https://owasp.org/slack/invite">this website</a>.</p>
-<p>We do a video conference every first monday of a month from 4pm to 5pm CET using <a href="https://meet.google.com/fmu-sokc-gei">https://meet.google.com/fmu-sokc-gei</a>.</p>
-<p>We will give a talk at the <a href="https://itsecx.fhstp.ac.at/">IT SecX 2025</a> conference in Austria on October 3rd 2025, as well as at the <a href="https://2025.owaspbenelux.eu/">OWASP BeNeLux 2025</a> conference in Brussels on December 2nd/3rd 2025.</p>
-<p>If you want to contribute, please see our <a href="v/2025/introduction/contributing/">contributing guide</a>.</p>
+<p>Please don’t hesitate to contact the OWASP OT Top 10 project with your questions
+comments, and ideas, either publicly by adding issues or providing commits on
+<a href="https://github.com/OWASP/www-project-operational-technology-top-10">our github page</a>.
+Please join the <a href="https://owasp.slack.com/archives/C07HDTYRA6R">OWASP OT Top 10 Slack Channel</a>
+to chat. You can get a free invitation to the OWASP slack server through
+<a href="https://owasp.org/slack/invite">this website</a>.</p>
+<p>We do a video conference every first monday of a month from 4pm to 5pm CET using
+<a href="https://meet.google.com/fmu-sokc-gei">https://meet.google.com/fmu-sokc-gei</a>. If
+you want to contribute, please see our <a href="v/2025/introduction/contributing/">contributing guide</a>.</p>
+<p>We will give a talk at the <a href="https://itsecx.fhstp.ac.at/">IT SecX 2025</a> conference
+in Austria on October 3rd 2025, as well as at the
+<a href="https://2025.owaspbenelux.eu/">OWASP BeNeLux 2025</a> conference in Brussels on December 2nd/3rd 2025.</p>
 </div>
 <h1 id="owasp-ot-top-10">OWASP OT Top 10</h1>
 <p>Operational Technology (OT) encompasses a wide variety of programmable systems and devices that have direct or indirect interactions with the physical environment. These technologies are integral to numerous sectors such as manufacturing, energy, transportation, medical, and utilities, where they play a crucial role in the operation and management of physical processes.</p>
@@ -1132,7 +1149,27 @@
 Even though awareness, or the lack thereof rather, is its own major talking point in the following list, reading this document already shows some kind of awareness for the problems that might occur. We also have to differentiate between awareness measures that are introduced by policy or internal guidelines, and measures that are mandated by supply chain management requirements. The former is part of what is commonly understood when we talk about "awareness," while the latter is arguably part of <a href="v/2025/the-top-10/inadequate_supply_chain_management/">supply chain management</a> in general.</p>
 <p>The goal is to make the target audience aware of what can (and most likely will) go wrong.</p>
 <h2 id="how-to-use-this-document">How to Use This Document</h2>
-<p>This document’s main purpose is to create awareness for possible common security problems in the OT space and provide a solid foundation of topics to help introduce developers and integrators to the OT world an its very special set of requirements. </p>
+<p>This document’s main purpose is to create awareness for possible common security problems in the OT space and provide a solid foundation of topics to help introduce developers and integrators to the OT world and its very special set of requirements.</p>
+<h2 id="the-top-10-list">The Top 10 List</h2>
+<p>During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective. The selected the Top 4 items as there was consensus that these are fundamental for OT security:</p>
+<ol>
+<li><a href="v/2025/the-top-10/unknown-assets-and-admin-access/">Unknown Assets and Unmanaged External Access</a></li>
+<li><a href="v/2025/the-top-10/accessible-devices-with-known-vulnerabilities/">Devices with known Vulnerabilities/Issues</a></li>
+<li><a href="v/2025/the-top-10/inadequate_supply_chain_management/">Inadequate Supplier/Supply Chain Management</a></li>
+<li><a href="v/2025/the-top-10/loss-of-availability/">Loss of Availability</a></li>
+</ol>
+<p>The next five items were all deemed to be of similar high importance:</p>
+<ol start="5">
+<li><a href="v/2025/the-top-10/insufficient-access-control/">Insufficient Access Control</a></li>
+<li><a href="v/2025/the-top-10/missing-incident-detection-reaction-capabilities/">Missing Incident Detection/Reaction Capabilities</a></li>
+<li><a href="v/2025/the-top-10/broken-zone-and-conduits-design/">Broken Zones and Conduits Design</a></li>
+<li><a href="v/2025/the-top-10/missing-awareness/">Missing Awareness</a></li>
+<li><a href="v/2025/the-top-10/components-with-insufficient-security-capabilities/">Components/Protocols with Insufficient Security Capabilities</a></li>
+</ol>
+<p>The final item is not a security issue by itself but would have prevented many of the incidents reported from the field. We thus included it as final item in the Top 10 list:</p>
+<ol start="10">
+<li><a href="v/2025/the-top-10/missing-hardening/">Missing Hardening</a></li>
+</ol>
 <h2 id="project-leaders-in-alphabetical-order">Project Leaders (in Alphabetical Order)</h2>
 <ul>
 <li><a href="mailto:andreas.happe@owasp.org">Andreas Happe</a></li>

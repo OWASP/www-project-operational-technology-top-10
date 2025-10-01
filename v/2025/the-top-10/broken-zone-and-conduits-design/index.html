@@ -17,7 +17,7 @@
         <link rel="next" href="../missing-awareness/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
@@ -1335,10 +1335,10 @@
 <li>Multi-homed-devices: Multi-homed devices have network interfaces in multiple network zones and may allow lateral movement, either through intentionally enabled routing capabilities or if the device is compromised.</li>
 <li>Possible command and control channels: Protocols such as IMAP and DNS within the OT network introduces the risk of unintended command and control channels, which may be used for lateral movement or data exfiltration.</li>
 <li>Hardware debug interfaces act as backdoors into zones: When debug interfaces like JTAG or SWD are forgotten to be deactivated, they can act as an entry point into otherwise highly secured zones. By gaining access to e.g. a device on the shopfloor via physical access, this enables an attacker to potentially move laterally to other systems in the same zone and compromise it completely.</li>
-<li>Forgotten remote access: While remote access via different protocols and solutions is more or less a necessity in most modern OT environments, they too can act as effective bypasses for defined zone access controls when not considered from the start and isolated accordingly. By acting as kind of an out-of-bound conduit that was not defined beforehand, this can result in a potential point of entry into a otherwise highly isolated zone. </li>
+<li>Forgotten remote access: While remote access via different protocols and solutions is more or less a necessity in most modern OT environments, they too can act as effective bypasses for defined zone access controls when not considered from the start and isolated accordingly. By acting as kind of an out-of-bound conduit that was not defined beforehand, this can result in a potential point of entry into a otherwise highly isolated zone.</li>
 </ul>
 <h2 id="rationale">Rationale</h2>
-<p>The most common entry into OT-zones comes from IT environments. For hardware devices the most common entry is via debugging interfaces. After getting entry into the system, without segmenting networks and isolating services, an attacker has full access to the network. Unfortunately, in realty networks are very flat. Segmentation or networks and services enables implementation of core principles like "defense in depth" and "least privilege". </p>
+<p>The most common entry into OT-zones comes from IT environments. For hardware devices the most common entry is via debugging interfaces. After getting entry into the system, without segmenting networks and isolating services, an attacker has full access to the network. Unfortunately, in realty networks are very flat. Segmentation or networks and services enables implementation of core principles like "defense in depth" and "least privilege".</p>
 <h2 id="known-attacksexamples">Known Attacks/Examples</h2>
 <ul>
 <li><a href="https://securityscorecard.com/wp-content/uploads/2024/01/aliquippa-report.pdf">Cyber Risk Intelligence: Iran-Linked Attack on U.S.Water Treatment Facility</a></li>
