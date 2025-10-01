@@ -1,13 +1,11 @@
 # The OWASP Operational Technology Top 10
 
-This is the preliminary list of the OWASP Operational Technology Top 10. The list is a work in progress and will be updated as we gather more information and feedback from the community.
-
 During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective. The selected the Top 4 items as there was consensus that these are fundamental for OT security:
 
 1. [Unknown Assets and Unmanaged External Access](./unknown-assets-and-admin-access.md)
 2. [Devices with known Vulnerabilities/Issues](./accessible-devices-with-known-vulnerabilities.md)
 3. [Inadequate Supplier/Supply Chain Management](./inadequate_supply_chain_management.md)
-4. [Availability](./loss-of-availability.md)
+4. [Loss of Availability](./loss-of-availability.md)
 
 The next five items were all deemed to be of similar high importance:
 

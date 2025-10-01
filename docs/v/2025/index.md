@@ -62,6 +62,27 @@ The goal is to make the target audience aware of what can (and most likely will)
 
 This document’s main purpose is to create awareness for possible common security problems in the OT space and provide a solid foundation of topics to help introduce developers and integrators to the OT world and its very special set of requirements.
 
+## The Top 10 List
+
+During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective. The selected the Top 4 items as there was consensus that these are fundamental for OT security:
+
+1. [Unknown Assets and Unmanaged External Access](the-top-10/unknown-assets-and-admin-access.md)
+2. [Devices with known Vulnerabilities/Issues](the-top-10/accessible-devices-with-known-vulnerabilities.md)
+3. [Inadequate Supplier/Supply Chain Management](the-top-10/inadequate_supply_chain_management.md)
+4. [Loss of Availability](the-top-10/loss-of-availability.md)
+
+The next five items were all deemed to be of similar high importance:
+
+5. [Insufficient Access Control](the-top-10/insufficient-access-control.md)
+6. [Missing Incident Detection/Reaction Capabilities](the-top-10/missing-incident-detection-reaction-capabilities.md)
+7. [Broken Zones and Conduits Design](the-top-10/broken-zone-and-conduits-design.md)
+8. [Missing Awareness](the-top-10/missing-awareness.md)
+9. [Components/Protocols with Insufficient Security Capabilities](the-top-10/components-with-insufficient-security-capabilities.md)
+
+The final item is not a security issue by itself but would have prevented many of the incidents reported from the field. We thus included it as final item in the Top 10 list:
+
+10. [Missing Hardening](the-top-10/missing-hardening.md)
+
 ## Project Leaders (in Alphabetical Order)
 
 - [Andreas Happe](mailto:andreas.happe@owasp.org)
