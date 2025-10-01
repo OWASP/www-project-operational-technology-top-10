@@ -1,6 +1,6 @@
 # The OWASP Operational Technology Top 10
 
-During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective. The selected the Top 4 items as there was consensus that these are fundamental for OT security:
+During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective. We selected the Top 4 items as there was consensus that these are fundamental for OT security:
 
 1. [Unknown Assets and Unmanaged External Access](./unknown-assets-and-admin-access.md)
 2. [Devices with known Vulnerabilities/Issues](./accessible-devices-with-known-vulnerabilities.md)
