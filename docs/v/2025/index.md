@@ -34,7 +34,7 @@ control physical processes. Unlike IT environments, where cyber attacks primaril
 impact data, breaches in OT systems can lead to catastrophic outcomes, including
 physical damage, safety hazards, and disruptions to critical infrastructure.
 Therefore, securing OT systems is paramount to prevent potentially severe
-consequences. The significance of safeguarding OT environments cannot be overstated
+consequences. The significance of safeguarding OT environments cannot be overstated.
 These systems are integral to the functionality of critical infrastructure, and thus society.
 
 Despite their importance, OT systems often lack the robust cybersecurity measures more-commonly found in IT environments, primarily due to the legacy nature of many industrial control systems (ICS) and the historical focus on availability and reliability over security.
@@ -64,7 +64,7 @@ This document’s main purpose is to create awareness for possible common securi
 
 ## The Top 10 List
 
-During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective. The selected the Top 4 items as there was consensus that these are fundamental for OT security:
+During the discussions, we agreed upon the items of the top 10 list while the respective ranking was highly subjective. We selected the Top 4 items as there was consensus that these are fundamental for OT security:
 
 1. [Unknown Assets and Unmanaged External Access](the-top-10/unknown-assets-and-admin-access.md)
 2. [Devices with known Vulnerabilities/Issues](the-top-10/accessible-devices-with-known-vulnerabilities.md)

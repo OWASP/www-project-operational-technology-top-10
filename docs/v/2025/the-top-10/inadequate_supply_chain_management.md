@@ -19,7 +19,7 @@ The following phases of the lifecycle of OT components or systems have to be con
 
 ## Rationale
 
-Dragos concluded in their [gloabl oil and gas cyber threat perspective](https://web.archive.org/web/20250401031929/https://www.dragos.com/wp-content/uploads/Dragos-Oil-and-Gas-Threat-Perspective-2019.pdf) in August 2019 that the growing threat of supply chain attacks and vendor compromises allows new avenues for activity groups to compromise IT and OT environments alike.
+Dragos concluded in their [global oil and gas cyber threat perspective](https://web.archive.org/web/20250401031929/https://www.dragos.com/wp-content/uploads/Dragos-Oil-and-Gas-Threat-Perspective-2019.pdf) in August 2019 that the growing threat of supply chain attacks and vendor compromises allows new avenues for activity groups to compromise IT and OT environments alike.
 
 Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection software demonstrated the scalability of supply chain issues, affecting numerous victims at the same time by the very same issue.
 
