@@ -8,6 +8,16 @@ The goal of the OWASP OT Top 10 is to raise awareness about the top security ris
 
 This talk presents the new release of the initial OWASP OT Top 10 to a broader audience to achieve awareness if its existence, alignment with the state-of-the-art and applicability in the OT domain.
 
+# OWASP Operational Technology (OT) Top 10 (German version)
+
+Operational Technology (OT) umfasst eine Vielzahl programmierbarer Systeme und Geräte, die direkt oder indirekt mit der physischen Umgebung interagieren. Der Einsatz von OT ist in zahlreichen Branchen integraler Bestandteil, beispielsweise Fertigung, Energie, Transport, Medizin oder bei Versorgungsunternehmen, wo sie eine entscheidende Rolle beim Betrieb und Management physischer Prozesse spielen.
+
+Da OT-Systeme zunehmend miteinander vernetzt und in IT-Netzwerke integriert sind, sind sie anfälliger für Cyberangriffe. Diese Integration ist zwar vorteilhaft für die betriebliche Effizienz und den Datenaustausch, setzt OT-Systeme jedoch denselben Cyberbedrohungen aus, die typischerweise auf IT-Umgebungen abzielen.
+
+Das Ziel der OWASP OT Top 10 ist es, das Bewusstsein für die wichtigsten Sicherheitsrisiken und Schwachstellen zu schärfen, die für OT-Umgebungen spezifisch sind. Durch die Bereitstellung umsetzbarer Empfehlungen soll die Sicherheitslage von OT-Systemen verbessert und kritische Infrastrukturen vor Cyber-Bedrohungen geschützt werden.
+
+Dieser Vortrag stellt die aktuelle Version der OWASP OT Top 10 einem breiteren Publikum vor, um das Bewusstsein für ihre Existenz, ihre Übereinstimmung mit dem Stand der Technik und ihre Anwendbarkeit im OT-Bereich zu schärfen.
+
 # Find the OWASP OT Top 10 at https://ot.owasp.org .
 
 Join us in the [OWASP OT Top 10 Slack channel](https://owasp.slack.com/archives/C07HDTYRA6R)! The first video meeting will be on Wednesday, August 28th at 6pm CEST using [google meets](https://meet.google.com/vjc-egev-dya):
