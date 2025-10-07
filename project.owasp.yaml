@@ -1,0 +1,33 @@
+audience:
+  - builder
+community:
+  - name: project-ot-top-10
+    platform: slack
+    url: https://owasp.slack.com/archives/C07HDTYRA6R
+    description: Discussion channel for the OWASP Operational Technology (OT) Top 10 (<https://ot.owasp.org>)
+leaders:
+  - name: Andreas Happe
+    email: andreas.happe@owasp.org
+    github: andreashappe
+  - name: Simon Rommer
+    email: simon.rommer@owasp.org
+    github: simonrommer
+  - name: Siegfried Hollerer
+    email: siegfried.hollerer@owasp.org
+    github: SiegfriedHollerer
+level: 2
+license:
+  - CC-BY-SA-4.0
+name: OWASP Operational Technology Top 10
+pitch: Top 10 Vulnerabilities Targeting Your OT Environment
+repositories:
+  - name: www-project-operational-technology-top-10
+    url: https://github.com/OWASP/www-project-operational-technology-top-10
+    description: OWASP Foundation web repository
+tags:
+  - top-10-list
+  - operational-technology
+  - industrial-control-system
+  - critical-infrastructure
+type: documentation
+website: https://ot.owasp.org/
