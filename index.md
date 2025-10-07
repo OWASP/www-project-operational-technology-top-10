@@ -5,7 +5,7 @@ title: OWASP Operational Technology Top 10
 tags: example-tag
 level: 2
 type: documentation
-pitch: A very brief, one-line description of your project
+pitch: Top 10 Vulnerabilities Targeting Your OT Environment
 
 ---
 
