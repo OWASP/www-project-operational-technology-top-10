@@ -20,6 +20,6 @@ We are in the process of scheduling upcoming talks and presentations related to 
 
 | Date | Venue | Speaker | Slides & Videos |
 |------|-------|---------|-------|
-| 3.10.2025  | [IT SecX](https://itsecx.fhstp.ac.at/), Austria | Siegfried Hollerer, Felix Eberstaller | [slides](slides/2025-10-03%20OWASP_OT_Top10-IT_SecX.pdf) [video](https://www.youtube.com/watch?v=jVGwyapWxXo&t=9036s) |
+| 3.10.2025  | [IT SecX](https://itsecx.fhstp.ac.at/), Austria | Siegfried Hollerer, Felix Eberstaller | [slides](slides/2025-10-03%20OWASP_OT_Top10-IT_SecX.pdf) [video](https://www.youtube.com/watch?v=35Bjpu4Z7U0) |
 | 10.9.2025 | [cert.at](https://www.cert.at/en/) Stammtisch, Austria | Simon Rommer, Andreas Happe | [slides](slides/2025-09-10%20OWASP-OT-TOP10-CERT.pdf) |
 | 10.3.2025 | [OWASP Chapter Klagenfurt](https://www.meetup.com/owasp-klagenfurt-chapter/), Austria | Andreas Happe | [slides](slides/2025-03-10%20OWASP%20OT%20Top%2010.pdf) |
