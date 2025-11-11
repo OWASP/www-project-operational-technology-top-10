@@ -81,7 +81,7 @@ nav:
       - '8. Missing Awareness': v/2025/the-top-10/missing-awareness.md
       - '9. Insufficient Security Capabilities': v/2025/the-top-10/components-with-insufficient-security-capabilities.md
       - '10. Missing Hardening': v/2025/the-top-10/missing-hardening.md
+  - "What's Next?": v/2025/appendix/whats-next.md
   - 'Appendix':
-    - "What's Next?": v/2025/appendix/whats-next.md
     - 'Standards Mapping Table': v/2025/appendix/mappingTable.md
     - 'Glossary': v/2025/appendix/glossary.md
