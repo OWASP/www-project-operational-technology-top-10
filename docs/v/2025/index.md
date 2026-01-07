@@ -37,7 +37,7 @@ Therefore, securing OT systems is paramount to prevent potentially severe
 consequences. The significance of safeguarding OT environments cannot be overstated.
 These systems are integral to the functionality of critical infrastructure, and thus society.
 
-Despite their importance, OT systems often lack the robust cybersecurity measures more-commonly found in IT environments, primarily due to the legacy nature of many industrial control systems (ICS) and the historical focus on availability and reliability over security.
+Despite their importance, OT systems often lack the robust cybersecurity measures more commonly found in IT environments. This is primarily due to the legacy nature of many industrial control systems (ICS) and the historical prioritization of operational goals. In OT, security principles follow the CIA triad - Confidentiality, Integrity, and Availability - but with a different emphasis than IT. Availability and safety are typically the highest priorities, as downtime or unsafe conditions can lead to severe operational, financial, or even physical consequences. Confidentiality and integrity, while still important, often take a secondary role compared to ensuring continuous and safe operations. This difference in prioritization has shaped the design and security posture of OT systems over time.
 
 ## Aim & Objective
 
@@ -49,18 +49,22 @@ The scope includes all the devices in the OT-domain. This includes devices that 
 
 ## Target Audience
 
-This document is written for two main target audiences: On one side we have system developers, operators, and integrators. This mirrors the OT world in which system components are developed and integrated (i.e., configured and setup on-site) by different parties with different capabilities. On the other side we have developers who can pro-actively create secure components, integrators are often limited to implement mitigations.
+This document is intended for professionals involved in the development, integration, and operation of OT systems, including system developers, integrators, and operators. It also provides value to development managers, product owners, QA professionals, program managers, and anyone engaged in building or maintaining software components for OT environments.
 
-However, development managers, product owners, Q/A professionals, program managers, and anyone involved in building software can also benefit from this document.
+While developers can proactively create secure components, integrators are often limited to implementing mitigations. Recognizing this distinction is important for applying the guidance effectively.
 
-Especially for groups that are not yet aware of the (security risks) in this space, awareness on what issues may arise is key.
-Even though awareness, or the lack thereof rather, is its own major talking point in the following list, reading this document already shows some kind of awareness for the problems that might occur. We also have to differentiate between awareness measures that are introduced by policy or internal guidelines, and measures that are mandated by supply chain management requirements. The former is part of what is commonly understood when we talk about "awareness," while the latter is arguably part of [supply chain management](the-top-10/inadequate_supply_chain_management.md) in general.
-
-The goal is to make the target audience aware of what can (and most likely will) go wrong.
+The goal is to make these groups aware of the unique security challenges in OT environments and the risks that can (and likely will) arise if security is overlooked. Awareness measures may come from internal policies or supply chain requirements, and this document supports both approaches.
 
 ## How to Use This Document
 
-This document’s main purpose is to create awareness for possible common security problems in the OT space and provide a solid foundation of topics to help introduce developers and integrators to the OT world and its very special set of requirements.
+The primary purpose of this document is to raise awareness of common security problems in the OT space and provide a foundation for addressing them. It introduces developers and integrators to the OT world and its specific requirements, helping them anticipate vulnerabilities and apply mitigations.
+
+Readers should use this document as:
+- **An awareness tool** for understanding critical OT security risks.
+- **A reference guide** for best practices and mitigations.
+- **A foundation for policy and supply chain requirements**, helping organizations align internal guidelines with external mandates.
+- **A starting point, not a complete solution** - while the Top 10 risks are critical, they are not exhaustive. Additional risks may exist, and organizations should build a comprehensive security strategy beyond this list.
+
 
 ## The Top 10 List
 
