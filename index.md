@@ -3,7 +3,7 @@
 layout: col-sidebar
 title: OWASP Operational Technology Top 10
 tags: example-tag
-level: 2
+level: 3
 type: documentation
 pitch: Top 10 Vulnerabilities Targeting Your OT Environment
 
