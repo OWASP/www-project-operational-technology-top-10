@@ -1,7 +1,7 @@
 # Meet and Greet
 
-We hold monthly meetings conference every first monday of a month from 4pm to 5pm CET/CEST using
-[https://meet.google.com/gwi-vhxz-rjr](https://meet.google.com/gwi-vhxz-rjr). We also provide an [public ics calendar series](https://calendar.google.com/calendar/ical/c_7dfb0e972186165865194ec083c325f8a744568c1229e44b6e8a99fc9250944a%40group.calendar.google.com/public/basic.ics) that you can add to your calendar.
+We hold a monthly video conference every first Monday of the month from 4pm to 5pm CET/CEST using
+[https://meet.google.com/gwi-vhxz-rjr](https://meet.google.com/gwi-vhxz-rjr). We also provide a [public ICS calendar series](https://calendar.google.com/calendar/ical/c_7dfb0e972186165865194ec083c325f8a744568c1229e44b6e8a99fc9250944a%40group.calendar.google.com/public/basic.ics) that you can add to your calendar.
 
 ## Upcoming Talks
 
