@@ -7,13 +7,11 @@
     to chat. You can get a free invitation to the OWASP slack server through
     [this website](https://owasp.org/slack/invite).
     
-    We do a video conference every first monday of a month from 4pm to 5pm CET using
-    [https://meet.google.com/fmu-sokc-gei](https://meet.google.com/fmu-sokc-gei). If
-    you want to contribute, please see our [contributing guide](v/2025/introduction/contributing.md).
-
-    We will give a talk at the [IT SecX 2025](https://itsecx.fhstp.ac.at/) conference
-    in Austria on October 3rd 2025, as well as at the
-    [OWASP BeNeLux 2025](https://2025.owaspbenelux.eu/) conference in Brussels on December 2nd/3rd 2025.
+    We do a video conference every first monday of a month from 4pm to 5pm CET/CEST using
+    [https://meet.google.com/gwi-vhxz-rjr](https://meet.google.com/gwi-vhxz-rjr). We also provide an [public ics calendar series](https://calendar.google.com/calendar/ical/c_7dfb0e972186165865194ec083c325f8a744568c1229e44b6e8a99fc9250944a%40group.calendar.google.com/public/basic.ics) that you can add to your calendar.
+    
+    If
+    you want to contribute, please see our [contributing guide](v/2025/introduction/contributing.md). Basically, all work happens public on github and through merge-requests. If you plan a larger change, it is always a good idea to talk with us during one of the Monthly meetings first. 
 
 # OWASP OT Top 10
 
