@@ -4,8 +4,8 @@ Please don’t hesitate to contact the OWASP OT Top 10 project with your questio
 
 Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R) to chat. You can get a free invitation to the OWASP slack server through [this website](https://owasp.org/slack/invite).
 
-We do a video conference every first monday of a month from 4pm to 5pm CET/CEST using
-[https://meet.google.com/gwi-vhxz-rjr](https://meet.google.com/gwi-vhxz-rjr). We also provide an [public ics calendar series](https://calendar.google.com/calendar/ical/c_7dfb0e972186165865194ec083c325f8a744568c1229e44b6e8a99fc9250944a%40group.calendar.google.com/public/basic.ics) that you can add to your calendar.
+We do a video conference every first Monday of the month from 4pm to 5pm CET/CEST using
+[https://meet.google.com/gwi-vhxz-rjr](https://meet.google.com/gwi-vhxz-rjr). We also provide a [public ICS calendar series](https://calendar.google.com/calendar/ical/c_7dfb0e972186165865194ec083c325f8a744568c1229e44b6e8a99fc9250944a%40group.calendar.google.com/public/basic.ics) that you can add to your calendar.
     
 ## How to Contribute?
 
