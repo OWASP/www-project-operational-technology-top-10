@@ -72,6 +72,8 @@ The following table maps the OWASP OT top 10 items to relevant standard and legi
 ||IEC 62443-2-1:2019|DATA 1.4|
 ||IEC 62443-2-1:2019|SPE 8|
 ||IEC 62443-3-3:2020|SR 7.X|
+||IEC 62061:2021|SEC 6|
+||IEC 62061:2021|SEC 8|
 ||NIST SP 800-82:v3|CP-2|
 ||NIST SP 800-82:v3|CP-7|
 ||NIST SP 800-82:v3|CP-9|
@@ -102,6 +104,8 @@ The following table maps the OWASP OT top 10 items to relevant standard and legi
 ||IEC 62443-2-1:2019|SPE 2|
 ||IEC 62443-3-3:2020|SR 1.X|
 ||IEC 62443-3-3:2020|SR 2.X|
+||IEC 62061:2021|SEC 5.4|
+||IEC 62061:2021|SEC 6.7|
 ||NIST SP 800-82:v3|AC-2|
 ||NIST SP 800-82:v3|AC-3|
 ||NIST SP 800-82:v3|AC-6|
@@ -127,6 +131,8 @@ The following table maps the OWASP OT top 10 items to relevant standard and legi
 ||IEC 62443-2-1:2019|SPE 7|
 ||IEC 62443-3-2:2020|ZCR 5.1|
 ||IEC 62443-3-2:2020|SR 6.X|
+||IEC 62061:2021|SEC 8|
+||IEC 62061:2021|SEC 9|
 ||NIST SP 800-82:v3|IR-4|
 ||NIST SP 800-82:v3|SI-4|
 ||NIST SP 800-82:v3|AU-6|
@@ -144,6 +150,7 @@ The following table maps the OWASP OT top 10 items to relevant standard and legi
 ||IEC 62443-2-1:2019|SPE 3|
 ||IEC 62443-3-2:2020|ZCR 3.X|
 ||IEC 62443-3-2:2020|SR 5.X|
+||IEC 62061:2021|SEC 5.2|
 ||NIST SP 800-82:v3|SC-7|
 ||NIST SP 800-82:v3|AC-4|
 ||NIST SP 800-82:v3|SC-2|
@@ -167,6 +174,8 @@ The following table maps the OWASP OT top 10 items to relevant standard and legi
 |9. Insufficient Security Capabilities|IEC 62443-2-4:2024|SP.03.03|
 ||IEC 62443-3-2:2020|ZCR 5.X|
 ||IEC 62443-4-2:2020|CCSC 2|
+||IEC 62061:2021|SEC 6|
+||IEC 62061:2021|SEC 7|
 ||NIST SP 800-82:v3|PM-1|
 ||NIST SP 800-82:v3|CA-2|
 ||NIST SP 800-82:v3|CA-7|
@@ -187,6 +196,7 @@ The following table maps the OWASP OT top 10 items to relevant standard and legi
 ||IEC 62443-3-3:2024|X|
 ||IEC 62443-4-1:2018|SG-3|
 ||IEC 62443-4-2|X|
+||IEC 62061:2021|SEC 5.4|
 ||NIST SP 800-82:v3|CM-6|
 ||NIST SP 800-82:v3|CM-7|
 ||NIST SP 800-82:v3|SI-3|
