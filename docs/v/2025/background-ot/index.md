@@ -12,14 +12,15 @@ ICS architectures form the backbone of industrial operations and are often used 
 
 ![Cyber-physical systems, OT and ICS](../assets/images/CPS_OT_ICS.png){ width=50% }
 
-Overall, OT systems are essential for the operation of many industries, and they far outnumber Information Technology (IT) systems in use. OT security problems in these industries can have major impacts on the society and surrounding environment. 
+Overall, OT systems are essential for the operation of many industries, and they far outnumber Information Technology (IT) systems in use. OT security problems in these industries can have major impacts on the society and surrounding environment.
 
 ## The Purdue Model: Organizing Systems by Function
 
 The Purdue Reference Model provides a functional hierarchy commonly used to describe and segment OT environments. It separates systems based on their operational role and their proximity to the physical process, enabling clearer security boundaries and communication paths. While initially deployed in the 1990s, the Purdue Model today exists in many slightly modified versions, but in general there are 6 separate levels and additional DMZs between them. The image below shows these levels starting with Level 0 (the actual physical field devices) up to Level 5, where the enterprise IT resides.
 
-![Purdue Model Architecture Example](../assets/images/limes_purdue_model_example.png)<br>
-*Source: Limes Security*
+![Purdue Model Architecture Example](../assets/images/limes_purdue_model_example.png)
+
+Source: *Limes Security*
 
 **Levels 0–1: Direct Interaction with the Physical Process**
 
@@ -65,8 +66,9 @@ Consider a standard IP video camera. If that camera is installed in a corporate 
 A typical OT system consists of control loops, human-machine interfaces (HMI)
 and remote diagnostics and maintenance tools like depicted in the image below.
 
-![Components of an OT System](../assets/images/nist_architecture.png)<br>
-*Source: NIST SP 800-82r3, p. 11*
+![Components of an OT System](../assets/images/nist_architecture.png)
+
+Source: *NIST SP 800-82r3, p. 11*
 
 A control loop is meant – as the name suggests – to control some kind of
 process. To do so, the loop employs a combination of sensors, actuators and

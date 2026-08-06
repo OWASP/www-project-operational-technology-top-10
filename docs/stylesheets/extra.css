@@ -7,7 +7,7 @@
   margin-right: auto;
 }
 
-.md-typeset p > img + br + em {
-  display: block;
+/* the italic source line that follows an image paragraph */
+.md-typeset p:has(> img:only-child) + p {
   text-align: center;
 }
