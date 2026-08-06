@@ -1,3 +1,5 @@
+# Glossary
+
 - Asset
 An **asset** refers to any physical or digital component that plays a role in the operation, control, or monitoring of industrial processes. These assets are critical to the functioning of systems in sectors like manufacturing, energy, transportation, and utilities.
 - Awareness

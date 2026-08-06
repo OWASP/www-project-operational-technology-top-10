@@ -19,6 +19,8 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
+      - name: Build combined PDF (pandoc + Eisvogel via Docker)
+        run: bash pdf/build.sh docs/assets/OWASP-OT-Top-10-2025.pdf
       - name: Install Dependencies
         run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force --clean

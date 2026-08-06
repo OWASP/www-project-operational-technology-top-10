@@ -1,0 +1,48 @@
+---
+# Pandoc + Eisvogel metadata for the combined OWASP OT Top 10 PDF.
+# See https://github.com/Wandmalfarbe/pandoc-latex-template for the variables.
+title: "OWASP OT Top 10"
+subtitle: "The Top 10 Operational Technology Security Risks"
+date: "2025 Edition"
+lang: en
+
+# Number only the ten risk chapters, two levels deep (1, 1.1, 1.2 ...).
+# assemble.py marks every other heading `.unnumbered`.
+numbersections: true
+secnumdepth: 2
+
+# Eisvogel title page
+titlepage: true
+titlepage-color: "0B3D3A"
+titlepage-text-color: "FFFFFF"
+titlepage-rule-color: "1ABC9C"
+titlepage-rule-height: 2
+# Emblem: pdf/build.sh rasterises pdf/assets/ot-top10-logo.svg -> /work/logo.pdf
+titlepage-logo: "/work/logo.pdf"
+logo-width: "60mm"
+
+# Table of contents
+toc: true
+toc-own-page: true
+toc-depth: 2
+
+# Links (otteal is defined in header-includes below so hyperref can use it)
+colorlinks: true
+linkcolor: otteal
+urlcolor: otteal
+toccolor: otteal
+# header-includes is parsed as markdown, so keep it to bare LaTeX commands
+# (a "%" comment in here ends up as text and breaks the preamble).
+# bookmarksnumbered puts the section numbers into the PDF outline as well, so
+# the ten risks read "1 Unknown Assets ..." in the bookmark pane, not just in
+# the table of contents.
+header-includes: |
+  \definecolor{otteal}{HTML}{005F56}
+  \hypersetup{bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1}
+
+# Tables / code / layout
+table-use-row-colors: true
+code-block-font-size: "\\small"
+geometry: "margin=2.2cm"
+footer-left: "OWASP OT Top 10 — 2025"
+...

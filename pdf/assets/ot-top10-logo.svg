@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="OWASP OT Top 10 industrial wasp emblem">
+  <!--
+    OWASP OT Top 10 project emblem (proposed / placeholder).
+    Concept: the OWASP wasp inside a machined hex-nut frame = an "industrial wasp".
+    Colours target the dark teal PDF cover: white line-art + #1ABC9C accent.
+    Edit freely; pdf/build.sh rasterises this to PDF via rsvg-convert.
+  -->
+  <defs>
+    <path id="abdomen" d="M100 86 C119 88 124 106 119 126 C115 144 109 154 100 160 C91 154 85 144 81 126 C76 106 81 88 100 86 Z"/>
+    <clipPath id="abdomen-clip"><use href="#abdomen"/></clipPath>
+  </defs>
+
+  <!-- Machined hex-nut frame -->
+  <g fill="none" stroke="#ffffff" stroke-linejoin="round">
+    <polygon points="188,100 144,23.8 56,23.8 12,100 56,176.2 144,176.2" stroke-width="7"/>
+    <polygon points="170,100 135,39.5 65,39.5 30,100 65,160.5 135,160.5" stroke-width="2.5" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- Wings (behind the body) -->
+  <g fill="#ffffff" fill-opacity="0.28" stroke="#ffffff" stroke-width="2.5">
+    <ellipse cx="74" cy="80" rx="27" ry="12" transform="rotate(-27 74 80)"/>
+    <ellipse cx="126" cy="80" rx="27" ry="12" transform="rotate(27 126 80)"/>
+  </g>
+
+  <!-- Abdomen + accent stripes -->
+  <use href="#abdomen" fill="#ffffff"/>
+  <g clip-path="url(#abdomen-clip)">
+    <rect x="70" y="103" width="60" height="8" fill="#1ABC9C"/>
+    <rect x="70" y="120" width="60" height="8" fill="#1ABC9C"/>
+    <rect x="70" y="137" width="60" height="8" fill="#1ABC9C"/>
+  </g>
+
+  <!-- Thorax + head -->
+  <ellipse cx="100" cy="72" rx="14" ry="16" fill="#ffffff"/>
+  <circle cx="100" cy="48" r="9" fill="#ffffff"/>
+
+  <!-- Antennae -->
+  <g stroke="#ffffff" stroke-width="3" stroke-linecap="round">
+    <line x1="96" y1="42" x2="90" y2="30"/>
+    <line x1="104" y1="42" x2="110" y2="30"/>
+  </g>
+  <circle cx="90" cy="29" r="3" fill="#1ABC9C"/>
+  <circle cx="110" cy="29" r="3" fill="#1ABC9C"/>
+</svg>
