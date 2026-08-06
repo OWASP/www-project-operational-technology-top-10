@@ -15,8 +15,10 @@ secnumdepth: 2
 titlepage: true
 titlepage-color: "0B3D3A"
 titlepage-text-color: "FFFFFF"
+# rule-height 0: Eisvogel draws the rule wider than our text block, so it
+# overshoots the page edge by ~4mm; without it the title page stays clean.
 titlepage-rule-color: "1ABC9C"
-titlepage-rule-height: 2
+titlepage-rule-height: 0
 # Emblem: pdf/build.sh rasterises pdf/assets/ot-top10-logo.svg -> /work/logo.pdf
 titlepage-logo: "/work/logo.pdf"
 logo-width: "60mm"
@@ -36,13 +38,26 @@ toccolor: otteal
 # bookmarksnumbered puts the section numbers into the PDF outline as well, so
 # the ten risks read "1 Unknown Assets ..." in the bookmark pane, not just in
 # the table of contents.
+# The running head's outer slot shows the current chapter (assemble.py emits a
+# \markright per chapter); the edition stays in the footer.
+header-right: "\\rightmark"
+
 header-includes: |
   \definecolor{otteal}{HTML}{005F56}
   \hypersetup{bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1}
-  \setkomafont{subsubsection}{\normalsize\itshape}
+  \setkomafont{subsubsection}{\normalsize\bfseries\itshape}
+  \setkomafont{paragraph}{\normalsize\itshape}
+  \emergencystretch=3em
+  \lefthyphenmin=3
+  \usepackage{enumitem}
+  \setlist{topsep=4pt,itemsep=2pt,parsep=0pt}
+  \AtBeginDocument{\captionsetup{skip=6pt,belowskip=2pt}}
 
 # Tables / code / layout
 table-use-row-colors: true
 code-block-font-size: "\\small"
-geometry: "margin=2.2cm"
+# 3.6cm side margins give a ~85-characters-per-line measure; the old 2.2cm
+# put ~103 characters on a line, which is hard to read and forced tight
+# justification and heavy hyphenation.
+geometry: "a4paper,left=3.6cm,right=3.6cm,top=2.5cm,bottom=2.7cm"
 ...

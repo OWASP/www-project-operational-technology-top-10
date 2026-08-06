@@ -169,6 +169,17 @@ def rewrite_links(text, cur_relpath):
     text = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', img_sub, text)
     return text
 
+def latex_escape(s):
+    return re.sub(r"([&%$#_{}])", r"\\\\1", s)
+
+def fold_source_into_caption(text):
+    """Merge an image's "Source: *X*" follow-up paragraph into its caption, so
+    the PDF gets one "Figure n: Alt (source: X)" instead of a caption plus a
+    stray body paragraph. The website keeps the visible source line."""
+    return re.sub(
+        r'(!\[[^\]]*)(\]\([^)]+\)(?:\{[^}]*\})?)\n\nSource: \*([^*\n]+)\*',
+        r'\1 (source: \3)\2', text)
+
 def process_headings(text, anchor, numbered):
     """Attach anchors and (for non-risk files) unnumber headings.
 
@@ -201,6 +212,13 @@ def process_headings(text, anchor, numbered):
             label = f"\\label{{{anchor}}}" if first else ""
             out += ["", "```{=latex}", f"\\phantomsection{label}", "```", "",
                     f"{hashes} {title} {{.unnumbered}}"]
+        if first:
+            # Feed the running head (header-right is \rightmark): numbered risk
+            # chapters show "3. Inadequate ...", the rest their plain title.
+            mark = latex_escape(title)
+            if numbered:
+                mark = "\\thesection.\\ " + mark
+            out += ["", "```{=latex}", f"\\markright{{{mark}}}", "```", ""]
         first = False
     return "\n".join(out)
 
@@ -213,6 +231,7 @@ def render(rel):
         t = f.read()
     t = strip_frontmatter(t)
     t = convert_admonitions(t)
+    t = fold_source_into_caption(t)
     t = rewrite_links(t, rel)
     t = process_headings(t, KNOWN[rel], rel in RISK_FILES)
     if RAW_HTML_IMG.search(t):

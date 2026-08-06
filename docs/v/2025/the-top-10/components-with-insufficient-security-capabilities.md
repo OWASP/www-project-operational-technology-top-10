@@ -34,6 +34,9 @@ Legacy protocols often have security issues:
 
 ## Known Attacks/Examples
 
+- [Industroyer](https://attack.mitre.org/software/S0604/) (also known as CrashOverride) caused the 2016 power outage in Kyiv by speaking the legitimate IEC 60870-5-104, IEC 61850, and OPC DA protocols directly to substation equipment. No vulnerability was needed: these protocols execute every syntactically valid command as they provide neither authentication nor integrity protection.
+- [INCONTROLLER](https://attack.mitre.org/software/S1045/) (also known as PIPEDREAM) is an attack toolkit discovered in 2022 that abuses legitimate functions of Modbus, CODESYS, and OPC UA to discover, manipulate, and disable PLCs and safety controllers from multiple vendors.
+
 ## Mitigation/Countermeasures
 
 ### Design and Implementation
