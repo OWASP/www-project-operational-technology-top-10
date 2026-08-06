@@ -39,6 +39,7 @@ toccolor: otteal
 header-includes: |
   \definecolor{otteal}{HTML}{005F56}
   \hypersetup{bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1}
+  \setkomafont{subsubsection}{\normalsize\itshape}
 
 # Tables / code / layout
 table-use-row-colors: true

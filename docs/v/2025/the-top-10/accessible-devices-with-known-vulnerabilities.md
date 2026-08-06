@@ -46,7 +46,7 @@ Vulnerable devices bad. Especially in critical infrastructure.
 
 ## Mitigation/Countermeasures
 
-### Developers/Builders: Design and Implementation
+### Design and Implementation
 
 - Try to prevent vulnerabilitites from accessing the system ([OWASP SAMM2](https://owaspsamm.org/))
 - Test hardware/software before deploying them in the field ([OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html), [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology))
@@ -54,7 +54,7 @@ Vulnerable devices bad. Especially in critical infrastructure.
 - Don't depend upon security-by-obscurity.
 - Use memory-safe programming languages and utilize security-features of frameworks.
 
-### Integrators/Operators: Operational
+### Operational
 
 - Make mandatory vulnerabilty notifications and remediation part of your supplier contracts.
 - Keep an up-to-date asset register with hardware/software versions.

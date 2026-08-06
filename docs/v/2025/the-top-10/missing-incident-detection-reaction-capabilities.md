@@ -34,8 +34,6 @@ Without logging and monitoring, breaches cannot be detected. An OT cybersecurity
 
 ## Mitigation/Countermeasures
 
-### General
-
 Implement [Network Intrusion Prevention](https://attack.mitre.org/mitigations/M0931/). At network boundaries, traffic should be blocked using intrusion detection signatures. When it comes to industrial control environments, network intrusion prevention should be configured so that it will not disrupt protocols and communications responsible for real-time functions related to control or safety.
 
 ### Design and Implementation
