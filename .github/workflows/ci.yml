@@ -33,3 +33,28 @@ jobs:
           config: '.markdownlint.yaml'
           globs: './docs/**/*.md'
 
+  pdf_structure:
+    name: PDF structure
+    runs-on: ubuntu-24.04
+    # Assembling needs no Docker and takes a second. It catches the mistakes the
+    # deploy-time PDF build would otherwise catch too late: a page renamed or
+    # added without updating PARTS in pdf/assemble.py.
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: 3.x
+
+      - name: Every edition assembles, with no missing or unlisted page
+        run: |
+          set -euo pipefail
+          editions=$(find docs/v -mindepth 1 -maxdepth 1 -type d \
+            -regex '.*/[0-9][0-9][0-9][0-9]' -printf '%f\n' | sort)
+          [ -n "$editions" ] || { echo "no docs/v/<year>/ edition found"; exit 1; }
+          for edition in $editions; do
+            python3 pdf/assemble.py docs "$RUNNER_TEMP/assembled-$edition.md" \
+              "$edition" --strict
+          done
+

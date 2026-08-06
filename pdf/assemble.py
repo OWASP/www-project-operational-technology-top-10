@@ -2,8 +2,11 @@
 """Assemble the mkdocs content into a single pandoc-friendly markdown file."""
 import os, re, sys
 
-DOCS = sys.argv[1]          # path to docs/ dir
-OUT  = sys.argv[2]          # output assembled .md
+ARGS   = [a for a in sys.argv[1:] if not a.startswith("--")]
+STRICT = "--strict" in sys.argv   # CI mode: warnings about the page set become errors
+
+DOCS = ARGS[0]              # path to docs/ dir
+OUT  = ARGS[1]              # output assembled .md
 
 
 def latest_edition(docs):
@@ -16,7 +19,7 @@ def latest_edition(docs):
 
 # Which edition to render, e.g. "2025" -> docs/v/2025/**. Defaults to the newest
 # one present, so v/2026 is picked up as soon as it exists.
-EDITION = sys.argv[3] if len(sys.argv) > 3 else latest_edition(DOCS)
+EDITION = ARGS[2] if len(ARGS) > 2 else latest_edition(DOCS)
 
 # Document structure: LaTeX parts, each holding its chapters (paths relative to
 # docs/v/<edition>/, in the same order as the mkdocs.yml nav). The parts are what
@@ -63,6 +66,10 @@ PARTS = [
         "appendix/glossary.md",
     ]),
 ]
+
+# Pages of an edition that belong to the website only, deliberately not to the
+# PDF. Anything else found under the edition and missing from PARTS is flagged.
+WEBSITE_ONLY = {"news.md"}
 
 def in_edition(rel):
     """Chapter path relative to docs/, e.g. "index.md" -> "v/2025/index.md"."""
@@ -210,6 +217,8 @@ def part_heading(title):
     """Raw-LaTeX part divider (kept raw so it stays a \\part, not a section)."""
     return "```{=latex}\n\\part{%s}\n```" % title
 
+PROBLEMS = []
+
 def available(files):
     """Drop chapters that are not in this checkout, e.g. a page still living on
     another branch. Loud on stderr so a typo in PARTS does not pass unnoticed."""
@@ -220,7 +229,26 @@ def available(files):
         else:
             print(f"WARNING: {in_edition(rel)} not found in {DOCS}, skipping",
                   file=sys.stderr)
+            PROBLEMS.append(rel)
     return out
+
+def unlisted_chapters():
+    """Pages of this edition that PARTS does not mention (a page added to the
+    nav but forgotten here would silently never reach the PDF)."""
+    root = os.path.join(DOCS, "v", EDITION)
+    found = set()
+    for dirpath, _dirs, files in os.walk(root):
+        for name in files:
+            if name.endswith(".md"):
+                rel = os.path.relpath(os.path.join(dirpath, name), root)
+                found.add(rel.replace(os.sep, "/"))
+    listed = {rel for _part, files in PARTS for rel in files}
+    return sorted(found - listed - WEBSITE_ONLY)
+
+for rel in unlisted_chapters():
+    print(f"WARNING: v/{EDITION}/{rel} is not listed in PARTS, it will not be in "
+          f"the PDF", file=sys.stderr)
+    PROBLEMS.append(rel)
 
 # One chunk per page break; a part heading opens the page of its first chapter.
 chunks = [COLOPHON.format(edition=EDITION).strip()]
@@ -236,3 +264,7 @@ for part, files in PARTS:
 with open(OUT, "w", encoding="utf-8") as f:
     f.write("\n\n\\newpage\n\n".join(chunks) + "\n")
 print(f"Assembled {count} of {len(ORDER)} files of the {EDITION} edition -> {OUT}")
+
+if STRICT and PROBLEMS:
+    sys.exit(f"--strict: {len(PROBLEMS)} page(s) of the {EDITION} edition are "
+             f"missing or unlisted, see the warnings above")

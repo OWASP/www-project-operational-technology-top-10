@@ -55,6 +55,14 @@ dropped, so a new edition can be built while it is still incomplete.
   outline as well.
 - **`build.sh`** — runs the two steps above in the pinned `pandoc/extra` image.
 
+## CI
+
+`.github/workflows/ci.yml` runs `assemble.py --strict` for every edition on each
+push. That needs no Docker and takes a second, and it fails on a page that PARTS
+lists but the edition does not have, or that the edition has but PARTS never
+mentions (`WEBSITE_ONLY` in `assemble.py` holds the deliberate exceptions). The
+full render is only exercised by the deploy workflow.
+
 ## Publishing
 
 The deploy workflow (`.github/workflows/deploy.yml`) runs `build.sh --all
