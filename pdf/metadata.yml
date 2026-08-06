@@ -49,6 +49,8 @@ header-includes: |
   \setkomafont{paragraph}{\normalsize\itshape}
   \emergencystretch=3em
   \lefthyphenmin=3
+  \widowpenalty=10000
+  \clubpenalty=10000
   \usepackage{enumitem}
   \setlist{topsep=4pt,itemsep=2pt,parsep=0pt}
   \AtBeginDocument{\captionsetup{skip=6pt,belowskip=2pt}}
@@ -56,8 +58,8 @@ header-includes: |
 # Tables / code / layout
 table-use-row-colors: true
 code-block-font-size: "\\small"
-# 3.6cm side margins give a ~85-characters-per-line measure; the old 2.2cm
-# put ~103 characters on a line, which is hard to read and forced tight
-# justification and heavy hyphenation.
-geometry: "a4paper,left=3.6cm,right=3.6cm,top=2.5cm,bottom=2.7cm"
+# 3.0cm side margins give a ~90-characters-per-line measure - the compromise
+# between the old 2.2cm (~103 characters, hard to read, strained justification)
+# and the bookish 3.6cm, which looked too airy.
+geometry: "a4paper,left=3cm,right=3cm,top=2.5cm,bottom=2.7cm"
 ...

@@ -180,6 +180,13 @@ def fold_source_into_caption(text):
         r'(!\[[^\]]*)(\]\([^)]+\)(?:\{[^}]*\})?)\n\nSource: \*([^*\n]+)\*',
         r'\1 (source: \3)\2', text)
 
+def drop_na_sections(text):
+    """Drop "### Tooling / - N.A." placeholder sections: in print, a heading
+    whose only content is "N.A." is noise, and these blocks kept stranding
+    alone on otherwise blank pages. The website keeps them."""
+    return re.sub(r"^#{2,4} [^\n]+\n+- N\.A\.?\s*\n+(?=#|\Z)", "", text,
+                  flags=re.M)
+
 def process_headings(text, anchor, numbered):
     """Attach anchors and (for non-risk files) unnumber headings.
 
@@ -232,6 +239,7 @@ def render(rel):
     t = strip_frontmatter(t)
     t = convert_admonitions(t)
     t = fold_source_into_caption(t)
+    t = drop_na_sections(t)
     t = rewrite_links(t, rel)
     t = process_headings(t, KNOWN[rel], rel in RISK_FILES)
     if RAW_HTML_IMG.search(t):
