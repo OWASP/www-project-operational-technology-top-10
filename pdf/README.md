@@ -12,16 +12,31 @@ numbers and row-striped tables.
 ## Build it
 
 ```bash
-bash pdf/build.sh                                  # -> ./OWASP-OT-Top-10-2025.pdf
-bash pdf/build.sh docs/assets/OWASP-OT-Top-10-2025.pdf
+bash pdf/build.sh                        # newest edition -> ./OWASP-OT-Top-10-<year>.pdf
+bash pdf/build.sh --edition 2025         # a specific edition
+bash pdf/build.sh --all docs/assets/     # every edition, into a directory
+bash pdf/build.sh out/top10.pdf          # newest edition under an exact file name
 ```
 
-Requirements: Docker + `python3`. The generated PDF is git-ignored.
+Requirements: Docker + `python3`. The generated PDFs are git-ignored.
+
+## Editions
+
+An edition is a `docs/v/<year>/` directory. Nothing in here names a year: the
+build defaults to the newest edition present, `--edition` picks another one, and
+`--all` builds every one of them. The cover date and the page footer are derived
+from the edition, and the file name is `OWASP-OT-Top-10-<year>.pdf`.
+
+So `docs/v/2026/` is picked up as soon as it exists. Chapters an edition does not
+have are skipped with a warning, and a part whose chapters are all missing is
+dropped, so a new edition can be built while it is still incomplete.
 
 ## How it works
 
-- **`assemble.py`** — concatenates the `docs/v/2025/**` pages, in the same order
-  as the `mkdocs.yml` `nav`, into one pandoc-friendly Markdown file. It:
+- **`assemble.py <docs> <out.md> [edition]`** — concatenates the pages of one
+  edition, in the same order as the `mkdocs.yml` `nav`, into a single
+  pandoc-friendly Markdown file. Without the third argument it uses the newest
+  edition. It:
   - groups the chapters into LaTeX parts (see `PARTS`), which is what gives the
     PDF outline its hierarchy: part > chapter > section, instead of one flat
     list of pages,
@@ -29,17 +44,20 @@ Requirements: Docker + `python3`. The generated PDF is git-ignored.
     website-only "Download the PDF" notice),
   - rewrites inter-page `*.md` links to internal `#anchors`,
   - resolves image paths relative to `docs/`,
-  - skips chapters that are missing from the checkout (e.g. a page that still
-    lives on another branch), with a warning on stderr.
-  If you add or reorder pages in `mkdocs.yml`, update `PARTS` here too.
+  - skips chapters the edition does not have, with a warning on stderr.
+  `PARTS` lists the chapters relative to `docs/v/<edition>/`, so it describes
+  every edition at once. If you add or reorder pages in `mkdocs.yml`, update
+  `PARTS` here too.
 - **`metadata.yml`** — pandoc/Eisvogel settings (title page, TOC, teal theme
-  colour, table styling, margins). Only the ten risk chapters are numbered;
-  `bookmarksnumbered` carries those numbers into the PDF outline as well.
+  colour, table styling, margins). It holds nothing edition-specific — the cover
+  date and footer are passed per edition by `build.sh`. Only the ten risk
+  chapters are numbered; `bookmarksnumbered` carries those numbers into the PDF
+  outline as well.
 - **`build.sh`** — runs the two steps above in the pinned `pandoc/extra` image.
 
 ## Publishing
 
-The deploy workflow (`.github/workflows/deploy.yml`) runs `build.sh` into
-`docs/assets/OWASP-OT-Top-10-2025.pdf` before `mkdocs gh-deploy`, so the PDF is
-published at <https://ot.owasp.org/assets/OWASP-OT-Top-10-2025.pdf> (linked from
-the Start Here / home pages).
+The deploy workflow (`.github/workflows/deploy.yml`) runs `build.sh --all
+docs/assets/` before `mkdocs gh-deploy`, so every edition is published at
+`https://ot.owasp.org/assets/OWASP-OT-Top-10-<year>.pdf` and the links of older
+editions keep working.

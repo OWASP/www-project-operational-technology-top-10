@@ -3,5 +3,6 @@
 /favicon.ico
 _site/
 /venv/
-/OWASP-OT-Top-10-2025.pdf
-docs/assets/OWASP-OT-Top-10-2025.pdf
+/OWASP-OT-Top-10-*.pdf
+docs/assets/OWASP-OT-Top-10-*.pdf
+__pycache__/

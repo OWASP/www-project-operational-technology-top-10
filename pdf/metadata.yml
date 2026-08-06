@@ -3,7 +3,7 @@
 # See https://github.com/Wandmalfarbe/pandoc-latex-template for the variables.
 title: "OWASP OT Top 10"
 subtitle: "The Top 10 Operational Technology Security Risks"
-date: "2025 Edition"
+# date / footer-left carry the edition year and are passed by pdf/build.sh
 lang: en
 
 # Number only the ten risk chapters, two levels deep (1, 1.1, 1.2 ...).
@@ -44,5 +44,4 @@ header-includes: |
 table-use-row-colors: true
 code-block-font-size: "\\small"
 geometry: "margin=2.2cm"
-footer-left: "OWASP OT Top 10 — 2025"
 ...

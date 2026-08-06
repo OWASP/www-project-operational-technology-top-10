@@ -5,57 +5,75 @@ import os, re, sys
 DOCS = sys.argv[1]          # path to docs/ dir
 OUT  = sys.argv[2]          # output assembled .md
 
+
+def latest_edition(docs):
+    """Newest docs/v/<year>/ directory, so a new edition needs no code change."""
+    years = sorted(d for d in os.listdir(os.path.join(docs, "v"))
+                   if re.fullmatch(r"\d{4}", d))
+    if not years:
+        sys.exit(f"no docs/v/<year>/ edition found in {docs}")
+    return years[-1]
+
+# Which edition to render, e.g. "2025" -> docs/v/2025/**. Defaults to the newest
+# one present, so v/2026 is picked up as soon as it exists.
+EDITION = sys.argv[3] if len(sys.argv) > 3 else latest_edition(DOCS)
+
 # Document structure: LaTeX parts, each holding its chapters (paths relative to
-# docs/, in the same order as the mkdocs.yml nav). The parts are what gives the
-# PDF outline/bookmarks a hierarchy — part > chapter > section — instead of one
-# flat list of pages.
+# docs/v/<edition>/, in the same order as the mkdocs.yml nav). The parts are what
+# gives the PDF outline/bookmarks a hierarchy — part > chapter > section —
+# instead of one flat list of pages. Chapters an edition does not have are
+# skipped with a warning, so editions may differ in content.
 PARTS = [
     ("Introduction", [
-        "v/2025/summary.md",
-        "v/2025/index.md",
+        "summary.md",
+        "index.md",
     ]),
     ("Operational Technology (OT)", [
-        "v/2025/background-ot/index.md",
-        "v/2025/background-ot/safety-vs-security.md",
-        "v/2025/background-ot/ot_for_itsec_people.md",
-        "v/2025/background-ot/itsec_for_ot_people.md",
-        "v/2025/background-ot/related-standards.md",
+        "background-ot/index.md",
+        "background-ot/safety-vs-security.md",
+        "background-ot/ot_for_itsec_people.md",
+        "background-ot/itsec_for_ot_people.md",
+        "background-ot/related-standards.md",
     ]),
     ("The Top 10", [
-        "v/2025/the-top-10/index.md",
-        "v/2025/the-top-10/unknown-assets-and-admin-access.md",
-        "v/2025/the-top-10/accessible-devices-with-known-vulnerabilities.md",
-        "v/2025/the-top-10/inadequate_supply_chain_management.md",
-        "v/2025/the-top-10/loss-of-availability.md",
-        "v/2025/the-top-10/insufficient-access-control.md",
-        "v/2025/the-top-10/missing-incident-detection-reaction-capabilities.md",
-        "v/2025/the-top-10/broken-zone-and-conduits-design.md",
-        "v/2025/the-top-10/missing-awareness.md",
-        "v/2025/the-top-10/components-with-insufficient-security-capabilities.md",
-        "v/2025/the-top-10/missing-hardening.md",
+        "the-top-10/index.md",
+        "the-top-10/unknown-assets-and-admin-access.md",
+        "the-top-10/accessible-devices-with-known-vulnerabilities.md",
+        "the-top-10/inadequate_supply_chain_management.md",
+        "the-top-10/loss-of-availability.md",
+        "the-top-10/insufficient-access-control.md",
+        "the-top-10/missing-incident-detection-reaction-capabilities.md",
+        "the-top-10/broken-zone-and-conduits-design.md",
+        "the-top-10/missing-awareness.md",
+        "the-top-10/components-with-insufficient-security-capabilities.md",
+        "the-top-10/missing-hardening.md",
     ]),
     ("Where to Start", [
-        "v/2025/appendix/whats-next.md",
+        "appendix/whats-next.md",
     ]),
     # Back matter: OWASP org / community boilerplate and reference appendices.
     ("About the Project", [
-        "v/2025/introduction/about-owasp.md",
-        "v/2025/introduction/contributing.md",
-        "v/2025/introduction/contributors.md",
-        "v/2025/introduction/related-owasp-projects.md",
+        "introduction/about-owasp.md",
+        "introduction/contributing.md",
+        "introduction/contributors.md",
+        "introduction/related-owasp-projects.md",
     ]),
     ("Appendix", [
-        "v/2025/appendix/mappingTable.md",
-        "v/2025/appendix/glossary.md",
+        "appendix/mappingTable.md",
+        "appendix/glossary.md",
     ]),
 ]
 
-ORDER = [rel for _part, files in PARTS for rel in files]
+def in_edition(rel):
+    """Chapter path relative to docs/, e.g. "index.md" -> "v/2025/index.md"."""
+    return f"v/{EDITION}/{rel}"
+
+ORDER = [in_edition(rel) for _part, files in PARTS for rel in files]
 
 # Imprint / colophon shown on its own page ahead of the content (no heading,
 # so it stays out of the table of contents).
 COLOPHON = """\
-**OWASP Operational Technology (OT) Top 10 — 2025 Edition**
+**OWASP Operational Technology (OT) Top 10 — {edition} Edition**
 
 Available online at <https://ot.owasp.org>. This is a living document and is
 updated as the OT threat landscape evolves.
@@ -87,7 +105,7 @@ KNOWN = {p: slug(p) for p in ORDER}
 # Everything else (front matter, background, back matter) stays unnumbered so
 # "the Top 10" is the document's strongest hierarchy.
 RISK_FILES = {p for p in ORDER
-              if p.startswith("v/2025/the-top-10/") and not p.endswith("/index.md")}
+              if p.startswith(in_edition("the-top-10/")) and not p.endswith("/index.md")}
 
 def strip_frontmatter(text):
     if text.startswith("---\n"):
@@ -197,14 +215,15 @@ def available(files):
     another branch. Loud on stderr so a typo in PARTS does not pass unnoticed."""
     out = []
     for rel in files:
-        if os.path.exists(os.path.join(DOCS, rel)):
-            out.append(rel)
+        if os.path.exists(os.path.join(DOCS, in_edition(rel))):
+            out.append(in_edition(rel))
         else:
-            print(f"WARNING: {rel} not found in {DOCS}, skipping", file=sys.stderr)
+            print(f"WARNING: {in_edition(rel)} not found in {DOCS}, skipping",
+                  file=sys.stderr)
     return out
 
 # One chunk per page break; a part heading opens the page of its first chapter.
-chunks = [COLOPHON.strip()]
+chunks = [COLOPHON.format(edition=EDITION).strip()]
 count = 0
 for part, files in PARTS:
     files = available(files)
@@ -216,4 +235,4 @@ for part, files in PARTS:
 
 with open(OUT, "w", encoding="utf-8") as f:
     f.write("\n\n\\newpage\n\n".join(chunks) + "\n")
-print(f"Assembled {count} of {len(ORDER)} files -> {OUT}")
+print(f"Assembled {count} of {len(ORDER)} files of the {EDITION} edition -> {OUT}")
