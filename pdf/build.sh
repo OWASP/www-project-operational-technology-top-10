@@ -25,6 +25,18 @@ IMAGE="pandoc/extra@sha256:dfae5cf73a0e0ad40acf23d2d2c4adf5715e560aeea3324aa87e6
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 
+# Build identifier for the page footer: the current git tag if the project has
+# tagged a release ("v1.0", "v1.0-3-g851984b between tags"), otherwise the
+# short commit hash labelled as such ("git: 851984b"); "-dirty" marks
+# uncommitted trees. Empty outside a git checkout.
+if VERSION="$(git -C "$ROOT" describe --tags --dirty 2>/dev/null)"; then
+  :
+elif VERSION="$(git -C "$ROOT" describe --always --dirty 2>/dev/null)"; then
+  VERSION="git: $VERSION"
+else
+  VERSION=""
+fi
+
 EDITION=""
 ALL=false
 OUT=""
@@ -87,7 +99,7 @@ build_edition() {
       --template eisvogel \
       --metadata-file=/work/metadata.yml \
       --metadata date="$edition Edition" \
-      --metadata footer-left="OWASP OT Top 10 — $edition" \
+      --metadata footer-left="${VERSION:-$edition Edition}" \
       --toc \
       --pdf-engine=xelatex \
       --resource-path=/data/docs \
