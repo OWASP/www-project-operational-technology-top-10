@@ -33,6 +33,7 @@ theme:
 
 markdown_extensions:
   - admonition
+  - attr_list
   - tables
   - pymdownx.details
   - pymdownx.superfences

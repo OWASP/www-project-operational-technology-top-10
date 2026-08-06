@@ -10,9 +10,7 @@ Within the OT domain, **Industrial Control Systems (ICS)** represent a major sub
 
 ICS architectures form the backbone of industrial operations and are often used interchangeably with the term OT in cybersecurity contexts.
 
-<div align="center">
-  <img src="../assets/images/CPS_OT_ICS.png" width="50%" />
-</div>
+![Cyber-physical systems, OT and ICS](../assets/images/CPS_OT_ICS.png){ width=50% }
 
 Overall, OT systems are essential for the operation of many industries, and they far outnumber Information Technology (IT) systems in use. OT security problems in these industries can have major impacts on the society and surrounding environment. 
 

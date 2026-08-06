@@ -204,6 +204,10 @@ def process_headings(text, anchor, numbered):
         first = False
     return "\n".join(out)
 
+# pandoc drops raw HTML when writing LaTeX, so an <img> in the markdown renders
+# on the website but is silently absent from the PDF.
+RAW_HTML_IMG = re.compile(r"<img\b", re.I)
+
 def render(rel):
     with open(os.path.join(DOCS, rel), encoding="utf-8") as f:
         t = f.read()
@@ -211,6 +215,10 @@ def render(rel):
     t = convert_admonitions(t)
     t = rewrite_links(t, rel)
     t = process_headings(t, KNOWN[rel], rel in RISK_FILES)
+    if RAW_HTML_IMG.search(t):
+        print(f"WARNING: {rel} embeds an image as raw HTML, which pandoc drops; "
+              f"use ![alt](src)" + "{ width=50% } instead", file=sys.stderr)
+        PROBLEMS.append(rel)
     return t.strip()
 
 def part_heading(title):
