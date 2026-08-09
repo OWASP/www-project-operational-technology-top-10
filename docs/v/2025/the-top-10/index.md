@@ -31,7 +31,7 @@ Each entry in the OWASP OT Top 10 will be accompanied by a short description, pu
 | Known Attacks/Examples | What are documented attacks that utilized the respective Top 10 item? |
 | Mitigation/Countermeasures | There will be multiple levels: 1) design and implementation level mitigations for developers/builders;  2) operational mitigations for integrators, e.g., air-gapping systems |
 | Next Actionable Steps | What can be done to identify and/or mitigate the issue? |
-| References| Relevant standards, Links to Tools, and Background Information |
+| References | Relevant standards, Links to Tools, and Background Information |
 
 ## Methodology
 
