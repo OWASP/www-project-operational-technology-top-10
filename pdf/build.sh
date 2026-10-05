@@ -76,7 +76,9 @@ build_edition() {
 
   local work
   work="$(mktemp -d)"
-  trap 'rm -rf "$work"' RETURN
+  # RETURN traps don't fire when set -e aborts the function mid-command, so
+  # clean up on every exit path instead.
+  trap 'rm -rf "$work"' EXIT
 
   echo "==> [$edition] Assembling markdown..."
   python3 "$ROOT/pdf/assemble.py" "$ROOT/docs" "$work/assembled.md" "$edition"

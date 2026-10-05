@@ -28,8 +28,8 @@ EDITION = ARGS[2] if len(ARGS) > 2 else latest_edition(DOCS)
 # skipped with a warning, so editions may differ in content.
 PARTS = [
     ("Introduction", [
-        "summary.md",
         "index.md",
+        "summary.md",
     ]),
     ("Operational Technology (OT)", [
         "background-ot/index.md",
@@ -88,8 +88,8 @@ updated as the OT threat landscape evolves.
 Part of the OWASP OT Top 10 Project:
 <https://owasp.org/www-project-operational-technology-top-10/>.
 
-Project leaders (in alphabetical order): Andreas Happe, Siegfried Hollerer,
-Simon Rommer.
+Project leaders (in alphabetical order): Andreas Happe, Felix Eberstaller,
+Simon Rommer, Siegfried Hollerer.
 
 ------------------------------------------------------------------------
 
@@ -170,7 +170,7 @@ def rewrite_links(text, cur_relpath):
     return text
 
 def latex_escape(s):
-    return re.sub(r"([&%$#_{}])", r"\\\\1", s)
+    return re.sub(r"([&%$#_{}])", r"\\\1", s)
 
 def fold_source_into_caption(text):
     """Merge an image's "Source: *X*" follow-up paragraph into its caption, so

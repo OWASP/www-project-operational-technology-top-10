@@ -9,14 +9,11 @@ We are in the process of scheduling upcoming talks and presentations related to 
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FVienna&showPrint=0&src=YW5kcmVhcy5oYXBwZUBvd2FzcC5vcmc&src=Y183ZGZiMGU5NzIxODYxNjU4NjUxOTRlYzA4M2MzMjVmOGE3NDQ1NjhjMTIyOWU0NGI2ZThhOTlmYzkyNTA5NDRhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039be5&color=%23d50000" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-| Date | Venue | Speaker |
-| --- | --- | --- |
-| 06.05.2026 | [OWASP Kuwait City Chapter](https://www.linkedin.com/events/7447194042947395584/), Kuwait City (virtual) | Siegfried Hollerer |
-
 ## Past Talks and Meetings
 
 | Date | Venue | Speaker | Slides & Videos |
 | --- | --- | --- | --- |
+| 06.05.2026 | [OWASP Kuwait City Chapter](https://www.linkedin.com/events/7447194042947395584/), Kuwait City (virtual) | Siegfried Hollerer, Felix Eberstaller | |
 | 06.05.2026 | [Security Forum](https://www.securityforum.at/), Austria | Felix Eberstaller, Nino Fürthauer | [slides](slides/2026-05-06%20OWASP_OT_Top10-Security_Forum.pdf) |
 | 31.03.2026 | [OWASP Vienna Chapter](https://www.meetup.com/owasp-chapter-vienna/events/312209376/?eventOrigin=group_past_events), Austria | Siegfried Hollerer | [slides](slides/2026-03-31%20OWASP_OT_Top10-1st_Vienna_Chapter_Meeting.pdf) |
 | 16.12.2025 | [OWASP Cambridge Chapter](https://www.meetup.com/owasp-cambridge-meetup/events/311793779/), United Kingdom (virtual) | Siegfried Hollerer, Simon Rommer | [slides](slides/2025-12-16%20OWASP_OT_Top10-OWASP_Cambridge_Chapter.pdf) [video](https://www.youtube.com/watch?v=YLKodThURyk) |
