@@ -11,9 +11,12 @@
     [https://meet.google.com/fmu-sokc-gei](https://meet.google.com/fmu-sokc-gei). If
     you want to contribute, please see our [contributing guide](v/2025/introduction/contributing.md).
 
-    We will give a talk at the [IT SecX 2025](https://itsecx.fhstp.ac.at/) conference
-    in Austria on October 3rd 2025, as well as at the
-    [OWASP BeNeLux 2025](https://2025.owaspbenelux.eu/) conference in Brussels on December 2nd/3rd 2025.
+    We gave a talk at the [IT SecX 2025](https://itsecx.fhstp.ac.at/) conference in
+    Austria on October 3rd 2025, at the [OWASP BeNeLux 2025](https://2025.owaspbenelux.eu/)
+    conference in Belgium on December 2nd/3rd 2025, at the
+    [OWASP Vienna Chapter](https://www.meetup.com/owasp-chapter-vienna/) meeting on March
+    31st 2026, as well as at the [Security Forum](https://www.securityforum.at/) in Austria
+    on May 6th 2026.
 
 # OWASP OT Top 10
 
