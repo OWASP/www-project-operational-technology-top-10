@@ -1,0 +1,13 @@
+/* Centre content images and the italic source line that follows them.
+   The PDF build is unaffected: pandoc never sees this stylesheet. */
+
+.md-typeset img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.md-typeset p > img + br + em {
+  display: block;
+  text-align: center;
+}
