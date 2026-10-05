@@ -38,6 +38,9 @@ markdown_extensions:
   - pymdownx.superfences
   - sane_lists
 
+extra_css:
+  - stylesheets/extra.css
+
 extra:
   social:
     - icon: fontawesome/brands/github-alt
@@ -57,13 +60,8 @@ copyright: |
 
 nav:
   - 'Start Here': v/2025/index.md
-  - 'Meet and Greet': v/2025/news.md
-  - 'Introduction':
-    - 'About OWASP': v/2025/introduction/about-owasp.md
-    - 'How to contribute?': v/2025/introduction/contributing.md
-    - 'Contributors': v/2025/introduction/contributors.md
-    - 'Related OWASP Projects': v/2025/introduction/related-owasp-projects.md
-  - 'Operation Technology (OT)':
+  - 'Summary': v/2025/summary.md
+  - 'Operational Technology (OT)':
     - v/2025/background-ot/index.md
     - 'Safety vs. Security': v/2025/background-ot/safety-vs-security.md
     - "OT for IT Sec People": v/2025/background-ot/ot_for_itsec_people.md
@@ -82,6 +80,12 @@ nav:
       - '9. Insufficient Security Capabilities': v/2025/the-top-10/components-with-insufficient-security-capabilities.md
       - '10. Missing Hardening': v/2025/the-top-10/missing-hardening.md
   - "What's Next?": v/2025/appendix/whats-next.md
+  - 'About the Project':
+    - 'About OWASP': v/2025/introduction/about-owasp.md
+    - 'How to contribute?': v/2025/introduction/contributing.md
+    - 'Contributors': v/2025/introduction/contributors.md
+    - 'Related OWASP Projects': v/2025/introduction/related-owasp-projects.md
+    - 'Meet and Greet': v/2025/news.md
   - 'Appendix':
     - 'Standards Mapping Table': v/2025/appendix/mappingTable.md
     - 'Glossary': v/2025/appendix/glossary.md
