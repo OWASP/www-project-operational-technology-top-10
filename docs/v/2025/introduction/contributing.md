@@ -2,15 +2,19 @@
 
 Please don’t hesitate to contact the OWASP OT Top 10 project with your questions, comments, and ideas, either publicly by adding issues or providing commits on [our github page](https://github.com/OWASP/www-project-operational-technology-top-10).
 
-Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R) to chat. You can get a free invitation to the OWASP slack server through [this website](https://owasp.org/slack/invite). We do a video conference every first monday of a month from 4pm to 5pm CET using [google meets](https://meet.google.com/fmu-sokc-gei).
+Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives/C07HDTYRA6R) to chat. You can get a free invitation to the OWASP slack server through [this website](https://owasp.org/slack/invite).
 
+We do a video conference every first Monday of the month from 4pm to 5pm CET/CEST using
+[https://meet.google.com/gwi-vhxz-rjr](https://meet.google.com/gwi-vhxz-rjr). We also provide a [public ICS calendar series](https://calendar.google.com/calendar/ical/c_7dfb0e972186165865194ec083c325f8a744568c1229e44b6e8a99fc9250944a%40group.calendar.google.com/public/basic.ics) that you can add to your calendar.
+    
 ## How to Contribute?
 
-We're currently discussing and selecting the potential top 10 entries and are looking for new suggestions. If you have one, please add them as new markdown file in the `/docs/the-top-10/` directory and link it from within [index.md](../the-top-10/index.md)'s list of potential top 10.
+All development is public and happens on github. If you want to contribute, please fork the repository, make your changes, and then submit a pull request. We will review your changes and provide feedback as needed.
 
-You find the source code of the current version of the OWASP OT Top 10 in the `docs/` directory within the git repository.
 
-When you check [our open issues on github](https://github.com/OWASP/www-project-operational-technology-top-10/issues), you can see that some issues are tagged with `help wanted` or `good first issue`. Choose these if you want to help out the project!
+If you plan a larger change, it is always a good idea to talk with us during one of the Monthly meetings first. This way we can discuss your ideas and provide feedback before you start working on the changes. This can save you a lot of time and effort, and it can also help us to ensure that your changes are aligned with the goals of the project.
+
+You find the source code of the current version of the OWASP OT Top 10 in the `docs/` directory within the git repository. When you check [our open issues on github](https://github.com/OWASP/www-project-operational-technology-top-10/issues), you can see that some issues are tagged with `help wanted` or `good first issue`. Choose these if you want to help out the project!
 
 ## Empirical Data Contribution
 
