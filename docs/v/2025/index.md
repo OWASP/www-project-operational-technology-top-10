@@ -71,8 +71,9 @@ The [Summary](summary.md) gives you all ten items with one sentence each, [The T
 ## Project Leaders (in Alphabetical Order)
 
 - [Andreas Happe](mailto:andreas.happe@owasp.org)
-- [Siegfried Hollerer](mailto:siegfried.hollerer@owasp.org)
+- [Felix Eberstaller](mailto:f0rw4rd4owasp@pm.me)
 - [Simon Rommer](mailto:simon.rommer@owasp.org)
+- [Siegfried Hollerer](mailto:siegfried.hollerer@owasp.org)
 
 ## Copyright and License
 
