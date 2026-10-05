@@ -11,13 +11,14 @@ lang: en
 numbersections: true
 secnumdepth: 2
 
-# Eisvogel title page
+# Eisvogel title page — palette taken from the IT SecX 2025 title slide
+# (light #F5F7FC ground, green #13A10E / blue #1D7BD7 accents, dark text).
 titlepage: true
-titlepage-color: "0B3D3A"
-titlepage-text-color: "FFFFFF"
+titlepage-color: "F5F7FC"
+titlepage-text-color: "1B2733"
 # rule-height 0: Eisvogel draws the rule wider than our text block, so it
 # overshoots the page edge by ~4mm; without it the title page stays clean.
-titlepage-rule-color: "1ABC9C"
+titlepage-rule-color: "1D7BD7"
 titlepage-rule-height: 0
 # Emblem: pdf/build.sh rasterises pdf/assets/ot-top10-logo.svg -> /work/logo.pdf
 titlepage-logo: "/work/logo.pdf"
@@ -43,7 +44,7 @@ toccolor: otteal
 header-right: "\\rightmark"
 
 header-includes: |
-  \definecolor{otteal}{HTML}{005F56}
+  \definecolor{otteal}{HTML}{1D7BD7}
   \hypersetup{bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1}
   \setkomafont{subsubsection}{\normalsize\bfseries\itshape}
   \setkomafont{paragraph}{\normalsize\itshape}
