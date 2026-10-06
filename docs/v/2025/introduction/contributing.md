@@ -6,11 +6,10 @@ Please join the [OWASP OT Top 10 Slack Channel](https://owasp.slack.com/archives
 
 We do a video conference every first Monday of the month from 4pm to 5pm CET/CEST using
 [https://meet.google.com/gwi-vhxz-rjr](https://meet.google.com/gwi-vhxz-rjr). We also provide a [public ICS calendar series](https://calendar.google.com/calendar/ical/c_7dfb0e972186165865194ec083c325f8a744568c1229e44b6e8a99fc9250944a%40group.calendar.google.com/public/basic.ics) that you can add to your calendar.
-    
+
 ## How to Contribute?
 
 All development is public and happens on github. If you want to contribute, please fork the repository, make your changes, and then submit a pull request. We will review your changes and provide feedback as needed.
-
 
 If you plan a larger change, it is always a good idea to talk with us during one of the Monthly meetings first. This way we can discuss your ideas and provide feedback before you start working on the changes. This can save you a lot of time and effort, and it can also help us to ensure that your changes are aligned with the goals of the project.
 
