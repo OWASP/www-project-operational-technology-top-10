@@ -49,7 +49,7 @@ Vulnerable devices bad. Especially in critical infrastructure.
 ### Design and Implementation
 
 - Try to prevent vulnerabilitites from accessing the system ([OWASP SAMM2](https://owaspsamm.org/))
-- Test hardware/software before deploying them in the field ([OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html), [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology))
+- Test hardware/software before deploying them in the field ([OWASP IoT Security Testing Guide](https://owasp.org/www-project-iot-security-testing-guide/), [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology))
 - Inform customers about security updates. Provide SBOMs.
 - Don't depend upon security-by-obscurity.
 - Use memory-safe programming languages and utilize security-features of frameworks.
@@ -58,7 +58,7 @@ Vulnerable devices bad. Especially in critical infrastructure.
 
 - Make mandatory vulnerabilty notifications and remediation part of your supplier contracts.
 - Keep an up-to-date asset register with hardware/software versions.
-- Test hardware/software before deploying them in the field ([OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html), [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology))
+- Test hardware/software before deploying them in the field ([OWASP IoT Security Testing Guide](https://owasp.org/www-project-iot-security-testing-guide/), [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology))
 - Establish a vulnerability management program that includes regular vulnerability scanning, patch management, and remediation processes: Prioritize critical security updates and patches for OT systems to address high-risk vulnerabilities.
 - Implement network segmentation and access controls to limit the impact of security vulnerabilities.
 
@@ -78,7 +78,7 @@ Vulnerable devices bad. Especially in critical infrastructure.
 
 ### Background information
 
-- ***OWASP*** maintains the [OWASP IoT Security Testing Guide](https://owasp.org/owasp-istg/index.html) as well as the [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology), both of which provide guidance on how to test for vulnerabilities in IoT and firmware systems.
+- ***OWASP*** maintains the [OWASP IoT Security Testing Guide](https://owasp.org/www-project-iot-security-testing-guide/) as well as the [OWASP Firmware Security Testing Methodology](https://scriptingxss.gitbook.io/firmware-security-testing-methodology), both of which provide guidance on how to test for vulnerabilities in IoT and firmware systems.
 - [Software Bill of Materials (SBOM) - CISA](https://www.cisa.gov/sbom) describes a component's dependencies and vulnerabilities in a machine-readable format. This can be used to track known vulnerabilities in your software supply chain.
 
 ### Tooling
