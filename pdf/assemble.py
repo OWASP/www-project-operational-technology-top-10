@@ -9,6 +9,28 @@ DOCS = ARGS[0]              # path to docs/ dir
 OUT  = ARGS[1]              # output assembled .md
 
 
+def project_leaders(repo_root):
+    """Names from project.owasp.yaml, so the colophon can't drift from the
+    wiki page / metadata. Minimal key:value parsing, no YAML dependency."""
+    yaml = os.path.join(repo_root, "project.owasp.yaml")
+    names, in_leaders = [], False
+    try:
+        with open(yaml, encoding="utf-8") as f:
+            for line in f:
+                stripped = line.strip()
+                if line.startswith("leaders:"):
+                    in_leaders = True
+                elif in_leaders and line and not line[0].isspace():
+                    break
+                elif in_leaders and re.match(r"-?\s*name:", stripped):
+                    names.append(stripped.split(":", 1)[1].strip())
+    except OSError:
+        print(f"WARNING: cannot read {yaml}, colophon has no leader list",
+              file=sys.stderr)
+        PROBLEMS.append("project.owasp.yaml:leaders")
+    return names
+
+
 def latest_edition(docs):
     """Newest docs/v/<year>/ directory, so a new edition needs no code change."""
     years = sorted(d for d in os.listdir(os.path.join(docs, "v"))
@@ -88,8 +110,7 @@ updated as the OT threat landscape evolves.
 Part of the OWASP OT Top 10 Project:
 <https://owasp.org/www-project-operational-technology-top-10/>.
 
-Project leaders (in alphabetical order): Andreas Happe, Felix Eberstaller,
-Simon Rommer, Siegfried Hollerer.
+Project leaders (in alphabetical order): {leaders}.
 
 ------------------------------------------------------------------------
 
@@ -175,9 +196,10 @@ def latex_escape(s):
 def fold_source_into_caption(text):
     """Merge an image's "Source: *X*" follow-up paragraph into its caption, so
     the PDF gets one "Figure n: Alt (source: X)" instead of a caption plus a
-    stray body paragraph. The website keeps the visible source line."""
+    stray body paragraph. The website keeps the visible source line (tagged
+    { .img-source } for centering; the attribute is stripped here)."""
     return re.sub(
-        r'(!\[[^\]]*)(\]\([^)]+\)(?:\{[^}]*\})?)\n\nSource: \*([^*\n]+)\*',
+        r'(!\[[^\]]*)(\]\([^)]+\)(?:\{[^}]*\})?)\n\nSource: \*([^*\n]+)\*(?:\{[^}]*\})?',
         r'\1 (source: \3)\2', text)
 
 def drop_na_sections(text):
@@ -286,7 +308,11 @@ for rel in unlisted_chapters():
     PROBLEMS.append(rel)
 
 # One chunk per page break; a part heading opens the page of its first chapter.
-chunks = [COLOPHON.format(edition=EDITION).strip()]
+# docs/ sits in the repo root, so that root holds project.owasp.yaml.
+repo_root = os.path.dirname(os.path.abspath(DOCS.rstrip(os.sep)))
+leaders = project_leaders(repo_root)
+chunks = [COLOPHON.format(edition=EDITION,
+                          leaders=", ".join(leaders) or "N.A.").strip()]
 count = 0
 for part, files in PARTS:
     files = available(files)

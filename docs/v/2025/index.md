@@ -72,8 +72,8 @@ The [Summary](summary.md) gives you all ten items with one sentence each, [The T
 
 - [Andreas Happe](mailto:andreas.happe@owasp.org)
 - [Felix Eberstaller](mailto:f0rw4rd@owasp.org)
-- [Simon Rommer](mailto:simon.rommer@owasp.org)
 - [Siegfried Hollerer](mailto:siegfried.hollerer@owasp.org)
+- [Simon Rommer](mailto:simon.rommer@owasp.org)
 
 ## Copyright and License
 
