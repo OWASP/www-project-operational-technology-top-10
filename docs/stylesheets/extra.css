@@ -7,7 +7,9 @@
   margin-right: auto;
 }
 
-/* the italic source line that follows an image paragraph */
-.md-typeset p:has(> img:only-child) + p {
+/* Source lines explicitly tagged with { .img-source } in the markdown. The
+   attribute binds to the inline <em> (the line ends in emphasis), so we centre
+   the paragraph containing it. */
+.md-typeset p:has(em.img-source) {
   text-align: center;
 }

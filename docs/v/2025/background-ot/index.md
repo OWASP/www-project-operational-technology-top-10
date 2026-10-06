@@ -20,7 +20,7 @@ The Purdue Reference Model provides a functional hierarchy commonly used to desc
 
 ![Purdue Model Architecture Example](../assets/images/limes_purdue_model_example.png)
 
-Source: *Limes Security*
+Source: *Limes Security*{ .img-source }
 
 ### Levels 0–1: Direct Interaction with the Physical Process
 
@@ -71,7 +71,7 @@ and remote diagnostics and maintenance tools like depicted in the image below.
 
 ![Components of an OT System](../assets/images/nist_architecture.png)
 
-Source: *NIST SP 800-82r3, p. 11*
+Source: *NIST SP 800-82r3, p. 11*{ .img-source }
 
 A control loop is meant – as the name suggests – to control some kind of
 process. To do so, the loop employs a combination of sensors, actuators and
