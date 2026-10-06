@@ -23,9 +23,7 @@ The following tables map each OWASP OT top 10 item to relevant standard and legi
 | IEC 62443-3-2:2020 | ZCR 5.2 |
 | IEC 62443-3-3:2020 | SR 3.X, SR 4.X |
 | NIST SP 800-82:v3 | SI-2, RA-5, CM-6 |
-| NIST CSF 2.0 | ID.RA-01 |
-| NIST CSP 2.0 | ID.IM |
-| NIST CSF 2.0 | PR.PS, DE.CM-09 |
+| NIST CSF 2.0 | ID.RA-01, ID.IM, PR.PS, DE.CM-09 |
 | MITRE ATT&CK | M0916, M0934, M0942, M0945, M0948 |
 | EU NIS2 Directive Commission implementing Regulation C(2024) 7151 - ANNEX | 6.5, 6.6, 6.10 |
 
