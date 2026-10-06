@@ -41,7 +41,7 @@ jobs:
     # added without updating PARTS in pdf/assemble.py.
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - uses: actions/setup-python@v6
         with:
@@ -58,3 +58,27 @@ jobs:
               "$edition" --strict
           done
 
+  pdf_render:
+    name: PDF render
+    runs-on: ubuntu-24.04
+    # The full pandoc + LaTeX render, so a PDF that no longer builds fails here
+    # and not in the deploy job, where it would also stop the website deploy.
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # git describe in the page footer needs the tags
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: 3.x
+
+      - name: Render every edition
+        run: bash pdf/build.sh --all "$RUNNER_TEMP/pdf/"
+
+      - name: Upload the PDFs
+        uses: actions/upload-artifact@v7
+        with:
+          name: owasp-ot-top-10-pdf
+          path: ${{ runner.temp }}/pdf/*.pdf
+          if-no-files-found: error

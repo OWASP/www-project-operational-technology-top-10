@@ -60,8 +60,10 @@ dropped, so a new edition can be built while it is still incomplete.
 `.github/workflows/ci.yml` runs `assemble.py --strict` for every edition on each
 push. That needs no Docker and takes a second, and it fails on a page that PARTS
 lists but the edition does not have, or that the edition has but PARTS never
-mentions (`WEBSITE_ONLY` in `assemble.py` holds the deliberate exceptions). The
-full render is only exercised by the deploy workflow.
+mentions (`WEBSITE_ONLY` in `assemble.py` holds the deliberate exceptions). A
+second job runs the full `build.sh --all` render and uploads the PDFs as a
+workflow artifact, so a broken render shows up on the push that caused it rather
+than in the deploy job.
 
 ## Publishing
 

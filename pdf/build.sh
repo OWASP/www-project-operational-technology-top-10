@@ -70,15 +70,18 @@ if [ -n "$OUT" ] && ! [ -d "$OUT" ] && [ "${OUT%/}" = "$OUT" ]; then
   [ ${#TARGETS[@]} -eq 1 ] || { echo "--all needs a directory as output" >&2; exit 1; }
 fi
 
+# One scratch root for all editions, removed on every exit path. The trap lives
+# at script level: a trap inside build_edition would outlive its `local` work
+# variable, fail under `set -u` and turn a successful build into exit 1.
+WORK_ROOT="$(mktemp -d)"
+trap 'rm -rf "$WORK_ROOT"' EXIT
+
 build_edition() {
   local edition="$1" out="$2"
   case "$out" in /*) : ;; *) out="$PWD/$out" ;; esac   # normalise to absolute
 
-  local work
-  work="$(mktemp -d)"
-  # RETURN traps don't fire when set -e aborts the function mid-command, so
-  # clean up on every exit path instead.
-  trap 'rm -rf "$work"' EXIT
+  local work="$WORK_ROOT/$edition"
+  mkdir "$work"
 
   echo "==> [$edition] Assembling markdown..."
   python3 "$ROOT/pdf/assemble.py" "$ROOT/docs" "$work/assembled.md" "$edition"
