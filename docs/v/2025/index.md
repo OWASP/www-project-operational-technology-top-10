@@ -8,9 +8,14 @@
     [this website](https://owasp.org/slack/invite).
     
     We do a video conference every first monday of a month from 4pm to 5pm CET/CEST using
-    [https://meet.google.com/gwi-vhxz-rjr](https://meet.google.com/gwi-vhxz-rjr). We also provide an [public ics calendar series](https://calendar.google.com/calendar/ical/c_7dfb0e972186165865194ec083c325f8a744568c1229e44b6e8a99fc9250944a%40group.calendar.google.com/public/basic.ics) that you can add to your calendar.
-    
-    If you want to contribute, please see our [contributing guide](introduction/contributing.md). Basically, all work happens public on github and through merge-requests. If you plan a larger change, it is always a good idea to talk with us during one of the Monthly meetings first.
+    [https://meet.google.com/gwi-vhxz-rjr](https://meet.google.com/gwi-vhxz-rjr).
+    We also provide an [public ics calendar series](https://calendar.google.com/calendar/ical/c_7dfb0e972186165865194ec083c325f8a744568c1229e44b6e8a99fc9250944a%40group.calendar.google.com/public/basic.ics)
+    that you can add to your calendar.
+
+    If you want to contribute, please see our
+    [contributing guide](introduction/contributing.md).
+    Basically, all work happens public on github and through merge-requests. If you plan a larger change,
+    it is always a good idea to talk with us during one of the Monthly meetings first.
 
 # OWASP OT Top 10
 
@@ -56,11 +61,11 @@ The goal is to make these groups aware of the unique security challenges in OT e
 The primary purpose of this document is to raise awareness of common security problems in the OT space and provide a foundation for addressing them. It introduces developers and integrators to the OT world and its specific requirements, helping them anticipate vulnerabilities and apply mitigations.
 
 Readers should use this document as:
+
 - **An awareness tool** for understanding critical OT security risks.
 - **A reference guide** for best practices and mitigations.
 - **A foundation for policy and supply chain requirements**, helping organizations align internal guidelines with external mandates.
 - **A starting point, not a complete solution** - while the Top 10 risks are critical, they are not exhaustive. Additional risks may exist, and organizations should build a comprehensive security strategy beyond this list.
-
 
 ## The Top 10 List
 
@@ -71,6 +76,7 @@ The [Summary](summary.md) gives you all ten items with one sentence each, [The T
 ## Project Leaders (in Alphabetical Order)
 
 - [Andreas Happe](mailto:andreas.happe@owasp.org)
+- [Felix Eberstaller](mailto:f0rw4rd@owasp.org)
 - [Siegfried Hollerer](mailto:siegfried.hollerer@owasp.org)
 - [Simon Rommer](mailto:simon.rommer@owasp.org)
 

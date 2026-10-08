@@ -37,7 +37,7 @@ Given the requirement of non-stop operation of many OT systems, hardening is cru
 
 Mitigation and countermeasures can be applied along the supply chain. Starting from the vendor over the integrator to the asset owner.
 
-### Developers/Component Suppliers/Integrators: Design and Implementation
+### Design and Implementation
 
 To ensure robust software security across the development lifecycle, component suppliers, and integrators—must adopt proactive countermeasures:
 
@@ -47,7 +47,7 @@ To ensure robust software security across the development lifecycle, component s
 - Provide your component or system with a secure default configuration
 - Provide a hardening guideline for your component or system to customers
 
-### Operators: Operational
+### Operational
 
 Operators play a critical role in maintaining the security and resilience of deployed systems. To reduce risk and ensure operational integrity, the following countermeasures are essential:
 

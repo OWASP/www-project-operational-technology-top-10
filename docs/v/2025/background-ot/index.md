@@ -10,20 +10,19 @@ Within the OT domain, **Industrial Control Systems (ICS)** represent a major sub
 
 ICS architectures form the backbone of industrial operations and are often used interchangeably with the term OT in cybersecurity contexts.
 
-<div align="center">
-  <img src="../assets/images/CPS_OT_ICS.png" width="50%" />
-</div>
+![Cyber-physical systems, OT and ICS](../assets/images/CPS_OT_ICS.png){ width=50% }
 
-Overall, OT systems are essential for the operation of many industries, and they far outnumber Information Technology (IT) systems in use. OT security problems in these industries can have major impacts on the society and surrounding environment. 
+Overall, OT systems are essential for the operation of many industries, and they far outnumber Information Technology (IT) systems in use. OT security problems in these industries can have major impacts on the society and surrounding environment.
 
 ## The Purdue Model: Organizing Systems by Function
 
 The Purdue Reference Model provides a functional hierarchy commonly used to describe and segment OT environments. It separates systems based on their operational role and their proximity to the physical process, enabling clearer security boundaries and communication paths. While initially deployed in the 1990s, the Purdue Model today exists in many slightly modified versions, but in general there are 6 separate levels and additional DMZs between them. The image below shows these levels starting with Level 0 (the actual physical field devices) up to Level 5, where the enterprise IT resides.
 
-![Purdue Model Architecture Example](../assets/images/limes_purdue_model_example.png)<br>
-*Source: Limes Security*
+![Purdue Model Architecture Example](../assets/images/limes_purdue_model_example.png)
 
-**Levels 0–1: Direct Interaction with the Physical Process**
+Source: *Limes Security*{ .img-source }
+
+### Levels 0–1: Direct Interaction with the Physical Process
 
 Levels 0 and 1 include systems that interface directly with physical equipment. Interruptions or compromise at this layer have immediate, real-time operational impact.
 
@@ -33,9 +32,10 @@ Levels 0 and 1 include systems that interface directly with physical equipment. 
   - **Remote Terminal Units (RTUs):** Similar to PLCs but typically deployed across long distances or remote infrastructure (e.g., pipelines).
   - **Intelligent Electronic Devices (IEDs):** Specialized control and protection equipment, used primarily in electric power systems.
 
-**Levels 2–3: Indirect Interaction and Operational Management**
+### Levels 2–3: Indirect Interaction and Operational Management
 
 Levels 2 and 3 provide supervisory and operational functions. These systems do not control hardware directly but communicate with Level 1 devices to monitor or adjust the process.
+
 - **Level 2 – Supervisory Control.** Systems at this level provide the interface for humans to interact with the machines.
   - **Human–Machine Interfaces (HMIs):** Localized operator screens for viewing process states and issuing manual commands to specific machines.
   - **Supervisory Control and Data Acquisition (SCADA) Systems:** Aggregated supervisory platforms that collect data from multiple controllers (PLCs/RTUs) to provide centralized visibility across an entire facility or distributed environment.
@@ -44,6 +44,7 @@ Levels 2 and 3 provide supervisory and operational functions. These systems do n
   - **Building Automation Systems (BAS):** Support infrastructure such as Heating, Ventilation, and Air Conditioning (HVAC), lighting, and environmental controls within industrial sites.
 
 While the core of OT sits at **Levels 0–3**, the Purdue Model extends into the corporate world. It is important to note that this is not a strict, universal blueprint, but a reference model to help define trust boundaries.
+
 - **Level 3.5 – IT/OT DMZ (Demilitarized Zone).** This is the most critical security boundary. It acts as a "buffer" between IT and OT. Since most security incidents originate in the IT environment (e.g., phishing), this layer prevents an infection from spreading directly to the controllers at Level 1.
 - **Level 4 – Local Business Network.** The local office network at the plant site (e.g., local engineering workstations or site-specific ERP).
 - **Level 5 – Enterprise.** The corporate headquarters network, where centralized services like email and global HR systems reside.
@@ -51,14 +52,15 @@ While the core of OT sits at **Levels 0–3**, the Purdue Model extends into the
 
 ## The IT/OT Convergence: Defining Functional Context
 
-In modern industrial settings, the distinction between IT and OT is not defined by the hardware itself, but by the _function_ the device performs and the _context_ in which it operates. This is known as IT/OT convergence - where traditional IT components are used to manage physical processes.
+In modern industrial settings, the distinction between IT and OT is not defined by the hardware itself, but by the *function* the device performs and the *context* in which it operates. This is known as IT/OT convergence - where traditional IT components are used to manage physical processes.
 
 To determine if a system belongs in the OT domain, consider the following "litmus test" questions:
+
 1. **Physical Impact:** If the device fails or is compromised, does it directly affect a physical process or life safety?
 2. **Environment:** Is the device located on the factory floor or within a secured industrial network (Levels 0–3)?
 3. **Primary Goal:** Is the system’s most critical requirement Availability (keeping the process running) rather than Confidentiality (protecting data)?
 
-**Example: The Video Camera**
+### Example: The Video Camera
 
 Consider a standard IP video camera. If that camera is installed in a corporate lobby to monitor for unauthorized visitors, it is a traditional **IT asset**. Failure results in a loss of records but no impact on business operations. However, if that same model of camera is placed on a factory floor to allow an operator to monitor a high-pressure furnace or a robotic assembly cell, it becomes a critical **OT asset**.
 
@@ -67,8 +69,9 @@ Consider a standard IP video camera. If that camera is installed in a corporate 
 A typical OT system consists of control loops, human-machine interfaces (HMI)
 and remote diagnostics and maintenance tools like depicted in the image below.
 
-![Components of an OT System](../assets/images/nist_architecture.png)<br>
-*Source: NIST SP 800-82r3, p. 11*
+![Components of an OT System](../assets/images/nist_architecture.png)
+
+Source: *NIST SP 800-82r3, p. 11*{ .img-source }
 
 A control loop is meant – as the name suggests – to control some kind of
 process. To do so, the loop employs a combination of sensors, actuators and

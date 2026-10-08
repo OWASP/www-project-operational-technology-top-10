@@ -12,3 +12,4 @@ The OT Top 10 wouldn't be possible without our awesome contributors and reviewer
 | [Sixtus Leonhardsberger](https://github.com/bamb00zl3r) | Limes Security | |
 | [mfd2007](https://github.com/mfd2007) | | |
 | [Marleine van Kampen](https://github.com/marleinevankampen) | | |
+| [Mariia D.](https://github.com/denisenkom) | | |

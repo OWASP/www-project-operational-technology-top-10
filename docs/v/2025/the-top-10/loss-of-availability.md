@@ -59,7 +59,7 @@ The [2024 CrowdStrike incident](https://en.wikipedia.org/wiki/2024_CrowdStrike-r
 
 ### Operational
 
-- implement redundancy and failover mechanisms to ensure continuous operation in case of a failure or attack
+- regularly test the implemented redundancy and failover mechanisms, e.g. during planned maintenance windows, to ensure they still work when needed
 
 ## Next Actionable Steps
 

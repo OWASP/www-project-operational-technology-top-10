@@ -33,8 +33,6 @@ Furthermore, examples like SolarWinds Orion and Crowdstrike threat detection sof
 
 ## Mitigation/Countermeasures
 
-### General
-
 Establish a [Supply Chain Management](https://attack.mitre.org/mitigations/M0817/) that includes policies and procedures to ensure all devices and components come from trusted suppliers and are tested to confirm their integrity.
 
 ### Design and Implementation
