@@ -443,6 +443,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="The Purdue Model: Organizing Systems by Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#levels-01-direct-interaction-with-the-physical-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Levels 0–1: Direct Interaction with the Physical Process
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levels-23-indirect-interaction-and-operational-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Levels 2–3: Indirect Interaction and Operational Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -453,6 +481,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="The IT/OT Convergence: Defining Functional Context">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-the-video-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: The Video Camera
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1334,6 +1379,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="The Purdue Model: Organizing Systems by Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#levels-01-direct-interaction-with-the-physical-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Levels 0–1: Direct Interaction with the Physical Process
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levels-23-indirect-interaction-and-operational-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Levels 2–3: Indirect Interaction and Operational Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1344,6 +1417,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="The IT/OT Convergence: Defining Functional Context">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-the-video-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: The Video Camera
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1401,16 +1491,13 @@
 <p>Within CPS lies <strong>Operational Technology (OT)</strong>, a more specialized domain focused specifically on industrial, utility, and critical infrastructure environments. OT encompasses the machines, control software, and communication networks. These systems are built to keep essential processes running safely, reliably, and often continuously.</p>
 <p>Within the OT domain, <strong>Industrial Control Systems (ICS)</strong> represent a major subset comprising technologies. ICS refers to the specific components that carry out control functions on the shop floor or within an industrial process. This includes Programmable Logic Controllers (PLCs) that open and close valves, Supervisory Control and Data Acquisition (SCADA) systems that supervise entire facilities, and Human–Machine Interfaces (HMIs) that operators use to monitor temperatures, pressures, and production flows.</p>
 <p>ICS architectures form the backbone of industrial operations and are often used interchangeably with the term OT in cybersecurity contexts.</p>
-<div align="center">
-  <img src="../assets/images/CPS_OT_ICS.png" width="50%" />
-</div>
-
-<p>Overall, OT systems are essential for the operation of many industries, and they far outnumber Information Technology (IT) systems in use. OT security problems in these industries can have major impacts on the society and surrounding environment. </p>
+<p><img alt="Cyber-physical systems, OT and ICS" src="../assets/images/CPS_OT_ICS.png" width="50%" /></p>
+<p>Overall, OT systems are essential for the operation of many industries, and they far outnumber Information Technology (IT) systems in use. OT security problems in these industries can have major impacts on the society and surrounding environment.</p>
 <h2 id="the-purdue-model-organizing-systems-by-function">The Purdue Model: Organizing Systems by Function</h2>
 <p>The Purdue Reference Model provides a functional hierarchy commonly used to describe and segment OT environments. It separates systems based on their operational role and their proximity to the physical process, enabling clearer security boundaries and communication paths. While initially deployed in the 1990s, the Purdue Model today exists in many slightly modified versions, but in general there are 6 separate levels and additional DMZs between them. The image below shows these levels starting with Level 0 (the actual physical field devices) up to Level 5, where the enterprise IT resides.</p>
-<p><img alt="Purdue Model Architecture Example" src="../assets/images/limes_purdue_model_example.png" /><br>
-<em>Source: Limes Security</em></p>
-<p><strong>Levels 0–1: Direct Interaction with the Physical Process</strong></p>
+<p><img alt="Purdue Model Architecture Example" src="../assets/images/limes_purdue_model_example.png" /></p>
+<p>Source: <em class="img-source">Limes Security</em></p>
+<h3 id="levels-01-direct-interaction-with-the-physical-process">Levels 0–1: Direct Interaction with the Physical Process</h3>
 <p>Levels 0 and 1 include systems that interface directly with physical equipment. Interruptions or compromise at this layer have immediate, real-time operational impact.</p>
 <ul>
 <li><strong>Level 0 – Field Devices.</strong> This level consists of sensors, actuators, valves, motors, and other field devices that monitor or affect physical parameters such as temperature, pressure, flow, or position.</li>
@@ -1419,32 +1506,38 @@
 <li><strong>Remote Terminal Units (RTUs):</strong> Similar to PLCs but typically deployed across long distances or remote infrastructure (e.g., pipelines).</li>
 <li><strong>Intelligent Electronic Devices (IEDs):</strong> Specialized control and protection equipment, used primarily in electric power systems.</li>
 </ul>
-<p><strong>Levels 2–3: Indirect Interaction and Operational Management</strong></p>
-<p>Levels 2 and 3 provide supervisory and operational functions. These systems do not control hardware directly but communicate with Level 1 devices to monitor or adjust the process.
-- <strong>Level 2 – Supervisory Control.</strong> Systems at this level provide the interface for humans to interact with the machines.
-  - <strong>Human–Machine Interfaces (HMIs):</strong> Localized operator screens for viewing process states and issuing manual commands to specific machines.
-  - <strong>Supervisory Control and Data Acquisition (SCADA) Systems:</strong> Aggregated supervisory platforms that collect data from multiple controllers (PLCs/RTUs) to provide centralized visibility across an entire facility or distributed environment.
-- <strong>Level 3 – Operations Management.</strong> Systems in this layer manage production workflows and facility operations across the site. Typical examples include:
-  - <strong>Manufacturing Execution Systems (MES):</strong> Coordinate production processes, material flows, and operational tracking.
-  - <strong>Building Automation Systems (BAS):</strong> Support infrastructure such as Heating, Ventilation, and Air Conditioning (HVAC), lighting, and environmental controls within industrial sites.</p>
-<p>While the core of OT sits at <strong>Levels 0–3</strong>, the Purdue Model extends into the corporate world. It is important to note that this is not a strict, universal blueprint, but a reference model to help define trust boundaries.
-- <strong>Level 3.5 – IT/OT DMZ (Demilitarized Zone).</strong> This is the most critical security boundary. It acts as a "buffer" between IT and OT. Since most security incidents originate in the IT environment (e.g., phishing), this layer prevents an infection from spreading directly to the controllers at Level 1.
-- <strong>Level 4 – Local Business Network.</strong> The local office network at the plant site (e.g., local engineering workstations or site-specific ERP).
-- <strong>Level 5 – Enterprise.</strong> The corporate headquarters network, where centralized services like email and global HR systems reside.
-- <strong>Level 5+ – Internet &amp; Internet DMZ.</strong> External connections, cloud-based analytics, and remote vendor access.</p>
+<h3 id="levels-23-indirect-interaction-and-operational-management">Levels 2–3: Indirect Interaction and Operational Management</h3>
+<p>Levels 2 and 3 provide supervisory and operational functions. These systems do not control hardware directly but communicate with Level 1 devices to monitor or adjust the process.</p>
+<ul>
+<li><strong>Level 2 – Supervisory Control.</strong> Systems at this level provide the interface for humans to interact with the machines.</li>
+<li><strong>Human–Machine Interfaces (HMIs):</strong> Localized operator screens for viewing process states and issuing manual commands to specific machines.</li>
+<li><strong>Supervisory Control and Data Acquisition (SCADA) Systems:</strong> Aggregated supervisory platforms that collect data from multiple controllers (PLCs/RTUs) to provide centralized visibility across an entire facility or distributed environment.</li>
+<li><strong>Level 3 – Operations Management.</strong> Systems in this layer manage production workflows and facility operations across the site. Typical examples include:</li>
+<li><strong>Manufacturing Execution Systems (MES):</strong> Coordinate production processes, material flows, and operational tracking.</li>
+<li><strong>Building Automation Systems (BAS):</strong> Support infrastructure such as Heating, Ventilation, and Air Conditioning (HVAC), lighting, and environmental controls within industrial sites.</li>
+</ul>
+<p>While the core of OT sits at <strong>Levels 0–3</strong>, the Purdue Model extends into the corporate world. It is important to note that this is not a strict, universal blueprint, but a reference model to help define trust boundaries.</p>
+<ul>
+<li><strong>Level 3.5 – IT/OT DMZ (Demilitarized Zone).</strong> This is the most critical security boundary. It acts as a "buffer" between IT and OT. Since most security incidents originate in the IT environment (e.g., phishing), this layer prevents an infection from spreading directly to the controllers at Level 1.</li>
+<li><strong>Level 4 – Local Business Network.</strong> The local office network at the plant site (e.g., local engineering workstations or site-specific ERP).</li>
+<li><strong>Level 5 – Enterprise.</strong> The corporate headquarters network, where centralized services like email and global HR systems reside.</li>
+<li><strong>Level 5+ – Internet &amp; Internet DMZ.</strong> External connections, cloud-based analytics, and remote vendor access.</li>
+</ul>
 <h2 id="the-itot-convergence-defining-functional-context">The IT/OT Convergence: Defining Functional Context</h2>
 <p>In modern industrial settings, the distinction between IT and OT is not defined by the hardware itself, but by the <em>function</em> the device performs and the <em>context</em> in which it operates. This is known as IT/OT convergence - where traditional IT components are used to manage physical processes.</p>
-<p>To determine if a system belongs in the OT domain, consider the following "litmus test" questions:
-1. <strong>Physical Impact:</strong> If the device fails or is compromised, does it directly affect a physical process or life safety?
-2. <strong>Environment:</strong> Is the device located on the factory floor or within a secured industrial network (Levels 0–3)?
-3. <strong>Primary Goal:</strong> Is the system’s most critical requirement Availability (keeping the process running) rather than Confidentiality (protecting data)?</p>
-<p><strong>Example: The Video Camera</strong></p>
+<p>To determine if a system belongs in the OT domain, consider the following "litmus test" questions:</p>
+<ol>
+<li><strong>Physical Impact:</strong> If the device fails or is compromised, does it directly affect a physical process or life safety?</li>
+<li><strong>Environment:</strong> Is the device located on the factory floor or within a secured industrial network (Levels 0–3)?</li>
+<li><strong>Primary Goal:</strong> Is the system’s most critical requirement Availability (keeping the process running) rather than Confidentiality (protecting data)?</li>
+</ol>
+<h3 id="example-the-video-camera">Example: The Video Camera</h3>
 <p>Consider a standard IP video camera. If that camera is installed in a corporate lobby to monitor for unauthorized visitors, it is a traditional <strong>IT asset</strong>. Failure results in a loss of records but no impact on business operations. However, if that same model of camera is placed on a factory floor to allow an operator to monitor a high-pressure furnace or a robotic assembly cell, it becomes a critical <strong>OT asset</strong>.</p>
 <h2 id="example-ot-architectures">Example OT Architectures</h2>
 <p>A typical OT system consists of control loops, human-machine interfaces (HMI)
 and remote diagnostics and maintenance tools like depicted in the image below.</p>
-<p><img alt="Components of an OT System" src="../assets/images/nist_architecture.png" /><br>
-<em>Source: NIST SP 800-82r3, p. 11</em></p>
+<p><img alt="Components of an OT System" src="../assets/images/nist_architecture.png" /></p>
+<p>Source: <em class="img-source">NIST SP 800-82r3, p. 11</em></p>
 <p>A control loop is meant – as the name suggests – to control some kind of
 process. To do so, the loop employs a combination of sensors, actuators and
 controllers. Sensors measure certain physical properties like temperature or
