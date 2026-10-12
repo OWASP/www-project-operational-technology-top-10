@@ -43,7 +43,7 @@ jobs:
       - name: Checkout markdown
         uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: 3.x
 
@@ -69,7 +69,7 @@ jobs:
         with:
           fetch-depth: 0   # git describe in the page footer needs the tags
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: 3.x
 
