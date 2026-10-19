@@ -5,9 +5,11 @@ Markdown that powers the website — using **pandoc + the Eisvogel LaTeX
 template**, run inside the [`pandoc/extra`](https://hub.docker.com/r/pandoc/extra)
 Docker image (bundles pandoc, XeLaTeX and Eisvogel, so no local TeX is needed).
 
-This mirrors how the OWASP MASTG produces its ebook, and gives a native cover
-page, table of contents, PDF bookmarks/outline, running headers/footers, page
-numbers and row-striped tables.
+This mirrors how the OWASP MASVS and ASVS produce their PDFs. On top of the
+template, `style.tex` gives it the look of the other OWASP documents: a
+full-bleed cover in the OWASP Foundation blue, an imprint page, part openers,
+numbered risk chapters, a back cover, plus the TOC, PDF bookmarks/outline,
+running headers/footers and row-striped tables.
 
 ## Build it
 
@@ -24,7 +26,7 @@ Requirements: Docker + `python3`. The generated PDFs are git-ignored.
 
 An edition is a `docs/v/<year>/` directory. Nothing in here names a year: the
 build defaults to the newest edition present, `--edition` picks another one, and
-`--all` builds every one of them. The cover date and the page footer are derived
+`--all` builds every one of them. The cover, imprint and page footer are derived
 from the edition, and the file name is `OWASP-OT-Top-10-<year>.pdf`.
 
 So `docs/v/2026/` is picked up as soon as it exists. Chapters an edition does not
@@ -44,16 +46,30 @@ dropped, so a new edition can be built while it is still incomplete.
     website-only "Download the PDF" notice),
   - rewrites inter-page `*.md` links to internal `#anchors`,
   - resolves image paths relative to `docs/`,
-  - skips chapters the edition does not have, with a warning on stderr.
+  - skips chapters the edition does not have, with a warning on stderr,
+  - keeps the ten risks' shared sub-sections (Description, Rationale, ...) out
+    of the TOC, which lists only their titles; the PDF outline keeps them,
+  - with `--front=<file.tex>`, writes the cover and imprint calls (edition,
+    project leaders from `project.owasp.yaml`) that go ahead of the TOC.
   `PARTS` lists the chapters relative to `docs/v/<edition>/`, so it describes
   every edition at once. If you add or reorder pages in `mkdocs.yml`, update
   `PARTS` here too.
-- **`metadata.yml`** — pandoc/Eisvogel settings (title page, TOC, teal theme
-  colour, table styling, margins). It holds nothing edition-specific — the cover
-  date and footer are passed per edition by `build.sh`. Only the ten risk
-  chapters are numbered; `bookmarksnumbered` carries those numbers into the PDF
+- **`style.tex`** — the LaTeX design layer: palette, cover, imprint, part
+  openers, risk chapter headings, back cover, text setting. Full-page artwork
+  is drawn through the `shipout/background` hook, so it needs no second LaTeX
+  run; it avoids TikZ opacity there, which xdvipdfmx drops (the watermark
+  colour is pre-mixed in `build.sh` instead).
+- **`assets/`** — `ot-top10-logo.svg`, the project emblem, and
+  `owasp-logo.svg`, the OWASP mark from
+  [OWASP/www--site-theme](https://github.com/OWASP/www--site-theme/blob/main/assets/images/logo.svg).
+  `build.sh` derives the white and watermark variants for the blue pages.
+- **`metadata.yml`** — pandoc/Eisvogel settings (TOC, link colours, table
+  styling, margins). It holds nothing edition-specific — the footer is passed
+  per edition by `build.sh`. Only the ten risk chapters are numbered;
+  `bookmarksnumbered` (in `style.tex`) carries those numbers into the PDF
   outline as well.
-- **`build.sh`** — runs the two steps above in the pinned `pandoc/extra` image.
+- **`build.sh`** — runs the steps above in the pinned `pandoc/extra` image and
+  writes the build identifier (git tag or commit) for the imprint page.
 
 ## CI
 

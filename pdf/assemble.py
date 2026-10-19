@@ -4,6 +4,10 @@ import os, re, sys
 
 ARGS   = [a for a in sys.argv[1:] if not a.startswith("--")]
 STRICT = "--strict" in sys.argv   # CI mode: warnings about the page set become errors
+# --front=PATH: also write the LaTeX front matter (cover, imprint) that
+# build.sh hands pandoc as --include-before-body, i.e. ahead of the TOC.
+FRONT  = next((a.split("=", 1)[1] for a in sys.argv[1:] if a.startswith("--front=")),
+              None)
 
 DOCS = ARGS[0]              # path to docs/ dir
 OUT  = ARGS[1]              # output assembled .md
@@ -99,28 +103,20 @@ def in_edition(rel):
 
 ORDER = [in_edition(rel) for _part, files in PARTS for rel in files]
 
-# Imprint / colophon shown on its own page ahead of the content (no heading,
-# so it stays out of the table of contents).
-COLOPHON = """\
-**OWASP Operational Technology (OT) Top 10 — {edition} Edition**
-
-Available online at <https://ot.owasp.org>. This is a living document and is
-updated as the OT threat landscape evolves.
-
-Part of the OWASP OT Top 10 Project:
-<https://owasp.org/www-project-operational-technology-top-10/>.
-
-Project leaders (in alphabetical order): {leaders}.
-
-------------------------------------------------------------------------
-
-Copyright © The OWASP Foundation.
-
-This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
-International License (CC BY-SA 4.0). For any reuse or distribution, you must
-make the license terms of this work clear to others. OWASP® is a registered
-trademark of the OWASP Foundation, Inc.
+# Cover and imprint, ahead of the table of contents. The layout lives in
+# pdf/style.tex (\otcover, \otimprint); this only fills in the edition and the
+# leaders. Front matter is numbered in roman, the content restarts at 1.
+FRONT_MATTER = r"""\pagenumbering{{roman}}
+\otcover{{{edition}}}{{{leaders_lines}}}
+\otimprint{{{edition}}}{{{leaders}}}
 """
+BODY_START = "```{=latex}\n\\pagenumbering{arabic}\n```"
+BACK_COVER = "```{=latex}\n\\otbackcover\n```"
+
+# The ten risk chapters share one sub-section template (Description,
+# Rationale, ...). Listed ten times it made the TOC five pages long, so the
+# TOC shows only their titles; the PDF outline keeps the full depth.
+TOC_DEPTH = "```{=latex}\n\\addtocontents{toc}{\\protect\\setcounter{tocdepth}{%d}}\n```"
 
 
 def slug(relpath):
@@ -311,19 +307,27 @@ for rel in unlisted_chapters():
 # docs/ sits in the repo root, so that root holds project.owasp.yaml.
 repo_root = os.path.dirname(os.path.abspath(DOCS.rstrip(os.sep)))
 leaders = project_leaders(repo_root)
-chunks = [COLOPHON.format(edition=EDITION,
-                          leaders=", ".join(leaders) or "N.A.").strip()]
+chunks = [BODY_START]
 count = 0
 for part, files in PARTS:
     files = available(files)
     if not files:
         continue
-    chunks.append(part_heading(part) + "\n\n" + render(files[0]))
-    chunks += [render(rel) for rel in files[1:]]
+    rendered = [f"{TOC_DEPTH % 1}\n\n{render(rel)}\n\n{TOC_DEPTH % 2}"
+                if rel in RISK_FILES else render(rel) for rel in files]
+    chunks.append(part_heading(part) + "\n\n" + rendered[0])
+    chunks += rendered[1:]
     count += len(files)
+chunks.append(BACK_COVER)
 
 with open(OUT, "w", encoding="utf-8") as f:
     f.write("\n\n\\newpage\n\n".join(chunks) + "\n")
+if FRONT:
+    names = [latex_escape(n) for n in leaders]
+    with open(FRONT, "w", encoding="utf-8") as f:
+        f.write(FRONT_MATTER.format(edition=EDITION,
+                                    leaders_lines=r" \\ ".join(names),
+                                    leaders=", ".join(names) or "N.A."))
 print(f"Assembled {count} of {len(ORDER)} files of the {EDITION} edition -> {OUT}")
 
 if STRICT and PROBLEMS:
