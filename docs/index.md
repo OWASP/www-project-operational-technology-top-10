@@ -1,3 +1,8 @@
+!!! tip "PDF Download"
+
+    The whole OWASP OT Top 10 2025 is also available as a single
+    [PDF document](https://ot.owasp.org/assets/OWASP-OT-Top-10-2025.pdf) for offline reading and printing.
+
 !!! info "Community and Contributing"
 
     Please don’t hesitate to contact the OWASP OT Top 10 project with your questions

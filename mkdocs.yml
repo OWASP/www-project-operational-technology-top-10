@@ -91,3 +91,4 @@ nav:
   - 'Appendix':
     - 'Standards Mapping Table': v/2025/appendix/mappingTable.md
     - 'Glossary': v/2025/appendix/glossary.md
+  - 'Download PDF': https://ot.owasp.org/assets/OWASP-OT-Top-10-2025.pdf
