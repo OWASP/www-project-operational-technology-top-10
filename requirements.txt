@@ -1,0 +1,4 @@
+# Site build dependencies, used by .github/workflows/deploy.yml.
+# Pinned so a new release cannot change the site unnoticed; dependabot bumps them.
+mkdocs==1.6.1
+mkdocs-material==9.7.7

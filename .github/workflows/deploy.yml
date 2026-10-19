@@ -22,5 +22,5 @@ jobs:
       - name: Build combined PDF (pandoc + Eisvogel via Docker)
         run: bash pdf/build.sh --all docs/assets/
       - name: Install Dependencies
-        run: pip install mkdocs-material
+        run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force --clean
