@@ -25,14 +25,14 @@ IMAGE="pandoc/extra@sha256:dfae5cf73a0e0ad40acf23d2d2c4adf5715e560aeea3324aa87e6
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 
-# Build identifier for the page footer: the current git tag if the project has
+# Build identifier for the imprint page: the current git tag if the project has
 # tagged a release ("v1.0", "v1.0-3-g851984b between tags"), otherwise the
-# short commit hash labelled as such ("git: 851984b"); "-dirty" marks
+# short commit hash labelled as such ("commit 851984b"); "-dirty" marks
 # uncommitted trees. Empty outside a git checkout.
 if VERSION="$(git -C "$ROOT" describe --tags --dirty 2>/dev/null)"; then
   :
 elif VERSION="$(git -C "$ROOT" describe --always --dirty 2>/dev/null)"; then
-  VERSION="git: $VERSION"
+  VERSION="commit $VERSION"
 else
   VERSION=""
 fi
@@ -84,16 +84,29 @@ build_edition() {
   mkdir "$work"
 
   echo "==> [$edition] Assembling markdown..."
-  python3 "$ROOT/pdf/assemble.py" "$ROOT/docs" "$work/assembled.md" "$edition"
+  python3 "$ROOT/pdf/assemble.py" "$ROOT/docs" "$work/assembled.md" "$edition" \
+    --front="$work/front.tex"
   cp "$ROOT/pdf/metadata.yml" "$work/metadata.yml"
+  # The build identifier for the imprint, as a macro style.tex reads; the
+  # describe output only ever needs "_" escaped.
+  printf '\\def\\otbuildid{%s}\n' "${VERSION//_/\\_}" > "$work/build.tex"
 
-  echo "==> [$edition] Rasterising cover emblem (SVG -> PDF)..."
+  echo "==> [$edition] Rasterising artwork (SVG -> PDF)..."
+  # Official OWASP artwork only: the lockup in black (imprint) and in white
+  # (cover, back cover). The OWASP mark is also the watermark on the blue
+  # (#1D7BD7) pages, its ink pre-mixed as 16% white over that blue (#4190DD)
+  # because TikZ opacity drawn from the shipout hook loses its PDF resource
+  # under xdvipdfmx.
+  cp "$ROOT/pdf/assets/owasp-lockup.svg" "$work/owasp-lockup.svg"
+  sed -e 's/fill="#000000"/fill="#FFFFFF"/' \
+    "$ROOT/pdf/assets/owasp-lockup.svg" > "$work/owasp-lockup-white.svg"
+  sed -e 's/fill:#000000/fill:#4190DD/g' \
+    "$ROOT/pdf/assets/owasp-logo.svg" > "$work/owasp-watermark.svg"
   docker run --rm \
-    -v "$ROOT":/data:ro \
     -v "$work":/work \
-    --entrypoint rsvg-convert \
+    --entrypoint sh \
     "$IMAGE" \
-      -f pdf -o /work/logo.pdf /data/pdf/assets/ot-top10-logo.svg
+      -c 'for f in /work/*.svg; do rsvg-convert -f pdf -o "${f%.svg}.pdf" "$f" || exit 1; done'
 
   echo "==> [$edition] Rendering PDF with pandoc + Eisvogel (Docker)..."
   docker run --rm \
@@ -103,8 +116,10 @@ build_edition() {
       /work/assembled.md \
       --template eisvogel \
       --metadata-file=/work/metadata.yml \
-      --metadata date="$edition Edition" \
-      --metadata footer-left="${VERSION:-$edition Edition}" \
+      --metadata footer-left="$edition Edition" \
+      --include-in-header=/work/build.tex \
+      --include-in-header=/data/pdf/style.tex \
+      --include-before-body=/work/front.tex \
       --toc \
       --pdf-engine=xelatex \
       --resource-path=/data/docs \

@@ -1,0 +1,189 @@
+% Visual design of the combined PDF, layered on top of the Eisvogel template.
+% pdf/build.sh passes this file with --include-in-header; the cover, imprint
+% and back cover macros are called from the front matter that assemble.py
+% writes (--front) and from the end of the assembled markdown.
+%
+% Artwork is read from /work, where build.sh rasterises the official OWASP
+% logos in pdf/assets/:
+%   /work/owasp-lockup.pdf        mark + wordmark, black
+%   /work/owasp-lockup-white.pdf  mark + wordmark, white
+%   /work/owasp-watermark.pdf     mark alone, pale on the cover blue
+\usepackage{fontspec}
+\usepackage{tikz}
+\makeatletter
+
+% Palette: the OWASP Foundation slide blue (also the link colour), a dark navy
+% for headings, a pale blue for secondary text on blue and a grey for notes.
+\definecolor{otblue}{HTML}{1D7BD7}
+\definecolor{otnavy}{HTML}{0E3A66}
+\definecolor{otpale}{HTML}{CFE4F8}
+\definecolor{otgrey}{HTML}{5A6672}
+
+% bookmarksnumbered puts the section numbers into the PDF outline as well, so
+% the ten risks read "1 Unknown Assets ..." in the bookmark pane, not just in
+% the table of contents.
+\hypersetup{bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1}
+
+% Text setting.
+\setkomafont{subsubsection}{\normalsize\bfseries\itshape}
+\setkomafont{paragraph}{\normalsize\itshape}
+\emergencystretch=3em
+\lefthyphenmin=3
+\widowpenalty=10000
+\clubpenalty=10000
+\usepackage{enumitem}
+\setlist{topsep=4pt,itemsep=2pt,parsep=0pt}
+\AtBeginDocument{\captionsetup{skip=6pt,belowskip=2pt}}
+
+% Extra weights of the body font (Source Sans 3) for display type.
+\newfontfamily\otlight{SourceSans3-Light}[Extension=.otf]
+\newfontfamily\otblack{SourceSans3-Black}[Extension=.otf]
+\newfontfamily\otsemibold{SourceSans3-Semibold}[Extension=.otf]
+
+% Admonitions arrive as blockquotes; Eisvogel defines their colours after the
+% header-includes, so recolour them once the preamble is done.
+\AtBeginDocument{%
+  \definecolor{blockquote-border}{HTML}{1D7BD7}%
+  \definecolor{blockquote-text}{HTML}{3A4754}}
+
+% ---------------------------------------------------------------------------
+% Full-page artwork without a second LaTeX run: the shipout/background hook
+% draws #1 behind the next page, in a \paperwidth x \paperheight TikZ canvas
+% whose origin is the bottom-left corner.
+\newcommand\ot@background[1]{%
+  \AddToHookNext{shipout/background}{%
+    \put(0,0){\raisebox{-\paperheight}[0pt][0pt]{%
+      \begin{tikzpicture}[x=1pt,y=1pt]
+        \useasboundingbox (0,0) rectangle (\paperwidth,\paperheight);
+        #1
+      \end{tikzpicture}}}}}
+
+% The official OWASP lockup in white, for the blue pages. #1: height.
+\newcommand\ot@owasplockup[1]{%
+  \includegraphics[height=#1]{/work/owasp-lockup-white.pdf}}
+
+% ---------------------------------------------------------------------------
+% Cover. #1 edition year, #2 project leaders separated by \\.
+\newcommand\otcover[2]{%
+  \begin{titlepage}
+  \ot@background{%
+    \fill[otblue] (0,0) rectangle (\paperwidth,\paperheight);
+    % Oversized OWASP mark bleeding off the right edge, as a watermark.
+    \node[inner sep=0] at (.82\paperwidth,.38\paperheight)
+      {\includegraphics[width=.78\paperwidth]{/work/owasp-watermark.pdf}};
+    \fill[otnavy] (0,0) rectangle (\paperwidth,.19\paperheight);
+    \node[anchor=north west, inner sep=0]
+      at (22mm,\paperheight-20mm) {\ot@owasplockup{13mm}};
+    % Multi-line nodes get a text width: without one TikZ sets align= as an
+    % \halign, which breaks on font groups that span a \\.
+    \node[anchor=north west, inner sep=0, text=white, align=left,
+          text width=.75\paperwidth]
+      at (22mm,.72\paperheight) {%
+        % Black weight sets its word spaces too tight at display size.
+        {\otblack\fontsize{86}{80}\selectfont OT\hspace{.25em}Top\hspace{.25em}10\par}\vspace{7mm}
+        {\otlight\fontsize{27}{33}\selectfont The Top 10 Operational\\
+         Technology Security Risks\par}\vspace{9mm}
+        {\otsemibold\fontsize{15}{18}\selectfont\color{otpale}#1 Edition\par}};
+    \node[anchor=south west, inner sep=0, text=white, align=left,
+          text width=.5\paperwidth]
+      at (22mm,22mm) {%
+        {\otsemibold\fontsize{9}{11}\selectfont\color{otpale}PROJECT LEADERS\par}\vspace{2.5mm}
+        {\fontsize{11.5}{15}\selectfont #2\par}};
+    \node[anchor=south east, inner sep=0, text=white]
+      at (\paperwidth-22mm,22mm) {\fontsize{11.5}{15}\selectfont ot.owasp.org};
+  }%
+  \null
+  \end{titlepage}}
+
+% Back cover, the same blue with the OWASP lockup.
+\newcommand\otbackcover{%
+  \clearpage
+  \thispagestyle{empty}%
+  \ot@background{%
+    \fill[otblue] (0,0) rectangle (\paperwidth,\paperheight);
+    \node[inner sep=0, text=white, align=center, text width=.8\paperwidth]
+      at (.5\paperwidth,.55\paperheight) {%
+      \ot@owasplockup{20mm}\par\vspace{14mm}
+      {\otlight\fontsize{17}{22}\selectfont The OWASP Operational Technology Top 10\par}\vspace{3mm}
+      {\fontsize{12}{15}\selectfont\color{otpale}ot.owasp.org\par}};
+    \node[anchor=south, inner sep=0, text=otpale, align=center, text width=.66\paperwidth]
+      at (.5\paperwidth,22mm) {\fontsize{8.5}{11}\selectfont\hyphenpenalty=10000
+        Licensed under Creative Commons Attribution-ShareAlike 4.0 International.
+        OWASP\textsuperscript{\textregistered} is a registered trademark of the
+        OWASP Foundation, Inc.};
+  }%
+  \null}
+
+% ---------------------------------------------------------------------------
+% Imprint, on the page after the cover. #1 edition, #2 leaders (comma list).
+% The version line shows \otbuildid, which build.sh defines; empty hides it.
+\@ifundefined{otbuildid}{\def\otbuildid{}}{}
+\newcommand\otimprint[2]{%
+  \thispagestyle{empty}%
+  \noindent
+  \raisebox{-.5\height}{\includegraphics[height=14mm]{/work/owasp-lockup.pdf}}%
+  \hspace{6mm}{\color{otblue}\rule[-9mm]{.8pt}{18mm}}\hspace{6mm}%
+  \begin{minipage}[c]{.5\linewidth}\color{otblue}
+    {\otlight\fontsize{26}{30}\selectfont OT Top 10}\\[1mm]
+    {\otlight\fontsize{14}{18}\selectfont Operational Technology Security Risks}
+  \end{minipage}
+  \par\vspace{22mm}
+  {\otsemibold OWASP Operational Technology (OT) Top 10, #1 Edition}\par
+  \ifx\otbuildid\@empty\else{\small\color{otgrey}Version: \otbuildid}\par\fi
+  \vspace{5mm}
+  Available online at \href{https://ot.owasp.org}{https://ot.owasp.org}. This is
+  a living document and is updated as the OT threat landscape evolves.\par
+  \vspace{3mm}
+  Part of the OWASP OT Top 10 Project:\\
+  \href{https://owasp.org/www-project-operational-technology-top-10/}{https://owasp.org/www-project-operational-technology-top-10/}\par
+  \vspace{3mm}
+  Project leaders (in alphabetical order): #2.\par
+  \vfill
+  {\otsemibold Copyright \textcopyright{} The OWASP Foundation}\par
+  \vspace{2mm}
+  {\small\color{otgrey}This work is licensed under the
+  \href{https://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons
+  Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)}. For any
+  reuse or distribution, you must make the license terms of this work clear to
+  others. OWASP\textsuperscript{\textregistered} is a registered trademark of
+  the OWASP Foundation, Inc.\par}
+  \clearpage}
+
+% ---------------------------------------------------------------------------
+% Headings in the brand navy.
+\addtokomafont{disposition}{\color{otnavy}}
+
+% Part openers: own page, the part number and title in white on a blue band
+% over the top of the page.
+\renewcommand*{\partformat}{\partname~\thepart}
+\setkomafont{partnumber}{\otsemibold\Large\color{otpale}}
+\setkomafont{part}{\otblack\fontsize{40}{46}\selectfont\color{white}}
+\renewcommand*{\partheadstartvskip}{%
+  \clearpage
+  \thispagestyle{empty}%
+  \ot@background{%
+    \fill[otblue] (0,.58\paperheight) rectangle (\paperwidth,\paperheight);
+    \node[inner sep=0] at (.86\paperwidth,.80\paperheight)
+      {\includegraphics[width=.42\paperwidth]{/work/owasp-watermark.pdf}};
+  }%
+  \vspace*{.12\textheight}}
+\renewcommand*{\partheadmidvskip}{\par\nobreak\vskip 4mm}
+\renewcommand*{\partheadendvskip}{\par\clearpage}
+\renewcommand*{\raggedpart}{\raggedright}
+
+% Risk chapters (the only numbered sections): the number in a blue tile next
+% to the title, a blue rule underneath. Unnumbered sections stay plain.
+\renewcommand*{\sectionformat}{\thesection}
+\renewcommand{\sectionlinesformat}[4]{%
+  \Ifstr{#1}{section}{%
+    \Ifstr{#3}{}{\@hangfrom{\hskip #2}{#4}}{%
+      \begingroup\setlength{\fboxsep}{0pt}%
+      \colorbox{otblue}{\parbox[c][15mm][c]{15mm}{\centering
+        \color{white}\otblack\fontsize{30}{30}\selectfont #3}}%
+      \hspace{5mm}%
+      \parbox[c]{\dimexpr\linewidth-20mm\relax}{\raggedright #4}%
+      \endgroup\par\vspace{3mm}%
+      {\color{otblue}\rule{\linewidth}{1.2pt}}}}%
+  {\@hangfrom{\hskip #2#3}{#4}}}
+
+\makeatother

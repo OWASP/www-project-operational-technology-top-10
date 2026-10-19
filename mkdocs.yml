@@ -40,6 +40,14 @@ markdown_extensions:
   - pymdownx.superfences
   - sane_lists
 
+plugins:
+  # Listing plugins replaces the defaults, so search has to be named too.
+  - search
+  - redirects:
+      redirect_maps:
+        # The site root has no page of its own; send visitors to the current edition.
+        'index.md': 'v/2025/index.md'
+
 extra_css:
   - stylesheets/extra.css
 
@@ -91,3 +99,4 @@ nav:
   - 'Appendix':
     - 'Standards Mapping Table': v/2025/appendix/mappingTable.md
     - 'Glossary': v/2025/appendix/glossary.md
+  - 'Download PDF': https://ot.owasp.org/assets/OWASP-OT-Top-10-2025.pdf

@@ -5,3 +5,8 @@ updates:
     schedule:
       interval: weekly
       time: '00:45'
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+      time: '00:45'
