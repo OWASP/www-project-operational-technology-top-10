@@ -59,10 +59,13 @@ dropped, so a new edition can be built while it is still incomplete.
   is drawn through the `shipout/background` hook, so it needs no second LaTeX
   run; it avoids TikZ opacity there, which xdvipdfmx drops (the watermark
   colour is pre-mixed in `build.sh` instead).
-- **`assets/`** — `ot-top10-logo.svg`, the project emblem, and
-  `owasp-logo.svg`, the OWASP mark from
-  [OWASP/www--site-theme](https://github.com/OWASP/www--site-theme/blob/main/assets/images/logo.svg).
-  `build.sh` derives the white and watermark variants for the blue pages.
+- **`assets/`** — official OWASP artwork, unmodified, from
+  [OWASP/www--site-theme](https://github.com/OWASP/www--site-theme/tree/main/assets/images):
+  `owasp-lockup.svg` (`owasp_logo_black.svg`, mark + wordmark) and
+  `owasp-logo.svg` (`logo.svg`, the mark alone). `build.sh` derives only colour
+  variants from them: the white lockup and the pale watermark for the blue
+  pages. Use these rather than redrawing the logo; the theme's `*_long` /
+  `*_wide` files set the wordmark as live text in a font the build lacks.
 - **`metadata.yml`** — pandoc/Eisvogel settings (TOC, link colours, table
   styling, margins). It holds nothing edition-specific — the footer is passed
   per edition by `build.sh`. Only the ten risk chapters are numbered;

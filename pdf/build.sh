@@ -92,16 +92,16 @@ build_edition() {
   printf '\\def\\otbuildid{%s}\n' "${VERSION//_/\\_}" > "$work/build.tex"
 
   echo "==> [$edition] Rasterising artwork (SVG -> PDF)..."
-  # The cover and part pages are OWASP blue (#1D7BD7). The emblem goes there
-  # as a watermark, its ink pre-mixed as 16% white over that blue (#4190DD)
+  # Official OWASP artwork only: the lockup in black (imprint) and in white
+  # (cover, back cover). The OWASP mark is also the watermark on the blue
+  # (#1D7BD7) pages, its ink pre-mixed as 16% white over that blue (#4190DD)
   # because TikZ opacity drawn from the shipout hook loses its PDF resource
-  # under xdvipdfmx; its stripes take the background blue, i.e. cut-outs.
-  # The OWASP mark is used in white.
-  cp "$ROOT/pdf/assets/ot-top10-logo.svg" "$work/logo.svg"
-  sed -e 's/#1B2733/#4190DD/g' -e 's/#13A10E/#1D7BD7/g' \
-    "$ROOT/pdf/assets/ot-top10-logo.svg" > "$work/emblem-watermark.svg"
-  sed -e 's/fill:#000000/fill:#ffffff/g' \
-    "$ROOT/pdf/assets/owasp-logo.svg" > "$work/owasp-white.svg"
+  # under xdvipdfmx.
+  cp "$ROOT/pdf/assets/owasp-lockup.svg" "$work/owasp-lockup.svg"
+  sed -e 's/fill="#000000"/fill="#FFFFFF"/' \
+    "$ROOT/pdf/assets/owasp-lockup.svg" > "$work/owasp-lockup-white.svg"
+  sed -e 's/fill:#000000/fill:#4190DD/g' \
+    "$ROOT/pdf/assets/owasp-logo.svg" > "$work/owasp-watermark.svg"
   docker run --rm \
     -v "$work":/work \
     --entrypoint sh \
