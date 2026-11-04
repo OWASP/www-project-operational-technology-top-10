@@ -36,7 +36,11 @@ Even if all the issues mentioned in the last section do not apply for an OT syst
 
 ## Rationale
 
-Vulnerable devices bad. Especially in critical infrastructure.
+Vulnerable devices are particularly dangerous in critical infrastructure because their exploitation can disrupt physical processes, cause outages and endanger safety. In OT, however, immediate patching may itself introduce operational or safety risks. Validation requirements, maintenance windows, vendor dependencies, legacy assets and long service lives therefore require risk-based treatment rather than unmanaged exposure.
+
+Where patching or other direct remediation is safe, apply it. Otherwise, use documented compensating controls. Updates should be verified, tested, authorised and deployed under controlled conditions with a proven recovery path. Every known vulnerability should remain visible, assessed, treated, documented and periodically reviewed.
+
+[![Reference workflow for offline patch management in critical infrastructure and OT environments](../assets/images/offline-patch-management-critical-infrastructure-ot.png)](../assets/images/offline-patch-management-critical-infrastructure-ot.png)
 
 ## Known Attacks/Examples
 
