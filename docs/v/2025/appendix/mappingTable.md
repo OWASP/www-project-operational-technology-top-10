@@ -140,6 +140,6 @@ The following tables map each OWASP OT top 10 item to relevant standard and legi
 | [NIST SP 800-82:v3](https://csrc.nist.gov/pubs/sp/800/82/r3/final) | CM-6, CM-7, SI-3, SC-28 |
 | [NIST CSF 2.0](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf) | PR.PS |
 | [MITRE ATT&CK](https://attack.mitre.org/mitigations/ics/) | M0806, M0818, M0921, M0924, M0927, M0928, M0934, M0936, M0938, M0942, M0944, M0949, M0950, M0951, M0954 |
-| [EU NIS2 Directive Commission implementing Regulation C(2024) 7151] (https://eur-lex.europa.eu/eli/reg_impl/2024/2690/oj) ANNEX | 6.3, 6.9, 9, 12.3 |
+| [EU NIS2 Directive Commission implementing Regulation C(2024) 7151](https://eur-lex.europa.eu/eli/reg_impl/2024/2690/oj) ANNEX | 6.3, 6.9, 9, 12.3 |
 | [BDEW Whitepaper](https://www.bdew.de/media/documents/BDEW-OE-VSE-Whitepaper-3.0.pdf) | 4.1.17, 4.2.X, 4.3.X |
-| [NCSC Guidance](https://www.ncsc.gov.uk/collection/operational-technology) |  Secure connectivity principles for operational technology (OT) Principle 2, 5, Principles for secure radio frequency communications in operational technology Principle 3, 4 | 
+| [NCSC Guidance](https://www.ncsc.gov.uk/collection/operational-technology) | Secure connectivity principles for operational technology (OT) Principle 2, 5, Principles for secure radio frequency communications in operational technology Principle 3, 4 |
